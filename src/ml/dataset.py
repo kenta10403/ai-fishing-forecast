@@ -49,7 +49,17 @@ def load_data(
             weather = row.get("weather", "")
             water_temp = row.get("waterTemp", "")
             tide = row.get("tide", "")
+            visitors_raw = row.get("visitors")
             catches = row.get("catches", [])
+            
+            # 来場者数の安全なパース
+            try:
+                visitors = int(visitors_raw) if visitors_raw is not None else 1
+            except (ValueError, TypeError):
+                visitors = 1
+                
+            if visitors <= 0:
+                visitors = 1
             
             # 釣果数の集計
             total_count = 0
@@ -59,15 +69,16 @@ def load_data(
                 try:
                     c = int(catch.get("count") or 0)
                 except (ValueError, TypeError):
-                    c = 1 # countがパースできない(文字列やnull)場合は最低1を保証するなど適宜
+                    c = 1 
                     
                 total_count += c
                 
                 if target_species and target_species in catch.get("name", ""):
                     target_count += c
 
-            # 学習のターゲット値
-            target_value = target_count if target_species else total_count
+            # 学習のターゲット値 (1人あたりの釣果 = CPUE) に変換
+            raw_target_value = target_count if target_species else total_count
+            cpue_score = raw_target_value / visitors
             
             records.append({
                 "date": date_str,
@@ -75,7 +86,8 @@ def load_data(
                 "weather": weather,
                 "water_temp": water_temp,
                 "tide": tide,
-                "target_score": target_value
+                "visitors": visitors,
+                "target_score": cpue_score
             })
 
     df = pd.DataFrame(records)

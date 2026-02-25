@@ -26,25 +26,33 @@ def train_model(include_files=None, exclude_files=None, target_species=None):
     model = RandomForestRegressor(n_estimators=100, random_state=42)
     model.fit(X_train, y_train)
     
-    predictions = model.predict(X_test)
-    mse = mean_squared_error(y_test, predictions)
-    r2 = r2_score(y_test, predictions)
+    predict_train = model.predict(X_train)
+    mse = mean_squared_error(y_train, predict_train)
+    r2 = r2_score(y_train, predict_train)
     
     print(f"学習完了!")
-    print(f" - Mean Squared Error (MSE): {mse:.2f}")
-    print(f" - R2 Score: {r2:.2f}")
+    print(f" - Train Mean Squared Error (MSE): {mse:.4f}")
+    print(f" - Train R2 Score: {r2:.4f}")
+    
+    import numpy as np
+    
+    # 100点満点評価（爆釣指数）算出のための分布データを保存
+    # 訓練データの実際のCPUEスコアをソートして保持しておくことで、
+    # 推論時に percentileofscore を使って上位％を算出できる
+    score_distribution = np.sort(y_train.values)
     
     # save model and feature names (columns)
     model_data = {
         "model": model,
-        "features": X.columns.tolist()
+        "features": X.columns.tolist(),
+        "score_distribution": score_distribution
     }
     
     # ターゲット魚種に応じた固有のファイル名で保存
     if target_species:
-        model_filename = f"model_{target_species}.pkl"
+        model_filename = f"model_cpue_{target_species}.pkl"
     else:
-        model_filename = "model_total.pkl"
+        model_filename = "model_cpue_total.pkl"
         
     model_path = os.path.join(os.path.dirname(__file__), model_filename)
         
