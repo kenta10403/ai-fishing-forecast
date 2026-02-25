@@ -1,0 +1,12 @@
+node_modules/
+dist/
+*.log
+.DS_Store
+
+# Data files (GitHubには上げず、DBやクラウドストレージで管理するのが一般的)
+# ただし、今回は初期データとして含める場合はコメントアウト
+# data/
+
+# .env or secrets
+.env
+.env.*
