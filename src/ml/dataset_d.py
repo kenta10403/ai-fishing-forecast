@@ -141,32 +141,48 @@ def load_trend_data(
     # トレンド指標の算出
     # 施設の場合: CPUE (Catch Per Unit Effort) = 釣果数 / 入場者数
     # 釣具屋の場合: 報告数ベースのスコア
-    def calc_trend_score(row):
-        if row['is_facility'] and row['visitors'] > 0:
-            # 施設は「その日の1人あたりの平均釣果」をベースにする
-            return (row['counts'] / row['visitors']) * 100 * row['weight']
+    # --- 1. データソース別にトレンドスコア算出とスケーリング ---
+    
+    fac_df = grouped[grouped['is_facility'] == True].copy()
+    shop_df = grouped[grouped['is_facility'] == False].copy()
+
+    def process_group(df, is_fac):
+        if df.empty:
+            return df
+        
+        # トレンドスコアの算出
+        if is_fac:
+            # 施設: CPUE (1人あたり釣果) * 100
+            df['trend_score'] = (df['counts'] / df['visitors'].replace(0, 1)) * 100
         else:
-            # 釣具屋は「報告の盛り上がり」をベースにする
-            return (row['report'] * 10 + row['counts']) * row['weight']
+            # 釣具屋: 報告数重量 + 匹数重量
+            df['trend_score'] = (df['report'] * 10 + df['counts'])
 
-    grouped['trend_score'] = grouped.apply(calc_trend_score, axis=1)
+        # 外れ値除去 (ソースごとに実施)
+        q1 = df['trend_score'].quantile(0.05)
+        q3 = df['trend_score'].quantile(0.95)
+        iqr = q3 - q1
+        ub = q3 + 1.5 * iqr
+        df = df[df['trend_score'] <= ub].copy()
 
-    # --- バイアス補正 ---
+        # スケーリング (90パーセンタイルを100として正規化)
+        # これにより、施設での「良い日」と釣具屋での「盛り上がっている日」が同じスケールになる
+        ref_val = df['trend_score'].quantile(0.9)
+        if ref_val > 0:
+            df['trend_score'] = (df['trend_score'] / ref_val) * 100
+        
+        # 重み付け (最終的なモデルへの影響度)
+        weight = 1.0 if is_fac else 0.5
+        df['trend_score'] = df['trend_score'] * weight
+        return df
 
-    # 1. 外れ値除去（IQR法: Q1-1.5*IQR 〜 Q3+1.5*IQR の範囲に収める）
-    q1 = grouped['trend_score'].quantile(0.05)
-    q3 = grouped['trend_score'].quantile(0.95)
-    iqr = q3 - q1
-    lower_bound = max(0, q1 - 1.5 * iqr)
-    upper_bound = q3 + 1.5 * iqr
-    original_count = len(grouped)
-    grouped = grouped[(grouped['trend_score'] >= lower_bound) & (grouped['trend_score'] <= upper_bound)].copy()
-    removed_count = original_count - len(grouped)
-    if removed_count > 0:
-        print(f"  外れ値除去: {removed_count}件 (範囲: {lower_bound:.1f}〜{upper_bound:.1f})")
+    fac_df = process_group(fac_df, True)
+    shop_df = process_group(shop_df, False)
+    
+    # 統合
+    grouped = pd.concat([fac_df, shop_df], ignore_index=True)
 
-    # 2. 曜日バイアスの正規化
-    # 土日は報告数が多いため、曜日ごとの平均で割って正規化
+    # --- 2. 曜日バイアスの正規化 ---
     grouped['date'] = pd.to_datetime(grouped['date'], errors='coerce')
     grouped['day_of_week'] = grouped['date'].dt.dayofweek
     weekday_mean = grouped.groupby('day_of_week')['trend_score'].mean()
@@ -179,8 +195,8 @@ def load_trend_data(
             axis=1
         )
 
-    # 3. 重複排除（同じ日付・エリア・魚種で複数ソースからデータがある場合、施設データ優先）
-    grouped = grouped.sort_values('weight', ascending=False).drop_duplicates(
+    # 3. 重複排除（施設優先）
+    grouped = grouped.sort_values('is_facility', ascending=False).drop_duplicates(
         subset=['date', 'area', 'species'], keep='first'
     ).reset_index(drop=True)
 
