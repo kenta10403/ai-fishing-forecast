@@ -40,8 +40,16 @@ def train_model(include_files=None, exclude_files=None, target_species=None):
         "features": X.columns.tolist()
     }
     
-    joblib.dump(model_data, MODEL_PATH)
-    print(f"モデルを {MODEL_PATH} に保存しました。")
+    # ターゲット魚種に応じた固有のファイル名で保存
+    if target_species:
+        model_filename = f"model_{target_species}.pkl"
+    else:
+        model_filename = "model_total.pkl"
+        
+    model_path = os.path.join(os.path.dirname(__file__), model_filename)
+        
+    joblib.dump(model_data, model_path)
+    print(f"モデルを {model_path} に保存しました。")
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="釣果予測モデルの学習スクリプト")
