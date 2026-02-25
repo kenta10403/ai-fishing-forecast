@@ -10,3 +10,8 @@ dist/
 # .env or secrets
 .env
 .env.*
+
+# Python
+venv/
+__pycache__/
+model.pkl
