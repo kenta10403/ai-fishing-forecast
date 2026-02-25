@@ -1,8 +1,10 @@
 import * as fs from 'fs';
 import * as path from 'path';
 
-const API_URL = 'https://iqqdsybr6beovaix6btxwykuha.appsync-api.ap-northeast-1.amazonaws.com/graphql';
-const API_KEY = 'da2-of4bzmdi4vhjha5buiog37mki4';
+import 'dotenv/config';
+
+const API_URL = process.env.APPSYNC_API_URL || '';
+const API_KEY = process.env.APPSYNC_API_KEY || '';
 
 interface FishCatch {
     name: string;
