@@ -1,0 +1,8421 @@
+[
+  {
+    "date": "2026/02/24",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "横須賀中央店",
+    "area": "神奈川県",
+    "place": "横須賀海辺つり公園"
+  },
+  {
+    "date": "2026/02/23",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "横浜南部市場店（南部市場駅前店）",
+    "area": "神奈川県",
+    "place": ""
+  },
+  {
+    "date": "2026/02/23",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ワカサギ",
+        "count": 82,
+        "size": "8 - 14 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "新盛岡店",
+    "area": "岩手県",
+    "place": "岩洞湖"
+  },
+  {
+    "date": "2026/02/23",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "小松店",
+    "area": "石川県",
+    "place": "七尾湾"
+  },
+  {
+    "date": "2026/02/23",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "山形店",
+    "area": "山形県",
+    "place": "グリーンパーク不忘"
+  },
+  {
+    "date": "2026/02/23",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ニジマス",
+        "count": 8,
+        "size": "20 - 40 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "八王子店",
+    "area": "東京都",
+    "place": "フィッシュアップ秋川湖"
+  },
+  {
+    "date": "2026/02/23",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "イワナ",
+        "count": 3,
+        "size": "20 - 25 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "岡谷店",
+    "area": "長野県",
+    "place": "天竜川水系"
+  },
+  {
+    "date": "2026/02/23",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "カサゴ",
+        "count": 5,
+        "size": "20 - 25 cm"
+      },
+      {
+        "name": "クロダイ",
+        "count": 2,
+        "size": "36 - 38 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "新高岡店",
+    "area": "富山県",
+    "place": "アグア　ズィークイッド７５Ｆ上州屋オリカラ"
+  },
+  {
+    "date": "2026/02/23",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "鈴鹿中央店",
+    "area": "三重県",
+    "place": ""
+  },
+  {
+    "date": "2026/02/23",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ニジマス",
+        "count": 16,
+        "size": "25 - 35 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "伊勢崎店",
+    "area": "群馬県",
+    "place": "東山道公園フィッシングエリア"
+  },
+  {
+    "date": "2026/02/23",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "可児店",
+    "area": "岐阜県",
+    "place": ""
+  },
+  {
+    "date": "2026/02/23",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "鶴ヶ峰店",
+    "area": "神奈川県",
+    "place": ""
+  },
+  {
+    "date": "2026/02/22",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ニジマス",
+        "count": 1,
+        "size": "0.20 kg"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "鴻巣店",
+    "area": "埼玉県",
+    "place": "しらこばと水上公園"
+  },
+  {
+    "date": "2026/02/22",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "山形店",
+    "area": "山形県",
+    "place": "ウエルカム・オーパ"
+  },
+  {
+    "date": "2026/02/22",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "新狭山店",
+    "area": "埼玉県",
+    "place": ""
+  },
+  {
+    "date": "2026/02/22",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "カワハギ",
+        "count": 6,
+        "size": "17 - 26 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "東大和店",
+    "area": "東京都",
+    "place": "剣崎～竹岡沖20～35m"
+  },
+  {
+    "date": "2026/02/22",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "メジナ",
+        "count": 1,
+        "size": "45 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "小田原店",
+    "area": "神奈川県",
+    "place": "真鶴周辺"
+  },
+  {
+    "date": "2026/02/22",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "シロアマダイ",
+        "count": 6,
+        "size": "23 - 44 cm"
+      },
+      {
+        "name": "アカアマダイ",
+        "count": 1,
+        "size": "18 cm"
+      },
+      {
+        "name": "レンコダイ",
+        "count": 2,
+        "size": "15 - 18 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "池袋店",
+    "area": "東京都",
+    "place": "静岡県大井川沖３５～５５ｍ"
+  },
+  {
+    "date": "2026/02/22",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ヘラブナ",
+        "count": 3,
+        "size": "25 - 35 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "池袋店",
+    "area": "東京都",
+    "place": "武蔵の池 中央桟橋 №083"
+  },
+  {
+    "date": "2026/02/22",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "マダラ",
+        "count": 516,
+        "size": "60 - 95 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "一関店",
+    "area": "岩手県",
+    "place": "越喜来　小石浜漁港　龍神丸さん"
+  },
+  {
+    "date": "2026/02/22",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "マダイ",
+        "count": 8,
+        "size": "0.50 - 1.50 kg"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "日立店",
+    "area": "茨城県",
+    "place": "日立沖40ｍ"
+  },
+  {
+    "date": "2026/02/22",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "トラウト",
+        "count": 5,
+        "size": "20 - 25 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "浦和店",
+    "area": "埼玉県",
+    "place": "アルネットホームスマイルパークしらこばと(しらこばと水上公園"
+  },
+  {
+    "date": "2026/02/22",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "溝ノ口店",
+    "area": "神奈川県",
+    "place": ""
+  },
+  {
+    "date": "2026/02/22",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "横須賀中央店",
+    "area": "神奈川県",
+    "place": ""
+  },
+  {
+    "date": "2026/02/22",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "アマゴ",
+        "count": 1,
+        "size": "25 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "岡谷店",
+    "area": "長野県",
+    "place": "諏訪東部エリア　上川"
+  },
+  {
+    "date": "2026/02/22",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "サゴシ",
+        "count": 1,
+        "size": "46 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "新敦賀店",
+    "area": "福井県",
+    "place": "敦賀新港"
+  },
+  {
+    "date": "2026/02/22",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "キャンベル宇都宮店",
+    "area": "栃木県",
+    "place": "那珂川水系"
+  },
+  {
+    "date": "2026/02/22",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "新高岡店",
+    "area": "富山県",
+    "place": "富山新港"
+  },
+  {
+    "date": "2026/02/21",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "横浜南部市場店（南部市場駅前店）",
+    "area": "神奈川県",
+    "place": ""
+  },
+  {
+    "date": "2026/02/21",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ワカサギ",
+        "count": 2300,
+        "size": "7 - 8 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "長野川中島店",
+    "area": "長野県",
+    "place": "諏訪湖"
+  },
+  {
+    "date": "2026/02/21",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "キャンベル宇都宮店",
+    "area": "栃木県",
+    "place": "那珂川水系"
+  },
+  {
+    "date": "2026/02/21",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "可児店",
+    "area": "岐阜県",
+    "place": ""
+  },
+  {
+    "date": "2026/02/21",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "青森店",
+    "area": "青森県",
+    "place": ""
+  },
+  {
+    "date": "2026/02/21",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "シーバス",
+        "count": 25,
+        "size": "50 - 70 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "圏央道厚木インター店",
+    "area": "神奈川県",
+    "place": "東京湾"
+  },
+  {
+    "date": "2026/02/21",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "横須賀佐島店",
+    "area": "神奈川県",
+    "place": ""
+  },
+  {
+    "date": "2026/02/21",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ヤリイカ",
+        "count": 16,
+        "size": "10 - 20 cm"
+      },
+      {
+        "name": "マイカ",
+        "count": 1,
+        "size": "15 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "新福井店",
+    "area": "福井県",
+    "place": "金沢沖"
+  },
+  {
+    "date": "2026/02/21",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "アマゴ",
+        "count": 1,
+        "size": "24 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "岡谷店",
+    "area": "長野県",
+    "place": "天竜川水系"
+  },
+  {
+    "date": "2026/02/21",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "八王子店",
+    "area": "東京都",
+    "place": "相模湖"
+  },
+  {
+    "date": "2026/02/21",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "新富山空港通り店",
+    "area": "富山県",
+    "place": "富山湾内"
+  },
+  {
+    "date": "2026/02/21",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "浦和店",
+    "area": "埼玉県",
+    "place": ""
+  },
+  {
+    "date": "2026/02/21",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "マダイ",
+        "count": 3,
+        "size": "50 - 57 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "新長岡店",
+    "area": "新潟県",
+    "place": "柏崎沖　海龍丸さん"
+  },
+  {
+    "date": "2026/02/21",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "関内店",
+    "area": "神奈川県",
+    "place": ""
+  },
+  {
+    "date": "2026/02/21",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "アマゴ",
+        "count": 1,
+        "size": "22 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "岡谷店",
+    "area": "長野県",
+    "place": "諏訪東部エリア"
+  },
+  {
+    "date": "2026/02/21",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ヒラメ",
+        "count": 1,
+        "size": "43 cm"
+      },
+      {
+        "name": "マゴチ",
+        "count": 1,
+        "size": "53 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "富山豊田店",
+    "area": "富山県",
+    "place": "富山中央部"
+  },
+  {
+    "date": "2026/02/21",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "新高岡店",
+    "area": "富山県",
+    "place": "八重津浜周辺"
+  },
+  {
+    "date": "2026/02/21",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "横浜南部市場店（南部市場駅前店）",
+    "area": "神奈川県",
+    "place": "多摩川"
+  },
+  {
+    "date": "2026/02/21",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "サゴシ",
+        "count": 1,
+        "size": "55 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "新高岡店",
+    "area": "富山県",
+    "place": "海老江周辺"
+  },
+  {
+    "date": "2026/02/21",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "鈴鹿中央店",
+    "area": "三重県",
+    "place": "鳥羽ジギング"
+  },
+  {
+    "date": "2026/02/21",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "小松店",
+    "area": "石川県",
+    "place": "加賀沖"
+  },
+  {
+    "date": "2026/02/21",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "カレイ",
+        "count": 1,
+        "size": "30 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "新高岡店",
+    "area": "富山県",
+    "place": "雨晴周辺"
+  },
+  {
+    "date": "2026/02/21",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "日立店",
+    "area": "茨城県",
+    "place": ""
+  },
+  {
+    "date": "2026/02/20",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ニジマス",
+        "count": 4,
+        "size": "20 - 30 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "八王子店",
+    "area": "東京都",
+    "place": "多摩湖駅前フィッシングエリア"
+  },
+  {
+    "date": "2026/02/20",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ヘラブナ",
+        "count": 40,
+        "size": "20 - 28 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "圏央道厚木インター店",
+    "area": "神奈川県",
+    "place": "相模川　千代田下"
+  },
+  {
+    "date": "2026/02/20",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "サクラマス",
+        "count": 2,
+        "size": "38 - 44 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "新盛岡店",
+    "area": "岩手県",
+    "place": "青森県　野牛港　第二十五正盛丸"
+  },
+  {
+    "date": "2026/02/20",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "レインボートラウト",
+        "count": 110,
+        "size": "15 - 42 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "仙台新港店",
+    "area": "宮城県",
+    "place": "北宮城ＦＡトラウトランド米川エリア"
+  },
+  {
+    "date": "2026/02/20",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "横浜南部市場店（南部市場駅前店）",
+    "area": "神奈川県",
+    "place": "鶴見川"
+  },
+  {
+    "date": "2026/02/20",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "新高岡店",
+    "area": "富山県",
+    "place": ""
+  },
+  {
+    "date": "2026/02/20",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "小松店",
+    "area": "石川県",
+    "place": "ドリームレイク"
+  },
+  {
+    "date": "2026/02/20",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "トラウト",
+        "count": 8,
+        "size": "20 - 30 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "東川口店",
+    "area": "埼玉県",
+    "place": "加須はなさき水上公園"
+  },
+  {
+    "date": "2026/02/20",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "横浜南部市場店（南部市場駅前店）",
+    "area": "神奈川県",
+    "place": ""
+  },
+  {
+    "date": "2026/02/20",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "岐阜穂積店",
+    "area": "岐阜県",
+    "place": ""
+  },
+  {
+    "date": "2026/02/20",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "アマゴ",
+        "count": 8,
+        "size": "18 - 23 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "岡谷店",
+    "area": "長野県",
+    "place": "諏訪東部エリア　上川"
+  },
+  {
+    "date": "2026/02/20",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "マダイ",
+        "count": 1,
+        "size": "66 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "新長岡店",
+    "area": "新潟県",
+    "place": "柏崎沖"
+  },
+  {
+    "date": "2026/02/20",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "富山豊田店",
+    "area": "富山県",
+    "place": ""
+  },
+  {
+    "date": "2026/02/20",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "新福井店",
+    "area": "福井県",
+    "place": "九頭竜サクラマス"
+  },
+  {
+    "date": "2026/02/20",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "横須賀佐島店",
+    "area": "神奈川県",
+    "place": ""
+  },
+  {
+    "date": "2026/02/20",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "横須賀中央店",
+    "area": "神奈川県",
+    "place": ""
+  },
+  {
+    "date": "2026/02/20",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ワカサギ",
+        "count": 60,
+        "size": "6 - 9 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "新盛岡店",
+    "area": "岩手県",
+    "place": "岩洞湖　ワラビ平"
+  },
+  {
+    "date": "2026/02/20",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "盛岡上堂店",
+    "area": "岩手県",
+    "place": "岩洞湖１W"
+  },
+  {
+    "date": "2026/02/20",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "弘前店",
+    "area": "青森県",
+    "place": ""
+  },
+  {
+    "date": "2026/02/19",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "スルメイカ",
+        "count": 21,
+        "size": "20 - 35 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "新高岡店",
+    "area": "富山県",
+    "place": "富山湾沖"
+  },
+  {
+    "date": "2026/02/19",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "厚木店",
+    "area": "神奈川県",
+    "place": ""
+  },
+  {
+    "date": "2026/02/19",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "横浜南部市場店（南部市場駅前店）",
+    "area": "神奈川県",
+    "place": "東京湾"
+  },
+  {
+    "date": "2026/02/19",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "新太田店",
+    "area": "群馬県",
+    "place": "フィッシングステージ彩の国"
+  },
+  {
+    "date": "2026/02/19",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "横須賀佐島店",
+    "area": "神奈川県",
+    "place": ""
+  },
+  {
+    "date": "2026/02/19",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "小松店",
+    "area": "石川県",
+    "place": "七尾湾"
+  },
+  {
+    "date": "2026/02/19",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "横浜南部市場店（南部市場駅前店）",
+    "area": "神奈川県",
+    "place": ""
+  },
+  {
+    "date": "2026/02/19",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ヤリイカ",
+        "count": 1,
+        "size": "25 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "つきみ野店",
+    "area": "神奈川県",
+    "place": "県西部の堤防"
+  },
+  {
+    "date": "2026/02/19",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "カサゴ",
+        "count": 4,
+        "size": "13 - 20 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "平塚八幡店",
+    "area": "神奈川県",
+    "place": "小田原のゴロタ"
+  },
+  {
+    "date": "2026/02/19",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "豊橋小向店",
+    "area": "愛知県",
+    "place": "浜名湖"
+  },
+  {
+    "date": "2026/02/19",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ニジマス",
+        "count": 20,
+        "size": "30 - 36 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "いわき泉店",
+    "area": "福島県",
+    "place": "ウェルカムオーパ"
+  },
+  {
+    "date": "2026/02/19",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "マルイカ",
+        "count": 213,
+        "size": "10 - 25 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "新沼津店",
+    "area": "静岡県",
+    "place": "沼津沖"
+  },
+  {
+    "date": "2026/02/19",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "バス",
+        "count": 2,
+        "size": "39 - 41 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "新真岡店",
+    "area": "栃木県",
+    "place": "鬼怒川"
+  },
+  {
+    "date": "2026/02/19",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "新富山空港通り店",
+    "area": "富山県",
+    "place": ""
+  },
+  {
+    "date": "2026/02/19",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "シーバス",
+        "count": 3,
+        "size": "45 - 55 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "市原店",
+    "area": "千葉県",
+    "place": "上州屋市原店近隣ポイント"
+  },
+  {
+    "date": "2026/02/19",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "奥戸店",
+    "area": "東京都",
+    "place": "旧江戸川下流（千葉県側）"
+  },
+  {
+    "date": "2026/02/19",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "アマダイ",
+        "count": 2,
+        "size": "30 - 36 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "圏央道厚木インター店",
+    "area": "神奈川県",
+    "place": "久里浜～剣崎沖"
+  },
+  {
+    "date": "2026/02/19",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ワカサギ",
+        "count": 12,
+        "size": "3 - 10 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "佐久店",
+    "area": "長野県",
+    "place": "松原湖氷上"
+  },
+  {
+    "date": "2026/02/19",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "コイ",
+        "count": 1,
+        "size": "60 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "伊勢崎店",
+    "area": "群馬県",
+    "place": "城沼"
+  },
+  {
+    "date": "2026/02/19",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "トラウト",
+        "count": 41,
+        "size": "25 - 35 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "足利店",
+    "area": "栃木県",
+    "place": "加賀フィッシングエリア"
+  },
+  {
+    "date": "2026/02/19",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "クロダイ",
+        "count": 1,
+        "size": "39 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "圏央道厚木インター店",
+    "area": "神奈川県",
+    "place": "真鶴の地磯"
+  },
+  {
+    "date": "2026/02/19",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "カサゴ",
+        "count": 1,
+        "size": "10 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "横浜南部市場店（南部市場駅前店）",
+    "area": "神奈川県",
+    "place": "金沢水際線緑地"
+  },
+  {
+    "date": "2026/02/19",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "圏央道厚木インター店",
+    "area": "神奈川県",
+    "place": "東山湖フィッシングエリア"
+  },
+  {
+    "date": "2026/02/19",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ワカサギ",
+        "count": 75160,
+        "size": "4 - 8 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "新盛岡店",
+    "area": "岩手県",
+    "place": "岩洞湖"
+  },
+  {
+    "date": "2026/02/19",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "郡山安積店",
+    "area": "福島県",
+    "place": ""
+  },
+  {
+    "date": "2026/02/19",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "関内店",
+    "area": "神奈川県",
+    "place": ""
+  },
+  {
+    "date": "2026/02/19",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "キジハタ",
+        "count": 1,
+        "size": "40 cm"
+      },
+      {
+        "name": "アマダイ",
+        "count": 8,
+        "size": "30 - 39 cm"
+      },
+      {
+        "name": "オニカサゴ",
+        "count": 1,
+        "size": "30 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "新高岡店",
+    "area": "富山県",
+    "place": "国分沖"
+  },
+  {
+    "date": "2026/02/18",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "トラフグ",
+        "count": 4,
+        "size": "0.50 - 2.00 kg"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "渋谷東口店",
+    "area": "東京都",
+    "place": "浦安吉野屋"
+  },
+  {
+    "date": "2026/02/18",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "佐久店",
+    "area": "長野県",
+    "place": "バラギ湖"
+  },
+  {
+    "date": "2026/02/18",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "小松店",
+    "area": "石川県",
+    "place": ""
+  },
+  {
+    "date": "2026/02/18",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "アマゴ",
+        "count": 1,
+        "size": "22 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "岡谷店",
+    "area": "長野県",
+    "place": "諏訪東部エリア"
+  },
+  {
+    "date": "2026/02/18",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "関内店",
+    "area": "神奈川県",
+    "place": "相模湾"
+  },
+  {
+    "date": "2026/02/18",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "トラフグ",
+        "count": 15,
+        "size": "0.60 - 2.00 kg"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "川口店",
+    "area": "埼玉県",
+    "place": "浦安　吉野屋"
+  },
+  {
+    "date": "2026/02/18",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "アジ",
+        "count": 1,
+        "size": "19 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "足立平野店",
+    "area": "東京都",
+    "place": "外房 堤防"
+  },
+  {
+    "date": "2026/02/18",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ホタルイカ",
+        "count": 50,
+        "size": "5 - 5 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "金沢店",
+    "area": "石川県",
+    "place": "富山県サーフ"
+  },
+  {
+    "date": "2026/02/18",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "横浜南部市場店（南部市場駅前店）",
+    "area": "神奈川県",
+    "place": ""
+  },
+  {
+    "date": "2026/02/18",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "トラフグ",
+        "count": 4,
+        "size": "0.80 - 2.00 kg"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "東陽町店",
+    "area": "東京都",
+    "place": "浦安　吉野屋さん"
+  },
+  {
+    "date": "2026/02/18",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "トラフグ",
+        "count": 1,
+        "size": "0.60 kg"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "新橋駅前店",
+    "area": "東京都",
+    "place": "浦安吉野家"
+  },
+  {
+    "date": "2026/02/18",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ニジマス",
+        "count": 8,
+        "size": "35 - 45 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "川越店",
+    "area": "埼玉県",
+    "place": "槻川フィッシングエリア"
+  },
+  {
+    "date": "2026/02/18",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "トラフグ",
+        "count": 4,
+        "size": "0.50 - 2.00 kg"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "練馬光が丘店",
+    "area": "東京都",
+    "place": "浦安吉野屋"
+  },
+  {
+    "date": "2026/02/18",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "トラフグ",
+        "count": 2,
+        "size": "0.30 - 1.50 kg"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "池袋店",
+    "area": "東京都",
+    "place": "アクアライン周辺30ｍ"
+  },
+  {
+    "date": "2026/02/18",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ニジマス",
+        "count": 13,
+        "size": "33 - 41 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "伊勢崎店",
+    "area": "群馬県",
+    "place": "犀川"
+  },
+  {
+    "date": "2026/02/18",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "トラフグ",
+        "count": 15,
+        "size": "0.60 - 2.00 kg"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "東川口店",
+    "area": "埼玉県",
+    "place": "浦安　吉野屋"
+  },
+  {
+    "date": "2026/02/18",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ブリ",
+        "count": 1,
+        "size": "90 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "燕三条店",
+    "area": "新潟県",
+    "place": "上越名立漁港「琉神丸」"
+  },
+  {
+    "date": "2026/02/18",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "チヌ",
+        "count": 2,
+        "size": "37 - 41 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "浜松店",
+    "area": "静岡県",
+    "place": "浜名湖新居海釣公園"
+  },
+  {
+    "date": "2026/02/18",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "メバル",
+        "count": 2,
+        "size": "20 - 23 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "東陽町店",
+    "area": "東京都",
+    "place": "内房"
+  },
+  {
+    "date": "2026/02/18",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ブラックバス",
+        "count": 2,
+        "size": "30 - 35 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "東陽町店",
+    "area": "東京都",
+    "place": "亀山ダム"
+  },
+  {
+    "date": "2026/02/18",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "トラフグ",
+        "count": 15,
+        "size": "0.80 - 1.50 kg"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "池袋店",
+    "area": "東京都",
+    "place": "浦安の釣り船【船宿 吉野屋】"
+  },
+  {
+    "date": "2026/02/18",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "クロダイ",
+        "count": 1,
+        "size": "33 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "我孫子店",
+    "area": "千葉県",
+    "place": "旧江戸川"
+  },
+  {
+    "date": "2026/02/18",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ワカサギ",
+        "count": 130180,
+        "size": "6 - 12 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "新盛岡店",
+    "area": "岩手県",
+    "place": "岩洞湖"
+  },
+  {
+    "date": "2026/02/18",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "トラフグ",
+        "count": 15,
+        "size": "0.60 - 2.00 kg"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "新宿店",
+    "area": "東京都",
+    "place": "浦安吉野屋"
+  },
+  {
+    "date": "2026/02/18",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ワカシ",
+        "count": 2,
+        "size": "25 - 35 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "長野店",
+    "area": "長野県",
+    "place": "糸魚川サーフ"
+  },
+  {
+    "date": "2026/02/18",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "新福井店",
+    "area": "福井県",
+    "place": "福井県内の港周辺"
+  },
+  {
+    "date": "2026/02/18",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ニジマス",
+        "count": 8,
+        "size": "20 - 40 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "草加店",
+    "area": "埼玉県",
+    "place": "アルクスポンド宇都宮"
+  },
+  {
+    "date": "2026/02/18",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "マダイ",
+        "count": 12,
+        "size": "0.40 - 0.60 kg"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "厚木店",
+    "area": "神奈川県",
+    "place": "佐島～城ヶ島沖"
+  },
+  {
+    "date": "2026/02/18",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ツバス",
+        "count": 1,
+        "size": "30 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "新福井店",
+    "area": "福井県",
+    "place": "福井サーフ"
+  },
+  {
+    "date": "2026/02/18",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "関内店",
+    "area": "神奈川県",
+    "place": "横浜エリア"
+  },
+  {
+    "date": "2026/02/18",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "上越店",
+    "area": "新潟県",
+    "place": "富山～糸魚川方面"
+  },
+  {
+    "date": "2026/02/18",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "豊橋小向店",
+    "area": "愛知県",
+    "place": "浜名湖フィッシングリゾート・トラウトポンド"
+  },
+  {
+    "date": "2026/02/18",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ニジマス",
+        "count": 13,
+        "size": "25 - 41 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "松本インター店",
+    "area": "長野県",
+    "place": "犀川水系"
+  },
+  {
+    "date": "2026/02/18",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "アマゴ",
+        "count": 4,
+        "size": "18 - 20 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "岡谷店",
+    "area": "長野県",
+    "place": "諏訪東部エリア　上川"
+  },
+  {
+    "date": "2026/02/18",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ヤリイカ",
+        "count": 222,
+        "size": "30 - 45 cm"
+      },
+      {
+        "name": "スルメイカ",
+        "count": 20,
+        "size": "30 - 45 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "横浜南部市場店（南部市場駅前店）",
+    "area": "神奈川県",
+    "place": "松輪江奈漁港成銀丸より　城ヶ島沖"
+  },
+  {
+    "date": "2026/02/18",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "横須賀中央店",
+    "area": "神奈川県",
+    "place": ""
+  },
+  {
+    "date": "2026/02/18",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ワカサギ",
+        "count": 75,
+        "size": "6 - 11 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "いわき泉店",
+    "area": "福島県",
+    "place": "桧原湖　早稲沢エリア"
+  },
+  {
+    "date": "2026/02/18",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "マゴチ",
+        "count": 1,
+        "size": "43 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "横須賀中央店",
+    "area": "神奈川県",
+    "place": "三浦のサーフ"
+  },
+  {
+    "date": "2026/02/18",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "富山豊田店",
+    "area": "富山県",
+    "place": ""
+  },
+  {
+    "date": "2026/02/17",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ニジマス",
+        "count": 9,
+        "size": "20 - 45 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "八王子店",
+    "area": "東京都",
+    "place": "フィッシュアップ秋川湖"
+  },
+  {
+    "date": "2026/02/17",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "トラフグ",
+        "count": 1,
+        "size": "40 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "三鷹東八店",
+    "area": "東京都",
+    "place": "鴨居　一郎丸"
+  },
+  {
+    "date": "2026/02/17",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "レインボートラウト",
+        "count": 2040,
+        "size": "25 - 40 cm"
+      },
+      {
+        "name": "イワナ",
+        "count": 1,
+        "size": "35 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "新潟赤道店",
+    "area": "新潟県",
+    "place": "五頭フィッシングパーク"
+  },
+  {
+    "date": "2026/02/17",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "アイナメ",
+        "count": 3,
+        "size": "25 - 41 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "新石巻店",
+    "area": "宮城県",
+    "place": "牡鹿半島"
+  },
+  {
+    "date": "2026/02/17",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "横浜南部市場店（南部市場駅前店）",
+    "area": "神奈川県",
+    "place": ""
+  },
+  {
+    "date": "2026/02/17",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ワカサギ",
+        "count": 671,
+        "size": "4 - 11 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "甲府昭和店",
+    "area": "山梨県",
+    "place": "精進湖　新ロープ"
+  },
+  {
+    "date": "2026/02/17",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ブラックバス",
+        "count": 2,
+        "size": "30 - 40 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "東陽町店",
+    "area": "東京都",
+    "place": "亀山ダム"
+  },
+  {
+    "date": "2026/02/17",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ワカシ",
+        "count": 2,
+        "size": "25 - 30 cm"
+      },
+      {
+        "name": "サゴシ",
+        "count": 1,
+        "size": "56 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "長野店",
+    "area": "長野県",
+    "place": "糸魚川サーフ"
+  },
+  {
+    "date": "2026/02/17",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ワカサギ",
+        "count": 12,
+        "size": "5 - 12 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "会津若松店",
+    "area": "福島県",
+    "place": "桧原湖"
+  },
+  {
+    "date": "2026/02/17",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ワカサギ",
+        "count": 325,
+        "size": "5 - 11 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "一関店",
+    "area": "岩手県",
+    "place": "「花山湖ドーム船ワカサギ」"
+  },
+  {
+    "date": "2026/02/17",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "いわき泉店",
+    "area": "福島県",
+    "place": ""
+  },
+  {
+    "date": "2026/02/17",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "新敦賀店",
+    "area": "福井県",
+    "place": "敦賀の堤防"
+  },
+  {
+    "date": "2026/02/17",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "クロダイ",
+        "count": 4,
+        "size": "40 - 50 cm"
+      },
+      {
+        "name": "セイゴ",
+        "count": 1,
+        "size": "70 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "富山豊田店",
+    "area": "富山県",
+    "place": "富山中央部"
+  },
+  {
+    "date": "2026/02/17",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ヤリイカ",
+        "count": 10,
+        "size": "30 - 45 cm"
+      },
+      {
+        "name": "スルメイカ",
+        "count": 8,
+        "size": "30 - 45 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "つきみ野店",
+    "area": "神奈川県",
+    "place": "城ヶ島西沖"
+  },
+  {
+    "date": "2026/02/17",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "クロダイ",
+        "count": 1,
+        "size": "40 cm"
+      },
+      {
+        "name": "ヘダイ",
+        "count": 1,
+        "size": "46 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "練馬光が丘店",
+    "area": "東京都",
+    "place": "西伊豆　仁科"
+  },
+  {
+    "date": "2026/02/17",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ワカサギ",
+        "count": 160,
+        "size": "6 - 11 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "新八戸店",
+    "area": "青森県",
+    "place": "岩洞湖"
+  },
+  {
+    "date": "2026/02/17",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ニジマス",
+        "count": 1,
+        "size": "40 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "新宿店",
+    "area": "東京都",
+    "place": "弁慶橋ボート場（弁慶FC倶楽部）"
+  },
+  {
+    "date": "2026/02/17",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "いわき泉店",
+    "area": "福島県",
+    "place": "桧原湖"
+  },
+  {
+    "date": "2026/02/17",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ニジマス",
+        "count": 1030,
+        "size": "30 - 40 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "浜松店",
+    "area": "静岡県",
+    "place": "浜名湖フィッシングリゾート"
+  },
+  {
+    "date": "2026/02/17",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "セイゴ",
+        "count": 1,
+        "size": "40 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "伊勢崎店",
+    "area": "群馬県",
+    "place": "那珂川河口"
+  },
+  {
+    "date": "2026/02/17",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "シーバス",
+        "count": 1,
+        "size": "78 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "足立入谷店",
+    "area": "東京都",
+    "place": "荒川中流域"
+  },
+  {
+    "date": "2026/02/17",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "トラウト",
+        "count": 50,
+        "size": "20 - 25 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "浦和店",
+    "area": "埼玉県",
+    "place": "フィッシングステージ彩の国"
+  },
+  {
+    "date": "2026/02/17",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "カレイ",
+        "count": 1,
+        "size": "42 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "横須賀中央店",
+    "area": "神奈川県",
+    "place": "【横須賀うみかぜ公園】横岸壁"
+  },
+  {
+    "date": "2026/02/17",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "盛岡上堂店",
+    "area": "岩手県",
+    "place": ""
+  },
+  {
+    "date": "2026/02/17",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "横須賀中央店",
+    "area": "神奈川県",
+    "place": ""
+  },
+  {
+    "date": "2026/02/16",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "シーバス",
+        "count": 3,
+        "size": "65 - 70 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "八千代店",
+    "area": "千葉県",
+    "place": "千葉県某所"
+  },
+  {
+    "date": "2026/02/16",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ワカサギ",
+        "count": 216,
+        "size": "5 - 10 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "一関店",
+    "area": "岩手県",
+    "place": "「花山湖ドーム船ワカサギ」"
+  },
+  {
+    "date": "2026/02/16",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "イワナ",
+        "count": 11,
+        "size": "20 - 25 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "岡谷店",
+    "area": "長野県",
+    "place": "天竜川水系"
+  },
+  {
+    "date": "2026/02/16",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "キャンベル宇都宮店",
+    "area": "栃木県",
+    "place": "那珂川水系"
+  },
+  {
+    "date": "2026/02/16",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ニジマス",
+        "count": 2,
+        "size": "55 - 62 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "佐久店",
+    "area": "長野県",
+    "place": "佐久漁協　千曲川水系"
+  },
+  {
+    "date": "2026/02/16",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "富山豊田店",
+    "area": "富山県",
+    "place": ""
+  },
+  {
+    "date": "2026/02/16",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "メジナ",
+        "count": 7,
+        "size": "33 - 39 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "練馬光が丘店",
+    "area": "東京都",
+    "place": "西伊豆田子沖磯"
+  },
+  {
+    "date": "2026/02/16",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "長野川中島店",
+    "area": "長野県",
+    "place": "千曲川漁協管轄"
+  },
+  {
+    "date": "2026/02/16",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "アマゴ",
+        "count": 8,
+        "size": "18 - 24 cm"
+      },
+      {
+        "name": "ニジマス",
+        "count": 12,
+        "size": "16 - 26 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "岡谷店",
+    "area": "長野県",
+    "place": "諏訪東部エリア　上川"
+  },
+  {
+    "date": "2026/02/16",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "小松店",
+    "area": "石川県",
+    "place": "七尾湾"
+  },
+  {
+    "date": "2026/02/16",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ニジマス",
+        "count": 28,
+        "size": "20 - 40 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "新千葉美浜店",
+    "area": "千葉県",
+    "place": "奥多摩フィッシングセンターさん"
+  },
+  {
+    "date": "2026/02/16",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ニジマス",
+        "count": 32,
+        "size": "20 - 45 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "水戸店",
+    "area": "茨城県",
+    "place": "TSURIBORI水戸南"
+  },
+  {
+    "date": "2026/02/16",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "盛岡上堂店",
+    "area": "岩手県",
+    "place": "岩洞湖氷上"
+  },
+  {
+    "date": "2026/02/16",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "山形店",
+    "area": "山形県",
+    "place": "秋田県　桁倉沼"
+  },
+  {
+    "date": "2026/02/16",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "鈴鹿中央店",
+    "area": "三重県",
+    "place": "四日市川越周辺ボート釣り"
+  },
+  {
+    "date": "2026/02/16",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "厚木店",
+    "area": "神奈川県",
+    "place": ""
+  },
+  {
+    "date": "2026/02/16",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ヘラブナ",
+        "count": 13,
+        "size": "25 - 30 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "池袋店",
+    "area": "東京都",
+    "place": "三名湖 大手張桟橋 奥 本湖向き"
+  },
+  {
+    "date": "2026/02/16",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "クロダイ",
+        "count": 1,
+        "size": "44 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "新千葉美浜店",
+    "area": "千葉県",
+    "place": "近隣河川"
+  },
+  {
+    "date": "2026/02/16",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "三島函南店",
+    "area": "静岡県",
+    "place": ""
+  },
+  {
+    "date": "2026/02/16",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "横須賀佐島店",
+    "area": "神奈川県",
+    "place": ""
+  },
+  {
+    "date": "2026/02/16",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "新石巻店",
+    "area": "宮城県",
+    "place": ""
+  },
+  {
+    "date": "2026/02/16",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "新高岡店",
+    "area": "富山県",
+    "place": "富山湾"
+  },
+  {
+    "date": "2026/02/16",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "松本インター店",
+    "area": "長野県",
+    "place": ""
+  },
+  {
+    "date": "2026/02/16",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ニジマス",
+        "count": 17,
+        "size": "28 - 50 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "松本インター店",
+    "area": "長野県",
+    "place": "犀川水系"
+  },
+  {
+    "date": "2026/02/16",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "新敦賀店",
+    "area": "福井県",
+    "place": "敦賀の堤防"
+  },
+  {
+    "date": "2026/02/15",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ヘラブナ",
+        "count": 5,
+        "size": "25 - 40 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "我孫子店",
+    "area": "千葉県",
+    "place": "三楽園野田"
+  },
+  {
+    "date": "2026/02/15",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ヤリイカ",
+        "count": 23,
+        "size": "30 - 40 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "長野川中島店",
+    "area": "長野県",
+    "place": "福井県"
+  },
+  {
+    "date": "2026/02/15",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ヤリイカ",
+        "count": 5,
+        "size": "22 - 35 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "新敦賀店",
+    "area": "福井県",
+    "place": "敦賀沖　泰丸"
+  },
+  {
+    "date": "2026/02/15",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "メバル",
+        "count": 4,
+        "size": "13 - 16 cm"
+      },
+      {
+        "name": "ムラソイ",
+        "count": 1,
+        "size": "14 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "小松店",
+    "area": "石川県",
+    "place": "加賀方面"
+  },
+  {
+    "date": "2026/02/15",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "マダイ",
+        "count": 2,
+        "size": "37 - 38 cm"
+      },
+      {
+        "name": "イナダ",
+        "count": 1,
+        "size": "45 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "新橋駅前店",
+    "area": "東京都",
+    "place": "久里浜沖50m"
+  },
+  {
+    "date": "2026/02/15",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "関内店",
+    "area": "神奈川県",
+    "place": ""
+  },
+  {
+    "date": "2026/02/15",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "横浜南部市場店（南部市場駅前店）",
+    "area": "神奈川県",
+    "place": ""
+  },
+  {
+    "date": "2026/02/15",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "テナガエビ",
+        "count": 25,
+        "size": "12 - 20 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "三島函南店",
+    "area": "静岡県",
+    "place": "沼津シュリンプパークさん"
+  },
+  {
+    "date": "2026/02/15",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "キャンベル宇都宮店",
+    "area": "栃木県",
+    "place": "アルクスポンド宇都宮"
+  },
+  {
+    "date": "2026/02/15",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "金沢金石店",
+    "area": "石川県",
+    "place": ""
+  },
+  {
+    "date": "2026/02/15",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "山形店",
+    "area": "山形県",
+    "place": "グリーンパーク不忘"
+  },
+  {
+    "date": "2026/02/15",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ワカサギ",
+        "count": 2,
+        "size": "3 - 5 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "佐久店",
+    "area": "長野県",
+    "place": "松原湖氷上"
+  },
+  {
+    "date": "2026/02/15",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ワカサギ",
+        "count": 79,
+        "size": "7 - 10 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "いわき泉店",
+    "area": "福島県",
+    "place": "小野川湖"
+  },
+  {
+    "date": "2026/02/15",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ニジマス",
+        "count": 3,
+        "size": "20 - 30 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "関店",
+    "area": "岐阜県",
+    "place": "Outdoor Village 373"
+  },
+  {
+    "date": "2026/02/15",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "可児店",
+    "area": "岐阜県",
+    "place": ""
+  },
+  {
+    "date": "2026/02/15",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ウミタナゴ",
+        "count": 1,
+        "size": "22 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "横浜南部市場店（南部市場駅前店）",
+    "area": "神奈川県",
+    "place": "横浜南部周辺"
+  },
+  {
+    "date": "2026/02/15",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "キャンベル宇都宮店",
+    "area": "栃木県",
+    "place": "那珂川水系"
+  },
+  {
+    "date": "2026/02/15",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "浦和店",
+    "area": "埼玉県",
+    "place": ""
+  },
+  {
+    "date": "2026/02/15",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "新富山空港通り店",
+    "area": "富山県",
+    "place": "県内西部方面"
+  },
+  {
+    "date": "2026/02/15",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "富山豊田店",
+    "area": "富山県",
+    "place": ""
+  },
+  {
+    "date": "2026/02/14",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "新狭山店",
+    "area": "埼玉県",
+    "place": ""
+  },
+  {
+    "date": "2026/02/14",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ワカサギ",
+        "count": 25,
+        "size": "4 - 7 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "新真岡店",
+    "area": "栃木県",
+    "place": "桧原湖"
+  },
+  {
+    "date": "2026/02/14",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "新つくば店",
+    "area": "茨城県",
+    "place": ""
+  },
+  {
+    "date": "2026/02/14",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "タチウオ",
+        "count": 38,
+        "size": "80 - 105 cm"
+      },
+      {
+        "name": "シリヤケイカ",
+        "count": 11,
+        "size": "0.30 - 0.30 kg"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "新宿店",
+    "area": "東京都",
+    "place": "深川吉野屋"
+  },
+  {
+    "date": "2026/02/14",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "新高岡店",
+    "area": "富山県",
+    "place": "四方周辺～八重津周辺"
+  },
+  {
+    "date": "2026/02/14",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "キャンベル宇都宮店",
+    "area": "栃木県",
+    "place": "那珂川水系"
+  },
+  {
+    "date": "2026/02/14",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "スモールマウスバス",
+        "count": 3,
+        "size": "41 - 50 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "長野川中島店",
+    "area": "長野県",
+    "place": ""
+  },
+  {
+    "date": "2026/02/14",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "関内店",
+    "area": "神奈川県",
+    "place": "横浜エリア"
+  },
+  {
+    "date": "2026/02/14",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "小松店",
+    "area": "石川県",
+    "place": ""
+  },
+  {
+    "date": "2026/02/14",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "秋田外旭川店",
+    "area": "秋田県",
+    "place": ""
+  },
+  {
+    "date": "2026/02/14",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "小松店",
+    "area": "石川県",
+    "place": "七尾湾"
+  },
+  {
+    "date": "2026/02/14",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "小田原店",
+    "area": "神奈川県",
+    "place": "開成フォレストスプリングス"
+  },
+  {
+    "date": "2026/02/14",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ヤリイカ",
+        "count": 1,
+        "size": "0.10 kg"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "横浜南部市場店（南部市場駅前店）",
+    "area": "神奈川県",
+    "place": "三浦南部"
+  },
+  {
+    "date": "2026/02/14",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "新高岡店",
+    "area": "富山県",
+    "place": "庄川沖"
+  },
+  {
+    "date": "2026/02/14",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "金沢金石店",
+    "area": "石川県",
+    "place": ""
+  },
+  {
+    "date": "2026/02/14",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "富山豊田店",
+    "area": "富山県",
+    "place": ""
+  },
+  {
+    "date": "2026/02/14",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "浜北店",
+    "area": "静岡県",
+    "place": ""
+  },
+  {
+    "date": "2026/02/14",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "マダイ",
+        "count": 1,
+        "size": "59 cm"
+      },
+      {
+        "name": "カサゴ",
+        "count": 2,
+        "size": "22 - 25 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "秋田外旭川店",
+    "area": "秋田県",
+    "place": "男鹿沖"
+  },
+  {
+    "date": "2026/02/14",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "クロダイ",
+        "count": 5,
+        "size": "38 - 42 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "秋田外旭川店",
+    "area": "秋田県",
+    "place": "男鹿半島北磯"
+  },
+  {
+    "date": "2026/02/14",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "横須賀中央店",
+    "area": "神奈川県",
+    "place": ""
+  },
+  {
+    "date": "2026/02/14",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "新敦賀店",
+    "area": "福井県",
+    "place": "敦賀の堤防"
+  },
+  {
+    "date": "2026/02/13",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ワカサギ",
+        "count": 300,
+        "size": "5 - 15 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "新太田店",
+    "area": "群馬県",
+    "place": "河口湖　さかなや"
+  },
+  {
+    "date": "2026/02/13",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "横浜南部市場店（南部市場駅前店）",
+    "area": "神奈川県",
+    "place": ""
+  },
+  {
+    "date": "2026/02/13",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "キャンベル宇都宮店",
+    "area": "栃木県",
+    "place": "那珂川"
+  },
+  {
+    "date": "2026/02/13",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "青森店",
+    "area": "青森県",
+    "place": ""
+  },
+  {
+    "date": "2026/02/13",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "秋田外旭川店",
+    "area": "秋田県",
+    "place": "男鹿磯"
+  },
+  {
+    "date": "2026/02/13",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ワカサギ",
+        "count": 452,
+        "size": "5 - 9 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "池袋店",
+    "area": "東京都",
+    "place": "名栗湖"
+  },
+  {
+    "date": "2026/02/13",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "新福井店",
+    "area": "福井県",
+    "place": "福井サーフ"
+  },
+  {
+    "date": "2026/02/13",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "クロダイ",
+        "count": 2,
+        "size": "42 - 47 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "新千葉美浜店",
+    "area": "千葉県",
+    "place": "近隣河川"
+  },
+  {
+    "date": "2026/02/13",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ニジマス",
+        "count": 20,
+        "size": "20 - 40 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "八千代店",
+    "area": "千葉県",
+    "place": "TSURIBORI水戸南様"
+  },
+  {
+    "date": "2026/02/13",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "八王子店",
+    "area": "東京都",
+    "place": "久里浜沖30～40ｍ前後"
+  },
+  {
+    "date": "2026/02/13",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ワカサギ",
+        "count": 115,
+        "size": "3 - 8 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "宇都宮店",
+    "area": "栃木県",
+    "place": "桧原湖早稲沢地区"
+  },
+  {
+    "date": "2026/02/13",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ヤリイカ",
+        "count": 1,
+        "size": "25 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "長野店",
+    "area": "長野県",
+    "place": "富山県東部"
+  },
+  {
+    "date": "2026/02/13",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ブラックバス",
+        "count": 3,
+        "size": "28 - 31 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "足立平野店",
+    "area": "東京都",
+    "place": "片倉ダム（笹川ボートさんより）"
+  },
+  {
+    "date": "2026/02/13",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ヘラブナ",
+        "count": 7,
+        "size": "20 - 25 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "新太田店",
+    "area": "群馬県",
+    "place": "城沼"
+  },
+  {
+    "date": "2026/02/13",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "新福井店",
+    "area": "福井県",
+    "place": "九頭竜川（新幹線の橋周辺）"
+  },
+  {
+    "date": "2026/02/13",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ハゼ",
+        "count": 1,
+        "size": "10 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "新長岡店",
+    "area": "新潟県",
+    "place": ""
+  },
+  {
+    "date": "2026/02/13",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "横浜南部市場店（南部市場駅前店）",
+    "area": "神奈川県",
+    "place": "三浦"
+  },
+  {
+    "date": "2026/02/13",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "横須賀佐島店",
+    "area": "神奈川県",
+    "place": ""
+  },
+  {
+    "date": "2026/02/13",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "サゴシ",
+        "count": 2,
+        "size": "50 - 50 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "新福井店",
+    "area": "福井県",
+    "place": "福井新港"
+  },
+  {
+    "date": "2026/02/13",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "新敦賀店",
+    "area": "福井県",
+    "place": "敦賀の堤防"
+  },
+  {
+    "date": "2026/02/13",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "横須賀中央店",
+    "area": "神奈川県",
+    "place": ""
+  },
+  {
+    "date": "2026/02/13",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ヤリイカ",
+        "count": 7,
+        "size": "12 - 31 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "新敦賀店",
+    "area": "福井県",
+    "place": ""
+  },
+  {
+    "date": "2026/02/13",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ワカサギ",
+        "count": 150,
+        "size": "6 - 11 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "新盛岡店",
+    "area": "岩手県",
+    "place": "岩洞湖"
+  },
+  {
+    "date": "2026/02/13",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "盛岡上堂店",
+    "area": "岩手県",
+    "place": "岩洞湖ワラビ平"
+  },
+  {
+    "date": "2026/02/13",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "弘前店",
+    "area": "青森県",
+    "place": ""
+  },
+  {
+    "date": "2026/02/12",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "新富山空港通り店",
+    "area": "富山県",
+    "place": ""
+  },
+  {
+    "date": "2026/02/12",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "トラフグ",
+        "count": 3,
+        "size": "0.30 - 2.40 kg"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "練馬光が丘店",
+    "area": "東京都",
+    "place": "観音崎沖１０～４０ｍ"
+  },
+  {
+    "date": "2026/02/12",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "トラフグ",
+        "count": 12,
+        "size": "0.50 - 2.40 kg"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "三鷹東八店",
+    "area": "東京都",
+    "place": "鴨居　一郎丸"
+  },
+  {
+    "date": "2026/02/12",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ヤリイカ",
+        "count": 20,
+        "size": "20 - 40 cm"
+      },
+      {
+        "name": "ゴマサバ",
+        "count": 1,
+        "size": "30 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "新つくば店",
+    "area": "茨城県",
+    "place": "千葉県外房総 勝浦"
+  },
+  {
+    "date": "2026/02/12",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "岐阜穂積店",
+    "area": "岐阜県",
+    "place": ""
+  },
+  {
+    "date": "2026/02/12",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "横浜南部市場店（南部市場駅前店）",
+    "area": "神奈川県",
+    "place": "城ヶ島英盛丸さん"
+  },
+  {
+    "date": "2026/02/12",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ヤリイカ",
+        "count": 3,
+        "size": "25 - 25 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "圏央道厚木インター店",
+    "area": "神奈川県",
+    "place": "伊豆方面"
+  },
+  {
+    "date": "2026/02/12",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "シーバス",
+        "count": 3,
+        "size": "70 - 75 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "八千代店",
+    "area": "千葉県",
+    "place": "千葉県船橋市"
+  },
+  {
+    "date": "2026/02/12",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ワカサギ",
+        "count": 152,
+        "size": "5 - 9 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "いわき泉店",
+    "area": "福島県",
+    "place": "桧原湖　早稲沢エリア"
+  },
+  {
+    "date": "2026/02/12",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ツバス",
+        "count": 6,
+        "size": "30 - 35 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "新福井店",
+    "area": "福井県",
+    "place": "福井サーフ"
+  },
+  {
+    "date": "2026/02/12",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ワカサギ",
+        "count": 230,
+        "size": "5 - 12 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "新八戸店",
+    "area": "青森県",
+    "place": "岩洞湖"
+  },
+  {
+    "date": "2026/02/12",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "トラフグ",
+        "count": 3,
+        "size": "28 - 35 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "神田駅前店",
+    "area": "東京都",
+    "place": "東京湾"
+  },
+  {
+    "date": "2026/02/12",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "新高岡店",
+    "area": "富山県",
+    "place": "富山湾内"
+  },
+  {
+    "date": "2026/02/12",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "メジナ",
+        "count": 18,
+        "size": "30 - 40 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "つきみ野店",
+    "area": "神奈川県",
+    "place": "東伊豆地磯"
+  },
+  {
+    "date": "2026/02/12",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "バス",
+        "count": 1,
+        "size": "43 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "新真岡店",
+    "area": "栃木県",
+    "place": "那珂川"
+  },
+  {
+    "date": "2026/02/12",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "クロダイ",
+        "count": 1,
+        "size": "49 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "平塚八幡店",
+    "area": "神奈川県",
+    "place": "相模川"
+  },
+  {
+    "date": "2026/02/12",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "クロダイ",
+        "count": 3,
+        "size": "40 - 44 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "鶴ヶ峰店",
+    "area": "神奈川県",
+    "place": "三浦南部"
+  },
+  {
+    "date": "2026/02/12",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "関内店",
+    "area": "神奈川県",
+    "place": ""
+  },
+  {
+    "date": "2026/02/12",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "会津若松店",
+    "area": "福島県",
+    "place": ""
+  },
+  {
+    "date": "2026/02/12",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "豊橋小向店",
+    "area": "愛知県",
+    "place": "赤羽根漁港出船「ぽん助丸」さま"
+  },
+  {
+    "date": "2026/02/12",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "カレイ",
+        "count": 2,
+        "size": "15 - 33 cm"
+      },
+      {
+        "name": "シロギス",
+        "count": 1,
+        "size": "23 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "横須賀中央店",
+    "area": "神奈川県",
+    "place": "うみかぜ公園"
+  },
+  {
+    "date": "2026/02/12",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "金沢金石店",
+    "area": "石川県",
+    "place": ""
+  },
+  {
+    "date": "2026/02/12",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ワカサギ",
+        "count": 900,
+        "size": "5 - 12 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "甲府昭和店",
+    "area": "山梨県",
+    "place": "精進湖　赤池"
+  },
+  {
+    "date": "2026/02/12",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ニジマス",
+        "count": 38,
+        "size": "25 - 60 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "山形店",
+    "area": "山形県",
+    "place": "グリーンパーク不忘"
+  },
+  {
+    "date": "2026/02/12",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ヤリイカ",
+        "count": 1,
+        "size": "20 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "新敦賀店",
+    "area": "福井県",
+    "place": "敦賀の堤防"
+  },
+  {
+    "date": "2026/02/11",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "小松店",
+    "area": "石川県",
+    "place": "七尾湾"
+  },
+  {
+    "date": "2026/02/11",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ワカサギ",
+        "count": 323,
+        "size": "4 - 8 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "郡山安積店",
+    "area": "福島県",
+    "place": "桧原湖　早稲沢"
+  },
+  {
+    "date": "2026/02/11",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ヘラブナ",
+        "count": 4,
+        "size": "21 - 27 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "草加店",
+    "area": "埼玉県",
+    "place": "清遊湖"
+  },
+  {
+    "date": "2026/02/11",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ワカサギ",
+        "count": 167,
+        "size": "5 - 12 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "新八戸店",
+    "area": "青森県",
+    "place": "大志田ダム（菜魚湖）"
+  },
+  {
+    "date": "2026/02/11",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ニジマス",
+        "count": 20,
+        "size": "20 - 30 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "草加店",
+    "area": "埼玉県",
+    "place": "みどりフィッシングエリア"
+  },
+  {
+    "date": "2026/02/11",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ワカサギ",
+        "count": 3,
+        "size": "4 - 8 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "佐久店",
+    "area": "長野県",
+    "place": "松原湖氷上"
+  },
+  {
+    "date": "2026/02/11",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "金沢金石店",
+    "area": "石川県",
+    "place": ""
+  },
+  {
+    "date": "2026/02/11",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "能代店",
+    "area": "秋田県",
+    "place": ""
+  },
+  {
+    "date": "2026/02/11",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "横浜南部市場店（南部市場駅前店）",
+    "area": "神奈川県",
+    "place": "城ヶ島英盛丸さん"
+  },
+  {
+    "date": "2026/02/11",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "可児店",
+    "area": "岐阜県",
+    "place": ""
+  },
+  {
+    "date": "2026/02/11",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "新石巻店",
+    "area": "宮城県",
+    "place": ""
+  },
+  {
+    "date": "2026/02/11",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "新福井店",
+    "area": "福井県",
+    "place": ""
+  },
+  {
+    "date": "2026/02/11",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "関内店",
+    "area": "神奈川県",
+    "place": ""
+  },
+  {
+    "date": "2026/02/10",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ヤリイカ",
+        "count": 9,
+        "size": "20 - 42 cm"
+      },
+      {
+        "name": "メバル",
+        "count": 1,
+        "size": "27 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "東船橋店",
+    "area": "千葉県",
+    "place": "波崎沖 カンネコ根"
+  },
+  {
+    "date": "2026/02/10",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "横浜南部市場店（南部市場駅前店）",
+    "area": "神奈川県",
+    "place": "横浜南部周辺"
+  },
+  {
+    "date": "2026/02/10",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "新太田店",
+    "area": "群馬県",
+    "place": "太田フィッシングクラブ"
+  },
+  {
+    "date": "2026/02/10",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ニジマス",
+        "count": 1520,
+        "size": "20 - 35 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "キャンベル春日部店",
+    "area": "埼玉県",
+    "place": "奥多摩フィッシングセンター"
+  },
+  {
+    "date": "2026/02/10",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "アジ",
+        "count": 18,
+        "size": "29 - 42 cm"
+      },
+      {
+        "name": "アマダイ",
+        "count": 2,
+        "size": "29 - 42 cm"
+      },
+      {
+        "name": "サバ",
+        "count": 1,
+        "size": "40 cm"
+      },
+      {
+        "name": "レンコダイ",
+        "count": 3,
+        "size": "23 - 29 cm"
+      },
+      {
+        "name": "ウッカリカサゴ",
+        "count": 2,
+        "size": "18 - 23 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "浜北店",
+    "area": "静岡県",
+    "place": "福田沖周辺"
+  },
+  {
+    "date": "2026/02/10",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ワカサギ",
+        "count": 102,
+        "size": "5 - 11 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "長野店",
+    "area": "長野県",
+    "place": "野尻湖"
+  },
+  {
+    "date": "2026/02/10",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ワカサギ",
+        "count": 61103,
+        "size": "5 - 10 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "燕三条店",
+    "area": "新潟県",
+    "place": "野尻湖　野尻湖マリーナ"
+  },
+  {
+    "date": "2026/02/10",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ワカサギ",
+        "count": 99,
+        "size": "6 - 11 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "新盛岡店",
+    "area": "岩手県",
+    "place": "岩洞湖"
+  },
+  {
+    "date": "2026/02/10",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "マルイカ",
+        "count": 20,
+        "size": "6 - 10 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "新宿店",
+    "area": "東京都",
+    "place": "小湊沖85～105m"
+  },
+  {
+    "date": "2026/02/10",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ワカサギ",
+        "count": 100,
+        "size": "3 - 6 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "新八戸店",
+    "area": "青森県",
+    "place": "岩手県一戸町 大志田ダム（菜魚湖）氷上ワカサギ釣り"
+  },
+  {
+    "date": "2026/02/10",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ワカサギ",
+        "count": 26,
+        "size": "3 - 8 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "会津若松店",
+    "area": "福島県",
+    "place": "桧原湖"
+  },
+  {
+    "date": "2026/02/10",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "クロダイ",
+        "count": 1,
+        "size": "46 cm"
+      },
+      {
+        "name": "アイナメ",
+        "count": 1,
+        "size": "42 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "横須賀中央店",
+    "area": "神奈川県",
+    "place": "「横須賀うみかぜ公園」横岸壁"
+  },
+  {
+    "date": "2026/02/10",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "盛岡上堂店",
+    "area": "岩手県",
+    "place": "岩洞湖ワラビ平"
+  },
+  {
+    "date": "2026/02/10",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "マダイ",
+        "count": 4,
+        "size": "63 - 72 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "鈴鹿中央店",
+    "area": "三重県",
+    "place": "志摩沖"
+  },
+  {
+    "date": "2026/02/10",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "横須賀中央店",
+    "area": "神奈川県",
+    "place": ""
+  },
+  {
+    "date": "2026/02/10",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "関内店",
+    "area": "神奈川県",
+    "place": ""
+  },
+  {
+    "date": "2026/02/09",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ニジマス",
+        "count": 16,
+        "size": "23 - 34 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "新狭山店",
+    "area": "埼玉県",
+    "place": "フィッシングステージ彩の国"
+  },
+  {
+    "date": "2026/02/09",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "可児店",
+    "area": "岐阜県",
+    "place": ""
+  },
+  {
+    "date": "2026/02/09",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "新高岡店",
+    "area": "富山県",
+    "place": "富山湾"
+  },
+  {
+    "date": "2026/02/09",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ワカサギ",
+        "count": 242,
+        "size": "4 - 8 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "いわき泉店",
+    "area": "福島県",
+    "place": "桧原湖　早稲沢エリア"
+  },
+  {
+    "date": "2026/02/09",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ニジマス",
+        "count": 8,
+        "size": "0.20 - 0.30 kg"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "鴻巣店",
+    "area": "埼玉県",
+    "place": "加須はなさき公園"
+  },
+  {
+    "date": "2026/02/09",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ワラサ",
+        "count": 2,
+        "size": "4.00 - 4.20 kg"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "横浜南部市場店（南部市場駅前店）",
+    "area": "神奈川県",
+    "place": "東京湾"
+  },
+  {
+    "date": "2026/02/09",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "グレ",
+        "count": 4,
+        "size": "35 - 45 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "鈴鹿中央店",
+    "area": "三重県",
+    "place": "紀伊長島〝一栄丸渡船〟"
+  },
+  {
+    "date": "2026/02/09",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ワカサギ",
+        "count": 30,
+        "size": "6 - 6 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "甲府昭和店",
+    "area": "山梨県",
+    "place": "河口湖湖波"
+  },
+  {
+    "date": "2026/02/09",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ワカサギ",
+        "count": 250,
+        "size": "5 - 12 cm"
+      },
+      {
+        "name": "ヒメマス",
+        "count": 1,
+        "size": "20 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "新八戸店",
+    "area": "青森県",
+    "place": ""
+  },
+  {
+    "date": "2026/02/09",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "新八戸店",
+    "area": "青森県",
+    "place": "岩手県一戸町 大志田ダム（菜魚湖）氷上ワカサギ釣り"
+  },
+  {
+    "date": "2026/02/09",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "キャンベル宇都宮店",
+    "area": "栃木県",
+    "place": "熊本養魚場"
+  },
+  {
+    "date": "2026/02/09",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "新福井店",
+    "area": "福井県",
+    "place": "九頭竜川：新幹線橋周辺"
+  },
+  {
+    "date": "2026/02/09",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "レインボートラウト",
+        "count": 22,
+        "size": "20 - 25 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "川越店",
+    "area": "埼玉県",
+    "place": "川越水上公園"
+  },
+  {
+    "date": "2026/02/09",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "盛岡上堂店",
+    "area": "岩手県",
+    "place": "岩洞湖対岸エリア"
+  },
+  {
+    "date": "2026/02/08",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "いわき泉店",
+    "area": "福島県",
+    "place": ""
+  },
+  {
+    "date": "2026/02/08",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ワカサギ",
+        "count": 141,
+        "size": "7 - 12 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "新盛岡店",
+    "area": "岩手県",
+    "place": "岩洞湖"
+  },
+  {
+    "date": "2026/02/08",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "シーバス",
+        "count": 1,
+        "size": "80 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "八千代店",
+    "area": "千葉県",
+    "place": "東京湾奥"
+  },
+  {
+    "date": "2026/02/08",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "可児店",
+    "area": "岐阜県",
+    "place": ""
+  },
+  {
+    "date": "2026/02/08",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "秋田外旭川店",
+    "area": "秋田県",
+    "place": ""
+  },
+  {
+    "date": "2026/02/07",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ワカサギ",
+        "count": 4,
+        "size": "4 - 8 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "甲府昭和店",
+    "area": "山梨県",
+    "place": "松原湖"
+  },
+  {
+    "date": "2026/02/07",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "金沢金石店",
+    "area": "石川県",
+    "place": "奥能登"
+  },
+  {
+    "date": "2026/02/07",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ヘラブナ",
+        "count": 116,
+        "size": "25 - 35 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "池袋店",
+    "area": "東京都",
+    "place": "三楽園 １号桟橋 南向き"
+  },
+  {
+    "date": "2026/02/07",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "横浜南部市場店（南部市場駅前店）",
+    "area": "神奈川県",
+    "place": "当店周辺"
+  },
+  {
+    "date": "2026/02/07",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "横須賀中央店",
+    "area": "神奈川県",
+    "place": ""
+  },
+  {
+    "date": "2026/02/07",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "東大和店",
+    "area": "東京都",
+    "place": "多摩湖駅前フィッシングエリア"
+  },
+  {
+    "date": "2026/02/06",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "新狭山店",
+    "area": "埼玉県",
+    "place": ""
+  },
+  {
+    "date": "2026/02/06",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "関内店",
+    "area": "神奈川県",
+    "place": ""
+  },
+  {
+    "date": "2026/02/06",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "八千代店",
+    "area": "千葉県",
+    "place": "釣りパラダイス"
+  },
+  {
+    "date": "2026/02/06",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "横浜南部市場店（南部市場駅前店）",
+    "area": "神奈川県",
+    "place": "神奈川西部堤防"
+  },
+  {
+    "date": "2026/02/06",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ブラックバス",
+        "count": 2,
+        "size": "50 - 58 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "東陽町店",
+    "area": "東京都",
+    "place": "亀山ダム"
+  },
+  {
+    "date": "2026/02/06",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "横浜南部市場店（南部市場駅前店）",
+    "area": "神奈川県",
+    "place": ""
+  },
+  {
+    "date": "2026/02/06",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "シーバス",
+        "count": 1,
+        "size": "50 cm"
+      },
+      {
+        "name": "クロダイ",
+        "count": 1,
+        "size": "43 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "横浜南部市場店（南部市場駅前店）",
+    "area": "神奈川県",
+    "place": "多摩川"
+  },
+  {
+    "date": "2026/02/06",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ニジマス",
+        "count": 23,
+        "size": "20 - 30 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "豊橋小向店",
+    "area": "愛知県",
+    "place": "焼津市『アルクスポンド焼津』"
+  },
+  {
+    "date": "2026/02/06",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "アカムツ",
+        "count": 1,
+        "size": "38 cm"
+      },
+      {
+        "name": "クロムツ",
+        "count": 1,
+        "size": "30 cm"
+      },
+      {
+        "name": "シロムツ",
+        "count": 3,
+        "size": "18 - 21 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "厚木店",
+    "area": "神奈川県",
+    "place": "大磯沖"
+  },
+  {
+    "date": "2026/02/06",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "トラウト",
+        "count": 7,
+        "size": "20 - 30 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "浦和店",
+    "area": "埼玉県",
+    "place": "加須はなさき水上公園「キサイフーズはなさきふれあいパーク」"
+  },
+  {
+    "date": "2026/02/06",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "クチブト",
+        "count": 3,
+        "size": "35 - 39 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "つきみ野店",
+    "area": "神奈川県",
+    "place": "真鶴地磯"
+  },
+  {
+    "date": "2026/02/06",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ニジマス",
+        "count": 8,
+        "size": "30 - 40 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "浜松店",
+    "area": "静岡県",
+    "place": "天竜川ルアー・フライ・テンカラ専用区"
+  },
+  {
+    "date": "2026/02/06",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "アカアマダイ",
+        "count": 5,
+        "size": "35 - 45 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "いわき泉店",
+    "area": "福島県",
+    "place": "日立沖（釣友丸さん）"
+  },
+  {
+    "date": "2026/02/06",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ツバス",
+        "count": 20,
+        "size": "30 - 35 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "新福井店",
+    "area": "福井県",
+    "place": "福井サーフ"
+  },
+  {
+    "date": "2026/02/06",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "圏央道厚木インター店",
+    "area": "神奈川県",
+    "place": "横浜南部"
+  },
+  {
+    "date": "2026/02/06",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "横須賀中央店",
+    "area": "神奈川県",
+    "place": "【横須賀うみかぜ公園】横岸壁"
+  },
+  {
+    "date": "2026/02/06",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "横須賀中央店",
+    "area": "神奈川県",
+    "place": ""
+  },
+  {
+    "date": "2026/02/06",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "盛岡上堂店",
+    "area": "岩手県",
+    "place": "岩洞湖ワラビ平"
+  },
+  {
+    "date": "2026/02/06",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ワカサギ",
+        "count": 91,
+        "size": "7 - 12 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "新盛岡店",
+    "area": "岩手県",
+    "place": "岩洞湖"
+  },
+  {
+    "date": "2026/02/06",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "弘前店",
+    "area": "青森県",
+    "place": ""
+  },
+  {
+    "date": "2026/02/06",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "平塚八幡店",
+    "area": "神奈川県",
+    "place": ""
+  },
+  {
+    "date": "2026/02/05",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "新西那須野店",
+    "area": "栃木県",
+    "place": "大芦川F&Cフィールドビレッジ"
+  },
+  {
+    "date": "2026/02/05",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "新富山空港通り店",
+    "area": "富山県",
+    "place": ""
+  },
+  {
+    "date": "2026/02/05",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "アイナメ",
+        "count": 1,
+        "size": "16 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "一関店",
+    "area": "岩手県",
+    "place": "広田半島周辺"
+  },
+  {
+    "date": "2026/02/05",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "新敦賀店",
+    "area": "福井県",
+    "place": "敦賀新港(鞠山海遊パーク)"
+  },
+  {
+    "date": "2026/02/05",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "横浜南部市場店（南部市場駅前店）",
+    "area": "神奈川県",
+    "place": ""
+  },
+  {
+    "date": "2026/02/05",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "カワハギ",
+        "count": 7,
+        "size": "16 - 26 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "東大和店",
+    "area": "東京都",
+    "place": "下浦沖20～30m"
+  },
+  {
+    "date": "2026/02/05",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ニジマス",
+        "count": 58,
+        "size": "25 - 43 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "我孫子店",
+    "area": "千葉県",
+    "place": "成田市ウォルトンガーデン"
+  },
+  {
+    "date": "2026/02/05",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "スルメイカ",
+        "count": 30,
+        "size": "25 - 35 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "新高岡店",
+    "area": "富山県",
+    "place": "富山湾"
+  },
+  {
+    "date": "2026/02/05",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "鹿沼店",
+    "area": "栃木県",
+    "place": "大芦川フィールドビレッジ"
+  },
+  {
+    "date": "2026/02/05",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "新真岡店",
+    "area": "栃木県",
+    "place": ""
+  },
+  {
+    "date": "2026/02/05",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ヤリイカ",
+        "count": 11,
+        "size": "30 - 45 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "水戸店",
+    "area": "茨城県",
+    "place": "鹿島港 幸栄丸"
+  },
+  {
+    "date": "2026/02/05",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "トラウト",
+        "count": 24,
+        "size": "20 - 30 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "木更津店",
+    "area": "千葉県",
+    "place": "ジョイバレー"
+  },
+  {
+    "date": "2026/02/05",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "シーバス",
+        "count": 5,
+        "size": "40 - 45 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "横浜南部市場店（南部市場駅前店）",
+    "area": "神奈川県",
+    "place": "河川"
+  },
+  {
+    "date": "2026/02/05",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "レンボートラウト",
+        "count": 86,
+        "size": "17 - 30 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "仙台新港店",
+    "area": "宮城県",
+    "place": "秋保フィッシングエリア"
+  },
+  {
+    "date": "2026/02/05",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ニジマス",
+        "count": 15,
+        "size": "20 - 35 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "草加店",
+    "area": "埼玉県",
+    "place": "加賀フィッシングエリア"
+  },
+  {
+    "date": "2026/02/05",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ワカサギ",
+        "count": 15,
+        "size": "8 - 11 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "佐久店",
+    "area": "長野県",
+    "place": "松原湖氷上"
+  },
+  {
+    "date": "2026/02/05",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "シーバス",
+        "count": 1,
+        "size": "77 cm"
+      },
+      {
+        "name": "クロダイ",
+        "count": 1,
+        "size": "38 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "我孫子店",
+    "area": "千葉県",
+    "place": "旧江戸川"
+  },
+  {
+    "date": "2026/02/05",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "タチウオ",
+        "count": 4,
+        "size": "90 - 100 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "圏央道厚木インター店",
+    "area": "神奈川県",
+    "place": "東京湾"
+  },
+  {
+    "date": "2026/02/05",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "小松店",
+    "area": "石川県",
+    "place": "能登島"
+  },
+  {
+    "date": "2026/02/05",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "新福井店",
+    "area": "福井県",
+    "place": "九頭竜川"
+  },
+  {
+    "date": "2026/02/05",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ワカサギ",
+        "count": 30105,
+        "size": "5 - 8 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "会津若松店",
+    "area": "福島県",
+    "place": "桧原湖"
+  },
+  {
+    "date": "2026/02/05",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "サクラマス",
+        "count": 3,
+        "size": "46 - 54 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "新盛岡店",
+    "area": "岩手県",
+    "place": "青森県　野牛港　第二十五正盛丸"
+  },
+  {
+    "date": "2026/02/05",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "スモールマウスバス",
+        "count": 1,
+        "size": "44 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "長野川中島店",
+    "area": "長野県",
+    "place": ""
+  },
+  {
+    "date": "2026/02/05",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "サゴシ",
+        "count": 1,
+        "size": "40 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "新敦賀店",
+    "area": "福井県",
+    "place": "美浜サーフ"
+  },
+  {
+    "date": "2026/02/05",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "新福井店",
+    "area": "福井県",
+    "place": "越前海岸周辺"
+  },
+  {
+    "date": "2026/02/05",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "圏央道厚木インター店",
+    "area": "神奈川県",
+    "place": "長井沖15～55ｍ"
+  },
+  {
+    "date": "2026/02/05",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "横須賀中央店",
+    "area": "神奈川県",
+    "place": ""
+  },
+  {
+    "date": "2026/02/05",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "小松店",
+    "area": "石川県",
+    "place": "小松サーフ"
+  },
+  {
+    "date": "2026/02/05",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ワカサギ",
+        "count": 145,
+        "size": "7 - 11 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "新盛岡店",
+    "area": "岩手県",
+    "place": "岩洞湖"
+  },
+  {
+    "date": "2026/02/04",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ニジマス",
+        "count": 518,
+        "size": "20 - 25 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "三鷹東八店",
+    "area": "東京都",
+    "place": "中津川フィッシングフィールド"
+  },
+  {
+    "date": "2026/02/04",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "いわき泉店",
+    "area": "福島県",
+    "place": ""
+  },
+  {
+    "date": "2026/02/04",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "横浜南部市場店（南部市場駅前店）",
+    "area": "神奈川県",
+    "place": "横浜市大型河川"
+  },
+  {
+    "date": "2026/02/04",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "トラウト",
+        "count": 39,
+        "size": "25 - 30 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "草加店",
+    "area": "埼玉県",
+    "place": "大芦川フィールドビレッジ"
+  },
+  {
+    "date": "2026/02/04",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ブダイ",
+        "count": 10,
+        "size": "30 - 47 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "新橋駅前店",
+    "area": "東京都",
+    "place": "三浦の磯"
+  },
+  {
+    "date": "2026/02/04",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "フクラギ",
+        "count": 15,
+        "size": "35 - 40 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "新福井店",
+    "area": "福井県",
+    "place": "福井サーフ"
+  },
+  {
+    "date": "2026/02/04",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "アジ",
+        "count": 51,
+        "size": "18 - 25 cm"
+      },
+      {
+        "name": "クロダイ",
+        "count": 2,
+        "size": "30 - 35 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "宇都宮店",
+    "area": "栃木県",
+    "place": "浦安　吉野屋さん"
+  },
+  {
+    "date": "2026/02/04",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "鈴鹿中央店",
+    "area": "三重県",
+    "place": "志摩沖"
+  },
+  {
+    "date": "2026/02/04",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ヤリイカ",
+        "count": 5,
+        "size": "25 - 45 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "東大和店",
+    "area": "東京都",
+    "place": "西伊豆"
+  },
+  {
+    "date": "2026/02/04",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "横須賀佐島店",
+    "area": "神奈川県",
+    "place": ""
+  },
+  {
+    "date": "2026/02/04",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ヤリイカ",
+        "count": 1,
+        "size": "25 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "新敦賀店",
+    "area": "福井県",
+    "place": "敦賀の堤防"
+  },
+  {
+    "date": "2026/02/04",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "関内店",
+    "area": "神奈川県",
+    "place": "横浜エリア"
+  },
+  {
+    "date": "2026/02/04",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "マサバ",
+        "count": 18,
+        "size": "35 - 40 cm"
+      },
+      {
+        "name": "アジ",
+        "count": 2,
+        "size": "30 - 30 cm"
+      },
+      {
+        "name": "オアカムロ",
+        "count": 1,
+        "size": "30 cm"
+      },
+      {
+        "name": "ヤリイカ",
+        "count": 2,
+        "size": "35 - 45 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "新千葉美浜店",
+    "area": "千葉県",
+    "place": "勝浦沖180～200ｍ"
+  },
+  {
+    "date": "2026/02/04",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ヤリイカ",
+        "count": 20,
+        "size": "30 - 50 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "新つくば店",
+    "area": "茨城県",
+    "place": "鹿島　桜井丸"
+  },
+  {
+    "date": "2026/02/04",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ブダイ",
+        "count": 210,
+        "size": "35 - 53 cm"
+      },
+      {
+        "name": "メジナ",
+        "count": 3,
+        "size": "32 - 35 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "圏央道厚木インター店",
+    "area": "神奈川県",
+    "place": "三浦"
+  },
+  {
+    "date": "2026/02/04",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ニジマス",
+        "count": 27,
+        "size": "23 - 30 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "新狭山店",
+    "area": "埼玉県",
+    "place": "フィッシングフィールド中津川"
+  },
+  {
+    "date": "2026/02/04",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "横浜南部市場店（南部市場駅前店）",
+    "area": "神奈川県",
+    "place": ""
+  },
+  {
+    "date": "2026/02/04",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ニジマス",
+        "count": 45,
+        "size": "20 - 35 cm"
+      },
+      {
+        "name": "イワナ",
+        "count": 4,
+        "size": "25 - 27 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "新潟赤道店",
+    "area": "新潟県",
+    "place": "五頭フィッシングパーク"
+  },
+  {
+    "date": "2026/02/04",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "サゴシ",
+        "count": 50,
+        "size": "40 - 60 cm"
+      },
+      {
+        "name": "サバ",
+        "count": 2,
+        "size": "30 - 45 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "燕三条店",
+    "area": "新潟県",
+    "place": "新潟東港シートランス"
+  },
+  {
+    "date": "2026/02/04",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ワカサギ",
+        "count": 311,
+        "size": "5 - 9 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "一関店",
+    "area": "岩手県",
+    "place": "「花山湖ドーム船ワカサギ」釣行"
+  },
+  {
+    "date": "2026/02/04",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "新福井店",
+    "area": "福井県",
+    "place": "福井県内の港周辺"
+  },
+  {
+    "date": "2026/02/04",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "アジ",
+        "count": 9,
+        "size": "28 - 33 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "いわき泉店",
+    "area": "福島県",
+    "place": "大津港"
+  },
+  {
+    "date": "2026/02/04",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "可児店",
+    "area": "岐阜県",
+    "place": ""
+  },
+  {
+    "date": "2026/02/04",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ナマズ",
+        "count": 1,
+        "size": "50 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "新太田店",
+    "area": "群馬県",
+    "place": "城沼"
+  },
+  {
+    "date": "2026/02/04",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "マルイカ",
+        "count": 223,
+        "size": "10 - 20 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "横浜南部市場店（南部市場駅前店）",
+    "area": "神奈川県",
+    "place": "小網代　山星丸"
+  },
+  {
+    "date": "2026/02/03",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "シーバス",
+        "count": 1,
+        "size": "60 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "川崎東口店",
+    "area": "神奈川県",
+    "place": "多摩川河口部"
+  },
+  {
+    "date": "2026/02/03",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "カミナリイカ",
+        "count": 15,
+        "size": "0.50 - 1.40 kg"
+      },
+      {
+        "name": "アオリイカ",
+        "count": 11,
+        "size": "0.20 - 0.80 kg"
+      },
+      {
+        "name": "オオモンハタ",
+        "count": 4,
+        "size": "22 - 26 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "新富山空港通り店",
+    "area": "富山県",
+    "place": "愛媛県・愛南～高知県・宿毛～土佐清水周辺"
+  },
+  {
+    "date": "2026/02/03",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "浜松店",
+    "area": "静岡県",
+    "place": "西伊豆 戸田沖"
+  },
+  {
+    "date": "2026/02/03",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "厚木店",
+    "area": "神奈川県",
+    "place": ""
+  },
+  {
+    "date": "2026/02/03",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "シーバス",
+        "count": 2,
+        "size": "50 - 55 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "浜松店",
+    "area": "静岡県",
+    "place": "浜名湖"
+  },
+  {
+    "date": "2026/02/03",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ニジマス",
+        "count": 10,
+        "size": "15 - 25 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "豊橋小向店",
+    "area": "愛知県",
+    "place": "浜名湖フィッシングリゾート"
+  },
+  {
+    "date": "2026/02/03",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ヘラ",
+        "count": 15,
+        "size": "25 - 35 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "小山駅南店",
+    "area": "栃木県",
+    "place": "三和新池"
+  },
+  {
+    "date": "2026/02/03",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "メバル",
+        "count": 3,
+        "size": "10 - 26 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "新石巻店",
+    "area": "宮城県",
+    "place": "石巻周辺"
+  },
+  {
+    "date": "2026/02/03",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ワカサギ",
+        "count": 22,
+        "size": "7 - 15 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "新八戸店",
+    "area": "青森県",
+    "place": "姉沼"
+  },
+  {
+    "date": "2026/02/03",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "アジ",
+        "count": 1,
+        "size": "22 cm"
+      },
+      {
+        "name": "チンタ",
+        "count": 1,
+        "size": "15 cm"
+      },
+      {
+        "name": "コノシロ",
+        "count": 1,
+        "size": "15 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "新福井店",
+    "area": "福井県",
+    "place": "越前海岸"
+  },
+  {
+    "date": "2026/02/03",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "東陽町店",
+    "area": "東京都",
+    "place": "なら山沼漁場"
+  },
+  {
+    "date": "2026/02/03",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "メジナ",
+        "count": 8,
+        "size": "25 - 35 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "練馬光が丘店",
+    "area": "東京都",
+    "place": "西伊豆　小下田沖磯"
+  },
+  {
+    "date": "2026/02/03",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "サクラマス",
+        "count": 3,
+        "size": "32 - 35 cm"
+      },
+      {
+        "name": "ニジマス",
+        "count": 50,
+        "size": "23 - 38 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "池袋店",
+    "area": "東京都",
+    "place": "リヴァスポット早戸"
+  },
+  {
+    "date": "2026/02/03",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "アジ",
+        "count": 2530,
+        "size": "16 - 23 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "池袋店",
+    "area": "東京都",
+    "place": "金沢八景　仁丸"
+  },
+  {
+    "date": "2026/02/03",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "マルイカ",
+        "count": 223,
+        "size": "12 - 25 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "つきみ野店",
+    "area": "神奈川県",
+    "place": "小網代港より城ヶ島沖"
+  },
+  {
+    "date": "2026/02/03",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ワカサギ",
+        "count": 51112,
+        "size": "6 - 12 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "圏央道厚木インター店",
+    "area": "神奈川県",
+    "place": "相模湖　天狗岩"
+  },
+  {
+    "date": "2026/02/03",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "マルイカ",
+        "count": 223,
+        "size": "12 - 25 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "鶴ヶ峰店",
+    "area": "神奈川県",
+    "place": "城ヶ島沖90ｍ"
+  },
+  {
+    "date": "2026/02/03",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ニジマス",
+        "count": 22,
+        "size": "20 - 45 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "青梅河辺店",
+    "area": "東京都",
+    "place": "桂川フライルアー釣り場"
+  },
+  {
+    "date": "2026/02/03",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "関内店",
+    "area": "神奈川県",
+    "place": ""
+  },
+  {
+    "date": "2026/02/03",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "横須賀中央店",
+    "area": "神奈川県",
+    "place": ""
+  },
+  {
+    "date": "2026/02/03",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "盛岡上堂店",
+    "area": "岩手県",
+    "place": "岩洞湖ドーム船②"
+  },
+  {
+    "date": "2026/02/02",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "マサバ",
+        "count": 20,
+        "size": "30 - 40 cm"
+      },
+      {
+        "name": "ヤリイカ",
+        "count": 1,
+        "size": "35 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "春日部店",
+    "area": "埼玉県",
+    "place": "川津港不動丸"
+  },
+  {
+    "date": "2026/02/02",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ヘラブナ",
+        "count": 11,
+        "size": "25 - 38 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "我孫子店",
+    "area": "千葉県",
+    "place": "野田幸手園"
+  },
+  {
+    "date": "2026/02/02",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "サゴシ",
+        "count": 1,
+        "size": "50 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "新福井店",
+    "area": "福井県",
+    "place": "越前海岸"
+  },
+  {
+    "date": "2026/02/02",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ヤリイカ",
+        "count": 113,
+        "size": "28 - 40 cm"
+      },
+      {
+        "name": "サバ",
+        "count": 520,
+        "size": "27 - 40 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "神田駅前店",
+    "area": "東京都",
+    "place": "勝浦沖"
+  },
+  {
+    "date": "2026/02/02",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "いわき泉店",
+    "area": "福島県",
+    "place": ""
+  },
+  {
+    "date": "2026/02/02",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ヘラブナ",
+        "count": 15,
+        "size": "20 - 30 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "足立入谷店",
+    "area": "東京都",
+    "place": "中の島センター"
+  },
+  {
+    "date": "2026/02/02",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ワカサギ",
+        "count": 85,
+        "size": "3 - 5 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "甲府昭和店",
+    "area": "山梨県",
+    "place": "松原湖"
+  },
+  {
+    "date": "2026/02/02",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "マルイカ",
+        "count": 2,
+        "size": "18 - 22 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "厚木店",
+    "area": "神奈川県",
+    "place": "城ヶ島沖"
+  },
+  {
+    "date": "2026/02/02",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "新八戸店",
+    "area": "青森県",
+    "place": "フィッシングエリア・ウキウキランド"
+  },
+  {
+    "date": "2026/02/02",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ワカサギ",
+        "count": 252,
+        "size": "4 - 10 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "郡山安積店",
+    "area": "福島県",
+    "place": "桧原湖　磐梯桧原湖畔ホテル"
+  },
+  {
+    "date": "2026/02/02",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "可児店",
+    "area": "岐阜県",
+    "place": ""
+  },
+  {
+    "date": "2026/02/02",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "一関店",
+    "area": "岩手県",
+    "place": "綾里漁港など"
+  },
+  {
+    "date": "2026/02/02",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ニジマス",
+        "count": 5,
+        "size": "20 - 25 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "滋賀栗東店",
+    "area": "滋賀県",
+    "place": "アクアヘブン"
+  },
+  {
+    "date": "2026/02/02",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "鈴鹿中央店",
+    "area": "三重県",
+    "place": ""
+  },
+  {
+    "date": "2026/02/02",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ヘラブナ",
+        "count": 2130,
+        "size": "25 - 35 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "池袋店",
+    "area": "東京都",
+    "place": "三名湖 大手張桟橋 中央奥 本湖向き"
+  },
+  {
+    "date": "2026/02/02",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "トラフグ",
+        "count": 1,
+        "size": "30 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "東陽町店",
+    "area": "東京都",
+    "place": "木更津、富津沖　約30ｍ"
+  },
+  {
+    "date": "2026/02/02",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "戸塚原宿店",
+    "area": "神奈川県",
+    "place": ""
+  },
+  {
+    "date": "2026/02/02",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "金沢金石店",
+    "area": "石川県",
+    "place": ""
+  },
+  {
+    "date": "2026/02/02",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "横須賀中央店",
+    "area": "神奈川県",
+    "place": "うみかぜ公園横岸壁"
+  },
+  {
+    "date": "2026/02/02",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "新高岡店",
+    "area": "富山県",
+    "place": "富山湾内"
+  },
+  {
+    "date": "2026/02/01",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "関内店",
+    "area": "神奈川県",
+    "place": ""
+  },
+  {
+    "date": "2026/02/01",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "東根店",
+    "area": "山形県",
+    "place": "吉浜湾"
+  },
+  {
+    "date": "2026/02/01",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "山形店",
+    "area": "山形県",
+    "place": "秋保フィッシングエリア"
+  },
+  {
+    "date": "2026/02/01",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "トラウト",
+        "count": 40,
+        "size": "20 - 35 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "浦和店",
+    "area": "埼玉県",
+    "place": "宮城アングラーズヴィレッジ"
+  },
+  {
+    "date": "2026/02/01",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "タラ",
+        "count": 7,
+        "size": "45 - 75 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "北上店",
+    "area": "岩手県",
+    "place": "満福丸さん"
+  },
+  {
+    "date": "2026/02/01",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ニジマス",
+        "count": 15,
+        "size": "25 - 27 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "新宿店",
+    "area": "東京都",
+    "place": "宮城アングラーズビレッジ"
+  },
+  {
+    "date": "2026/02/01",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "小松店",
+    "area": "石川県",
+    "place": "七尾湾"
+  },
+  {
+    "date": "2026/02/01",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "横須賀中央店",
+    "area": "神奈川県",
+    "place": ""
+  },
+  {
+    "date": "2026/01/31",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "金沢店",
+    "area": "石川県",
+    "place": ""
+  },
+  {
+    "date": "2026/01/31",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ニジマス",
+        "count": 35,
+        "size": "25 - 45 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "八王子店",
+    "area": "東京都",
+    "place": "フィッシュアップ秋川湖"
+  },
+  {
+    "date": "2026/01/31",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "可児店",
+    "area": "岐阜県",
+    "place": ""
+  },
+  {
+    "date": "2026/01/31",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "キャンベル宇都宮店",
+    "area": "栃木県",
+    "place": "大芦川F&Cフィールドビレッジ"
+  },
+  {
+    "date": "2026/01/31",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ワカサギ",
+        "count": 340,
+        "size": "4 - 8 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "新石巻店",
+    "area": "宮城県",
+    "place": "岩手県 岩洞湖ドーム船"
+  },
+  {
+    "date": "2026/01/31",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "八王子店",
+    "area": "東京都",
+    "place": "相模湖"
+  },
+  {
+    "date": "2026/01/31",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "マルイカ",
+        "count": 14,
+        "size": "10 - 23 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "新宿店",
+    "area": "東京都",
+    "place": "剣崎沖75～90m"
+  },
+  {
+    "date": "2026/01/31",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "新高岡店",
+    "area": "富山県",
+    "place": "富山湾"
+  },
+  {
+    "date": "2026/01/31",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "新高岡店",
+    "area": "富山県",
+    "place": "片口緑地公園"
+  },
+  {
+    "date": "2026/01/31",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "圏央道厚木インター店",
+    "area": "神奈川県",
+    "place": "足柄キャスティングエリア"
+  },
+  {
+    "date": "2026/01/30",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ヤリイカ",
+        "count": 5,
+        "size": "30 - 35 cm"
+      },
+      {
+        "name": "ケンサキイカ",
+        "count": 3,
+        "size": "25 - 30 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "東大和店",
+    "area": "東京都",
+    "place": "西伊豆"
+  },
+  {
+    "date": "2026/01/30",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "カワハギ",
+        "count": 17,
+        "size": "15 - 24 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "東大和店",
+    "area": "東京都",
+    "place": "竹岡沖20m前後"
+  },
+  {
+    "date": "2026/01/30",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ワカサギ",
+        "count": 32,
+        "size": "3 - 4 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "佐久店",
+    "area": "長野県",
+    "place": "バラギ湖"
+  },
+  {
+    "date": "2026/01/30",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "トラウト",
+        "count": 2,
+        "size": "25 - 35 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "木更津店",
+    "area": "千葉県",
+    "place": "しらこばと水上公園"
+  },
+  {
+    "date": "2026/01/30",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "小山駅南店",
+    "area": "栃木県",
+    "place": ""
+  },
+  {
+    "date": "2026/01/30",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ブラックバス",
+        "count": 3,
+        "size": "25 - 31 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "足立平野店",
+    "area": "東京都",
+    "place": "片倉ダム（笹川ボートさんより）"
+  },
+  {
+    "date": "2026/01/30",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ニジマス",
+        "count": 21,
+        "size": "20 - 35 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "新潟女池店",
+    "area": "新潟県",
+    "place": "五頭フィッシングパーク"
+  },
+  {
+    "date": "2026/01/30",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "奥戸店",
+    "area": "東京都",
+    "place": "木更津～富津沖20ｍ～30ｍ"
+  },
+  {
+    "date": "2026/01/30",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "圏央道厚木インター店",
+    "area": "神奈川県",
+    "place": ""
+  },
+  {
+    "date": "2026/01/30",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ワカサギ",
+        "count": 804,
+        "size": "4 - 11 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "一関店",
+    "area": "岩手県",
+    "place": "「花山湖ドーム船ワカサギ」"
+  },
+  {
+    "date": "2026/01/30",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "小松店",
+    "area": "石川県",
+    "place": "ドリームレイク"
+  },
+  {
+    "date": "2026/01/30",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "サヨリ",
+        "count": 9,
+        "size": "25 - 30 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "我孫子店",
+    "area": "千葉県",
+    "place": "鹿島港魚釣り園"
+  },
+  {
+    "date": "2026/01/30",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ニジマス",
+        "count": 8,
+        "size": "20 - 30 cm"
+      },
+      {
+        "name": "イワナ",
+        "count": 2,
+        "size": "20 - 25 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "新長岡店",
+    "area": "新潟県",
+    "place": "五頭フィッシングパーク"
+  },
+  {
+    "date": "2026/01/30",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ブラックバス",
+        "count": 1,
+        "size": "20 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "草加店",
+    "area": "埼玉県",
+    "place": "荒川　温泉"
+  },
+  {
+    "date": "2026/01/30",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "クチブト",
+        "count": 6,
+        "size": "25 - 39 cm"
+      },
+      {
+        "name": "オナガ",
+        "count": 3,
+        "size": "25 - 35 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "つきみ野店",
+    "area": "神奈川県",
+    "place": "真鶴地磯"
+  },
+  {
+    "date": "2026/01/30",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "盛岡上堂店",
+    "area": "岩手県",
+    "place": "岩洞湖ドーム船⑥"
+  },
+  {
+    "date": "2026/01/30",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "厚木店",
+    "area": "神奈川県",
+    "place": ""
+  },
+  {
+    "date": "2026/01/30",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "横須賀中央店",
+    "area": "神奈川県",
+    "place": ""
+  },
+  {
+    "date": "2026/01/29",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "シーバス",
+        "count": 10,
+        "size": "40 - 70 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "八千代店",
+    "area": "千葉県",
+    "place": "東京湾奥某所"
+  },
+  {
+    "date": "2026/01/29",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "レインボートラウト",
+        "count": 100,
+        "size": "25 - 64 cm"
+      },
+      {
+        "name": "ヤマメ",
+        "count": 2,
+        "size": "20 - 25 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "新沼津店",
+    "area": "静岡県",
+    "place": "足柄キャスティングエリア"
+  },
+  {
+    "date": "2026/01/29",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ワカサギ",
+        "count": 100,
+        "size": "5 - 10 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "会津若松店",
+    "area": "福島県",
+    "place": "桧原湖"
+  },
+  {
+    "date": "2026/01/29",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "新福井店",
+    "area": "福井県",
+    "place": "福井県内の港周辺"
+  },
+  {
+    "date": "2026/01/29",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ニジマス",
+        "count": 20,
+        "size": "20 - 25 cm"
+      },
+      {
+        "name": "イワナ",
+        "count": 3,
+        "size": "30 - 49 cm"
+      },
+      {
+        "name": "ヤマメ",
+        "count": 1,
+        "size": "15 cm"
+      },
+      {
+        "name": "ブルック",
+        "count": 1,
+        "size": "35 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "圏央道厚木インター店",
+    "area": "神奈川県",
+    "place": "足柄キャスティングエリア"
+  },
+  {
+    "date": "2026/01/29",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "トラフグ",
+        "count": 2,
+        "size": "0.50 - 1.30 kg"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "池袋店",
+    "area": "東京都",
+    "place": "鴨居　一郎丸"
+  },
+  {
+    "date": "2026/01/29",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ワカサギ",
+        "count": 32,
+        "size": "6 - 9 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "新盛岡店",
+    "area": "岩手県",
+    "place": "沼"
+  },
+  {
+    "date": "2026/01/29",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "アマダイ",
+        "count": 2,
+        "size": "26 - 26 cm"
+      },
+      {
+        "name": "オニカサゴ",
+        "count": 1,
+        "size": "35 cm"
+      },
+      {
+        "name": "イトヨリダイ",
+        "count": 1,
+        "size": "40 cm"
+      },
+      {
+        "name": "ホウボウ",
+        "count": 1,
+        "size": "30 cm"
+      },
+      {
+        "name": "トラフグ",
+        "count": 1,
+        "size": "44 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "新狭山店",
+    "area": "埼玉県",
+    "place": "茅ヶ崎沖～大磯沖38～110ｍ"
+  },
+  {
+    "date": "2026/01/29",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ワカサギ",
+        "count": 100,
+        "size": "4 - 9 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "郡山安積店",
+    "area": "福島県",
+    "place": "桧原湖　森のうた沖"
+  },
+  {
+    "date": "2026/01/29",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ヤリイカ",
+        "count": 7,
+        "size": "35 - 50 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "水戸店",
+    "area": "茨城県",
+    "place": "鹿島港 長岡丸"
+  },
+  {
+    "date": "2026/01/29",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ニジマス",
+        "count": 100,
+        "size": "30 - 65 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "横浜南部市場店（南部市場駅前店）",
+    "area": "神奈川県",
+    "place": "足柄キャスティングエリア"
+  },
+  {
+    "date": "2026/01/29",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "レインボー",
+        "count": 25,
+        "size": "20 - 65 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "つきみ野店",
+    "area": "神奈川県",
+    "place": "足柄キャスティングエリア"
+  },
+  {
+    "date": "2026/01/29",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "マアジ",
+        "count": 41,
+        "size": "18 - 26 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "新宿店",
+    "area": "東京都",
+    "place": "金沢八景　野毛屋"
+  },
+  {
+    "date": "2026/01/29",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ヘラブナ",
+        "count": 1018,
+        "size": "25 - 35 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "新つくば店",
+    "area": "茨城県",
+    "place": "友部湯崎湖"
+  },
+  {
+    "date": "2026/01/29",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ワカサギ",
+        "count": 27,
+        "size": "5 - 10 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "佐久店",
+    "area": "長野県",
+    "place": "松原湖(猪名湖)氷上"
+  },
+  {
+    "date": "2026/01/29",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "弘前店",
+    "area": "青森県",
+    "place": ""
+  },
+  {
+    "date": "2026/01/29",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "トラウト",
+        "count": 10,
+        "size": "25 - 52 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "鶴ヶ峰店",
+    "area": "神奈川県",
+    "place": "足柄キャスティングエリア"
+  },
+  {
+    "date": "2026/01/29",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "関内店",
+    "area": "神奈川県",
+    "place": "横浜エリア～大黒海釣り施設～"
+  },
+  {
+    "date": "2026/01/29",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "関内店",
+    "area": "神奈川県",
+    "place": "横浜エリア～本牧海釣り施設～"
+  },
+  {
+    "date": "2026/01/29",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "奥戸店",
+    "area": "東京都",
+    "place": "鴨居～久里浜沖20～40ｍ"
+  },
+  {
+    "date": "2026/01/29",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "関内店",
+    "area": "神奈川県",
+    "place": "横浜エリア"
+  },
+  {
+    "date": "2026/01/29",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "レインボートラウト",
+        "count": 31,
+        "size": "20 - 25 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "川越店",
+    "area": "埼玉県",
+    "place": "川越水上公園"
+  },
+  {
+    "date": "2026/01/29",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "新高岡店",
+    "area": "富山県",
+    "place": "富山湾内"
+  },
+  {
+    "date": "2026/01/29",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "関内店",
+    "area": "神奈川県",
+    "place": ""
+  },
+  {
+    "date": "2026/01/29",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "キャンベル春日部店",
+    "area": "埼玉県",
+    "place": "大芦川Ｆ＆Ｃフィールドビレッジ"
+  },
+  {
+    "date": "2026/01/28",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "新狭山店",
+    "area": "埼玉県",
+    "place": ""
+  },
+  {
+    "date": "2026/01/28",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "平塚八幡店",
+    "area": "神奈川県",
+    "place": "小田原早川港『藤八丸』さん"
+  },
+  {
+    "date": "2026/01/28",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "カサゴ",
+        "count": 6,
+        "size": "15 - 22 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "新千葉美浜店",
+    "area": "千葉県",
+    "place": "南房総の岸壁"
+  },
+  {
+    "date": "2026/01/28",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ブラックバス",
+        "count": 2,
+        "size": "43 - 46 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "鴻巣店",
+    "area": "埼玉県",
+    "place": "城沼"
+  },
+  {
+    "date": "2026/01/28",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ワカサギ",
+        "count": 23,
+        "size": "7 - 10 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "新盛岡店",
+    "area": "岩手県",
+    "place": "岩洞湖ドーム船"
+  },
+  {
+    "date": "2026/01/28",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "横浜南部市場店（南部市場駅前店）",
+    "area": "神奈川県",
+    "place": "大瀬沖磯渡船倉の下"
+  },
+  {
+    "date": "2026/01/28",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "スルメイカ",
+        "count": 13,
+        "size": "18 - 22 cm"
+      },
+      {
+        "name": "ヤリイカ",
+        "count": 2,
+        "size": "15 - 20 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "新宿店",
+    "area": "東京都",
+    "place": "萬栄丸さん　洲崎沖"
+  },
+  {
+    "date": "2026/01/28",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "サヨリ",
+        "count": 20,
+        "size": "20 - 30 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "牛久店",
+    "area": "茨城県",
+    "place": "鹿嶋港魚釣園"
+  },
+  {
+    "date": "2026/01/28",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "キャンベル宇都宮店",
+    "area": "栃木県",
+    "place": ""
+  },
+  {
+    "date": "2026/01/28",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "セイゴ",
+        "count": 2,
+        "size": "22 - 25 cm"
+      },
+      {
+        "name": "ニベ",
+        "count": 1,
+        "size": "22 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "新千葉美浜店",
+    "area": "千葉県",
+    "place": "日川浜"
+  },
+  {
+    "date": "2026/01/28",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ニジマス",
+        "count": 1,
+        "size": "25 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "新宿店",
+    "area": "東京都",
+    "place": "宮城アングラーズビレッジ"
+  },
+  {
+    "date": "2026/01/28",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "新石巻店",
+    "area": "宮城県",
+    "place": "追波川"
+  },
+  {
+    "date": "2026/01/28",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ブラックバス",
+        "count": 1,
+        "size": "46 cm"
+      },
+      {
+        "name": "コイ",
+        "count": 2,
+        "size": "62 - 65 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "伊勢崎店",
+    "area": "群馬県",
+    "place": "城沼"
+  },
+  {
+    "date": "2026/01/28",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ワカサギ",
+        "count": 1000,
+        "size": "5 - 11 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "名取店",
+    "area": "宮城県",
+    "place": "花山湖ワカサギドーム船"
+  },
+  {
+    "date": "2026/01/28",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "青森店",
+    "area": "青森県",
+    "place": ""
+  },
+  {
+    "date": "2026/01/28",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "新福井店",
+    "area": "福井県",
+    "place": "福井新港"
+  },
+  {
+    "date": "2026/01/28",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "可児店",
+    "area": "岐阜県",
+    "place": ""
+  },
+  {
+    "date": "2026/01/27",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "スルメイカ",
+        "count": 113,
+        "size": "30 - 40 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "戸塚原宿店",
+    "area": "神奈川県",
+    "place": "諸磯港 海帆丸"
+  },
+  {
+    "date": "2026/01/27",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "東陽町店",
+    "area": "東京都",
+    "place": "宮城アングラーズヴィレッジ"
+  },
+  {
+    "date": "2026/01/27",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "トラウト",
+        "count": 12,
+        "size": "20 - 25 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "浦和店",
+    "area": "埼玉県",
+    "place": "フィッシングステージ彩の国"
+  },
+  {
+    "date": "2026/01/27",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "新狭山店",
+    "area": "埼玉県",
+    "place": ""
+  },
+  {
+    "date": "2026/01/27",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "スルメイカ",
+        "count": 1213,
+        "size": "30 - 40 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "鶴ヶ峰店",
+    "area": "神奈川県",
+    "place": "諸磯　海帆丸"
+  },
+  {
+    "date": "2026/01/27",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "足利店",
+    "area": "栃木県",
+    "place": "フィッシングリゾート上永野"
+  },
+  {
+    "date": "2026/01/27",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "マサバ",
+        "count": 7,
+        "size": "35 - 40 cm"
+      },
+      {
+        "name": "ヤリイカ",
+        "count": 7,
+        "size": "25 - 40 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "八王子店",
+    "area": "東京都",
+    "place": "勝浦沖180ｍ～200ｍ"
+  },
+  {
+    "date": "2026/01/27",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "マダイ",
+        "count": 1,
+        "size": "30 cm"
+      },
+      {
+        "name": "アヤメカサゴ",
+        "count": 2,
+        "size": "25 - 25 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "浜北店",
+    "area": "静岡県",
+    "place": "御前崎沖"
+  },
+  {
+    "date": "2026/01/27",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ニジマス",
+        "count": 30,
+        "size": "25 - 40 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "伊勢崎店",
+    "area": "群馬県",
+    "place": "東山道公園フィッシングエリア"
+  },
+  {
+    "date": "2026/01/27",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ヤリイカ",
+        "count": 13,
+        "size": "40 - 50 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "宇都宮店",
+    "area": "栃木県",
+    "place": "鹿嶋港長岡丸"
+  },
+  {
+    "date": "2026/01/27",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ブラックバス",
+        "count": 2,
+        "size": "20 - 40 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "足立平野店",
+    "area": "東京都",
+    "place": "三島湖（ともえボートさんより出船）"
+  },
+  {
+    "date": "2026/01/27",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ワカサギ",
+        "count": 891,
+        "size": "4 - 11 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "一関店",
+    "area": "岩手県",
+    "place": "「花山湖ドーム船ワカサギ」"
+  },
+  {
+    "date": "2026/01/27",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "横浜南部市場店（南部市場駅前店）",
+    "area": "神奈川県",
+    "place": ""
+  },
+  {
+    "date": "2026/01/27",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ヤリイカ",
+        "count": 4,
+        "size": "20 - 25 cm"
+      },
+      {
+        "name": "スルメイカ",
+        "count": 32,
+        "size": "25 - 35 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "いわき泉店",
+    "area": "福島県",
+    "place": "四倉沖（古峯丸さん）"
+  },
+  {
+    "date": "2026/01/27",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "溝ノ口店",
+    "area": "神奈川県",
+    "place": ""
+  },
+  {
+    "date": "2026/01/27",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ワカサギ",
+        "count": 701,
+        "size": "4 - 12 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "川口店",
+    "area": "埼玉県",
+    "place": "河口湖"
+  },
+  {
+    "date": "2026/01/27",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "水戸店",
+    "area": "茨城県",
+    "place": ""
+  },
+  {
+    "date": "2026/01/27",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ヘラブナ",
+        "count": 6,
+        "size": "30 - 40 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "新太田店",
+    "area": "群馬県",
+    "place": "加須吉沼"
+  },
+  {
+    "date": "2026/01/27",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "タチウオ",
+        "count": 8,
+        "size": "80 - 125 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "つきみ野店",
+    "area": "神奈川県",
+    "place": "新山下　渡辺釣船店　　東京湾"
+  },
+  {
+    "date": "2026/01/27",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ニジマス",
+        "count": 10,
+        "size": "30 - 45 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "八千代店",
+    "area": "千葉県",
+    "place": "ウォルトンガーデン"
+  },
+  {
+    "date": "2026/01/27",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "盛岡上堂店",
+    "area": "岩手県",
+    "place": "岩洞湖ドーム船③"
+  },
+  {
+    "date": "2026/01/27",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "横須賀中央店",
+    "area": "神奈川県",
+    "place": ""
+  },
+  {
+    "date": "2026/01/27",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "関内店",
+    "area": "神奈川県",
+    "place": ""
+  },
+  {
+    "date": "2026/01/27",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "いわき泉店",
+    "area": "福島県",
+    "place": ""
+  },
+  {
+    "date": "2026/01/26",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ワカサギ",
+        "count": 250,
+        "size": "3 - 7 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "岐阜穂積店",
+    "area": "岐阜県",
+    "place": "入鹿池"
+  },
+  {
+    "date": "2026/01/26",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "小田原店",
+    "area": "神奈川県",
+    "place": "小川"
+  },
+  {
+    "date": "2026/01/26",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "横浜南部市場店（南部市場駅前店）",
+    "area": "神奈川県",
+    "place": ""
+  },
+  {
+    "date": "2026/01/26",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ニジマス",
+        "count": 535,
+        "size": "20 - 50 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "燕三条店",
+    "area": "新潟県",
+    "place": "五頭フィッシングパーク"
+  },
+  {
+    "date": "2026/01/26",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "カワハギ",
+        "count": 1,
+        "size": "27 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "横浜南部市場店（南部市場駅前店）",
+    "area": "神奈川県",
+    "place": "三浦南部宮川"
+  },
+  {
+    "date": "2026/01/26",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "グレ",
+        "count": 6,
+        "size": "29 - 37 cm"
+      },
+      {
+        "name": "チヌ",
+        "count": 1,
+        "size": "48 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "鈴鹿中央店",
+    "area": "三重県",
+    "place": "梶賀の磯"
+  },
+  {
+    "date": "2026/01/26",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ニジマス",
+        "count": 735,
+        "size": "15 - 50 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "新潟女池店",
+    "area": "新潟県",
+    "place": "五頭フィッシングパーク"
+  },
+  {
+    "date": "2026/01/26",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "ニジマス",
+        "count": 50,
+        "size": "20 - 35 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "新潟赤道店",
+    "area": "新潟県",
+    "place": "五頭フィッシングパーク"
+  },
+  {
+    "date": "2026/01/26",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "新西那須野店",
+    "area": "栃木県",
+    "place": "アングラーズパークキングフィッシャー"
+  },
+  {
+    "date": "2026/01/26",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "バス",
+        "count": 1,
+        "size": "50 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "伊勢崎店",
+    "area": "群馬県",
+    "place": "榛名湖"
+  },
+  {
+    "date": "2026/01/26",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "unknown",
+    "shopName": "可児店",
+    "area": "岐阜県",
+    "place": ""
+  },
+  {
+    "date": "2026/01/26",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "アジ",
+        "count": 31,
+        "size": "16 - 22 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "圏央道厚木インター店",
+    "area": "神奈川県",
+    "place": "金沢八景沖他"
+  },
+  {
+    "date": "2026/01/26",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "マアジ",
+        "count": 1528,
+        "size": "15 - 30 cm"
+      },
+      {
+        "name": "カサゴ",
+        "count": 2,
+        "size": "20 - 25 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "freshwater",
+    "shopName": "足利店",
+    "area": "栃木県",
+    "place": "川崎　つり幸"
+  },
+  {
+    "date": "2026/01/26",
+    "facility": "johshuya",
+    "catches": [],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "圏央道厚木インター店",
+    "area": "神奈川県",
+    "place": "横浜南部"
+  },
+  {
+    "date": "2026/01/26",
+    "facility": "johshuya",
+    "catches": [
+      {
+        "name": "マコガレイ",
+        "count": 1,
+        "size": "45 cm"
+      },
+      {
+        "name": "ハゼ",
+        "count": 1,
+        "size": "22 cm"
+      }
+    ],
+    "weather": "",
+    "waterTemp": "",
+    "category": "sea",
+    "shopName": "新高岡店",
+    "area": "富山県",
+    "place": "氷見周辺"
+  }
+]
