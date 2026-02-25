@@ -36,13 +36,43 @@ export function judgeCategory(place: string, catches: { name: string }[]): 'sea'
 }
 
 /**
- * 上州屋の釣果一覧ページ（1ページ分）をパースする
+ * 上州屋の釣果一覧ページ（指定年分など）をパースする
  */
-export async function scrapeJohshuyaPage(page = 1): Promise<JohshuyaFishingData[]> {
-    const url = page === 1 ? BASE_URL : `${BASE_URL}search.php?page=${page}`;
-    console.log(`Fetching Johshuya page: ${url}`);
+export async function scrapeJohshuyaPage(page = 1, year?: number, month?: number): Promise<JohshuyaFishingData[]> {
+    let url = page === 1 ? BASE_URL : `${BASE_URL}search.php?page=${page}`;
+    let options: any = { method: 'GET' };
 
-    const res = await fetch(url);
+    // 年・月指定がある場合は検索URLを構築し、POSTリクエストを準備
+    if (year) {
+        url = `${BASE_URL}search.php`;
+        const params = new URLSearchParams();
+        params.append('choko_ys', year.toString());
+        params.append('choko_ye', year.toString());
+
+        if (month) {
+            const m = month.toString().padStart(2, '0');
+            const lastDay = new Date(year, month, 0).getDate().toString().padStart(2, '0');
+            params.append('choko_ms', m);
+            params.append('choko_ds', '01');
+            params.append('choko_me', m);
+            params.append('choko_de', lastDay);
+        }
+
+        params.append('page', page.toString());
+        // btn_search は EUC-JP で「検索」
+
+        options = {
+            method: 'POST',
+            body: params.toString() + '&btn_search=%b8%a1%ba%f7', // EUC-JPの生値を結合
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded'
+            }
+        };
+    }
+
+    console.log(`Fetching Johshuya URL: ${url} (Page: ${page}, Year: ${year}, Month: ${month})`);
+
+    const res = await fetch(url, options);
     if (!res.ok) throw new Error(`HTTP Error: ${res.status}`);
     const html = await res.text();
     const $ = cheerio.load(html);

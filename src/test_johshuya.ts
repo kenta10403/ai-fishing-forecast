@@ -1,9 +1,9 @@
 import { scrapeJohshuyaPage } from './scraper_johshuya';
 
 async function test() {
-    console.log('🧪 Testing Johshuya Scraper (Page 1)...');
+    console.log('🧪 Testing Johshuya Scraper (Year 2010, Page 1)...');
     try {
-        const data = await scrapeJohshuyaPage(1);
+        const data = await scrapeJohshuyaPage(1, 2010);
         console.log(`✅ Success! Found ${data.length} articles.`);
 
         data.forEach((d, i) => {
