@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+:root {
+  --primary: #0284c7; /* light blue 600 */
+  --secondary: #38bdf8; /* light blue 400 */
+  --accent: #f97316; /* orange 500 */
+  --background: #f8fafc; /* slate 50 */
+}
+
+body {
+  margin: 0;
+  background-color: var(--background);
+  color: #334155; /* slate 700 */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}

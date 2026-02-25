@@ -19,8 +19,15 @@ def load_trend_data(
     日次・エリア別にグルーピングしてトレンド指数（報告人数や総釣果数）を算出する。
     """
     if include_files is None:
-        # デフォルトでは釣具屋系のデータのみを対象とする
-        include_files = ["casting_choka.json", "johshuya_history.json"]
+        # デフォルトでは釣具屋系と海釣り施設のデータ両方を対象とする
+        include_files = [
+            "casting_choka.json", 
+            "johshuya_history.json",
+            "honmoku_2024_to_present.json",
+            "daikoku_2024_to_present.json",
+            "isogo_2024_to_present.json",
+            "ichihara_2024_to_present.json"
+        ]
     
     if exclude_files:
         include_files = [f for f in include_files if f not in exclude_files]
@@ -49,6 +56,15 @@ def load_trend_data(
             if not isinstance(row, dict):
                 continue
             
+            # 関東圏の海釣りに限定する
+            category = row.get("category", "")
+            if category != "sea":
+                continue
+                
+            area = row.get("area", "不明")
+            if area not in ["東京都", "神奈川県", "千葉県", "埼玉県", "茨城県", "栃木県", "群馬県"]:
+                continue
+            
             date_str = row.get("date", "")
             if not date_str:
                 date_str = row.get("fishingDate", "") # 上州屋などの表記揺れ対応
@@ -56,6 +72,20 @@ def load_trend_data(
             shop = row.get("shopName", row.get("shop", "不明"))
             area = row.get("area", "不明")
             weather = row.get("weather", "不明")
+            water_temp = row.get("waterTemp", "")
+            visitors = row.get("visitors", 0)
+            facility_type = row.get("facility", "shop") # 'honmoku', 'johshuya' etc.
+            
+            # 海釣り施設か釣具屋かの判定
+            is_facility = facility_type in ["honmoku", "daikoku", "isogo", "ichihara"]
+            weight = 1.0 if is_facility else 0.3 # 施設のデータ（生存者バイアスが少ない）を重視
+            
+            # 水温の数値化
+            try:
+                temp_val = float(water_temp) if water_temp else None
+            except (ValueError, TypeError):
+                temp_val = None
+
             catches = row.get("catches", [])
             
             for catch in catches:
@@ -83,6 +113,10 @@ def load_trend_data(
                         "shop": shop,
                         "area": area,
                         "weather": weather,
+                        "water_temp": temp_val,
+                        "visitors": visitors,
+                        "is_facility": is_facility,
+                        "weight": weight,
                         "species": matched_sp,
                         "counts": c,
                         "report": 1 # 1件の報告としてカウント
@@ -93,15 +127,26 @@ def load_trend_data(
         return df
         
     # 日付 × エリア × 魚種 ごとに集計 (グルーピング)
-    # これにより「その日、そのエリアで何人がアジを報告し、合計何匹釣れたか」のトレンドが分かる
     df['date'] = pd.to_datetime(df['date'], errors='coerce')
-    grouped = df.groupby(['date', 'area', 'weather', 'species']).agg({
+    grouped = df.groupby(['date', 'area', 'weather', 'species', 'is_facility', 'weight']).agg({
         'report': 'sum',
-        'counts': 'sum'
+        'counts': 'sum',
+        'visitors': 'max', # 1日の入場者数
+        'water_temp': 'mean'
     }).reset_index()
     
-    # トレンド指標 = (報告数 * 10) + 釣果総数 (報告数が多い＝あちこちで釣れている強いトレンドとみなす)
-    grouped['trend_score'] = (grouped['report'] * 10) + grouped['counts']
+    # トレンド指標の算出
+    # 施設の場合: CPUE (Catch Per Unit Effort) = 釣果数 / 入場者数
+    # 釣具屋の場合: 報告数ベースのスコア
+    def calc_trend_score(row):
+        if row['is_facility'] and row['visitors'] > 0:
+            # 施設は「その日の1人あたりの平均釣果」をベースにする
+            return (row['counts'] / row['visitors']) * 100 * row['weight']
+        else:
+            # 釣具屋は「報告の盛り上がり」をベースにする
+            return (row['report'] * 10 + row['counts']) * row['weight']
+
+    grouped['trend_score'] = grouped.apply(calc_trend_score, axis=1)
     
     return grouped
 
@@ -135,9 +180,12 @@ def preprocess_trend_data(df: pd.DataFrame) -> Tuple[pd.DataFrame, pd.Series]:
         
     df['weather_simple'] = df['weather'].apply(simplify_weather)
     
-    features = ['period_of_year', 'day_of_week', 'area', 'weather_simple', 'species']
+    features = ['period_of_year', 'day_of_week', 'area', 'weather_simple', 'species', 'water_temp']
     X = df[features]
     y = df['trend_score']
+    
+    # 水温の欠損値補完（その「旬」の平均水温などで埋めるのが理想だが、一旦全体平均または0）
+    X['water_temp'] = X['water_temp'].fillna(X['water_temp'].mean() if not X['water_temp'].isna().all() else 0)
     
     # One-Hot Encoding
     X = pd.get_dummies(X, columns=['area', 'weather_simple', 'species'], drop_first=True)

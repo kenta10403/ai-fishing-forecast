@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "ai:update-data": "npx tsx src/fetch_johshuya_full_history.ts",
+    "ai:retrain": "python3 src/ml/dataset_d.py && python3 src/ml/train_d.py",
+    "ai:generate": "python3 src/ml/generate_calendar.py",
+    "ai:full-update": "pnpm ai:update-data && pnpm ai:retrain && pnpm ai:generate"
   },
   "keywords": [],
   "author": "",
@@ -17,6 +21,7 @@
     "typescript": "^5.9.3"
   },
   "dependencies": {
+    "axios": "^1.13.5",
     "cheerio": "^1.2.0",
     "dotenv": "^17.3.1",
     "node-fetch": "^3.3.2"
