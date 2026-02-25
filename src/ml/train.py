@@ -37,15 +37,25 @@ def train_model(include_files=None, exclude_files=None, target_species=None):
     import numpy as np
     
     # 100点満点評価（爆釣指数）算出のための分布データを保存
-    # 訓練データの実際のCPUEスコアをソートして保持しておくことで、
-    # 推論時に percentileofscore を使って上位％を算出できる
     score_distribution = np.sort(y_train.values)
+    
+    # 時期(period_of_year: 1〜36)ごとの過去の平均CPUEを計算・保存
+    # テストデータを含めた全データ(df_rawの加工後)の X と y から集計する
+    period_avg_dict = {}
+    for p in range(1, 37):
+        mask = X['period_of_year'] == p
+        if mask.sum() > 0:
+            period_avg_dict[p] = float(np.mean(y[mask]))
+        else:
+            # その時期のデータがない場合は全体の平均を設定
+            period_avg_dict[p] = float(np.mean(y))
     
     # save model and feature names (columns)
     model_data = {
         "model": model,
         "features": X.columns.tolist(),
-        "score_distribution": score_distribution
+        "score_distribution": score_distribution,
+        "period_averages": period_avg_dict
     }
     
     # ターゲット魚種に応じた固有のファイル名で保存

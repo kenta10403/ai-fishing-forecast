@@ -40,11 +40,17 @@ def train_trend_model(include_files=None, exclude_files=None):
     # トレンド指数の規模感（パーセンタイル）を出すための分布を保存
     score_distribution = np.sort(y_train.values)
     
+    # 36期(period_of_year) × 魚種(species) ごとの平均トレンドスコアを算出
+    period_species_avg = df_raw.groupby(['period_of_year', 'species'])['trend_score'].mean().to_dict()
+    # 辞書のキーがtupleなので、文字列に変換してJSON/pickle時に扱いやすくする
+    period_avg_dict = {f"{k[0]}_{k[1]}": v for k, v in period_species_avg.items()}
+    
     # 使用された特徴量のカラムと、ユニークな魚種リスト・エリアリストも記録しておく
     model_data = {
         "model": model,
         "features": X.columns.tolist(),
         "score_distribution": score_distribution,
+        "period_averages": period_avg_dict,
         "species_list": sorted(df_raw['species'].unique().tolist()),
         "areas": sorted(df_raw['area'].unique().tolist())
     }

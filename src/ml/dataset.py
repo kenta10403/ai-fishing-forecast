@@ -100,14 +100,26 @@ def preprocess_data(df: pd.DataFrame) -> Tuple[pd.DataFrame, pd.Series]:
     if df.empty:
         raise ValueError("提供されたデータフレームが空です")
 
-    # 日付から月を抽出
+    # 日付から月と日を抽出し、1年を36分割（各月の上旬・中旬・下旬）した期間（1〜36）を計算
     df['date'] = pd.to_datetime(df['date'], errors='coerce')
     df['month'] = df['date'].dt.month
+    df['day'] = df['date'].dt.day
     df['day_of_week'] = df['date'].dt.dayofweek
+    
+    # 上・中・下旬の判定 (1〜10日: 0, 11〜20日: 1, 21日以降: 2)
+    def calc_period(row):
+        if pd.isna(row['month']) or pd.isna(row['day']):
+            return 1 # デフォルト
+        m = int(row['month'])
+        d = int(row['day'])
+        part = 0 if d <= 10 else 1 if d <= 20 else 2
+        return (m - 1) * 3 + part + 1
+        
+    df['period_of_year'] = df.apply(calc_period, axis=1)
     
     # 水温を数値化
     df['water_temp'] = pd.to_numeric(df['water_temp'], errors='coerce')
-    df['water_temp'].fillna(df['water_temp'].mean(), inplace=True)
+    df.fillna({'water_temp': df['water_temp'].mean()}, inplace=True)
     
     # カテゴリ変数の処理（One-Hot Encodingなど）
     # 天気を簡易なカテゴリに
@@ -120,7 +132,7 @@ def preprocess_data(df: pd.DataFrame) -> Tuple[pd.DataFrame, pd.Series]:
         
     df['weather_simple'] = df['weather'].apply(simplify_weather)
     
-    features = ['month', 'day_of_week', 'water_temp', 'facility', 'weather_simple', 'tide']
+    features = ['period_of_year', 'day_of_week', 'water_temp', 'facility', 'weather_simple', 'tide']
     X = df[features]
     y = df['target_score']
     

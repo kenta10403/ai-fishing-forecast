@@ -113,7 +113,18 @@ def preprocess_trend_data(df: pd.DataFrame) -> Tuple[pd.DataFrame, pd.Series]:
         raise ValueError("提供されたデータフレームが空です")
 
     df['month'] = df['date'].dt.month
+    df['day'] = df['date'].dt.day
     df['day_of_week'] = df['date'].dt.dayofweek
+    
+    def calc_period(row):
+        if pd.isna(row['month']) or pd.isna(row['day']):
+            return 1
+        m = int(row['month'])
+        d = int(row['day'])
+        part = 0 if d <= 10 else 1 if d <= 20 else 2
+        return (m - 1) * 3 + part + 1
+        
+    df['period_of_year'] = df.apply(calc_period, axis=1)
     
     def simplify_weather(w):
         if pd.isna(w): return "不明"
@@ -124,7 +135,7 @@ def preprocess_trend_data(df: pd.DataFrame) -> Tuple[pd.DataFrame, pd.Series]:
         
     df['weather_simple'] = df['weather'].apply(simplify_weather)
     
-    features = ['month', 'day_of_week', 'area', 'weather_simple', 'species']
+    features = ['period_of_year', 'day_of_week', 'area', 'weather_simple', 'species']
     X = df[features]
     y = df['trend_score']
     
