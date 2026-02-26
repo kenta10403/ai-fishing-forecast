@@ -12,6 +12,7 @@ TARGET_SPECIES_LIST = [
 
 import sqlite3
 
+
 DB_PATH = os.path.join(DATA_DIR, "fishing_forecast.db")
 
 def load_trend_data() -> pd.DataFrame:
@@ -30,8 +31,13 @@ def load_trend_data() -> pd.DataFrame:
         l.date, 
         l.facility as shop, 
         '神奈川県' as area, -- 施設は基本神奈川
-        l.weather, 
-        l.water_temp, 
+        COALESCE(wh.avg_temp, l.water_temp) as water_temp, -- 水温の代わりに気温を使用可能に
+        th.tide,
+        wh.avg_wind_speed,
+        wh.max_wind_speed,
+        wh.wind_direction,
+        wh.precipitation,
+        wh.avg_temp,
         l.visitors, 
         1.0 as weight,
         TRUE as is_facility,
@@ -40,6 +46,8 @@ def load_trend_data() -> pd.DataFrame:
         1 as report
     FROM facility_logs l
     JOIN facility_catches c ON l.id = c.log_id
+    LEFT JOIN tide_history th ON th.date = REPLACE(l.date, '/', '-')
+    LEFT JOIN weather_history wh ON wh.date = REPLACE(l.date, '/', '-') AND wh.area = '神奈川県'
     
     UNION ALL
     
@@ -47,8 +55,13 @@ def load_trend_data() -> pd.DataFrame:
         l.date, 
         l.shop_name as shop, 
         l.area, 
-        l.weather, 
-        NULL as water_temp, 
+        wh.avg_temp as water_temp, -- 水温がないので気温をフォールバックに 
+        th.tide,
+        wh.avg_wind_speed,
+        wh.max_wind_speed,
+        wh.wind_direction,
+        wh.precipitation,
+        wh.avg_temp,
         0 as visitors, 
         0.3 as weight,
         FALSE as is_facility,
@@ -57,7 +70,9 @@ def load_trend_data() -> pd.DataFrame:
         1 as report
     FROM shop_logs l
     JOIN shop_catches c ON l.id = c.log_id
-    WHERE l.area IN ('東京都', '神奈川県', '千葉県', '埼玉県', '茨城県', '栃木県', '群馬県')
+    LEFT JOIN tide_history th ON th.date = REPLACE(l.date, '/', '-')
+    LEFT JOIN weather_history wh ON wh.date = REPLACE(l.date, '/', '-') AND wh.area = l.area
+    WHERE l.area IN ('東京都', '神奈川県', '千葉県', '茨城県') -- JMAデータ取得済みの主要4県に絞る
     AND l.category = 'sea'
     """
     
@@ -87,43 +102,52 @@ def load_trend_data() -> pd.DataFrame:
     df['date'] = pd.to_datetime(df['date'], errors='coerce')
     df = df.dropna(subset=['date'])
 
+    df['tide'] = df['tide'].fillna('不明')
+    df['wind_direction'] = df['wind_direction'].fillna('不明')
+    
+    # 連続値の欠損補完（全体平均）
+    for col in ['avg_wind_speed', 'max_wind_speed', 'precipitation', 'avg_temp']:
+        df[col] = pd.to_numeric(df[col], errors='coerce')
+        df[col] = df[col].fillna(df[col].mean())
+
     # グルーピング集計
-    grouped = df.groupby(['date', 'area', 'weather', 'species', 'is_facility', 'weight']).agg({
+    grouped = df.groupby(['date', 'area', 'tide', 'wind_direction', 'species', 'is_facility', 'weight']).agg({
+
         'report': 'sum',
         'counts': 'sum',
         'visitors': 'max',
-        'water_temp': 'mean'
+        'water_temp': 'mean',
+        'avg_wind_speed': 'mean',
+        'max_wind_speed': 'mean',
+        'precipitation': 'mean',
+        'avg_temp': 'mean'
     }).reset_index()
 
     # トレンド指標の算出
     def calc_trend_score(row):
+        base_score = 0
         if row['is_facility'] and row['visitors'] > 0:
-            return (row['counts'] / row['visitors']) * 100 * row['weight']
+            # 入場者が多いほど「釣果を報告せずに帰る人」が増えるという推測に基づく補正
+            # 入場者1000人を上限として、最大20%のスコア上方修正を入れる
+            crowd_bonus = 1.0 + min(row['visitors'] / 1000.0, 1.0) * 0.2
+            base_score = (row['counts'] / row['visitors']) * crowd_bonus
         else:
-            return (row['report'] * 10 + row['counts']) * row['weight']
+            base_score = (row['report'] * 1 + row['counts'] * 0.1)
+
+        # ベーススコア × 信頼度(weight)
+        return base_score * 100 * row['weight']
 
     grouped['trend_score'] = grouped.apply(calc_trend_score, axis=1)
 
-    # --- バイアス補正 ---
-    q1 = grouped['trend_score'].quantile(0.05)
-    q3 = grouped['trend_score'].quantile(0.95)
+    # --- バブルデータ（上振れ）のクリッピング ---
+    # 下振れのカットは廃止（渋い日も「学習すべき事実」として扱うため）
+    q1 = grouped['trend_score'].quantile(0.10)
+    q3 = grouped['trend_score'].quantile(0.90)
     iqr = q3 - q1
-    lower_bound = max(0, q1 - 1.5 * iqr)
     upper_bound = q3 + 1.5 * iqr
     
-    grouped = grouped[(grouped['trend_score'] >= lower_bound) & (grouped['trend_score'] <= upper_bound)].copy()
-
-    # 曜日バイアスの正規化
-    grouped['day_of_week'] = grouped['date'].dt.dayofweek
-    weekday_mean = grouped.groupby('day_of_week')['trend_score'].mean()
-    overall_mean = grouped['trend_score'].mean()
-    if overall_mean > 0:
-        weekday_factor = weekday_mean / overall_mean
-        grouped['trend_score'] = grouped.apply(
-            lambda row: row['trend_score'] / weekday_factor.get(row['day_of_week'], 1.0)
-            if pd.notna(row['day_of_week']) else row['trend_score'],
-            axis=1
-        )
+    # 上限を超えたスコアは上限値に丸める（カットして消さずに残す）
+    grouped['trend_score'] = grouped['trend_score'].clip(upper=upper_bound)
 
     # 重複排除
     grouped = grouped.sort_values('weight', ascending=False).drop_duplicates(
@@ -132,9 +156,10 @@ def load_trend_data() -> pd.DataFrame:
 
     return grouped
 
-def preprocess_trend_data(df: pd.DataFrame) -> tuple[pd.DataFrame, pd.Series]:
+def preprocess_trend_data(df: pd.DataFrame) -> tuple[pd.DataFrame, pd.Series, pd.Series]:
     """
     特徴量エンジニアリングと前処理（パターンD トレンド用）
+    戻り値: 特徴量(X), 目的変数(y), サンプル重み(sample_weight)
     """
     if df.empty:
         raise ValueError("提供されたデータフレームが空です")
@@ -153,33 +178,42 @@ def preprocess_trend_data(df: pd.DataFrame) -> tuple[pd.DataFrame, pd.Series]:
 
     df['period_of_year'] = df.apply(calc_period, axis=1)
 
-    def simplify_weather(w):
-        if pd.isna(w): return "不明"
-        if "晴" in w: return "晴れ"
-        if "雨" in w: return "雨"
-        if "曇" in w: return "曇り"
-        return "その他"
+    def classify_wind(w_dir):
+        if pd.isna(w_dir) or w_dir == "不明": return "不明"
+        if "北" in w_dir: return "北風"
+        if "南" in w_dir: return "南風"
+        if "東" in w_dir: return "東風"
+        if "西" in w_dir: return "西風"
+        return "無風"
+        
+    df['wind_dir_simple'] = df['wind_direction'].apply(classify_wind)
 
-    df['weather_simple'] = df['weather'].apply(simplify_weather)
-
-    features = ['period_of_year', 'day_of_week', 'area', 'weather_simple', 'species', 'water_temp']
+    features = [
+        'period_of_year', 'day_of_week', 'area', 
+        'wind_dir_simple', 'tide', 'species', 
+        'water_temp', 'avg_wind_speed', 'max_wind_speed', 
+        'precipitation', 'avg_temp'
+    ]
+    
     X = df[features]
     y = df['trend_score']
+    sample_weight = df['weight'] # AIモデルの学習時の重要度として使用
 
     # 水温の欠損値補完（その「旬」の平均水温などで埋めるのが理想だが、一旦全体平均または0）
     X['water_temp'] = X['water_temp'].fillna(X['water_temp'].mean() if not X['water_temp'].isna().all() else 0)
 
     # One-Hot Encoding
-    X = pd.get_dummies(X, columns=['area', 'weather_simple', 'species'], drop_first=True)
+    X = pd.get_dummies(X, columns=['area', 'wind_dir_simple', 'tide', 'species'], drop_first=True)
     X.fillna(0, inplace=True)
 
-    return X, y
+    return X, y, sample_weight
 
 if __name__ == "__main__":
     df_raw = load_trend_data()
     print(f"集計後のレコード件数: {len(df_raw)}")
     if not df_raw.empty:
         print(df_raw.head())
-        X, y = preprocess_trend_data(df_raw)
+        X, y, sample_weight = preprocess_trend_data(df_raw)
         print("X shape:", X.shape)
         print("y shape:", y.shape)
+        print("sample_weight shape:", sample_weight.shape)

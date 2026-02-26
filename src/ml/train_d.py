@@ -13,22 +13,25 @@ MODEL_DIR = os.path.dirname(__file__)
 MODEL_PATH = os.path.join(MODEL_DIR, "model_trend.pkl")
 
 def train_trend_model(include_files=None, exclude_files=None):
-    print("釣具屋トレンドデータ(パターンD)の読み込みと日次集計中...")
-    df_raw = load_trend_data(include_files, exclude_files)
+    print("SQLiteから釣果データと施設データを結合して読み込み中...")
+    df_raw = load_trend_data()
     if df_raw.empty:
         print("エラー: 有効な釣具屋データがロードできませんでした。")
         return
 
     print("データの前処理中...")
-    X, y = preprocess_trend_data(df_raw)
+    X, y, sample_weights = preprocess_trend_data(df_raw)
 
     print(f"X shape: {X.shape}, y shape: {y.shape}")
 
-    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+    X_train, X_test, y_train, y_test, w_train, w_test = train_test_split(
+        X, y, sample_weights, test_size=0.2, random_state=42
+    )
 
     print("モデルの学習中 (RandomForestRegressor)...")
     model = RandomForestRegressor(n_estimators=100, random_state=42)
-    model.fit(X_train, y_train)
+    # ここで weight（施設1.0, 釣具屋0.3等）を sample_weight として渡すことでAIが施設データをより重視する
+    model.fit(X_train, y_train, sample_weight=w_train)
 
     pred_test = model.predict(X_test)
     mse = mean_squared_error(y_test, pred_test)
