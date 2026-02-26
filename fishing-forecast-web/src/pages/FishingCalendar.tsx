@@ -15,7 +15,13 @@ interface DayData {
     weather?: string;
     tide: string;
     trend: 'fire' | 'hot' | 'normal' | 'bad';
-    details: string;
+    ai_comment: string;
+    marine?: {
+        temp: number;
+        transparency: number;
+        wave: number;
+        salinity: number;
+    };
 }
 
 const getWeatherIcon = (weather?: string, size = "w-3 h-3") => {
@@ -93,7 +99,7 @@ const FishingCalendar: React.FC = () => {
                             score: 0,
                             tide: 'ー',
                             trend: 'normal',
-                            details: 'データがありません'
+                            ai_comment: 'データがありません'
                         });
                     }
                 }
@@ -291,20 +297,54 @@ const FishingCalendar: React.FC = () => {
                                 </div>
                                 <div className="w-px h-8 bg-slate-200" />
                                 <div className="text-center w-1/3">
-                                    <div className="text-[10px] font-bold text-slate-400 mb-1">トレンド</div>
+                                    <div className="text-[10px] font-bold text-slate-400 mb-1">期待度</div>
                                     <div className="font-bold text-sm">
-                                        {selectedDay.trend === 'fire' ? '🔥 激アツ'
-                                            : selectedDay.trend === 'hot' ? '👍 良さげ'
-                                                : selectedDay.trend === 'bad' ? '⚠️ 渋い' : 'ー'}
+                                        {selectedDay.score >= 80 ? '🔥 激アツ'
+                                            : selectedDay.score >= 60 ? '👍 良さげ'
+                                                : selectedDay.score < 30 ? '⚠️ 渋い' : 'ー'}
                                     </div>
                                 </div>
                             </div>
 
+                            {selectedDay.marine && (
+                                <div className="grid grid-cols-2 gap-2">
+                                    <div className="bg-sky-50/50 p-3 rounded-xl border border-sky-100 flex items-center gap-3">
+                                        <div className="bg-white p-1.5 rounded-lg shadow-sm"><Droplets className="w-4 h-4 text-sky-500" /></div>
+                                        <div>
+                                            <div className="text-[10px] text-slate-400 font-bold">推定水温</div>
+                                            <div className="text-sm font-black text-slate-700">{selectedDay.marine.temp}℃</div>
+                                        </div>
+                                    </div>
+                                    <div className="bg-blue-50/50 p-3 rounded-xl border border-blue-100 flex items-center gap-3">
+                                        <div className="bg-white p-1.5 rounded-lg shadow-sm"><Wind className="w-4 h-4 text-blue-500" /></div>
+                                        <div>
+                                            <div className="text-[10px] text-slate-400 font-bold">最大波高</div>
+                                            <div className="text-sm font-black text-slate-700">{selectedDay.marine.wave}m</div>
+                                        </div>
+                                    </div>
+                                    <div className="bg-teal-50/50 p-3 rounded-xl border border-teal-100 flex items-center gap-3">
+                                        <div className="bg-white p-1.5 rounded-lg shadow-sm"><Info className="w-4 h-4 text-teal-500" /></div>
+                                        <div>
+                                            <div className="text-[10px] text-slate-400 font-bold">透明度</div>
+                                            <div className="text-sm font-black text-slate-700">{selectedDay.marine.transparency}m</div>
+                                        </div>
+                                    </div>
+                                    <div className="bg-indigo-50/50 p-3 rounded-xl border border-indigo-100 flex items-center gap-3">
+                                        <div className="bg-white p-1.5 rounded-lg shadow-sm"><Droplets className="w-4 h-4 text-indigo-500" /></div>
+                                        <div>
+                                            <div className="text-[10px] text-slate-400 font-bold">塩分濃度</div>
+                                            <div className="text-sm font-black text-slate-700">{selectedDay.marine.salinity}</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            )}
+
                             <div>
-                                <h4 className="text-xs font-bold text-slate-500 mb-2">AIの分析コメント</h4>
-                                <p className="text-sm text-slate-700 leading-relaxed bg-slate-50 p-3 rounded-xl border border-slate-100">
-                                    {selectedDay.details}
-                                </p>
+                                <h4 className="text-xs font-bold text-slate-500 mb-2 tracking-wider">AIの分析コメント</h4>
+                                <div className="text-sm text-slate-700 leading-relaxed bg-slate-900 text-white p-4 rounded-2xl shadow-lg relative overflow-hidden">
+                                    <div className="absolute top-0 right-0 p-2 opacity-10"><Info className="w-12 h-12" /></div>
+                                    <span className="relative z-10">{selectedDay.ai_comment}</span>
+                                </div>
                             </div>
 
                             <div className="pt-2">
