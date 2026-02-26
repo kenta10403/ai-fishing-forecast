@@ -38,6 +38,11 @@ def load_trend_data() -> pd.DataFrame:
         wh.wind_direction,
         wh.precipitation,
         wh.avg_temp,
+        me.wave_height,
+        me.salinity,
+        me.turbidity,
+        me.do_level,
+        me.is_kuroshio_meander,
         l.visitors, 
         1.0 as weight,
         TRUE as is_facility,
@@ -48,6 +53,7 @@ def load_trend_data() -> pd.DataFrame:
     JOIN facility_catches c ON l.id = c.log_id
     LEFT JOIN tide_history th ON th.date = REPLACE(l.date, '/', '-')
     LEFT JOIN weather_history wh ON wh.date = REPLACE(l.date, '/', '-') AND wh.area = '神奈川県'
+    LEFT JOIN marine_environment_history me ON me.date = REPLACE(l.date, '/', '-') AND me.area = '神奈川県'
     
     UNION ALL
     
@@ -62,6 +68,11 @@ def load_trend_data() -> pd.DataFrame:
         wh.wind_direction,
         wh.precipitation,
         wh.avg_temp,
+        me.wave_height,
+        me.salinity,
+        me.turbidity,
+        me.do_level,
+        me.is_kuroshio_meander,
         0 as visitors, 
         0.3 as weight,
         FALSE as is_facility,
@@ -72,6 +83,7 @@ def load_trend_data() -> pd.DataFrame:
     JOIN shop_catches c ON l.id = c.log_id
     LEFT JOIN tide_history th ON th.date = REPLACE(l.date, '/', '-')
     LEFT JOIN weather_history wh ON wh.date = REPLACE(l.date, '/', '-') AND wh.area = l.area
+    LEFT JOIN marine_environment_history me ON me.date = REPLACE(l.date, '/', '-') AND me.area = l.area
     WHERE l.area IN ('東京都', '神奈川県', '千葉県', '茨城県') -- JMAデータ取得済みの主要4県に絞る
     AND l.category = 'sea'
     """
@@ -106,9 +118,11 @@ def load_trend_data() -> pd.DataFrame:
     df['wind_direction'] = df['wind_direction'].fillna('不明')
     
     # 連続値の欠損補完（全体平均）
-    for col in ['avg_wind_speed', 'max_wind_speed', 'precipitation', 'avg_temp']:
+    for col in ['avg_wind_speed', 'max_wind_speed', 'precipitation', 'avg_temp', 'wave_height', 'salinity', 'turbidity', 'do_level']:
         df[col] = pd.to_numeric(df[col], errors='coerce')
         df[col] = df[col].fillna(df[col].mean())
+        
+    df['is_kuroshio_meander'] = df['is_kuroshio_meander'].fillna(0).astype(int)
 
     # グルーピング集計
     grouped = df.groupby(['date', 'area', 'tide', 'wind_direction', 'species', 'is_facility', 'weight']).agg({
@@ -120,7 +134,12 @@ def load_trend_data() -> pd.DataFrame:
         'avg_wind_speed': 'mean',
         'max_wind_speed': 'mean',
         'precipitation': 'mean',
-        'avg_temp': 'mean'
+        'avg_temp': 'mean',
+        'wave_height': 'mean',
+        'salinity': 'mean',
+        'turbidity': 'mean',
+        'do_level': 'mean',
+        'is_kuroshio_meander': 'max'
     }).reset_index()
 
     # トレンド指標の算出
@@ -192,7 +211,8 @@ def preprocess_trend_data(df: pd.DataFrame) -> tuple[pd.DataFrame, pd.Series, pd
         'period_of_year', 'day_of_week', 'area', 
         'wind_dir_simple', 'tide', 'species', 
         'water_temp', 'avg_wind_speed', 'max_wind_speed', 
-        'precipitation', 'avg_temp'
+        'precipitation', 'avg_temp',
+        'wave_height', 'salinity', 'turbidity', 'do_level', 'is_kuroshio_meander'
     ]
     
     X = df[features]
