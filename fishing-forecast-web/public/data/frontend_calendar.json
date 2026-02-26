@@ -2,932 +2,149 @@
   {
     "date": "2025/01/01",
     "type": "past",
-    "score": 20,
+    "score": 63,
     "weather": "cloudy",
     "tide": "大潮",
-    "trend": "bad",
+    "trend": "hot",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2025/01/02",
     "type": "past",
-    "score": 20,
+    "score": 67,
     "weather": "cloudy",
     "tide": "大潮",
-    "trend": "bad",
+    "trend": "hot",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2025/01/03",
     "type": "past",
-    "score": 20,
+    "score": 65,
     "weather": "rain",
     "tide": "中潮",
-    "trend": "bad",
+    "trend": "hot",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2025/01/04",
     "type": "past",
-    "score": 17,
+    "score": 61,
     "weather": "sunny",
     "tide": "中潮",
-    "trend": "bad",
+    "trend": "hot",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2025/01/05",
     "type": "past",
-    "score": 10,
+    "score": 55,
     "weather": "sunny",
     "tide": "中潮",
-    "trend": "bad",
+    "trend": "normal",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2025/01/06",
     "type": "past",
-    "score": 20,
+    "score": 64,
     "weather": "rain",
     "tide": "小潮",
-    "trend": "bad",
+    "trend": "hot",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2025/01/07",
     "type": "past",
-    "score": 20,
+    "score": 55,
     "weather": "sunny",
     "tide": "小潮",
-    "trend": "bad",
+    "trend": "normal",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2025/01/08",
     "type": "past",
-    "score": 20,
+    "score": 63,
     "weather": "sunny",
     "tide": "小潮",
-    "trend": "bad",
+    "trend": "hot",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2025/01/09",
     "type": "past",
-    "score": 20,
+    "score": 67,
     "weather": "sunny",
     "tide": "長潮",
-    "trend": "bad",
+    "trend": "hot",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2025/01/10",
     "type": "past",
-    "score": 20,
+    "score": 65,
     "weather": "sunny",
     "tide": "若潮",
-    "trend": "bad",
+    "trend": "hot",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2025/01/11",
     "type": "past",
-    "score": 27,
+    "score": 64,
     "weather": "sunny",
     "tide": "中潮",
-    "trend": "bad",
+    "trend": "hot",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2025/01/12",
     "type": "past",
-    "score": 26,
+    "score": 64,
     "weather": "cloudy",
     "tide": "中潮",
-    "trend": "bad",
+    "trend": "hot",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2025/01/13",
     "type": "past",
-    "score": 27,
+    "score": 67,
     "weather": "sunny",
     "tide": "中潮",
-    "trend": "bad",
+    "trend": "hot",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2025/01/14",
     "type": "past",
-    "score": 28,
+    "score": 66,
     "weather": "cloudy",
     "tide": "大潮",
-    "trend": "bad",
+    "trend": "hot",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2025/01/15",
     "type": "past",
-    "score": 27,
+    "score": 62,
     "weather": "cloudy",
     "tide": "大潮",
-    "trend": "bad",
+    "trend": "hot",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2025/01/16",
     "type": "past",
-    "score": 27,
+    "score": 63,
     "weather": "sunny",
     "tide": "大潮",
-    "trend": "bad",
+    "trend": "hot",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2025/01/17",
-    "type": "past",
-    "score": 27,
-    "weather": "sunny",
-    "tide": "大潮",
-    "trend": "bad",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
-  },
-  {
-    "date": "2025/01/18",
-    "type": "past",
-    "score": 27,
-    "weather": "sunny",
-    "tide": "中潮",
-    "trend": "bad",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
-  },
-  {
-    "date": "2025/01/19",
-    "type": "past",
-    "score": 26,
-    "weather": "cloudy",
-    "tide": "中潮",
-    "trend": "bad",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
-  },
-  {
-    "date": "2025/01/20",
-    "type": "past",
-    "score": 28,
-    "weather": "rain",
-    "tide": "中潮",
-    "trend": "bad",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
-  },
-  {
-    "date": "2025/01/21",
-    "type": "past",
-    "score": 24,
-    "weather": "cloudy",
-    "tide": "小潮",
-    "trend": "bad",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
-  },
-  {
-    "date": "2025/01/22",
-    "type": "past",
-    "score": 21,
-    "weather": "cloudy",
-    "tide": "小潮",
-    "trend": "bad",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
-  },
-  {
-    "date": "2025/01/23",
-    "type": "past",
-    "score": 24,
-    "weather": "cloudy",
-    "tide": "小潮",
-    "trend": "bad",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
-  },
-  {
-    "date": "2025/01/24",
-    "type": "past",
-    "score": 22,
-    "weather": "sunny",
-    "tide": "長潮",
-    "trend": "bad",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
-  },
-  {
-    "date": "2025/01/25",
-    "type": "past",
-    "score": 24,
-    "weather": "sunny",
-    "tide": "若潮",
-    "trend": "bad",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
-  },
-  {
-    "date": "2025/01/26",
-    "type": "past",
-    "score": 22,
-    "weather": "sunny",
-    "tide": "中潮",
-    "trend": "bad",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
-  },
-  {
-    "date": "2025/01/27",
-    "type": "past",
-    "score": 25,
-    "weather": "cloudy",
-    "tide": "中潮",
-    "trend": "bad",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
-  },
-  {
-    "date": "2025/01/28",
-    "type": "past",
-    "score": 24,
-    "weather": "cloudy",
-    "tide": "中潮",
-    "trend": "bad",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
-  },
-  {
-    "date": "2025/01/29",
-    "type": "past",
-    "score": 18,
-    "weather": "sunny",
-    "tide": "大潮",
-    "trend": "bad",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
-  },
-  {
-    "date": "2025/01/30",
-    "type": "past",
-    "score": 23,
-    "weather": "sunny",
-    "tide": "大潮",
-    "trend": "bad",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
-  },
-  {
-    "date": "2025/01/31",
-    "type": "past",
-    "score": 22,
-    "weather": "sunny",
-    "tide": "大潮",
-    "trend": "bad",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
-  },
-  {
-    "date": "2025/02/01",
-    "type": "past",
-    "score": 20,
-    "weather": "sunny",
-    "tide": "大潮",
-    "trend": "bad",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
-  },
-  {
-    "date": "2025/02/02",
-    "type": "past",
-    "score": 18,
-    "weather": "cloudy",
-    "tide": "中潮",
-    "trend": "bad",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
-  },
-  {
-    "date": "2025/02/03",
-    "type": "past",
-    "score": 19,
-    "weather": "cloudy",
-    "tide": "中潮",
-    "trend": "bad",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
-  },
-  {
-    "date": "2025/02/04",
-    "type": "past",
-    "score": 21,
-    "weather": "cloudy",
-    "tide": "中潮",
-    "trend": "bad",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
-  },
-  {
-    "date": "2025/02/05",
-    "type": "past",
-    "score": 18,
-    "weather": "sunny",
-    "tide": "小潮",
-    "trend": "bad",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
-  },
-  {
-    "date": "2025/02/06",
-    "type": "past",
-    "score": 17,
-    "weather": "sunny",
-    "tide": "小潮",
-    "trend": "bad",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
-  },
-  {
-    "date": "2025/02/07",
-    "type": "past",
-    "score": 18,
-    "weather": "sunny",
-    "tide": "小潮",
-    "trend": "bad",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
-  },
-  {
-    "date": "2025/02/08",
-    "type": "past",
-    "score": 20,
-    "weather": "sunny",
-    "tide": "長潮",
-    "trend": "bad",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
-  },
-  {
-    "date": "2025/02/09",
-    "type": "past",
-    "score": 14,
-    "weather": "sunny",
-    "tide": "若潮",
-    "trend": "bad",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
-  },
-  {
-    "date": "2025/02/10",
-    "type": "past",
-    "score": 19,
-    "weather": "cloudy",
-    "tide": "中潮",
-    "trend": "bad",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
-  },
-  {
-    "date": "2025/02/11",
-    "type": "past",
-    "score": 21,
-    "weather": "sunny",
-    "tide": "中潮",
-    "trend": "bad",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
-  },
-  {
-    "date": "2025/02/12",
-    "type": "past",
-    "score": 21,
-    "weather": "cloudy",
-    "tide": "中潮",
-    "trend": "bad",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
-  },
-  {
-    "date": "2025/02/13",
-    "type": "past",
-    "score": 20,
-    "weather": "sunny",
-    "tide": "大潮",
-    "trend": "bad",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
-  },
-  {
-    "date": "2025/02/14",
-    "type": "past",
-    "score": 21,
-    "weather": "cloudy",
-    "tide": "大潮",
-    "trend": "bad",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
-  },
-  {
-    "date": "2025/02/15",
-    "type": "past",
-    "score": 19,
-    "weather": "sunny",
-    "tide": "大潮",
-    "trend": "bad",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
-  },
-  {
-    "date": "2025/02/16",
-    "type": "past",
-    "score": 17,
-    "weather": "cloudy",
-    "tide": "大潮",
-    "trend": "bad",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
-  },
-  {
-    "date": "2025/02/17",
-    "type": "past",
-    "score": 20,
-    "weather": "cloudy",
-    "tide": "中潮",
-    "trend": "bad",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
-  },
-  {
-    "date": "2025/02/18",
-    "type": "past",
-    "score": 21,
-    "weather": "sunny",
-    "tide": "中潮",
-    "trend": "bad",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
-  },
-  {
-    "date": "2025/02/19",
-    "type": "past",
-    "score": 20,
-    "weather": "sunny",
-    "tide": "中潮",
-    "trend": "bad",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
-  },
-  {
-    "date": "2025/02/20",
-    "type": "past",
-    "score": 20,
-    "weather": "sunny",
-    "tide": "小潮",
-    "trend": "bad",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
-  },
-  {
-    "date": "2025/02/21",
-    "type": "past",
-    "score": 25,
-    "weather": "sunny",
-    "tide": "小潮",
-    "trend": "bad",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
-  },
-  {
-    "date": "2025/02/22",
-    "type": "past",
-    "score": 24,
-    "weather": "cloudy",
-    "tide": "小潮",
-    "trend": "bad",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
-  },
-  {
-    "date": "2025/02/23",
-    "type": "past",
-    "score": 22,
-    "weather": "sunny",
-    "tide": "長潮",
-    "trend": "bad",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
-  },
-  {
-    "date": "2025/02/24",
-    "type": "past",
-    "score": 18,
-    "weather": "sunny",
-    "tide": "若潮",
-    "trend": "bad",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
-  },
-  {
-    "date": "2025/02/25",
-    "type": "past",
-    "score": 24,
-    "weather": "sunny",
-    "tide": "中潮",
-    "trend": "bad",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
-  },
-  {
-    "date": "2025/02/26",
-    "type": "past",
-    "score": 25,
-    "weather": "sunny",
-    "tide": "中潮",
-    "trend": "bad",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
-  },
-  {
-    "date": "2025/02/27",
-    "type": "past",
-    "score": 25,
-    "weather": "sunny",
-    "tide": "大潮",
-    "trend": "bad",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
-  },
-  {
-    "date": "2025/02/28",
-    "type": "past",
-    "score": 25,
-    "weather": "cloudy",
-    "tide": "大潮",
-    "trend": "bad",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
-  },
-  {
-    "date": "2025/03/01",
-    "type": "past",
-    "score": 25,
-    "weather": "sunny",
-    "tide": "大潮",
-    "trend": "bad",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
-  },
-  {
-    "date": "2025/03/02",
-    "type": "past",
-    "score": 23,
-    "weather": "sunny",
-    "tide": "大潮",
-    "trend": "bad",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
-  },
-  {
-    "date": "2025/03/03",
-    "type": "past",
-    "score": 25,
-    "weather": "rain",
-    "tide": "中潮",
-    "trend": "bad",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
-  },
-  {
-    "date": "2025/03/04",
-    "type": "past",
-    "score": 25,
-    "weather": "cloudy",
-    "tide": "中潮",
-    "trend": "bad",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
-  },
-  {
-    "date": "2025/03/05",
-    "type": "past",
-    "score": 25,
-    "weather": "cloudy",
-    "tide": "中潮",
-    "trend": "bad",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
-  },
-  {
-    "date": "2025/03/06",
-    "type": "past",
-    "score": 24,
-    "weather": "cloudy",
-    "tide": "小潮",
-    "trend": "bad",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
-  },
-  {
-    "date": "2025/03/07",
-    "type": "past",
-    "score": 25,
-    "weather": "cloudy",
-    "tide": "小潮",
-    "trend": "bad",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
-  },
-  {
-    "date": "2025/03/08",
-    "type": "past",
-    "score": 25,
-    "weather": "cloudy",
-    "tide": "小潮",
-    "trend": "bad",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
-  },
-  {
-    "date": "2025/03/09",
-    "type": "past",
-    "score": 23,
-    "weather": "sunny",
-    "tide": "長潮",
-    "trend": "bad",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
-  },
-  {
-    "date": "2025/03/10",
-    "type": "past",
-    "score": 24,
-    "weather": "sunny",
-    "tide": "若潮",
-    "trend": "bad",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
-  },
-  {
-    "date": "2025/03/11",
-    "type": "past",
-    "score": 22,
-    "weather": "cloudy",
-    "tide": "中潮",
-    "trend": "bad",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
-  },
-  {
-    "date": "2025/03/12",
-    "type": "past",
-    "score": 22,
-    "weather": "cloudy",
-    "tide": "中潮",
-    "trend": "bad",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
-  },
-  {
-    "date": "2025/03/13",
-    "type": "past",
-    "score": 22,
-    "weather": "cloudy",
-    "tide": "中潮",
-    "trend": "bad",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
-  },
-  {
-    "date": "2025/03/14",
-    "type": "past",
-    "score": 22,
-    "weather": "cloudy",
-    "tide": "中潮",
-    "trend": "bad",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
-  },
-  {
-    "date": "2025/03/15",
-    "type": "past",
-    "score": 21,
-    "weather": "cloudy",
-    "tide": "大潮",
-    "trend": "bad",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
-  },
-  {
-    "date": "2025/03/16",
-    "type": "past",
-    "score": 20,
-    "weather": "rain",
-    "tide": "大潮",
-    "trend": "bad",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
-  },
-  {
-    "date": "2025/03/17",
-    "type": "past",
-    "score": 17,
-    "weather": "sunny",
-    "tide": "大潮",
-    "trend": "bad",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
-  },
-  {
-    "date": "2025/03/18",
-    "type": "past",
-    "score": 22,
-    "weather": "cloudy",
-    "tide": "中潮",
-    "trend": "bad",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
-  },
-  {
-    "date": "2025/03/19",
-    "type": "past",
-    "score": 22,
-    "weather": "cloudy",
-    "tide": "中潮",
-    "trend": "bad",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
-  },
-  {
-    "date": "2025/03/20",
-    "type": "past",
-    "score": 21,
-    "weather": "sunny",
-    "tide": "中潮",
-    "trend": "bad",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
-  },
-  {
-    "date": "2025/03/21",
-    "type": "past",
-    "score": 10,
-    "weather": "sunny",
-    "tide": "小潮",
-    "trend": "bad",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
-  },
-  {
-    "date": "2025/03/22",
-    "type": "past",
-    "score": 23,
-    "weather": "sunny",
-    "tide": "小潮",
-    "trend": "bad",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
-  },
-  {
-    "date": "2025/03/23",
-    "type": "past",
-    "score": 21,
-    "weather": "sunny",
-    "tide": "小潮",
-    "trend": "bad",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
-  },
-  {
-    "date": "2025/03/24",
-    "type": "past",
-    "score": 23,
-    "weather": "cloudy",
-    "tide": "長潮",
-    "trend": "bad",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
-  },
-  {
-    "date": "2025/03/25",
-    "type": "past",
-    "score": 23,
-    "weather": "sunny",
-    "tide": "若潮",
-    "trend": "bad",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
-  },
-  {
-    "date": "2025/03/26",
-    "type": "past",
-    "score": 21,
-    "weather": "sunny",
-    "tide": "中潮",
-    "trend": "bad",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
-  },
-  {
-    "date": "2025/03/27",
-    "type": "past",
-    "score": 23,
-    "weather": "cloudy",
-    "tide": "中潮",
-    "trend": "bad",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
-  },
-  {
-    "date": "2025/03/28",
-    "type": "past",
-    "score": 18,
-    "weather": "cloudy",
-    "tide": "中潮",
-    "trend": "bad",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
-  },
-  {
-    "date": "2025/03/29",
-    "type": "past",
-    "score": 23,
-    "weather": "rain",
-    "tide": "大潮",
-    "trend": "bad",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
-  },
-  {
-    "date": "2025/03/30",
-    "type": "past",
-    "score": 22,
-    "weather": "cloudy",
-    "tide": "大潮",
-    "trend": "bad",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
-  },
-  {
-    "date": "2025/03/31",
-    "type": "past",
-    "score": 23,
-    "weather": "cloudy",
-    "tide": "大潮",
-    "trend": "bad",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
-  },
-  {
-    "date": "2025/04/01",
-    "type": "past",
-    "score": 100,
-    "weather": "rain",
-    "tide": "大潮",
-    "trend": "fire",
-    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
-  },
-  {
-    "date": "2025/04/02",
-    "type": "past",
-    "score": 100,
-    "weather": "rain",
-    "tide": "中潮",
-    "trend": "fire",
-    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
-  },
-  {
-    "date": "2025/04/03",
-    "type": "past",
-    "score": 100,
-    "weather": "cloudy",
-    "tide": "中潮",
-    "trend": "fire",
-    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
-  },
-  {
-    "date": "2025/04/04",
-    "type": "past",
-    "score": 54,
-    "weather": "sunny",
-    "tide": "中潮",
-    "trend": "normal",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
-  },
-  {
-    "date": "2025/04/05",
-    "type": "past",
-    "score": 100,
-    "weather": "sunny",
-    "tide": "小潮",
-    "trend": "fire",
-    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
-  },
-  {
-    "date": "2025/04/06",
-    "type": "past",
-    "score": 100,
-    "weather": "cloudy",
-    "tide": "小潮",
-    "trend": "fire",
-    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
-  },
-  {
-    "date": "2025/04/07",
-    "type": "past",
-    "score": 100,
-    "weather": "sunny",
-    "tide": "小潮",
-    "trend": "fire",
-    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
-  },
-  {
-    "date": "2025/04/08",
-    "type": "past",
-    "score": 80,
-    "weather": "sunny",
-    "tide": "長潮",
-    "trend": "fire",
-    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
-  },
-  {
-    "date": "2025/04/09",
-    "type": "past",
-    "score": 100,
-    "weather": "sunny",
-    "tide": "若潮",
-    "trend": "fire",
-    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
-  },
-  {
-    "date": "2025/04/10",
-    "type": "past",
-    "score": 100,
-    "weather": "cloudy",
-    "tide": "中潮",
-    "trend": "fire",
-    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
-  },
-  {
-    "date": "2025/04/11",
-    "type": "past",
-    "score": 52,
-    "weather": "cloudy",
-    "tide": "中潮",
-    "trend": "normal",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
-  },
-  {
-    "date": "2025/04/12",
-    "type": "past",
-    "score": 24,
-    "weather": "sunny",
-    "tide": "中潮",
-    "trend": "bad",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
-  },
-  {
-    "date": "2025/04/13",
-    "type": "past",
-    "score": 57,
-    "weather": "cloudy",
-    "tide": "大潮",
-    "trend": "normal",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
-  },
-  {
-    "date": "2025/04/14",
     "type": "past",
     "score": 66,
     "weather": "sunny",
@@ -936,72 +153,855 @@
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
-    "date": "2025/04/15",
+    "date": "2025/01/18",
+    "type": "past",
+    "score": 64,
+    "weather": "sunny",
+    "tide": "中潮",
+    "trend": "hot",
+    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+  },
+  {
+    "date": "2025/01/19",
+    "type": "past",
+    "score": 64,
+    "weather": "cloudy",
+    "tide": "中潮",
+    "trend": "hot",
+    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+  },
+  {
+    "date": "2025/01/20",
+    "type": "past",
+    "score": 67,
+    "weather": "rain",
+    "tide": "中潮",
+    "trend": "hot",
+    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+  },
+  {
+    "date": "2025/01/21",
+    "type": "past",
+    "score": 63,
+    "weather": "cloudy",
+    "tide": "小潮",
+    "trend": "hot",
+    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+  },
+  {
+    "date": "2025/01/22",
+    "type": "past",
+    "score": 56,
+    "weather": "cloudy",
+    "tide": "小潮",
+    "trend": "normal",
+    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+  },
+  {
+    "date": "2025/01/23",
+    "type": "past",
+    "score": 64,
+    "weather": "cloudy",
+    "tide": "小潮",
+    "trend": "hot",
+    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+  },
+  {
+    "date": "2025/01/24",
+    "type": "past",
+    "score": 55,
+    "weather": "sunny",
+    "tide": "長潮",
+    "trend": "normal",
+    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+  },
+  {
+    "date": "2025/01/25",
+    "type": "past",
+    "score": 60,
+    "weather": "sunny",
+    "tide": "若潮",
+    "trend": "hot",
+    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+  },
+  {
+    "date": "2025/01/26",
+    "type": "past",
+    "score": 64,
+    "weather": "sunny",
+    "tide": "中潮",
+    "trend": "hot",
+    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+  },
+  {
+    "date": "2025/01/27",
+    "type": "past",
+    "score": 67,
+    "weather": "cloudy",
+    "tide": "中潮",
+    "trend": "hot",
+    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+  },
+  {
+    "date": "2025/01/28",
+    "type": "past",
+    "score": 63,
+    "weather": "cloudy",
+    "tide": "中潮",
+    "trend": "hot",
+    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+  },
+  {
+    "date": "2025/01/29",
+    "type": "past",
+    "score": 56,
+    "weather": "sunny",
+    "tide": "大潮",
+    "trend": "normal",
+    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+  },
+  {
+    "date": "2025/01/30",
+    "type": "past",
+    "score": 64,
+    "weather": "sunny",
+    "tide": "大潮",
+    "trend": "hot",
+    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+  },
+  {
+    "date": "2025/01/31",
+    "type": "past",
+    "score": 55,
+    "weather": "sunny",
+    "tide": "大潮",
+    "trend": "normal",
+    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+  },
+  {
+    "date": "2025/02/01",
+    "type": "past",
+    "score": 67,
+    "weather": "sunny",
+    "tide": "大潮",
+    "trend": "hot",
+    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+  },
+  {
+    "date": "2025/02/02",
+    "type": "past",
+    "score": 71,
+    "weather": "cloudy",
+    "tide": "中潮",
+    "trend": "hot",
+    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
+  },
+  {
+    "date": "2025/02/03",
+    "type": "past",
+    "score": 74,
+    "weather": "cloudy",
+    "tide": "中潮",
+    "trend": "hot",
+    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
+  },
+  {
+    "date": "2025/02/04",
+    "type": "past",
+    "score": 69,
+    "weather": "cloudy",
+    "tide": "中潮",
+    "trend": "hot",
+    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+  },
+  {
+    "date": "2025/02/05",
+    "type": "past",
+    "score": 69,
+    "weather": "sunny",
+    "tide": "小潮",
+    "trend": "hot",
+    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+  },
+  {
+    "date": "2025/02/06",
     "type": "past",
     "score": 61,
+    "weather": "sunny",
+    "tide": "小潮",
+    "trend": "hot",
+    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+  },
+  {
+    "date": "2025/02/07",
+    "type": "past",
+    "score": 71,
+    "weather": "sunny",
+    "tide": "小潮",
+    "trend": "hot",
+    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
+  },
+  {
+    "date": "2025/02/08",
+    "type": "past",
+    "score": 67,
+    "weather": "sunny",
+    "tide": "長潮",
+    "trend": "hot",
+    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+  },
+  {
+    "date": "2025/02/09",
+    "type": "past",
+    "score": 71,
+    "weather": "sunny",
+    "tide": "若潮",
+    "trend": "hot",
+    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
+  },
+  {
+    "date": "2025/02/10",
+    "type": "past",
+    "score": 74,
+    "weather": "cloudy",
+    "tide": "中潮",
+    "trend": "hot",
+    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
+  },
+  {
+    "date": "2025/02/11",
+    "type": "past",
+    "score": 73,
+    "weather": "sunny",
+    "tide": "中潮",
+    "trend": "hot",
+    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
+  },
+  {
+    "date": "2025/02/12",
+    "type": "past",
+    "score": 68,
+    "weather": "cloudy",
+    "tide": "中潮",
+    "trend": "hot",
+    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+  },
+  {
+    "date": "2025/02/13",
+    "type": "past",
+    "score": 73,
+    "weather": "sunny",
+    "tide": "大潮",
+    "trend": "hot",
+    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
+  },
+  {
+    "date": "2025/02/14",
+    "type": "past",
+    "score": 72,
     "weather": "cloudy",
     "tide": "大潮",
     "trend": "hot",
+    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
+  },
+  {
+    "date": "2025/02/15",
+    "type": "past",
+    "score": 72,
+    "weather": "sunny",
+    "tide": "大潮",
+    "trend": "hot",
+    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
+  },
+  {
+    "date": "2025/02/16",
+    "type": "past",
+    "score": 67,
+    "weather": "cloudy",
+    "tide": "大潮",
+    "trend": "hot",
+    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+  },
+  {
+    "date": "2025/02/17",
+    "type": "past",
+    "score": 72,
+    "weather": "cloudy",
+    "tide": "中潮",
+    "trend": "hot",
+    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
+  },
+  {
+    "date": "2025/02/18",
+    "type": "past",
+    "score": 73,
+    "weather": "sunny",
+    "tide": "中潮",
+    "trend": "hot",
+    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
+  },
+  {
+    "date": "2025/02/19",
+    "type": "past",
+    "score": 68,
+    "weather": "sunny",
+    "tide": "中潮",
+    "trend": "hot",
+    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+  },
+  {
+    "date": "2025/02/20",
+    "type": "past",
+    "score": 73,
+    "weather": "sunny",
+    "tide": "小潮",
+    "trend": "hot",
+    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
+  },
+  {
+    "date": "2025/02/21",
+    "type": "past",
+    "score": 75,
+    "weather": "sunny",
+    "tide": "小潮",
+    "trend": "hot",
+    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
+  },
+  {
+    "date": "2025/02/22",
+    "type": "past",
+    "score": 74,
+    "weather": "cloudy",
+    "tide": "小潮",
+    "trend": "hot",
+    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
+  },
+  {
+    "date": "2025/02/23",
+    "type": "past",
+    "score": 71,
+    "weather": "sunny",
+    "tide": "長潮",
+    "trend": "hot",
+    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
+  },
+  {
+    "date": "2025/02/24",
+    "type": "past",
+    "score": 70,
+    "weather": "sunny",
+    "tide": "若潮",
+    "trend": "hot",
+    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+  },
+  {
+    "date": "2025/02/25",
+    "type": "past",
+    "score": 75,
+    "weather": "sunny",
+    "tide": "中潮",
+    "trend": "hot",
+    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
+  },
+  {
+    "date": "2025/02/26",
+    "type": "past",
+    "score": 76,
+    "weather": "sunny",
+    "tide": "中潮",
+    "trend": "hot",
+    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
+  },
+  {
+    "date": "2025/02/27",
+    "type": "past",
+    "score": 76,
+    "weather": "sunny",
+    "tide": "大潮",
+    "trend": "hot",
+    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
+  },
+  {
+    "date": "2025/02/28",
+    "type": "past",
+    "score": 75,
+    "weather": "cloudy",
+    "tide": "大潮",
+    "trend": "hot",
+    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
+  },
+  {
+    "date": "2025/03/01",
+    "type": "past",
+    "score": 66,
+    "weather": "sunny",
+    "tide": "大潮",
+    "trend": "hot",
+    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+  },
+  {
+    "date": "2025/03/02",
+    "type": "past",
+    "score": 62,
+    "weather": "sunny",
+    "tide": "大潮",
+    "trend": "hot",
+    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+  },
+  {
+    "date": "2025/03/03",
+    "type": "past",
+    "score": 66,
+    "weather": "rain",
+    "tide": "中潮",
+    "trend": "hot",
+    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+  },
+  {
+    "date": "2025/03/04",
+    "type": "past",
+    "score": 65,
+    "weather": "cloudy",
+    "tide": "中潮",
+    "trend": "hot",
+    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+  },
+  {
+    "date": "2025/03/05",
+    "type": "past",
+    "score": 63,
+    "weather": "cloudy",
+    "tide": "中潮",
+    "trend": "hot",
+    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+  },
+  {
+    "date": "2025/03/06",
+    "type": "past",
+    "score": 63,
+    "weather": "cloudy",
+    "tide": "小潮",
+    "trend": "hot",
+    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+  },
+  {
+    "date": "2025/03/07",
+    "type": "past",
+    "score": 65,
+    "weather": "cloudy",
+    "tide": "小潮",
+    "trend": "hot",
+    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+  },
+  {
+    "date": "2025/03/08",
+    "type": "past",
+    "score": 66,
+    "weather": "cloudy",
+    "tide": "小潮",
+    "trend": "hot",
+    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+  },
+  {
+    "date": "2025/03/09",
+    "type": "past",
+    "score": 62,
+    "weather": "sunny",
+    "tide": "長潮",
+    "trend": "hot",
+    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+  },
+  {
+    "date": "2025/03/10",
+    "type": "past",
+    "score": 66,
+    "weather": "sunny",
+    "tide": "若潮",
+    "trend": "hot",
+    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+  },
+  {
+    "date": "2025/03/11",
+    "type": "past",
+    "score": 64,
+    "weather": "cloudy",
+    "tide": "中潮",
+    "trend": "hot",
+    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+  },
+  {
+    "date": "2025/03/12",
+    "type": "past",
+    "score": 64,
+    "weather": "cloudy",
+    "tide": "中潮",
+    "trend": "hot",
+    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+  },
+  {
+    "date": "2025/03/13",
+    "type": "past",
+    "score": 65,
+    "weather": "cloudy",
+    "tide": "中潮",
+    "trend": "hot",
+    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+  },
+  {
+    "date": "2025/03/14",
+    "type": "past",
+    "score": 66,
+    "weather": "cloudy",
+    "tide": "中潮",
+    "trend": "hot",
+    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+  },
+  {
+    "date": "2025/03/15",
+    "type": "past",
+    "score": 63,
+    "weather": "cloudy",
+    "tide": "大潮",
+    "trend": "hot",
+    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+  },
+  {
+    "date": "2025/03/16",
+    "type": "past",
+    "score": 62,
+    "weather": "rain",
+    "tide": "大潮",
+    "trend": "hot",
+    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+  },
+  {
+    "date": "2025/03/17",
+    "type": "past",
+    "score": 59,
+    "weather": "sunny",
+    "tide": "大潮",
+    "trend": "normal",
+    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+  },
+  {
+    "date": "2025/03/18",
+    "type": "past",
+    "score": 64,
+    "weather": "cloudy",
+    "tide": "中潮",
+    "trend": "hot",
+    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+  },
+  {
+    "date": "2025/03/19",
+    "type": "past",
+    "score": 64,
+    "weather": "cloudy",
+    "tide": "中潮",
+    "trend": "hot",
+    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+  },
+  {
+    "date": "2025/03/20",
+    "type": "past",
+    "score": 65,
+    "weather": "sunny",
+    "tide": "中潮",
+    "trend": "hot",
+    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+  },
+  {
+    "date": "2025/03/21",
+    "type": "past",
+    "score": 63,
+    "weather": "sunny",
+    "tide": "小潮",
+    "trend": "hot",
+    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+  },
+  {
+    "date": "2025/03/22",
+    "type": "past",
+    "score": 62,
+    "weather": "sunny",
+    "tide": "小潮",
+    "trend": "hot",
+    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+  },
+  {
+    "date": "2025/03/23",
+    "type": "past",
+    "score": 62,
+    "weather": "sunny",
+    "tide": "小潮",
+    "trend": "hot",
+    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+  },
+  {
+    "date": "2025/03/24",
+    "type": "past",
+    "score": 64,
+    "weather": "cloudy",
+    "tide": "長潮",
+    "trend": "hot",
+    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+  },
+  {
+    "date": "2025/03/25",
+    "type": "past",
+    "score": 64,
+    "weather": "sunny",
+    "tide": "若潮",
+    "trend": "hot",
+    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+  },
+  {
+    "date": "2025/03/26",
+    "type": "past",
+    "score": 63,
+    "weather": "sunny",
+    "tide": "中潮",
+    "trend": "hot",
+    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+  },
+  {
+    "date": "2025/03/27",
+    "type": "past",
+    "score": 63,
+    "weather": "cloudy",
+    "tide": "中潮",
+    "trend": "hot",
+    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+  },
+  {
+    "date": "2025/03/28",
+    "type": "past",
+    "score": 63,
+    "weather": "cloudy",
+    "tide": "中潮",
+    "trend": "hot",
+    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+  },
+  {
+    "date": "2025/03/29",
+    "type": "past",
+    "score": 62,
+    "weather": "rain",
+    "tide": "大潮",
+    "trend": "hot",
+    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+  },
+  {
+    "date": "2025/03/30",
+    "type": "past",
+    "score": 62,
+    "weather": "cloudy",
+    "tide": "大潮",
+    "trend": "hot",
+    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+  },
+  {
+    "date": "2025/03/31",
+    "type": "past",
+    "score": 64,
+    "weather": "cloudy",
+    "tide": "大潮",
+    "trend": "hot",
+    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+  },
+  {
+    "date": "2025/04/01",
+    "type": "past",
+    "score": 85,
+    "weather": "rain",
+    "tide": "大潮",
+    "trend": "fire",
+    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
+  },
+  {
+    "date": "2025/04/02",
+    "type": "past",
+    "score": 83,
+    "weather": "rain",
+    "tide": "中潮",
+    "trend": "fire",
+    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
+  },
+  {
+    "date": "2025/04/03",
+    "type": "past",
+    "score": 84,
+    "weather": "cloudy",
+    "tide": "中潮",
+    "trend": "fire",
+    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
+  },
+  {
+    "date": "2025/04/04",
+    "type": "past",
+    "score": 70,
+    "weather": "sunny",
+    "tide": "中潮",
+    "trend": "hot",
+    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+  },
+  {
+    "date": "2025/04/05",
+    "type": "past",
+    "score": 84,
+    "weather": "sunny",
+    "tide": "小潮",
+    "trend": "fire",
+    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
+  },
+  {
+    "date": "2025/04/06",
+    "type": "past",
+    "score": 81,
+    "weather": "cloudy",
+    "tide": "小潮",
+    "trend": "fire",
+    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
+  },
+  {
+    "date": "2025/04/07",
+    "type": "past",
+    "score": 83,
+    "weather": "sunny",
+    "tide": "小潮",
+    "trend": "fire",
+    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
+  },
+  {
+    "date": "2025/04/08",
+    "type": "past",
+    "score": 85,
+    "weather": "sunny",
+    "tide": "長潮",
+    "trend": "fire",
+    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
+  },
+  {
+    "date": "2025/04/09",
+    "type": "past",
+    "score": 83,
+    "weather": "sunny",
+    "tide": "若潮",
+    "trend": "fire",
+    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
+  },
+  {
+    "date": "2025/04/10",
+    "type": "past",
+    "score": 84,
+    "weather": "cloudy",
+    "tide": "中潮",
+    "trend": "fire",
+    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
+  },
+  {
+    "date": "2025/04/11",
+    "type": "past",
+    "score": 83,
+    "weather": "cloudy",
+    "tide": "中潮",
+    "trend": "fire",
+    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
+  },
+  {
+    "date": "2025/04/12",
+    "type": "past",
+    "score": 84,
+    "weather": "sunny",
+    "tide": "中潮",
+    "trend": "fire",
+    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
+  },
+  {
+    "date": "2025/04/13",
+    "type": "past",
+    "score": 77,
+    "weather": "cloudy",
+    "tide": "大潮",
+    "trend": "hot",
+    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
+  },
+  {
+    "date": "2025/04/14",
+    "type": "past",
+    "score": 85,
+    "weather": "sunny",
+    "tide": "大潮",
+    "trend": "fire",
+    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
+  },
+  {
+    "date": "2025/04/15",
+    "type": "past",
+    "score": 50,
+    "weather": "cloudy",
+    "tide": "大潮",
+    "trend": "normal",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2025/04/16",
     "type": "past",
-    "score": 61,
+    "score": 72,
     "weather": "cloudy",
     "tide": "大潮",
     "trend": "hot",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
   },
   {
     "date": "2025/04/17",
     "type": "past",
-    "score": 24,
+    "score": 84,
     "weather": "sunny",
     "tide": "中潮",
-    "trend": "bad",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+    "trend": "fire",
+    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
   },
   {
     "date": "2025/04/18",
     "type": "past",
-    "score": 35,
+    "score": 83,
     "weather": "sunny",
     "tide": "中潮",
-    "trend": "bad",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+    "trend": "fire",
+    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
   },
   {
     "date": "2025/04/19",
     "type": "past",
-    "score": 24,
+    "score": 84,
     "weather": "sunny",
     "tide": "中潮",
-    "trend": "bad",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+    "trend": "fire",
+    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
   },
   {
     "date": "2025/04/20",
     "type": "past",
-    "score": 52,
+    "score": 77,
     "weather": "sunny",
     "tide": "小潮",
-    "trend": "normal",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+    "trend": "hot",
+    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
   },
   {
     "date": "2025/04/21",
     "type": "past",
-    "score": 59,
+    "score": 81,
     "weather": "sunny",
     "tide": "小潮",
-    "trend": "normal",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+    "trend": "fire",
+    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
   },
   {
     "date": "2025/04/22",
     "type": "past",
-    "score": 62,
+    "score": 64,
     "weather": "cloudy",
     "tide": "小潮",
     "trend": "hot",
@@ -1010,7 +1010,7 @@
   {
     "date": "2025/04/23",
     "type": "past",
-    "score": 90,
+    "score": 84,
     "weather": "rain",
     "tide": "長潮",
     "trend": "fire",
@@ -1019,34 +1019,34 @@
   {
     "date": "2025/04/24",
     "type": "past",
-    "score": 62,
+    "score": 75,
     "weather": "cloudy",
     "tide": "若潮",
     "trend": "hot",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
   },
   {
     "date": "2025/04/25",
     "type": "past",
-    "score": 87,
+    "score": 68,
     "weather": "cloudy",
     "tide": "中潮",
-    "trend": "fire",
-    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
+    "trend": "hot",
+    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2025/04/26",
     "type": "past",
-    "score": 88,
+    "score": 79,
     "weather": "cloudy",
     "tide": "中潮",
-    "trend": "fire",
+    "trend": "hot",
     "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
   },
   {
     "date": "2025/04/27",
     "type": "past",
-    "score": 90,
+    "score": 84,
     "weather": "sunny",
     "tide": "中潮",
     "trend": "fire",
@@ -1064,7 +1064,7 @@
   {
     "date": "2025/04/29",
     "type": "past",
-    "score": 62,
+    "score": 64,
     "weather": "cloudy",
     "tide": "大潮",
     "trend": "hot",
@@ -1073,7 +1073,7 @@
   {
     "date": "2025/04/30",
     "type": "past",
-    "score": 87,
+    "score": 84,
     "weather": "sunny",
     "tide": "大潮",
     "trend": "fire",
@@ -1082,16 +1082,16 @@
   {
     "date": "2025/05/01",
     "type": "past",
-    "score": 72,
+    "score": 82,
     "weather": "sunny",
     "tide": "中潮",
-    "trend": "hot",
+    "trend": "fire",
     "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
   },
   {
     "date": "2025/05/02",
     "type": "past",
-    "score": 100,
+    "score": 81,
     "weather": "rain",
     "tide": "中潮",
     "trend": "fire",
@@ -1100,7 +1100,7 @@
   {
     "date": "2025/05/03",
     "type": "past",
-    "score": 81,
+    "score": 87,
     "weather": "sunny",
     "tide": "中潮",
     "trend": "fire",
@@ -1109,7 +1109,7 @@
   {
     "date": "2025/05/04",
     "type": "past",
-    "score": 100,
+    "score": 86,
     "weather": "cloudy",
     "tide": "小潮",
     "trend": "fire",
@@ -1118,16 +1118,16 @@
   {
     "date": "2025/05/05",
     "type": "past",
-    "score": 70,
+    "score": 88,
     "weather": "sunny",
     "tide": "小潮",
-    "trend": "hot",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+    "trend": "fire",
+    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
   },
   {
     "date": "2025/05/06",
     "type": "past",
-    "score": 89,
+    "score": 84,
     "weather": "cloudy",
     "tide": "小潮",
     "trend": "fire",
@@ -1136,7 +1136,7 @@
   {
     "date": "2025/05/07",
     "type": "past",
-    "score": 89,
+    "score": 87,
     "weather": "sunny",
     "tide": "長潮",
     "trend": "fire",
@@ -1145,7 +1145,7 @@
   {
     "date": "2025/05/08",
     "type": "past",
-    "score": 94,
+    "score": 82,
     "weather": "cloudy",
     "tide": "若潮",
     "trend": "fire",
@@ -1154,7 +1154,7 @@
   {
     "date": "2025/05/09",
     "type": "past",
-    "score": 100,
+    "score": 81,
     "weather": "cloudy",
     "tide": "中潮",
     "trend": "fire",
@@ -1163,7 +1163,7 @@
   {
     "date": "2025/05/10",
     "type": "past",
-    "score": 96,
+    "score": 87,
     "weather": "cloudy",
     "tide": "中潮",
     "trend": "fire",
@@ -1172,7 +1172,7 @@
   {
     "date": "2025/05/11",
     "type": "past",
-    "score": 100,
+    "score": 81,
     "weather": "sunny",
     "tide": "中潮",
     "trend": "fire",
@@ -1181,7 +1181,7 @@
   {
     "date": "2025/05/12",
     "type": "past",
-    "score": 100,
+    "score": 89,
     "weather": "cloudy",
     "tide": "中潮",
     "trend": "fire",
@@ -1190,7 +1190,7 @@
   {
     "date": "2025/05/13",
     "type": "past",
-    "score": 84,
+    "score": 87,
     "weather": "sunny",
     "tide": "大潮",
     "trend": "fire",
@@ -1199,7 +1199,7 @@
   {
     "date": "2025/05/14",
     "type": "past",
-    "score": 100,
+    "score": 89,
     "weather": "cloudy",
     "tide": "大潮",
     "trend": "fire",
@@ -1208,7 +1208,7 @@
   {
     "date": "2025/05/15",
     "type": "past",
-    "score": 100,
+    "score": 89,
     "weather": "sunny",
     "tide": "大潮",
     "trend": "fire",
@@ -1217,7 +1217,7 @@
   {
     "date": "2025/05/16",
     "type": "past",
-    "score": 100,
+    "score": 80,
     "weather": "cloudy",
     "tide": "中潮",
     "trend": "fire",
@@ -1226,7 +1226,7 @@
   {
     "date": "2025/05/17",
     "type": "past",
-    "score": 100,
+    "score": 83,
     "weather": "cloudy",
     "tide": "中潮",
     "trend": "fire",
@@ -1235,7 +1235,7 @@
   {
     "date": "2025/05/18",
     "type": "past",
-    "score": 100,
+    "score": 81,
     "weather": "cloudy",
     "tide": "中潮",
     "trend": "fire",
@@ -1244,7 +1244,7 @@
   {
     "date": "2025/05/19",
     "type": "past",
-    "score": 100,
+    "score": 89,
     "weather": "cloudy",
     "tide": "小潮",
     "trend": "fire",
@@ -1253,7 +1253,7 @@
   {
     "date": "2025/05/20",
     "type": "past",
-    "score": 84,
+    "score": 87,
     "weather": "sunny",
     "tide": "小潮",
     "trend": "fire",
@@ -1262,7 +1262,7 @@
   {
     "date": "2025/05/21",
     "type": "past",
-    "score": 91,
+    "score": 86,
     "weather": "cloudy",
     "tide": "小潮",
     "trend": "fire",
@@ -1271,16 +1271,16 @@
   {
     "date": "2025/05/22",
     "type": "past",
-    "score": 92,
+    "score": 78,
     "weather": "cloudy",
     "tide": "長潮",
-    "trend": "fire",
+    "trend": "hot",
     "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
   },
   {
     "date": "2025/05/23",
     "type": "past",
-    "score": 93,
+    "score": 88,
     "weather": "cloudy",
     "tide": "若潮",
     "trend": "fire",
@@ -1289,7 +1289,7 @@
   {
     "date": "2025/05/24",
     "type": "past",
-    "score": 83,
+    "score": 81,
     "weather": "cloudy",
     "tide": "中潮",
     "trend": "fire",
@@ -1298,7 +1298,7 @@
   {
     "date": "2025/05/25",
     "type": "past",
-    "score": 97,
+    "score": 85,
     "weather": "cloudy",
     "tide": "中潮",
     "trend": "fire",
@@ -1307,7 +1307,7 @@
   {
     "date": "2025/05/26",
     "type": "past",
-    "score": 84,
+    "score": 87,
     "weather": "cloudy",
     "tide": "中潮",
     "trend": "fire",
@@ -1316,16 +1316,16 @@
   {
     "date": "2025/05/27",
     "type": "past",
-    "score": 74,
+    "score": 88,
     "weather": "cloudy",
     "tide": "大潮",
-    "trend": "hot",
+    "trend": "fire",
     "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
   },
   {
     "date": "2025/05/28",
     "type": "past",
-    "score": 91,
+    "score": 86,
     "weather": "cloudy",
     "tide": "大潮",
     "trend": "fire",
@@ -1334,16 +1334,16 @@
   {
     "date": "2025/05/29",
     "type": "past",
-    "score": 92,
+    "score": 78,
     "weather": "cloudy",
     "tide": "大潮",
-    "trend": "fire",
+    "trend": "hot",
     "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
   },
   {
     "date": "2025/05/30",
     "type": "past",
-    "score": 93,
+    "score": 88,
     "weather": "rain",
     "tide": "大潮",
     "trend": "fire",
@@ -1352,7 +1352,7 @@
   {
     "date": "2025/05/31",
     "type": "past",
-    "score": 82,
+    "score": 81,
     "weather": "rain",
     "tide": "中潮",
     "trend": "fire",
@@ -1361,277 +1361,277 @@
   {
     "date": "2025/06/01",
     "type": "past",
-    "score": 41,
+    "score": 89,
     "weather": "cloudy",
     "tide": "中潮",
-    "trend": "normal",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+    "trend": "fire",
+    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
   },
   {
     "date": "2025/06/02",
     "type": "past",
-    "score": 28,
+    "score": 86,
     "weather": "cloudy",
     "tide": "中潮",
-    "trend": "bad",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+    "trend": "fire",
+    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
   },
   {
     "date": "2025/06/03",
     "type": "past",
-    "score": 33,
+    "score": 90,
     "weather": "cloudy",
     "tide": "小潮",
-    "trend": "bad",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+    "trend": "fire",
+    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
   },
   {
     "date": "2025/06/04",
     "type": "past",
-    "score": 39,
+    "score": 88,
     "weather": "cloudy",
     "tide": "小潮",
-    "trend": "bad",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+    "trend": "fire",
+    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
   },
   {
     "date": "2025/06/05",
     "type": "past",
-    "score": 35,
+    "score": 88,
     "weather": "sunny",
     "tide": "小潮",
-    "trend": "bad",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+    "trend": "fire",
+    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
   },
   {
     "date": "2025/06/06",
     "type": "past",
-    "score": 39,
+    "score": 90,
     "weather": "sunny",
     "tide": "長潮",
-    "trend": "bad",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+    "trend": "fire",
+    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
   },
   {
     "date": "2025/06/07",
     "type": "past",
-    "score": 32,
+    "score": 88,
     "weather": "cloudy",
     "tide": "若潮",
-    "trend": "bad",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+    "trend": "fire",
+    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
   },
   {
     "date": "2025/06/08",
     "type": "past",
-    "score": 41,
+    "score": 89,
     "weather": "cloudy",
     "tide": "中潮",
-    "trend": "normal",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+    "trend": "fire",
+    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
   },
   {
     "date": "2025/06/09",
     "type": "past",
-    "score": 28,
+    "score": 86,
     "weather": "cloudy",
     "tide": "中潮",
-    "trend": "bad",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+    "trend": "fire",
+    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
   },
   {
     "date": "2025/06/10",
     "type": "past",
-    "score": 37,
+    "score": 90,
     "weather": "rain",
     "tide": "中潮",
-    "trend": "bad",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+    "trend": "fire",
+    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
   },
   {
     "date": "2025/06/11",
     "type": "past",
-    "score": 57,
+    "score": 90,
     "weather": "rain",
     "tide": "大潮",
-    "trend": "normal",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+    "trend": "fire",
+    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
   },
   {
     "date": "2025/06/12",
     "type": "past",
-    "score": 55,
+    "score": 92,
     "weather": "cloudy",
     "tide": "大潮",
-    "trend": "normal",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+    "trend": "fire",
+    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
   },
   {
     "date": "2025/06/13",
     "type": "past",
-    "score": 55,
+    "score": 91,
     "weather": "cloudy",
     "tide": "大潮",
-    "trend": "normal",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+    "trend": "fire",
+    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
   },
   {
     "date": "2025/06/14",
     "type": "past",
-    "score": 53,
+    "score": 91,
     "weather": "cloudy",
     "tide": "大潮",
-    "trend": "normal",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+    "trend": "fire",
+    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
   },
   {
     "date": "2025/06/15",
     "type": "past",
-    "score": 54,
+    "score": 90,
     "weather": "cloudy",
     "tide": "中潮",
-    "trend": "normal",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+    "trend": "fire",
+    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
   },
   {
     "date": "2025/06/16",
     "type": "past",
-    "score": 55,
+    "score": 89,
     "weather": "sunny",
     "tide": "中潮",
-    "trend": "normal",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+    "trend": "fire",
+    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
   },
   {
     "date": "2025/06/17",
     "type": "past",
-    "score": 56,
+    "score": 87,
     "weather": "sunny",
     "tide": "中潮",
-    "trend": "normal",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+    "trend": "fire",
+    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
   },
   {
     "date": "2025/06/18",
     "type": "past",
-    "score": 56,
+    "score": 90,
     "weather": "sunny",
     "tide": "小潮",
-    "trend": "normal",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+    "trend": "fire",
+    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
   },
   {
     "date": "2025/06/19",
     "type": "past",
-    "score": 54,
+    "score": 92,
     "weather": "sunny",
     "tide": "小潮",
-    "trend": "normal",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+    "trend": "fire",
+    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
   },
   {
     "date": "2025/06/20",
     "type": "past",
-    "score": 52,
+    "score": 91,
     "weather": "sunny",
     "tide": "小潮",
-    "trend": "normal",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+    "trend": "fire",
+    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
   },
   {
     "date": "2025/06/21",
     "type": "past",
-    "score": 33,
+    "score": 83,
     "weather": "sunny",
     "tide": "長潮",
-    "trend": "bad",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+    "trend": "fire",
+    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
   },
   {
     "date": "2025/06/22",
     "type": "past",
-    "score": 37,
+    "score": 79,
     "weather": "sunny",
     "tide": "若潮",
-    "trend": "bad",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+    "trend": "hot",
+    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
   },
   {
     "date": "2025/06/23",
     "type": "past",
-    "score": 54,
+    "score": 90,
     "weather": "cloudy",
     "tide": "中潮",
-    "trend": "normal",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+    "trend": "fire",
+    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
   },
   {
     "date": "2025/06/24",
     "type": "past",
-    "score": 34,
+    "score": 89,
     "weather": "cloudy",
     "tide": "中潮",
-    "trend": "bad",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+    "trend": "fire",
+    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
   },
   {
     "date": "2025/06/25",
     "type": "past",
-    "score": 54,
+    "score": 90,
     "weather": "cloudy",
     "tide": "中潮",
-    "trend": "normal",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+    "trend": "fire",
+    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
   },
   {
     "date": "2025/06/26",
     "type": "past",
-    "score": 55,
+    "score": 91,
     "weather": "cloudy",
     "tide": "大潮",
-    "trend": "normal",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+    "trend": "fire",
+    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
   },
   {
     "date": "2025/06/27",
     "type": "past",
-    "score": 54,
+    "score": 87,
     "weather": "cloudy",
     "tide": "大潮",
-    "trend": "normal",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+    "trend": "fire",
+    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
   },
   {
     "date": "2025/06/28",
     "type": "past",
-    "score": 33,
+    "score": 83,
     "weather": "sunny",
     "tide": "大潮",
-    "trend": "bad",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+    "trend": "fire",
+    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
   },
   {
     "date": "2025/06/29",
     "type": "past",
-    "score": 37,
+    "score": 79,
     "weather": "sunny",
     "tide": "中潮",
-    "trend": "bad",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+    "trend": "hot",
+    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
   },
   {
     "date": "2025/06/30",
     "type": "past",
-    "score": 50,
+    "score": 90,
     "weather": "sunny",
     "tide": "中潮",
-    "trend": "normal",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+    "trend": "fire",
+    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
   },
   {
     "date": "2025/07/01",
     "type": "past",
-    "score": 78,
+    "score": 77,
     "weather": "cloudy",
     "tide": "中潮",
     "trend": "hot",
@@ -1640,10 +1640,10 @@
   {
     "date": "2025/07/02",
     "type": "past",
-    "score": 75,
+    "score": 82,
     "weather": "cloudy",
     "tide": "小潮",
-    "trend": "hot",
+    "trend": "fire",
     "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
   },
   {
@@ -1658,7 +1658,7 @@
   {
     "date": "2025/07/04",
     "type": "past",
-    "score": 75,
+    "score": 77,
     "weather": "sunny",
     "tide": "小潮",
     "trend": "hot",
@@ -1667,7 +1667,7 @@
   {
     "date": "2025/07/05",
     "type": "past",
-    "score": 75,
+    "score": 74,
     "weather": "cloudy",
     "tide": "長潮",
     "trend": "hot",
@@ -1676,10 +1676,10 @@
   {
     "date": "2025/07/06",
     "type": "past",
-    "score": 84,
+    "score": 71,
     "weather": "cloudy",
     "tide": "若潮",
-    "trend": "fire",
+    "trend": "hot",
     "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
   },
   {
@@ -1694,20 +1694,20 @@
   {
     "date": "2025/07/08",
     "type": "past",
-    "score": 52,
+    "score": 77,
     "weather": "sunny",
     "tide": "中潮",
-    "trend": "normal",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+    "trend": "hot",
+    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
   },
   {
     "date": "2025/07/09",
     "type": "past",
-    "score": 46,
+    "score": 82,
     "weather": "sunny",
     "tide": "中潮",
-    "trend": "normal",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+    "trend": "fire",
+    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
   },
   {
     "date": "2025/07/10",
@@ -1721,25 +1721,25 @@
   {
     "date": "2025/07/11",
     "type": "past",
-    "score": 56,
+    "score": 79,
     "weather": "cloudy",
     "tide": "大潮",
-    "trend": "normal",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+    "trend": "hot",
+    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
   },
   {
     "date": "2025/07/12",
     "type": "past",
-    "score": 26,
+    "score": 80,
     "weather": "sunny",
     "tide": "大潮",
-    "trend": "bad",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+    "trend": "fire",
+    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
   },
   {
     "date": "2025/07/13",
     "type": "past",
-    "score": 71,
+    "score": 75,
     "weather": "cloudy",
     "tide": "大潮",
     "trend": "hot",
@@ -1748,34 +1748,34 @@
   {
     "date": "2025/07/14",
     "type": "past",
-    "score": 70,
+    "score": 80,
     "weather": "cloudy",
     "tide": "中潮",
-    "trend": "hot",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+    "trend": "fire",
+    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
   },
   {
     "date": "2025/07/15",
     "type": "past",
-    "score": 70,
+    "score": 80,
     "weather": "rain",
     "tide": "中潮",
-    "trend": "hot",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+    "trend": "fire",
+    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
   },
   {
     "date": "2025/07/16",
     "type": "past",
-    "score": 68,
+    "score": 81,
     "weather": "rain",
     "tide": "中潮",
-    "trend": "hot",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+    "trend": "fire",
+    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
   },
   {
     "date": "2025/07/17",
     "type": "past",
-    "score": 64,
+    "score": 70,
     "weather": "cloudy",
     "tide": "小潮",
     "trend": "hot",
@@ -1784,25 +1784,25 @@
   {
     "date": "2025/07/18",
     "type": "past",
-    "score": 56,
+    "score": 79,
     "weather": "cloudy",
     "tide": "小潮",
-    "trend": "normal",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+    "trend": "hot",
+    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
   },
   {
     "date": "2025/07/19",
     "type": "past",
-    "score": 66,
+    "score": 80,
     "weather": "cloudy",
     "tide": "小潮",
-    "trend": "hot",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+    "trend": "fire",
+    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
   },
   {
     "date": "2025/07/20",
     "type": "past",
-    "score": 71,
+    "score": 75,
     "weather": "sunny",
     "tide": "長潮",
     "trend": "hot",
@@ -1811,7 +1811,7 @@
   {
     "date": "2025/07/21",
     "type": "past",
-    "score": 85,
+    "score": 80,
     "weather": "sunny",
     "tide": "若潮",
     "trend": "fire",
@@ -1820,10 +1820,10 @@
   {
     "date": "2025/07/22",
     "type": "past",
-    "score": 58,
+    "score": 68,
     "weather": "sunny",
     "tide": "中潮",
-    "trend": "normal",
+    "trend": "hot",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
@@ -1838,16 +1838,16 @@
   {
     "date": "2025/07/24",
     "type": "past",
-    "score": 81,
+    "score": 79,
     "weather": "sunny",
     "tide": "中潮",
-    "trend": "fire",
+    "trend": "hot",
     "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
   },
   {
     "date": "2025/07/25",
     "type": "past",
-    "score": 71,
+    "score": 73,
     "weather": "sunny",
     "tide": "大潮",
     "trend": "hot",
@@ -1856,25 +1856,25 @@
   {
     "date": "2025/07/26",
     "type": "past",
-    "score": 86,
+    "score": 79,
     "weather": "sunny",
     "tide": "大潮",
-    "trend": "fire",
+    "trend": "hot",
     "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
   },
   {
     "date": "2025/07/27",
     "type": "past",
-    "score": 88,
+    "score": 79,
     "weather": "sunny",
     "tide": "大潮",
-    "trend": "fire",
+    "trend": "hot",
     "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
   },
   {
     "date": "2025/07/28",
     "type": "past",
-    "score": 85,
+    "score": 80,
     "weather": "sunny",
     "tide": "大潮",
     "trend": "fire",
@@ -1883,10 +1883,10 @@
   {
     "date": "2025/07/29",
     "type": "past",
-    "score": 58,
+    "score": 68,
     "weather": "sunny",
     "tide": "中潮",
-    "trend": "normal",
+    "trend": "hot",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
@@ -1901,113 +1901,95 @@
   {
     "date": "2025/07/31",
     "type": "past",
-    "score": 84,
+    "score": 79,
     "weather": "cloudy",
     "tide": "中潮",
-    "trend": "fire",
+    "trend": "hot",
     "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
   },
   {
     "date": "2025/08/01",
     "type": "past",
-    "score": 100,
+    "score": 63,
     "weather": "cloudy",
     "tide": "小潮",
-    "trend": "fire",
-    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
+    "trend": "hot",
+    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2025/08/02",
     "type": "past",
-    "score": 96,
+    "score": 68,
     "weather": "cloudy",
     "tide": "小潮",
-    "trend": "fire",
-    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
+    "trend": "hot",
+    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2025/08/03",
     "type": "past",
-    "score": 100,
+    "score": 74,
     "weather": "sunny",
     "tide": "小潮",
-    "trend": "fire",
+    "trend": "hot",
     "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
   },
   {
     "date": "2025/08/04",
     "type": "past",
-    "score": 100,
+    "score": 65,
     "weather": "sunny",
     "tide": "長潮",
-    "trend": "fire",
-    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
+    "trend": "hot",
+    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2025/08/05",
     "type": "past",
-    "score": 100,
+    "score": 48,
     "weather": "sunny",
     "tide": "若潮",
-    "trend": "fire",
-    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
+    "trend": "normal",
+    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2025/08/06",
     "type": "past",
-    "score": 84,
+    "score": 59,
     "weather": "sunny",
     "tide": "中潮",
-    "trend": "fire",
-    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
+    "trend": "normal",
+    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2025/08/07",
     "type": "past",
-    "score": 100,
+    "score": 69,
     "weather": "cloudy",
     "tide": "中潮",
-    "trend": "fire",
-    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
+    "trend": "hot",
+    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2025/08/08",
     "type": "past",
-    "score": 100,
+    "score": 63,
     "weather": "sunny",
     "tide": "中潮",
-    "trend": "fire",
-    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
+    "trend": "hot",
+    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2025/08/09",
     "type": "past",
-    "score": 96,
+    "score": 68,
     "weather": "cloudy",
     "tide": "大潮",
-    "trend": "fire",
-    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
+    "trend": "hot",
+    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2025/08/10",
-    "type": "past",
-    "score": 100,
-    "weather": "cloudy",
-    "tide": "大潮",
-    "trend": "fire",
-    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
-  },
-  {
-    "date": "2025/08/11",
-    "type": "past",
-    "score": 98,
-    "weather": "cloudy",
-    "tide": "大潮",
-    "trend": "fire",
-    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
-  },
-  {
-    "date": "2025/08/12",
     "type": "past",
     "score": 74,
     "weather": "cloudy",
@@ -2016,72 +1998,90 @@
     "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
   },
   {
+    "date": "2025/08/11",
+    "type": "past",
+    "score": 63,
+    "weather": "cloudy",
+    "tide": "大潮",
+    "trend": "hot",
+    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+  },
+  {
+    "date": "2025/08/12",
+    "type": "past",
+    "score": 50,
+    "weather": "cloudy",
+    "tide": "大潮",
+    "trend": "normal",
+    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+  },
+  {
     "date": "2025/08/13",
     "type": "past",
-    "score": 87,
+    "score": 66,
     "weather": "cloudy",
     "tide": "中潮",
-    "trend": "fire",
-    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
+    "trend": "hot",
+    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2025/08/14",
     "type": "past",
-    "score": 77,
+    "score": 70,
     "weather": "sunny",
     "tide": "中潮",
     "trend": "hot",
-    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
+    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2025/08/15",
     "type": "past",
-    "score": 96,
+    "score": 57,
     "weather": "sunny",
     "tide": "中潮",
-    "trend": "fire",
-    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
+    "trend": "normal",
+    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2025/08/16",
     "type": "past",
-    "score": 94,
+    "score": 67,
     "weather": "cloudy",
     "tide": "小潮",
-    "trend": "fire",
-    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
+    "trend": "hot",
+    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2025/08/17",
     "type": "past",
-    "score": 89,
+    "score": 69,
     "weather": "cloudy",
     "tide": "小潮",
-    "trend": "fire",
-    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
+    "trend": "hot",
+    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2025/08/18",
     "type": "past",
-    "score": 98,
+    "score": 63,
     "weather": "cloudy",
     "tide": "小潮",
-    "trend": "fire",
-    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
+    "trend": "hot",
+    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2025/08/19",
     "type": "past",
-    "score": 64,
+    "score": 50,
     "weather": "sunny",
     "tide": "長潮",
-    "trend": "hot",
+    "trend": "normal",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2025/08/20",
     "type": "past",
-    "score": 64,
+    "score": 66,
     "weather": "sunny",
     "tide": "若潮",
     "trend": "hot",
@@ -2090,38 +2090,38 @@
   {
     "date": "2025/08/21",
     "type": "past",
-    "score": 81,
+    "score": 74,
     "weather": "sunny",
     "tide": "中潮",
-    "trend": "fire",
+    "trend": "hot",
     "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
   },
   {
     "date": "2025/08/22",
     "type": "past",
-    "score": 80,
+    "score": 71,
     "weather": "sunny",
     "tide": "中潮",
-    "trend": "fire",
+    "trend": "hot",
     "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
   },
   {
     "date": "2025/08/23",
     "type": "past",
-    "score": 84,
+    "score": 73,
     "weather": "sunny",
     "tide": "中潮",
-    "trend": "fire",
+    "trend": "hot",
     "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
   },
   {
     "date": "2025/08/24",
     "type": "past",
-    "score": 68,
+    "score": 71,
     "weather": "sunny",
     "tide": "大潮",
     "trend": "hot",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
   },
   {
     "date": "2025/08/25",
@@ -2135,61 +2135,61 @@
   {
     "date": "2025/08/26",
     "type": "past",
-    "score": 70,
+    "score": 73,
     "weather": "sunny",
     "tide": "大潮",
     "trend": "hot",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
   },
   {
     "date": "2025/08/27",
     "type": "past",
-    "score": 39,
+    "score": 57,
     "weather": "sunny",
     "tide": "中潮",
-    "trend": "bad",
+    "trend": "normal",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2025/08/28",
     "type": "past",
-    "score": 86,
+    "score": 74,
     "weather": "cloudy",
     "tide": "中潮",
-    "trend": "fire",
+    "trend": "hot",
     "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
   },
   {
     "date": "2025/08/29",
     "type": "past",
-    "score": 80,
+    "score": 71,
     "weather": "sunny",
     "tide": "中潮",
-    "trend": "fire",
+    "trend": "hot",
     "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
   },
   {
     "date": "2025/08/30",
     "type": "past",
-    "score": 84,
+    "score": 73,
     "weather": "sunny",
     "tide": "小潮",
-    "trend": "fire",
+    "trend": "hot",
     "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
   },
   {
     "date": "2025/08/31",
     "type": "past",
-    "score": 68,
+    "score": 71,
     "weather": "sunny",
     "tide": "小潮",
     "trend": "hot",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
   },
   {
     "date": "2025/09/01",
     "type": "past",
-    "score": 84,
+    "score": 83,
     "weather": "sunny",
     "tide": "小潮",
     "trend": "fire",
@@ -2198,7 +2198,7 @@
   {
     "date": "2025/09/02",
     "type": "past",
-    "score": 79,
+    "score": 73,
     "weather": "sunny",
     "tide": "長潮",
     "trend": "hot",
@@ -2207,25 +2207,25 @@
   {
     "date": "2025/09/03",
     "type": "past",
-    "score": 80,
+    "score": 79,
     "weather": "sunny",
     "tide": "若潮",
-    "trend": "fire",
+    "trend": "hot",
     "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
   },
   {
     "date": "2025/09/04",
     "type": "past",
-    "score": 69,
+    "score": 72,
     "weather": "cloudy",
     "tide": "中潮",
     "trend": "hot",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
   },
   {
     "date": "2025/09/05",
     "type": "past",
-    "score": 100,
+    "score": 84,
     "weather": "rain",
     "tide": "中潮",
     "trend": "fire",
@@ -2234,7 +2234,7 @@
   {
     "date": "2025/09/06",
     "type": "past",
-    "score": 100,
+    "score": 86,
     "weather": "sunny",
     "tide": "中潮",
     "trend": "fire",
@@ -2243,7 +2243,7 @@
   {
     "date": "2025/09/07",
     "type": "past",
-    "score": 89,
+    "score": 85,
     "weather": "sunny",
     "tide": "中潮",
     "trend": "fire",
@@ -2252,7 +2252,7 @@
   {
     "date": "2025/09/08",
     "type": "past",
-    "score": 84,
+    "score": 83,
     "weather": "sunny",
     "tide": "大潮",
     "trend": "fire",
@@ -2261,43 +2261,43 @@
   {
     "date": "2025/09/09",
     "type": "past",
-    "score": 100,
+    "score": 73,
     "weather": "cloudy",
     "tide": "大潮",
-    "trend": "fire",
+    "trend": "hot",
     "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
   },
   {
     "date": "2025/09/10",
     "type": "past",
-    "score": 100,
+    "score": 79,
     "weather": "cloudy",
     "tide": "大潮",
-    "trend": "fire",
+    "trend": "hot",
     "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
   },
   {
     "date": "2025/09/11",
     "type": "past",
-    "score": 44,
+    "score": 65,
     "weather": "cloudy",
     "tide": "中潮",
-    "trend": "normal",
+    "trend": "hot",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2025/09/12",
     "type": "past",
-    "score": 38,
+    "score": 81,
     "weather": "cloudy",
     "tide": "中潮",
-    "trend": "bad",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+    "trend": "fire",
+    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
   },
   {
     "date": "2025/09/13",
     "type": "past",
-    "score": 60,
+    "score": 70,
     "weather": "cloudy",
     "tide": "中潮",
     "trend": "hot",
@@ -2306,61 +2306,61 @@
   {
     "date": "2025/09/14",
     "type": "past",
-    "score": 37,
+    "score": 82,
     "weather": "cloudy",
     "tide": "小潮",
-    "trend": "bad",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+    "trend": "fire",
+    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
   },
   {
     "date": "2025/09/15",
     "type": "past",
-    "score": 58,
+    "score": 67,
     "weather": "cloudy",
     "tide": "小潮",
-    "trend": "normal",
+    "trend": "hot",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2025/09/16",
     "type": "past",
-    "score": 59,
+    "score": 85,
     "weather": "cloudy",
     "tide": "小潮",
-    "trend": "normal",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+    "trend": "fire",
+    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
   },
   {
     "date": "2025/09/17",
     "type": "past",
-    "score": 58,
+    "score": 85,
     "weather": "sunny",
     "tide": "長潮",
-    "trend": "normal",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+    "trend": "fire",
+    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
   },
   {
     "date": "2025/09/18",
     "type": "past",
-    "score": 44,
+    "score": 65,
     "weather": "cloudy",
     "tide": "若潮",
-    "trend": "normal",
+    "trend": "hot",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2025/09/19",
     "type": "past",
-    "score": 38,
+    "score": 81,
     "weather": "cloudy",
     "tide": "中潮",
-    "trend": "bad",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+    "trend": "fire",
+    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
   },
   {
     "date": "2025/09/20",
     "type": "past",
-    "score": 60,
+    "score": 70,
     "weather": "cloudy",
     "tide": "中潮",
     "trend": "hot",
@@ -2369,115 +2369,115 @@
   {
     "date": "2025/09/21",
     "type": "past",
-    "score": 36,
+    "score": 69,
     "weather": "cloudy",
     "tide": "中潮",
-    "trend": "bad",
+    "trend": "hot",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2025/09/22",
     "type": "past",
-    "score": 35,
+    "score": 84,
     "weather": "sunny",
     "tide": "大潮",
-    "trend": "bad",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+    "trend": "fire",
+    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
   },
   {
     "date": "2025/09/23",
     "type": "past",
-    "score": 55,
+    "score": 83,
     "weather": "cloudy",
     "tide": "大潮",
-    "trend": "normal",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+    "trend": "fire",
+    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
   },
   {
     "date": "2025/09/24",
     "type": "past",
-    "score": 29,
+    "score": 64,
     "weather": "sunny",
     "tide": "大潮",
-    "trend": "bad",
+    "trend": "hot",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2025/09/25",
     "type": "past",
-    "score": 37,
+    "score": 64,
     "weather": "cloudy",
     "tide": "大潮",
-    "trend": "bad",
+    "trend": "hot",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2025/09/26",
     "type": "past",
-    "score": 36,
+    "score": 72,
     "weather": "sunny",
     "tide": "中潮",
-    "trend": "bad",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+    "trend": "hot",
+    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
   },
   {
     "date": "2025/09/27",
     "type": "past",
-    "score": 45,
+    "score": 70,
     "weather": "cloudy",
     "tide": "中潮",
-    "trend": "normal",
+    "trend": "hot",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2025/09/28",
     "type": "past",
-    "score": 36,
+    "score": 69,
     "weather": "cloudy",
     "tide": "中潮",
-    "trend": "bad",
+    "trend": "hot",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2025/09/29",
     "type": "past",
-    "score": 52,
+    "score": 84,
     "weather": "cloudy",
     "tide": "小潮",
-    "trend": "normal",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+    "trend": "fire",
+    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
   },
   {
     "date": "2025/09/30",
     "type": "past",
-    "score": 55,
+    "score": 83,
     "weather": "cloudy",
     "tide": "小潮",
-    "trend": "normal",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+    "trend": "fire",
+    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
   },
   {
     "date": "2025/10/01",
     "type": "past",
-    "score": 34,
+    "score": 61,
     "weather": "rain",
     "tide": "小潮",
-    "trend": "bad",
+    "trend": "hot",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2025/10/02",
     "type": "past",
-    "score": 27,
+    "score": 58,
     "weather": "sunny",
     "tide": "長潮",
-    "trend": "bad",
+    "trend": "normal",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2025/10/03",
     "type": "past",
-    "score": 42,
+    "score": 58,
     "weather": "cloudy",
     "tide": "若潮",
     "trend": "normal",
@@ -2486,25 +2486,25 @@
   {
     "date": "2025/10/04",
     "type": "past",
-    "score": 37,
-    "weather": "cloudy",
-    "tide": "中潮",
-    "trend": "bad",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
-  },
-  {
-    "date": "2025/10/05",
-    "type": "past",
-    "score": 41,
+    "score": 48,
     "weather": "cloudy",
     "tide": "中潮",
     "trend": "normal",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
+    "date": "2025/10/05",
+    "type": "past",
+    "score": 62,
+    "weather": "cloudy",
+    "tide": "中潮",
+    "trend": "hot",
+    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+  },
+  {
     "date": "2025/10/06",
     "type": "past",
-    "score": 41,
+    "score": 58,
     "weather": "cloudy",
     "tide": "中潮",
     "trend": "normal",
@@ -2513,7 +2513,7 @@
   {
     "date": "2025/10/07",
     "type": "past",
-    "score": 41,
+    "score": 59,
     "weather": "cloudy",
     "tide": "大潮",
     "trend": "normal",
@@ -2522,25 +2522,25 @@
   {
     "date": "2025/10/08",
     "type": "past",
-    "score": 36,
+    "score": 61,
     "weather": "cloudy",
     "tide": "大潮",
-    "trend": "bad",
+    "trend": "hot",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2025/10/09",
     "type": "past",
-    "score": 38,
+    "score": 58,
     "weather": "cloudy",
     "tide": "大潮",
-    "trend": "bad",
+    "trend": "normal",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2025/10/10",
     "type": "past",
-    "score": 42,
+    "score": 58,
     "weather": "cloudy",
     "tide": "大潮",
     "trend": "normal",
@@ -2549,97 +2549,97 @@
   {
     "date": "2025/10/11",
     "type": "past",
-    "score": 33,
+    "score": 44,
     "weather": "rain",
     "tide": "中潮",
-    "trend": "bad",
+    "trend": "normal",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2025/10/12",
     "type": "past",
-    "score": 38,
+    "score": 62,
     "weather": "cloudy",
     "tide": "中潮",
-    "trend": "bad",
+    "trend": "hot",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2025/10/13",
     "type": "past",
-    "score": 36,
+    "score": 58,
     "weather": "cloudy",
     "tide": "中潮",
-    "trend": "bad",
+    "trend": "normal",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2025/10/14",
     "type": "past",
-    "score": 26,
+    "score": 44,
     "weather": "cloudy",
     "tide": "小潮",
-    "trend": "bad",
+    "trend": "normal",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2025/10/15",
     "type": "past",
-    "score": 34,
+    "score": 58,
     "weather": "cloudy",
     "tide": "小潮",
-    "trend": "bad",
+    "trend": "normal",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2025/10/16",
     "type": "past",
-    "score": 39,
+    "score": 62,
     "weather": "cloudy",
     "tide": "小潮",
-    "trend": "bad",
+    "trend": "hot",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2025/10/17",
     "type": "past",
-    "score": 25,
+    "score": 46,
     "weather": "sunny",
     "tide": "長潮",
-    "trend": "bad",
+    "trend": "normal",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2025/10/18",
     "type": "past",
-    "score": 30,
+    "score": 44,
     "weather": "sunny",
     "tide": "若潮",
-    "trend": "bad",
+    "trend": "normal",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2025/10/19",
     "type": "past",
-    "score": 38,
+    "score": 62,
     "weather": "cloudy",
     "tide": "中潮",
-    "trend": "bad",
+    "trend": "hot",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2025/10/20",
     "type": "past",
-    "score": 36,
+    "score": 58,
     "weather": "cloudy",
     "tide": "中潮",
-    "trend": "bad",
+    "trend": "normal",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2025/10/21",
     "type": "past",
-    "score": 55,
+    "score": 48,
     "weather": "cloudy",
     "tide": "中潮",
     "trend": "normal",
@@ -2648,7 +2648,7 @@
   {
     "date": "2025/10/22",
     "type": "past",
-    "score": 63,
+    "score": 62,
     "weather": "cloudy",
     "tide": "大潮",
     "trend": "hot",
@@ -2657,7 +2657,7 @@
   {
     "date": "2025/10/23",
     "type": "past",
-    "score": 66,
+    "score": 61,
     "weather": "cloudy",
     "tide": "大潮",
     "trend": "hot",
@@ -2666,7 +2666,7 @@
   {
     "date": "2025/10/24",
     "type": "past",
-    "score": 48,
+    "score": 51,
     "weather": "cloudy",
     "tide": "大潮",
     "trend": "normal",
@@ -2675,7 +2675,7 @@
   {
     "date": "2025/10/25",
     "type": "past",
-    "score": 41,
+    "score": 46,
     "weather": "cloudy",
     "tide": "大潮",
     "trend": "normal",
@@ -2684,7 +2684,7 @@
   {
     "date": "2025/10/26",
     "type": "past",
-    "score": 48,
+    "score": 50,
     "weather": "cloudy",
     "tide": "中潮",
     "trend": "normal",
@@ -2702,7 +2702,7 @@
   {
     "date": "2025/10/28",
     "type": "past",
-    "score": 55,
+    "score": 48,
     "weather": "cloudy",
     "tide": "中潮",
     "trend": "normal",
@@ -2711,7 +2711,7 @@
   {
     "date": "2025/10/29",
     "type": "past",
-    "score": 63,
+    "score": 62,
     "weather": "cloudy",
     "tide": "小潮",
     "trend": "hot",
@@ -2720,7 +2720,7 @@
   {
     "date": "2025/10/30",
     "type": "past",
-    "score": 66,
+    "score": 61,
     "weather": "sunny",
     "tide": "小潮",
     "trend": "hot",
@@ -2729,7 +2729,7 @@
   {
     "date": "2025/10/31",
     "type": "past",
-    "score": 48,
+    "score": 51,
     "weather": "cloudy",
     "tide": "小潮",
     "trend": "normal",
@@ -2738,7 +2738,7 @@
   {
     "date": "2025/11/01",
     "type": "past",
-    "score": 44,
+    "score": 55,
     "weather": "sunny",
     "tide": "長潮",
     "trend": "normal",
@@ -2747,25 +2747,25 @@
   {
     "date": "2025/11/02",
     "type": "past",
-    "score": 50,
+    "score": 61,
     "weather": "sunny",
     "tide": "若潮",
-    "trend": "normal",
+    "trend": "hot",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2025/11/03",
     "type": "past",
-    "score": 23,
+    "score": 59,
     "weather": "sunny",
     "tide": "中潮",
-    "trend": "bad",
+    "trend": "normal",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2025/11/04",
     "type": "past",
-    "score": 46,
+    "score": 55,
     "weather": "cloudy",
     "tide": "中潮",
     "trend": "normal",
@@ -2774,34 +2774,34 @@
   {
     "date": "2025/11/05",
     "type": "past",
-    "score": 39,
+    "score": 59,
     "weather": "sunny",
     "tide": "中潮",
-    "trend": "bad",
+    "trend": "normal",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2025/11/06",
     "type": "past",
-    "score": 32,
+    "score": 48,
     "weather": "cloudy",
     "tide": "大潮",
-    "trend": "bad",
+    "trend": "normal",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2025/11/07",
     "type": "past",
-    "score": 31,
+    "score": 42,
     "weather": "sunny",
     "tide": "大潮",
-    "trend": "bad",
+    "trend": "normal",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2025/11/08",
     "type": "past",
-    "score": 44,
+    "score": 55,
     "weather": "sunny",
     "tide": "大潮",
     "trend": "normal",
@@ -2810,52 +2810,52 @@
   {
     "date": "2025/11/09",
     "type": "past",
-    "score": 50,
+    "score": 61,
     "weather": "cloudy",
     "tide": "大潮",
-    "trend": "normal",
+    "trend": "hot",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2025/11/10",
     "type": "past",
-    "score": 37,
+    "score": 59,
     "weather": "cloudy",
     "tide": "中潮",
-    "trend": "bad",
+    "trend": "normal",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2025/11/11",
     "type": "past",
-    "score": 86,
+    "score": 61,
     "weather": "sunny",
     "tide": "中潮",
-    "trend": "fire",
-    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
+    "trend": "hot",
+    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2025/11/12",
     "type": "past",
-    "score": 77,
+    "score": 54,
     "weather": "sunny",
     "tide": "中潮",
-    "trend": "hot",
-    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
+    "trend": "normal",
+    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2025/11/13",
     "type": "past",
-    "score": 67,
+    "score": 46,
     "weather": "cloudy",
     "tide": "小潮",
-    "trend": "hot",
+    "trend": "normal",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2025/11/14",
     "type": "past",
-    "score": 55,
+    "score": 52,
     "weather": "sunny",
     "tide": "小潮",
     "trend": "normal",
@@ -2864,25 +2864,25 @@
   {
     "date": "2025/11/15",
     "type": "past",
-    "score": 79,
+    "score": 57,
     "weather": "cloudy",
     "tide": "小潮",
-    "trend": "hot",
-    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
+    "trend": "normal",
+    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2025/11/16",
     "type": "past",
-    "score": 64,
+    "score": 50,
     "weather": "cloudy",
     "tide": "長潮",
-    "trend": "hot",
+    "trend": "normal",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2025/11/17",
     "type": "past",
-    "score": 57,
+    "score": 59,
     "weather": "sunny",
     "tide": "若潮",
     "trend": "normal",
@@ -2891,52 +2891,52 @@
   {
     "date": "2025/11/18",
     "type": "past",
-    "score": 89,
+    "score": 61,
     "weather": "cloudy",
     "tide": "中潮",
-    "trend": "fire",
-    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
+    "trend": "hot",
+    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2025/11/19",
     "type": "past",
-    "score": 77,
+    "score": 54,
     "weather": "sunny",
     "tide": "中潮",
-    "trend": "hot",
-    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
+    "trend": "normal",
+    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2025/11/20",
     "type": "past",
-    "score": 67,
+    "score": 46,
     "weather": "cloudy",
     "tide": "大潮",
-    "trend": "hot",
+    "trend": "normal",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2025/11/21",
     "type": "past",
-    "score": 30,
-    "weather": "sunny",
-    "tide": "大潮",
-    "trend": "bad",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
-  },
-  {
-    "date": "2025/11/22",
-    "type": "past",
-    "score": 49,
+    "score": 58,
     "weather": "sunny",
     "tide": "大潮",
     "trend": "normal",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
+    "date": "2025/11/22",
+    "type": "past",
+    "score": 61,
+    "weather": "sunny",
+    "tide": "大潮",
+    "trend": "hot",
+    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+  },
+  {
     "date": "2025/11/23",
     "type": "past",
-    "score": 42,
+    "score": 49,
     "weather": "cloudy",
     "tide": "大潮",
     "trend": "normal",
@@ -2945,16 +2945,16 @@
   {
     "date": "2025/11/24",
     "type": "past",
-    "score": 49,
+    "score": 61,
     "weather": "sunny",
     "tide": "中潮",
-    "trend": "normal",
+    "trend": "hot",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2025/11/25",
     "type": "past",
-    "score": 45,
+    "score": 51,
     "weather": "cloudy",
     "tide": "中潮",
     "trend": "normal",
@@ -2963,25 +2963,25 @@
   {
     "date": "2025/11/26",
     "type": "past",
-    "score": 18,
+    "score": 60,
     "weather": "sunny",
     "tide": "中潮",
-    "trend": "bad",
+    "trend": "hot",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2025/11/27",
     "type": "past",
-    "score": 23,
+    "score": 44,
     "weather": "sunny",
     "tide": "小潮",
-    "trend": "bad",
+    "trend": "normal",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2025/11/28",
     "type": "past",
-    "score": 49,
+    "score": 58,
     "weather": "cloudy",
     "tide": "小潮",
     "trend": "normal",
@@ -2990,34 +2990,34 @@
   {
     "date": "2025/11/29",
     "type": "past",
-    "score": 49,
+    "score": 61,
     "weather": "sunny",
     "tide": "小潮",
-    "trend": "normal",
+    "trend": "hot",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2025/11/30",
     "type": "past",
-    "score": 30,
+    "score": 49,
     "weather": "sunny",
     "tide": "長潮",
-    "trend": "bad",
+    "trend": "normal",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2025/12/01",
     "type": "past",
-    "score": 40,
+    "score": 65,
     "weather": "sunny",
     "tide": "若潮",
-    "trend": "normal",
+    "trend": "hot",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2025/12/02",
     "type": "past",
-    "score": 47,
+    "score": 55,
     "weather": "cloudy",
     "tide": "中潮",
     "trend": "normal",
@@ -3026,1472 +3026,878 @@
   {
     "date": "2025/12/03",
     "type": "past",
-    "score": 44,
+    "score": 60,
     "weather": "cloudy",
     "tide": "中潮",
-    "trend": "normal",
+    "trend": "hot",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2025/12/04",
     "type": "past",
-    "score": 24,
+    "score": 41,
     "weather": "sunny",
     "tide": "中潮",
-    "trend": "bad",
+    "trend": "normal",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2025/12/05",
     "type": "past",
-    "score": 47,
+    "score": 61,
     "weather": "sunny",
     "tide": "大潮",
-    "trend": "normal",
+    "trend": "hot",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2025/12/06",
     "type": "past",
-    "score": 49,
+    "score": 62,
     "weather": "sunny",
     "tide": "大潮",
-    "trend": "normal",
+    "trend": "hot",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2025/12/07",
     "type": "past",
-    "score": 39,
+    "score": 53,
     "weather": "sunny",
     "tide": "大潮",
-    "trend": "bad",
+    "trend": "normal",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2025/12/08",
     "type": "past",
-    "score": 40,
+    "score": 65,
     "weather": "sunny",
     "tide": "大潮",
-    "trend": "normal",
+    "trend": "hot",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2025/12/09",
     "type": "past",
-    "score": 32,
+    "score": 55,
     "weather": "sunny",
     "tide": "中潮",
-    "trend": "bad",
+    "trend": "normal",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2025/12/10",
     "type": "past",
-    "score": 32,
+    "score": 60,
     "weather": "sunny",
     "tide": "中潮",
-    "trend": "bad",
+    "trend": "hot",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2025/12/11",
     "type": "past",
-    "score": 89,
+    "score": 60,
     "weather": "cloudy",
     "tide": "中潮",
-    "trend": "fire",
-    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
+    "trend": "hot",
+    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2025/12/12",
     "type": "past",
-    "score": 89,
+    "score": 64,
     "weather": "sunny",
     "tide": "小潮",
-    "trend": "fire",
-    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
+    "trend": "hot",
+    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2025/12/13",
     "type": "past",
-    "score": 90,
+    "score": 64,
     "weather": "cloudy",
     "tide": "小潮",
-    "trend": "fire",
-    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
+    "trend": "hot",
+    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2025/12/14",
     "type": "past",
-    "score": 90,
+    "score": 64,
     "weather": "cloudy",
     "tide": "小潮",
-    "trend": "fire",
-    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
+    "trend": "hot",
+    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2025/12/15",
     "type": "past",
-    "score": 87,
+    "score": 63,
     "weather": "sunny",
     "tide": "長潮",
-    "trend": "fire",
-    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
+    "trend": "hot",
+    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2025/12/16",
     "type": "past",
-    "score": 66,
+    "score": 58,
     "weather": "sunny",
     "tide": "若潮",
-    "trend": "hot",
+    "trend": "normal",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2025/12/17",
     "type": "past",
-    "score": 87,
+    "score": 60,
     "weather": "cloudy",
     "tide": "中潮",
-    "trend": "fire",
-    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
+    "trend": "hot",
+    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2025/12/18",
     "type": "past",
-    "score": 83,
+    "score": 60,
     "weather": "sunny",
     "tide": "中潮",
-    "trend": "fire",
-    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
+    "trend": "hot",
+    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2025/12/19",
     "type": "past",
-    "score": 89,
+    "score": 64,
     "weather": "sunny",
     "tide": "中潮",
-    "trend": "fire",
-    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
+    "trend": "hot",
+    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2025/12/20",
     "type": "past",
-    "score": 90,
+    "score": 64,
     "weather": "cloudy",
     "tide": "大潮",
-    "trend": "fire",
-    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
+    "trend": "hot",
+    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2025/12/21",
     "type": "past",
-    "score": 58,
+    "score": 63,
     "weather": "cloudy",
     "tide": "大潮",
-    "trend": "normal",
+    "trend": "hot",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2025/12/22",
     "type": "past",
-    "score": 58,
+    "score": 63,
     "weather": "cloudy",
     "tide": "大潮",
-    "trend": "normal",
+    "trend": "hot",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2025/12/23",
     "type": "past",
-    "score": 55,
+    "score": 65,
     "weather": "sunny",
     "tide": "大潮",
-    "trend": "normal",
+    "trend": "hot",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2025/12/24",
     "type": "past",
-    "score": 57,
+    "score": 63,
     "weather": "cloudy",
     "tide": "中潮",
-    "trend": "normal",
+    "trend": "hot",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2025/12/25",
     "type": "past",
-    "score": 58,
+    "score": 63,
     "weather": "cloudy",
     "tide": "中潮",
-    "trend": "normal",
+    "trend": "hot",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2025/12/26",
     "type": "past",
-    "score": 59,
+    "score": 64,
     "weather": "cloudy",
     "tide": "中潮",
-    "trend": "normal",
+    "trend": "hot",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2025/12/27",
     "type": "past",
-    "score": 52,
+    "score": 62,
     "weather": "sunny",
     "tide": "小潮",
-    "trend": "normal",
+    "trend": "hot",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2025/12/28",
     "type": "past",
-    "score": 57,
+    "score": 63,
     "weather": "sunny",
     "tide": "小潮",
-    "trend": "normal",
+    "trend": "hot",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2025/12/29",
     "type": "past",
-    "score": 57,
+    "score": 63,
     "weather": "sunny",
     "tide": "小潮",
-    "trend": "normal",
+    "trend": "hot",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2025/12/30",
     "type": "past",
-    "score": 55,
+    "score": 65,
     "weather": "sunny",
     "tide": "長潮",
-    "trend": "normal",
+    "trend": "hot",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2025/12/31",
     "type": "past",
-    "score": 57,
+    "score": 63,
     "weather": "cloudy",
     "tide": "若潮",
-    "trend": "normal",
+    "trend": "hot",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2026/01/01",
     "type": "past",
-    "score": 20,
+    "score": 67,
     "weather": "cloudy",
     "tide": "中潮",
-    "trend": "bad",
+    "trend": "hot",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2026/01/02",
     "type": "past",
-    "score": 20,
+    "score": 65,
     "weather": "sunny",
     "tide": "中潮",
-    "trend": "bad",
+    "trend": "hot",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2026/01/03",
     "type": "past",
-    "score": 17,
+    "score": 61,
     "weather": "sunny",
     "tide": "中潮",
-    "trend": "bad",
+    "trend": "hot",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2026/01/04",
     "type": "past",
-    "score": 10,
+    "score": 55,
     "weather": "sunny",
     "tide": "大潮",
-    "trend": "bad",
+    "trend": "normal",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2026/01/05",
     "type": "past",
-    "score": 20,
+    "score": 64,
     "weather": "cloudy",
     "tide": "大潮",
-    "trend": "bad",
+    "trend": "hot",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2026/01/06",
     "type": "past",
-    "score": 21,
+    "score": 55,
     "weather": "cloudy",
     "tide": "大潮",
-    "trend": "bad",
+    "trend": "normal",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2026/01/07",
     "type": "past",
-    "score": 20,
+    "score": 63,
     "weather": "cloudy",
     "tide": "大潮",
-    "trend": "bad",
+    "trend": "hot",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2026/01/08",
     "type": "past",
-    "score": 20,
+    "score": 67,
     "weather": "cloudy",
     "tide": "中潮",
-    "trend": "bad",
+    "trend": "hot",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2026/01/09",
     "type": "past",
-    "score": 20,
+    "score": 65,
     "weather": "sunny",
     "tide": "中潮",
-    "trend": "bad",
+    "trend": "hot",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2026/01/10",
     "type": "past",
-    "score": 17,
+    "score": 61,
     "weather": "sunny",
     "tide": "中潮",
-    "trend": "bad",
+    "trend": "hot",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2026/01/11",
     "type": "past",
-    "score": 26,
+    "score": 64,
     "weather": "cloudy",
     "tide": "小潮",
-    "trend": "bad",
+    "trend": "hot",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2026/01/12",
     "type": "past",
-    "score": 27,
+    "score": 67,
     "weather": "sunny",
     "tide": "小潮",
-    "trend": "bad",
+    "trend": "hot",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2026/01/13",
     "type": "past",
-    "score": 27,
+    "score": 66,
     "weather": "sunny",
     "tide": "小潮",
-    "trend": "bad",
+    "trend": "hot",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2026/01/14",
     "type": "past",
-    "score": 26,
+    "score": 62,
     "weather": "sunny",
     "tide": "長潮",
-    "trend": "bad",
+    "trend": "hot",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2026/01/15",
     "type": "past",
-    "score": 27,
+    "score": 63,
     "weather": "sunny",
     "tide": "若潮",
-    "trend": "bad",
+    "trend": "hot",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2026/01/16",
     "type": "past",
-    "score": 27,
+    "score": 66,
     "weather": "sunny",
     "tide": "中潮",
-    "trend": "bad",
+    "trend": "hot",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2026/01/17",
     "type": "past",
-    "score": 27,
+    "score": 64,
     "weather": "sunny",
     "tide": "中潮",
-    "trend": "bad",
+    "trend": "hot",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2026/01/18",
     "type": "past",
-    "score": 26,
+    "score": 64,
     "weather": "cloudy",
     "tide": "大潮",
-    "trend": "bad",
+    "trend": "hot",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2026/01/19",
     "type": "past",
-    "score": 28,
+    "score": 67,
     "weather": "cloudy",
     "tide": "大潮",
-    "trend": "bad",
+    "trend": "hot",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2026/01/20",
     "type": "past",
-    "score": 27,
+    "score": 66,
     "weather": "sunny",
     "tide": "大潮",
-    "trend": "bad",
+    "trend": "hot",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2026/01/21",
     "type": "past",
-    "score": 21,
+    "score": 56,
     "weather": "cloudy",
     "tide": "大潮",
-    "trend": "bad",
+    "trend": "normal",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2026/01/22",
     "type": "past",
-    "score": 23,
+    "score": 64,
     "weather": "sunny",
     "tide": "中潮",
-    "trend": "bad",
+    "trend": "hot",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2026/01/23",
     "type": "past",
-    "score": 22,
+    "score": 55,
     "weather": "sunny",
     "tide": "中潮",
-    "trend": "bad",
+    "trend": "normal",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2026/01/24",
     "type": "past",
-    "score": 24,
+    "score": 60,
     "weather": "sunny",
     "tide": "中潮",
-    "trend": "bad",
+    "trend": "hot",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2026/01/25",
     "type": "past",
-    "score": 22,
+    "score": 64,
     "weather": "sunny",
     "tide": "小潮",
-    "trend": "bad",
+    "trend": "hot",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2026/01/26",
     "type": "past",
-    "score": 25,
+    "score": 67,
     "weather": "cloudy",
     "tide": "小潮",
-    "trend": "bad",
+    "trend": "hot",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2026/01/27",
     "type": "past",
-    "score": 24,
+    "score": 63,
     "weather": "sunny",
     "tide": "小潮",
-    "trend": "bad",
+    "trend": "hot",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2026/01/28",
     "type": "past",
-    "score": 21,
+    "score": 56,
     "weather": "cloudy",
     "tide": "長潮",
-    "trend": "bad",
+    "trend": "normal",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2026/01/29",
     "type": "past",
-    "score": 23,
+    "score": 64,
     "weather": "sunny",
     "tide": "若潮",
-    "trend": "bad",
+    "trend": "hot",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2026/01/30",
     "type": "past",
-    "score": 22,
+    "score": 55,
     "weather": "sunny",
     "tide": "中潮",
-    "trend": "bad",
+    "trend": "normal",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2026/01/31",
     "type": "past",
-    "score": 24,
+    "score": 60,
     "weather": "sunny",
     "tide": "中潮",
-    "trend": "bad",
+    "trend": "hot",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2026/02/01",
     "type": "past",
-    "score": 14,
+    "score": 71,
     "weather": "sunny",
     "tide": "中潮",
-    "trend": "bad",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+    "trend": "hot",
+    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
   },
   {
     "date": "2026/02/02",
     "type": "past",
-    "score": 19,
+    "score": 74,
     "weather": "sunny",
     "tide": "大潮",
-    "trend": "bad",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+    "trend": "hot",
+    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
   },
   {
     "date": "2026/02/03",
     "type": "past",
-    "score": 21,
+    "score": 69,
     "weather": "sunny",
     "tide": "大潮",
-    "trend": "bad",
+    "trend": "hot",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2026/02/04",
     "type": "past",
-    "score": 18,
+    "score": 69,
     "weather": "sunny",
     "tide": "大潮",
-    "trend": "bad",
+    "trend": "hot",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2026/02/05",
     "type": "past",
-    "score": 20,
+    "score": 61,
     "weather": "cloudy",
     "tide": "大潮",
-    "trend": "bad",
+    "trend": "hot",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2026/02/06",
     "type": "past",
-    "score": 18,
+    "score": 71,
     "weather": "sunny",
     "tide": "中潮",
-    "trend": "bad",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+    "trend": "hot",
+    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
   },
   {
     "date": "2026/02/07",
     "type": "past",
-    "score": 21,
+    "score": 67,
     "weather": "cloudy",
     "tide": "中潮",
-    "trend": "bad",
+    "trend": "hot",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2026/02/08",
     "type": "past",
-    "score": 18,
+    "score": 71,
     "weather": "cloudy",
     "tide": "中潮",
-    "trend": "bad",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+    "trend": "hot",
+    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
   },
   {
     "date": "2026/02/09",
     "type": "past",
-    "score": 19,
+    "score": 74,
     "weather": "sunny",
     "tide": "小潮",
-    "trend": "bad",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+    "trend": "hot",
+    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
   },
   {
     "date": "2026/02/10",
     "type": "past",
-    "score": 21,
+    "score": 69,
     "weather": "cloudy",
     "tide": "小潮",
-    "trend": "bad",
+    "trend": "hot",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2026/02/11",
     "type": "past",
-    "score": 21,
+    "score": 68,
     "weather": "cloudy",
     "tide": "小潮",
-    "trend": "bad",
+    "trend": "hot",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2026/02/12",
     "type": "past",
-    "score": 21,
+    "score": 73,
     "weather": "cloudy",
     "tide": "長潮",
-    "trend": "bad",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+    "trend": "hot",
+    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
   },
   {
     "date": "2026/02/13",
     "type": "past",
-    "score": 21,
+    "score": 72,
     "weather": "cloudy",
     "tide": "若潮",
-    "trend": "bad",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+    "trend": "hot",
+    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
   },
   {
     "date": "2026/02/14",
     "type": "past",
-    "score": 19,
+    "score": 72,
     "weather": "cloudy",
     "tide": "中潮",
-    "trend": "bad",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+    "trend": "hot",
+    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
   },
   {
     "date": "2026/02/15",
     "type": "past",
-    "score": 16,
+    "score": 67,
     "weather": "sunny",
     "tide": "中潮",
-    "trend": "bad",
+    "trend": "hot",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2026/02/16",
     "type": "past",
-    "score": 20,
+    "score": 72,
     "weather": "cloudy",
     "tide": "中潮",
-    "trend": "bad",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+    "trend": "hot",
+    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
   },
   {
     "date": "2026/02/17",
     "type": "past",
-    "score": 22,
+    "score": 73,
     "weather": "cloudy",
     "tide": "大潮",
-    "trend": "bad",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+    "trend": "hot",
+    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
   },
   {
     "date": "2026/02/18",
     "type": "past",
-    "score": 21,
+    "score": 68,
     "weather": "cloudy",
     "tide": "大潮",
-    "trend": "bad",
+    "trend": "hot",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2026/02/19",
     "type": "past",
-    "score": 20,
+    "score": 73,
     "weather": "sunny",
     "tide": "大潮",
-    "trend": "bad",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+    "trend": "hot",
+    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
   },
   {
     "date": "2026/02/20",
     "type": "past",
-    "score": 20,
+    "score": 72,
     "weather": "sunny",
     "tide": "大潮",
-    "trend": "bad",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+    "trend": "hot",
+    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
   },
   {
     "date": "2026/02/21",
     "type": "past",
-    "score": 24,
+    "score": 74,
     "weather": "sunny",
     "tide": "中潮",
-    "trend": "bad",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+    "trend": "hot",
+    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
   },
   {
     "date": "2026/02/22",
     "type": "past",
-    "score": 22,
+    "score": 71,
     "weather": "sunny",
     "tide": "中潮",
-    "trend": "bad",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+    "trend": "hot",
+    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
   },
   {
     "date": "2026/02/23",
     "type": "past",
-    "score": 21,
+    "score": 70,
     "weather": "cloudy",
     "tide": "中潮",
-    "trend": "bad",
+    "trend": "hot",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2026/02/24",
     "type": "past",
-    "score": 25,
+    "score": 75,
     "weather": "cloudy",
     "tide": "小潮",
-    "trend": "bad",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+    "trend": "hot",
+    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
   },
   {
     "date": "2026/02/25",
-    "type": "forecast",
-    "score": 25,
+    "type": "past",
+    "score": 76,
     "weather": "rain",
     "tide": "小潮",
-    "trend": "bad",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+    "trend": "hot",
+    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
   },
   {
     "date": "2026/02/26",
     "type": "forecast",
-    "score": 25,
+    "score": 76,
     "weather": "rain",
     "tide": "小潮",
-    "trend": "bad",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+    "trend": "hot",
+    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
   },
   {
     "date": "2026/02/27",
     "type": "forecast",
-    "score": 25,
+    "score": 75,
     "weather": "cloudy",
     "tide": "長潮",
-    "trend": "bad",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+    "trend": "hot",
+    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
   },
   {
     "date": "2026/02/28",
     "type": "forecast",
-    "score": 24,
+    "score": 74,
     "weather": "cloudy",
     "tide": "若潮",
-    "trend": "bad",
-    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
+    "trend": "hot",
+    "details": "AIの分析によると、神奈川県ではアジの活性が非常に高まっています。"
   },
   {
     "date": "2026/03/01",
     "type": "forecast",
-    "score": 24,
+    "score": 62,
     "weather": "cloudy",
     "tide": "中潮",
-    "trend": "bad",
+    "trend": "hot",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2026/03/02",
     "type": "forecast",
-    "score": 25,
+    "score": 66,
     "weather": "cloudy",
     "tide": "中潮",
-    "trend": "bad",
+    "trend": "hot",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2026/03/03",
     "type": "forecast",
-    "score": 25,
+    "score": 65,
     "weather": "rain",
     "tide": "中潮",
-    "trend": "bad",
+    "trend": "hot",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2026/03/04",
     "type": "forecast",
-    "score": 25,
-    "weather": "sunny",
+    "score": 63,
+    "weather": "rain",
     "tide": "大潮",
-    "trend": "bad",
+    "trend": "hot",
     "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2026/03/05",
-    "type": "base",
-    "score": 24,
+    "type": "forecast",
+    "score": 63,
     "weather": "sunny",
     "tide": "大潮",
-    "trend": "bad",
-    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
+    "trend": "hot",
+    "details": "神奈川県のアジは平年並みの推移です。潮回りを意識した釣行をおすすめします。"
   },
   {
     "date": "2026/03/06",
     "type": "base",
-    "score": 25,
+    "score": 65,
     "weather": "sunny",
     "tide": "大潮",
-    "trend": "bad",
+    "trend": "hot",
     "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
   },
   {
     "date": "2026/03/07",
     "type": "base",
-    "score": 25,
+    "score": 66,
     "weather": "sunny",
     "tide": "大潮",
-    "trend": "bad",
+    "trend": "hot",
     "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
   },
   {
     "date": "2026/03/08",
     "type": "base",
-    "score": 23,
+    "score": 62,
     "weather": "sunny",
     "tide": "中潮",
-    "trend": "bad",
+    "trend": "hot",
     "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
   },
   {
     "date": "2026/03/09",
     "type": "base",
-    "score": 24,
+    "score": 66,
     "weather": "sunny",
     "tide": "中潮",
-    "trend": "bad",
+    "trend": "hot",
     "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
   },
   {
     "date": "2026/03/10",
-    "type": "base",
-    "score": 24,
-    "weather": "sunny",
-    "tide": "中潮",
-    "trend": "bad",
-    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
-  },
-  {
-    "date": "2026/03/11",
-    "type": "base",
-    "score": 21,
-    "weather": "sunny",
-    "tide": "小潮",
-    "trend": "bad",
-    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
-  },
-  {
-    "date": "2026/03/12",
-    "type": "base",
-    "score": 21,
-    "weather": "sunny",
-    "tide": "小潮",
-    "trend": "bad",
-    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
-  },
-  {
-    "date": "2026/03/13",
-    "type": "base",
-    "score": 21,
-    "weather": "sunny",
-    "tide": "小潮",
-    "trend": "bad",
-    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
-  },
-  {
-    "date": "2026/03/14",
-    "type": "base",
-    "score": 21,
-    "weather": "sunny",
-    "tide": "長潮",
-    "trend": "bad",
-    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
-  },
-  {
-    "date": "2026/03/15",
-    "type": "base",
-    "score": 19,
-    "weather": "sunny",
-    "tide": "若潮",
-    "trend": "bad",
-    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
-  },
-  {
-    "date": "2026/03/16",
-    "type": "base",
-    "score": 17,
-    "weather": "sunny",
-    "tide": "中潮",
-    "trend": "bad",
-    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
-  },
-  {
-    "date": "2026/03/17",
-    "type": "base",
-    "score": 20,
-    "weather": "sunny",
-    "tide": "中潮",
-    "trend": "bad",
-    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
-  },
-  {
-    "date": "2026/03/18",
-    "type": "base",
-    "score": 21,
-    "weather": "sunny",
-    "tide": "大潮",
-    "trend": "bad",
-    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
-  },
-  {
-    "date": "2026/03/19",
-    "type": "base",
-    "score": 21,
-    "weather": "sunny",
-    "tide": "大潮",
-    "trend": "bad",
-    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
-  },
-  {
-    "date": "2026/03/20",
-    "type": "base",
-    "score": 21,
-    "weather": "sunny",
-    "tide": "大潮",
-    "trend": "bad",
-    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
-  },
-  {
-    "date": "2026/03/21",
-    "type": "base",
-    "score": 23,
-    "weather": "sunny",
-    "tide": "大潮",
-    "trend": "bad",
-    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
-  },
-  {
-    "date": "2026/03/22",
-    "type": "base",
-    "score": 21,
-    "weather": "sunny",
-    "tide": "中潮",
-    "trend": "bad",
-    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
-  },
-  {
-    "date": "2026/03/23",
-    "type": "base",
-    "score": 23,
-    "weather": "sunny",
-    "tide": "中潮",
-    "trend": "bad",
-    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
-  },
-  {
-    "date": "2026/03/24",
-    "type": "base",
-    "score": 23,
-    "weather": "sunny",
-    "tide": "中潮",
-    "trend": "bad",
-    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
-  },
-  {
-    "date": "2026/03/25",
-    "type": "base",
-    "score": 21,
-    "weather": "sunny",
-    "tide": "小潮",
-    "trend": "bad",
-    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
-  },
-  {
-    "date": "2026/03/26",
-    "type": "base",
-    "score": 21,
-    "weather": "sunny",
-    "tide": "小潮",
-    "trend": "bad",
-    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
-  },
-  {
-    "date": "2026/03/27",
-    "type": "base",
-    "score": 10,
-    "weather": "sunny",
-    "tide": "小潮",
-    "trend": "bad",
-    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
-  },
-  {
-    "date": "2026/03/28",
-    "type": "base",
-    "score": 23,
-    "weather": "sunny",
-    "tide": "長潮",
-    "trend": "bad",
-    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
-  },
-  {
-    "date": "2026/03/29",
-    "type": "base",
-    "score": 21,
-    "weather": "sunny",
-    "tide": "若潮",
-    "trend": "bad",
-    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
-  },
-  {
-    "date": "2026/03/30",
-    "type": "base",
-    "score": 23,
-    "weather": "sunny",
-    "tide": "中潮",
-    "trend": "bad",
-    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
-  },
-  {
-    "date": "2026/03/31",
-    "type": "base",
-    "score": 23,
-    "weather": "sunny",
-    "tide": "中潮",
-    "trend": "bad",
-    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
-  },
-  {
-    "date": "2026/04/01",
-    "type": "base",
-    "score": 100,
-    "weather": "sunny",
-    "tide": "中潮",
-    "trend": "fire",
-    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
-  },
-  {
-    "date": "2026/04/02",
-    "type": "base",
-    "score": 54,
-    "weather": "sunny",
-    "tide": "大潮",
-    "trend": "normal",
-    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
-  },
-  {
-    "date": "2026/04/03",
-    "type": "base",
-    "score": 54,
-    "weather": "sunny",
-    "tide": "大潮",
-    "trend": "normal",
-    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
-  },
-  {
-    "date": "2026/04/04",
-    "type": "base",
-    "score": 100,
-    "weather": "sunny",
-    "tide": "大潮",
-    "trend": "fire",
-    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
-  },
-  {
-    "date": "2026/04/05",
-    "type": "base",
-    "score": 100,
-    "weather": "sunny",
-    "tide": "大潮",
-    "trend": "fire",
-    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
-  },
-  {
-    "date": "2026/04/06",
-    "type": "base",
-    "score": 100,
-    "weather": "sunny",
-    "tide": "中潮",
-    "trend": "fire",
-    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
-  },
-  {
-    "date": "2026/04/07",
-    "type": "base",
-    "score": 80,
-    "weather": "sunny",
-    "tide": "中潮",
-    "trend": "fire",
-    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
-  },
-  {
-    "date": "2026/04/08",
-    "type": "base",
-    "score": 100,
-    "weather": "sunny",
-    "tide": "中潮",
-    "trend": "fire",
-    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
-  },
-  {
-    "date": "2026/04/09",
-    "type": "base",
-    "score": 54,
-    "weather": "sunny",
-    "tide": "小潮",
-    "trend": "normal",
-    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
-  },
-  {
-    "date": "2026/04/10",
-    "type": "base",
-    "score": 54,
-    "weather": "sunny",
-    "tide": "小潮",
-    "trend": "normal",
-    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
-  },
-  {
-    "date": "2026/04/11",
-    "type": "base",
-    "score": 24,
-    "weather": "sunny",
-    "tide": "小潮",
-    "trend": "bad",
-    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
-  },
-  {
-    "date": "2026/04/12",
-    "type": "base",
-    "score": 52,
-    "weather": "sunny",
-    "tide": "長潮",
-    "trend": "normal",
-    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
-  },
-  {
-    "date": "2026/04/13",
-    "type": "base",
-    "score": 66,
-    "weather": "sunny",
-    "tide": "若潮",
-    "trend": "hot",
-    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
-  },
-  {
-    "date": "2026/04/14",
-    "type": "base",
-    "score": 42,
-    "weather": "sunny",
-    "tide": "中潮",
-    "trend": "normal",
-    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
-  },
-  {
-    "date": "2026/04/15",
-    "type": "base",
-    "score": 55,
-    "weather": "sunny",
-    "tide": "中潮",
-    "trend": "normal",
-    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
-  },
-  {
-    "date": "2026/04/16",
-    "type": "base",
-    "score": 24,
-    "weather": "sunny",
-    "tide": "中潮",
-    "trend": "bad",
-    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
-  },
-  {
-    "date": "2026/04/17",
-    "type": "base",
-    "score": 35,
-    "weather": "sunny",
-    "tide": "大潮",
-    "trend": "bad",
-    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
-  },
-  {
-    "date": "2026/04/18",
-    "type": "base",
-    "score": 24,
-    "weather": "sunny",
-    "tide": "大潮",
-    "trend": "bad",
-    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
-  },
-  {
-    "date": "2026/04/19",
-    "type": "base",
-    "score": 52,
-    "weather": "sunny",
-    "tide": "大潮",
-    "trend": "normal",
-    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
-  },
-  {
-    "date": "2026/04/20",
-    "type": "base",
-    "score": 66,
-    "weather": "sunny",
-    "tide": "大潮",
-    "trend": "hot",
-    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
-  },
-  {
-    "date": "2026/04/21",
-    "type": "base",
-    "score": 48,
-    "weather": "sunny",
-    "tide": "中潮",
-    "trend": "normal",
-    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
-  },
-  {
-    "date": "2026/04/22",
-    "type": "base",
-    "score": 87,
-    "weather": "sunny",
-    "tide": "中潮",
-    "trend": "fire",
-    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
-  },
-  {
-    "date": "2026/04/23",
-    "type": "base",
-    "score": 48,
-    "weather": "sunny",
-    "tide": "中潮",
-    "trend": "normal",
-    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
-  },
-  {
-    "date": "2026/04/24",
-    "type": "base",
-    "score": 76,
-    "weather": "sunny",
-    "tide": "小潮",
-    "trend": "hot",
-    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
-  },
-  {
-    "date": "2026/04/25",
-    "type": "base",
-    "score": 84,
-    "weather": "sunny",
-    "tide": "小潮",
-    "trend": "fire",
-    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
-  },
-  {
-    "date": "2026/04/26",
-    "type": "base",
-    "score": 90,
-    "weather": "sunny",
-    "tide": "小潮",
-    "trend": "fire",
-    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
-  },
-  {
-    "date": "2026/04/27",
-    "type": "base",
-    "score": 59,
-    "weather": "sunny",
-    "tide": "長潮",
-    "trend": "normal",
-    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
-  },
-  {
-    "date": "2026/04/28",
-    "type": "base",
-    "score": 48,
-    "weather": "sunny",
-    "tide": "若潮",
-    "trend": "normal",
-    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
-  },
-  {
-    "date": "2026/04/29",
-    "type": "base",
-    "score": 87,
-    "weather": "sunny",
-    "tide": "中潮",
-    "trend": "fire",
-    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
-  },
-  {
-    "date": "2026/04/30",
-    "type": "base",
-    "score": 48,
-    "weather": "sunny",
-    "tide": "中潮",
-    "trend": "normal",
-    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
-  },
-  {
-    "date": "2026/05/01",
-    "type": "base",
-    "score": 66,
-    "weather": "sunny",
-    "tide": "中潮",
-    "trend": "hot",
-    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
-  },
-  {
-    "date": "2026/05/02",
-    "type": "base",
-    "score": 81,
-    "weather": "sunny",
-    "tide": "大潮",
-    "trend": "fire",
-    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
-  },
-  {
-    "date": "2026/05/03",
-    "type": "base",
-    "score": 100,
-    "weather": "sunny",
-    "tide": "大潮",
-    "trend": "fire",
-    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
-  },
-  {
-    "date": "2026/05/04",
-    "type": "base",
-    "score": 70,
-    "weather": "sunny",
-    "tide": "大潮",
-    "trend": "hot",
-    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
-  },
-  {
-    "date": "2026/05/05",
-    "type": "base",
-    "score": 62,
-    "weather": "sunny",
-    "tide": "大潮",
-    "trend": "hot",
-    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
-  },
-  {
-    "date": "2026/05/06",
-    "type": "base",
-    "score": 89,
-    "weather": "sunny",
-    "tide": "中潮",
-    "trend": "fire",
-    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
-  },
-  {
-    "date": "2026/05/07",
-    "type": "base",
-    "score": 72,
-    "weather": "sunny",
-    "tide": "中潮",
-    "trend": "hot",
-    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
-  },
-  {
-    "date": "2026/05/08",
-    "type": "base",
-    "score": 66,
-    "weather": "sunny",
-    "tide": "中潮",
-    "trend": "hot",
-    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
-  },
-  {
-    "date": "2026/05/09",
-    "type": "base",
-    "score": 81,
-    "weather": "sunny",
-    "tide": "小潮",
-    "trend": "fire",
-    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
-  },
-  {
-    "date": "2026/05/10",
-    "type": "base",
-    "score": 100,
-    "weather": "sunny",
-    "tide": "小潮",
-    "trend": "fire",
-    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
-  },
-  {
-    "date": "2026/05/11",
-    "type": "base",
-    "score": 95,
-    "weather": "sunny",
-    "tide": "小潮",
-    "trend": "fire",
-    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
-  },
-  {
-    "date": "2026/05/12",
-    "type": "base",
-    "score": 84,
-    "weather": "sunny",
-    "tide": "長潮",
-    "trend": "fire",
-    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
-  },
-  {
-    "date": "2026/05/13",
-    "type": "base",
-    "score": 97,
-    "weather": "sunny",
-    "tide": "若潮",
-    "trend": "fire",
-    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
-  },
-  {
-    "date": "2026/05/14",
-    "type": "base",
-    "score": 100,
-    "weather": "sunny",
-    "tide": "中潮",
-    "trend": "fire",
-    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
-  },
-  {
-    "date": "2026/05/15",
     "type": "base",
     "score": 65,
     "weather": "sunny",
@@ -4500,34 +3906,205 @@
     "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
   },
   {
-    "date": "2026/05/16",
+    "date": "2026/03/11",
     "type": "base",
-    "score": 97,
+    "score": 64,
+    "weather": "sunny",
+    "tide": "小潮",
+    "trend": "hot",
+    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
+  },
+  {
+    "date": "2026/03/12",
+    "type": "base",
+    "score": 65,
+    "weather": "sunny",
+    "tide": "小潮",
+    "trend": "hot",
+    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
+  },
+  {
+    "date": "2026/03/13",
+    "type": "base",
+    "score": 66,
+    "weather": "sunny",
+    "tide": "小潮",
+    "trend": "hot",
+    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
+  },
+  {
+    "date": "2026/03/14",
+    "type": "base",
+    "score": 63,
+    "weather": "sunny",
+    "tide": "長潮",
+    "trend": "hot",
+    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
+  },
+  {
+    "date": "2026/03/15",
+    "type": "base",
+    "score": 62,
+    "weather": "sunny",
+    "tide": "若潮",
+    "trend": "hot",
+    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
+  },
+  {
+    "date": "2026/03/16",
+    "type": "base",
+    "score": 59,
+    "weather": "sunny",
+    "tide": "中潮",
+    "trend": "normal",
+    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
+  },
+  {
+    "date": "2026/03/17",
+    "type": "base",
+    "score": 64,
+    "weather": "sunny",
+    "tide": "中潮",
+    "trend": "hot",
+    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
+  },
+  {
+    "date": "2026/03/18",
+    "type": "base",
+    "score": 64,
     "weather": "sunny",
     "tide": "大潮",
+    "trend": "hot",
+    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
+  },
+  {
+    "date": "2026/03/19",
+    "type": "base",
+    "score": 65,
+    "weather": "sunny",
+    "tide": "大潮",
+    "trend": "hot",
+    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
+  },
+  {
+    "date": "2026/03/20",
+    "type": "base",
+    "score": 66,
+    "weather": "sunny",
+    "tide": "大潮",
+    "trend": "hot",
+    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
+  },
+  {
+    "date": "2026/03/21",
+    "type": "base",
+    "score": 62,
+    "weather": "sunny",
+    "tide": "大潮",
+    "trend": "hot",
+    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
+  },
+  {
+    "date": "2026/03/22",
+    "type": "base",
+    "score": 62,
+    "weather": "sunny",
+    "tide": "中潮",
+    "trend": "hot",
+    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
+  },
+  {
+    "date": "2026/03/23",
+    "type": "base",
+    "score": 64,
+    "weather": "sunny",
+    "tide": "中潮",
+    "trend": "hot",
+    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
+  },
+  {
+    "date": "2026/03/24",
+    "type": "base",
+    "score": 64,
+    "weather": "sunny",
+    "tide": "中潮",
+    "trend": "hot",
+    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
+  },
+  {
+    "date": "2026/03/25",
+    "type": "base",
+    "score": 63,
+    "weather": "sunny",
+    "tide": "小潮",
+    "trend": "hot",
+    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
+  },
+  {
+    "date": "2026/03/26",
+    "type": "base",
+    "score": 63,
+    "weather": "sunny",
+    "tide": "小潮",
+    "trend": "hot",
+    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
+  },
+  {
+    "date": "2026/03/27",
+    "type": "base",
+    "score": 63,
+    "weather": "sunny",
+    "tide": "小潮",
+    "trend": "hot",
+    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
+  },
+  {
+    "date": "2026/03/28",
+    "type": "base",
+    "score": 62,
+    "weather": "sunny",
+    "tide": "長潮",
+    "trend": "hot",
+    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
+  },
+  {
+    "date": "2026/03/29",
+    "type": "base",
+    "score": 62,
+    "weather": "sunny",
+    "tide": "若潮",
+    "trend": "hot",
+    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
+  },
+  {
+    "date": "2026/03/30",
+    "type": "base",
+    "score": 64,
+    "weather": "sunny",
+    "tide": "中潮",
+    "trend": "hot",
+    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
+  },
+  {
+    "date": "2026/03/31",
+    "type": "base",
+    "score": 64,
+    "weather": "sunny",
+    "tide": "中潮",
+    "trend": "hot",
+    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
+  },
+  {
+    "date": "2026/04/01",
+    "type": "base",
+    "score": 83,
+    "weather": "sunny",
+    "tide": "中潮",
     "trend": "fire",
     "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
   },
   {
-    "date": "2026/05/17",
-    "type": "base",
-    "score": 100,
-    "weather": "sunny",
-    "tide": "大潮",
-    "trend": "fire",
-    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
-  },
-  {
-    "date": "2026/05/18",
-    "type": "base",
-    "score": 95,
-    "weather": "sunny",
-    "tide": "大潮",
-    "trend": "fire",
-    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
-  },
-  {
-    "date": "2026/05/19",
+    "date": "2026/04/02",
     "type": "base",
     "score": 84,
     "weather": "sunny",
@@ -4536,9 +4113,432 @@
     "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
   },
   {
+    "date": "2026/04/03",
+    "type": "base",
+    "score": 70,
+    "weather": "sunny",
+    "tide": "大潮",
+    "trend": "hot",
+    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
+  },
+  {
+    "date": "2026/04/04",
+    "type": "base",
+    "score": 84,
+    "weather": "sunny",
+    "tide": "大潮",
+    "trend": "fire",
+    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
+  },
+  {
+    "date": "2026/04/05",
+    "type": "base",
+    "score": 81,
+    "weather": "sunny",
+    "tide": "大潮",
+    "trend": "fire",
+    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
+  },
+  {
+    "date": "2026/04/06",
+    "type": "base",
+    "score": 83,
+    "weather": "sunny",
+    "tide": "中潮",
+    "trend": "fire",
+    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
+  },
+  {
+    "date": "2026/04/07",
+    "type": "base",
+    "score": 85,
+    "weather": "sunny",
+    "tide": "中潮",
+    "trend": "fire",
+    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
+  },
+  {
+    "date": "2026/04/08",
+    "type": "base",
+    "score": 83,
+    "weather": "sunny",
+    "tide": "中潮",
+    "trend": "fire",
+    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
+  },
+  {
+    "date": "2026/04/09",
+    "type": "base",
+    "score": 84,
+    "weather": "sunny",
+    "tide": "小潮",
+    "trend": "fire",
+    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
+  },
+  {
+    "date": "2026/04/10",
+    "type": "base",
+    "score": 70,
+    "weather": "sunny",
+    "tide": "小潮",
+    "trend": "hot",
+    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
+  },
+  {
+    "date": "2026/04/11",
+    "type": "base",
+    "score": 84,
+    "weather": "sunny",
+    "tide": "小潮",
+    "trend": "fire",
+    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
+  },
+  {
+    "date": "2026/04/12",
+    "type": "base",
+    "score": 77,
+    "weather": "sunny",
+    "tide": "長潮",
+    "trend": "hot",
+    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
+  },
+  {
+    "date": "2026/04/13",
+    "type": "base",
+    "score": 85,
+    "weather": "sunny",
+    "tide": "若潮",
+    "trend": "fire",
+    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
+  },
+  {
+    "date": "2026/04/14",
+    "type": "base",
+    "score": 50,
+    "weather": "sunny",
+    "tide": "中潮",
+    "trend": "normal",
+    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
+  },
+  {
+    "date": "2026/04/15",
+    "type": "base",
+    "score": 72,
+    "weather": "sunny",
+    "tide": "中潮",
+    "trend": "hot",
+    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
+  },
+  {
+    "date": "2026/04/16",
+    "type": "base",
+    "score": 84,
+    "weather": "sunny",
+    "tide": "中潮",
+    "trend": "fire",
+    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
+  },
+  {
+    "date": "2026/04/17",
+    "type": "base",
+    "score": 83,
+    "weather": "sunny",
+    "tide": "大潮",
+    "trend": "fire",
+    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
+  },
+  {
+    "date": "2026/04/18",
+    "type": "base",
+    "score": 84,
+    "weather": "sunny",
+    "tide": "大潮",
+    "trend": "fire",
+    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
+  },
+  {
+    "date": "2026/04/19",
+    "type": "base",
+    "score": 77,
+    "weather": "sunny",
+    "tide": "大潮",
+    "trend": "hot",
+    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
+  },
+  {
+    "date": "2026/04/20",
+    "type": "base",
+    "score": 85,
+    "weather": "sunny",
+    "tide": "大潮",
+    "trend": "fire",
+    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
+  },
+  {
+    "date": "2026/04/21",
+    "type": "base",
+    "score": 64,
+    "weather": "sunny",
+    "tide": "中潮",
+    "trend": "hot",
+    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
+  },
+  {
+    "date": "2026/04/22",
+    "type": "base",
+    "score": 84,
+    "weather": "sunny",
+    "tide": "中潮",
+    "trend": "fire",
+    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
+  },
+  {
+    "date": "2026/04/23",
+    "type": "base",
+    "score": 75,
+    "weather": "sunny",
+    "tide": "中潮",
+    "trend": "hot",
+    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
+  },
+  {
+    "date": "2026/04/24",
+    "type": "base",
+    "score": 68,
+    "weather": "sunny",
+    "tide": "小潮",
+    "trend": "hot",
+    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
+  },
+  {
+    "date": "2026/04/25",
+    "type": "base",
+    "score": 79,
+    "weather": "sunny",
+    "tide": "小潮",
+    "trend": "hot",
+    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
+  },
+  {
+    "date": "2026/04/26",
+    "type": "base",
+    "score": 84,
+    "weather": "sunny",
+    "tide": "小潮",
+    "trend": "fire",
+    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
+  },
+  {
+    "date": "2026/04/27",
+    "type": "base",
+    "score": 81,
+    "weather": "sunny",
+    "tide": "長潮",
+    "trend": "fire",
+    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
+  },
+  {
+    "date": "2026/04/28",
+    "type": "base",
+    "score": 64,
+    "weather": "sunny",
+    "tide": "若潮",
+    "trend": "hot",
+    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
+  },
+  {
+    "date": "2026/04/29",
+    "type": "base",
+    "score": 84,
+    "weather": "sunny",
+    "tide": "中潮",
+    "trend": "fire",
+    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
+  },
+  {
+    "date": "2026/04/30",
+    "type": "base",
+    "score": 75,
+    "weather": "sunny",
+    "tide": "中潮",
+    "trend": "hot",
+    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
+  },
+  {
+    "date": "2026/05/01",
+    "type": "base",
+    "score": 81,
+    "weather": "sunny",
+    "tide": "中潮",
+    "trend": "fire",
+    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
+  },
+  {
+    "date": "2026/05/02",
+    "type": "base",
+    "score": 87,
+    "weather": "sunny",
+    "tide": "大潮",
+    "trend": "fire",
+    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
+  },
+  {
+    "date": "2026/05/03",
+    "type": "base",
+    "score": 86,
+    "weather": "sunny",
+    "tide": "大潮",
+    "trend": "fire",
+    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
+  },
+  {
+    "date": "2026/05/04",
+    "type": "base",
+    "score": 88,
+    "weather": "sunny",
+    "tide": "大潮",
+    "trend": "fire",
+    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
+  },
+  {
+    "date": "2026/05/05",
+    "type": "base",
+    "score": 84,
+    "weather": "sunny",
+    "tide": "大潮",
+    "trend": "fire",
+    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
+  },
+  {
+    "date": "2026/05/06",
+    "type": "base",
+    "score": 87,
+    "weather": "sunny",
+    "tide": "中潮",
+    "trend": "fire",
+    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
+  },
+  {
+    "date": "2026/05/07",
+    "type": "base",
+    "score": 82,
+    "weather": "sunny",
+    "tide": "中潮",
+    "trend": "fire",
+    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
+  },
+  {
+    "date": "2026/05/08",
+    "type": "base",
+    "score": 81,
+    "weather": "sunny",
+    "tide": "中潮",
+    "trend": "fire",
+    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
+  },
+  {
+    "date": "2026/05/09",
+    "type": "base",
+    "score": 87,
+    "weather": "sunny",
+    "tide": "小潮",
+    "trend": "fire",
+    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
+  },
+  {
+    "date": "2026/05/10",
+    "type": "base",
+    "score": 86,
+    "weather": "sunny",
+    "tide": "小潮",
+    "trend": "fire",
+    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
+  },
+  {
+    "date": "2026/05/11",
+    "type": "base",
+    "score": 89,
+    "weather": "sunny",
+    "tide": "小潮",
+    "trend": "fire",
+    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
+  },
+  {
+    "date": "2026/05/12",
+    "type": "base",
+    "score": 87,
+    "weather": "sunny",
+    "tide": "長潮",
+    "trend": "fire",
+    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
+  },
+  {
+    "date": "2026/05/13",
+    "type": "base",
+    "score": 89,
+    "weather": "sunny",
+    "tide": "若潮",
+    "trend": "fire",
+    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
+  },
+  {
+    "date": "2026/05/14",
+    "type": "base",
+    "score": 89,
+    "weather": "sunny",
+    "tide": "中潮",
+    "trend": "fire",
+    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
+  },
+  {
+    "date": "2026/05/15",
+    "type": "base",
+    "score": 80,
+    "weather": "sunny",
+    "tide": "中潮",
+    "trend": "fire",
+    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
+  },
+  {
+    "date": "2026/05/16",
+    "type": "base",
+    "score": 83,
+    "weather": "sunny",
+    "tide": "大潮",
+    "trend": "fire",
+    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
+  },
+  {
+    "date": "2026/05/17",
+    "type": "base",
+    "score": 81,
+    "weather": "sunny",
+    "tide": "大潮",
+    "trend": "fire",
+    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
+  },
+  {
+    "date": "2026/05/18",
+    "type": "base",
+    "score": 89,
+    "weather": "sunny",
+    "tide": "大潮",
+    "trend": "fire",
+    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
+  },
+  {
+    "date": "2026/05/19",
+    "type": "base",
+    "score": 87,
+    "weather": "sunny",
+    "tide": "大潮",
+    "trend": "fire",
+    "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
+  },
+  {
     "date": "2026/05/20",
     "type": "base",
-    "score": 97,
+    "score": 89,
     "weather": "sunny",
     "tide": "中潮",
     "trend": "fire",
@@ -4547,16 +4547,16 @@
   {
     "date": "2026/05/21",
     "type": "base",
-    "score": 82,
+    "score": 78,
     "weather": "sunny",
     "tide": "中潮",
-    "trend": "fire",
+    "trend": "hot",
     "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
   },
   {
     "date": "2026/05/22",
     "type": "base",
-    "score": 91,
+    "score": 88,
     "weather": "sunny",
     "tide": "中潮",
     "trend": "fire",
@@ -4565,16 +4565,16 @@
   {
     "date": "2026/05/23",
     "type": "base",
-    "score": 70,
+    "score": 81,
     "weather": "sunny",
     "tide": "小潮",
-    "trend": "hot",
+    "trend": "fire",
     "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
   },
   {
     "date": "2026/05/24",
     "type": "base",
-    "score": 96,
+    "score": 85,
     "weather": "sunny",
     "tide": "小潮",
     "trend": "fire",
@@ -4583,43 +4583,43 @@
   {
     "date": "2026/05/25",
     "type": "base",
-    "score": 71,
+    "score": 87,
     "weather": "sunny",
     "tide": "小潮",
-    "trend": "hot",
+    "trend": "fire",
     "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
   },
   {
     "date": "2026/05/26",
     "type": "base",
-    "score": 44,
+    "score": 88,
     "weather": "sunny",
     "tide": "長潮",
-    "trend": "normal",
+    "trend": "fire",
     "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
   },
   {
     "date": "2026/05/27",
     "type": "base",
-    "score": 79,
+    "score": 86,
     "weather": "sunny",
     "tide": "若潮",
-    "trend": "hot",
+    "trend": "fire",
     "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
   },
   {
     "date": "2026/05/28",
     "type": "base",
-    "score": 82,
+    "score": 78,
     "weather": "sunny",
     "tide": "中潮",
-    "trend": "fire",
+    "trend": "hot",
     "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
   },
   {
     "date": "2026/05/29",
     "type": "base",
-    "score": 91,
+    "score": 88,
     "weather": "sunny",
     "tide": "中潮",
     "trend": "fire",
@@ -4628,10 +4628,10 @@
   {
     "date": "2026/05/30",
     "type": "base",
-    "score": 70,
+    "score": 81,
     "weather": "sunny",
     "tide": "中潮",
-    "trend": "hot",
+    "trend": "fire",
     "details": "天気予報データがないため、例年の傾向と潮回りのみで算出した期待値です。"
   }
 ]
