@@ -2,8 +2,34 @@ import json
 import sqlite3
 import os
 import sys
+import re
 
 DB_PATH = 'data/fishing_forecast.db'
+
+def zen_to_han(text):
+    if not text: return text
+    return text.translate(str.maketrans('０１２３４５６７８９', '0123456789'))
+
+def normalize_weather(w):
+    if not w: return w
+    w = w.replace('くもり', '曇り').replace('はれ', '晴れ').replace('あめ', '雨')
+    w = w.replace('曇', '曇り').replace('曇りり', '曇り')
+    
+    if 'のち' in w: w = w.split('のち')[-1]
+    if '後' in w: w = w.split('後')[-1]
+    if '時々' in w: w = w.split('時々')[0]
+    if '一時' in w: w = w.split('一時')[0]
+        
+    return w.strip().replace('曇りり', '曇り')
+
+def extract_count_from_size(size):
+    if not size: return None
+    size = zen_to_han(size)
+    matches = re.findall(r'(\d+)\s*匹', size)
+    if matches:
+        return int(matches[-1])
+    return None
+
 
 def import_facility_data(conn):
     facs = ['honmoku', 'daikoku', 'isogo', 'ichihara']
@@ -32,7 +58,7 @@ def import_facility_data(conn):
             ''', (
                 fac,
                 date,
-                row.get('weather'),
+                normalize_weather(row.get('weather')),
                 row.get('waterTemp'),
                 row.get('tide'),
                 row.get('visitors'),
@@ -90,7 +116,7 @@ def import_shop_data(conn, file_path):
             row.get('area'),
             row.get('place'),
             row.get('category'),
-            row.get('weather')
+            normalize_weather(row.get('weather'))
         ))
         
         if cursor.rowcount == 0:
@@ -99,14 +125,23 @@ def import_shop_data(conn, file_path):
         log_id = cursor.lastrowid
         
         for catch in row.get('catches', []):
+            count = catch.get('count')
+            size = catch.get('size')
+            
+            # countが空または0の場合、sizeから抽出を試みる
+            if not count or count == 0:
+                extracted = extract_count_from_size(size)
+                if extracted is not None:
+                    count = extracted
+                    
             cursor.execute('''
                 INSERT INTO shop_catches (log_id, species, count, size)
                 VALUES (?, ?, ?, ?)
             ''', (
                 log_id,
                 catch.get('name'),
-                catch.get('count'),
-                catch.get('size')
+                count,
+                size
             ))
         
         if i % 1000 == 0:
