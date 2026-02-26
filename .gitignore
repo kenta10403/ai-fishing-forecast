@@ -16,3 +16,4 @@ data/*.json
 venv/
 __pycache__/
 model.pkl
+data/chiba_marine_csv/
