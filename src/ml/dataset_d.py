@@ -223,7 +223,10 @@ def preprocess_trend_data(df: pd.DataFrame) -> tuple[pd.DataFrame, pd.Series, pd
 
     # One-Hot Encoding
     X = pd.get_dummies(X, columns=['area', 'wind_dir_simple', 'tide', 'species'], drop_first=True)
-    X.fillna(0, inplace=True)
+
+    # Issue #54: One-Hot Encoding で生成されたカテゴリ変数のみを補完（数値列はそのまま）
+    categorical_cols = [col for col in X.columns if col.startswith(('area_', 'wind_dir_simple_', 'tide_', 'species_'))]
+    X[categorical_cols] = X[categorical_cols].fillna(0)
 
     return X, y, sample_weight
 

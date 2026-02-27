@@ -228,10 +228,10 @@ def train_catch_forecast_model(df):
     rmse = np.sqrt(mean_squared_error(y_test, pred_test))
     
     print(f"  ✅ Hold-out R2 = {r2:7.4f}, RMSE = {rmse:7.4f}")
-    
-    # 予測分布の保存
-    pred_all = np.maximum(0, catch_model.predict(safe_impute(df[features], is_train=False, train_means=train_means)))
-    score_distribution = np.sort(pred_all)
+
+    # 予測分布の保存 (Issue #53: Data Leakage 対策のため Train データのみで作成)
+    pred_train = np.maximum(0, catch_model.predict(X_train))
+    score_distribution = np.sort(pred_train)
     
     model_data = {
         "model": catch_model,
