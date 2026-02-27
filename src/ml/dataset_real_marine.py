@@ -106,19 +106,15 @@ def create_dataset():
     
     df['tide_level'] = df['tide_level'].ffill().bfill().fillna(2)
     
-    # 波浪・河川トラッキングデータの補完 (毎日あるはずだが念のため)
-    df['real_wave_height'] = df['real_wave_height'].ffill().bfill().fillna(0.5)
-    df['wave_direction_dominant'] = df['wave_direction_dominant'].ffill().bfill().fillna(180)
-    df['real_river_discharge'] = df['real_river_discharge'].ffill().bfill().fillna(0.5)
-    
-    # 千葉県水質データの補完 (これが一番粗い。月に1回程度の計測しかないため、線形補間が必須)
+    # 波浪・河川トラッキングデータ：NULLはそのまま（モデル学習時に除外）
+    # 注: 以前は ffill/bfill で補完していたが、偽データで学習する問題があったため廃止
+    df['wave_direction_dominant'] = df['wave_direction_dominant'].fillna(180)  # 方向のみデフォルト値
+
+    # 千葉県水質データ：NULLはそのまま（モデル学習時に除外）
+    # 注: 以前は線形補間していたが、実測値が少ないためモデル精度が崩壊していた
+    # 実測データのみで学習する方針に変更
     marine_cols = ['real_water_temp', 'real_salinity', 'real_do', 'real_cod', 'real_transparency']
-    for col in marine_cols:
-        # 線形補間 (時間経過による滑らかな変化を仮定)
-        df[col] = df[col].interpolate(method='time', limit_direction='both')
-        # それでも欠損があれば平均値で埋める
-        if df[col].isnull().any():
-             df[col] = df[col].fillna(df[col].mean())
+    # 補間は一切行わない！
 
     # 7. 追加特徴量エンジニアリング (前日値など)
     # 河川流量は前日に降った雨の影響を強く受けるため、前日の雨量などをモデルに教える
@@ -127,8 +123,9 @@ def create_dataset():
     df['avg_wind_speed_lag1'] = df['avg_wind_speed'].shift(1).fillna(0)
     
     # 前日の各種海況(自己回帰的な情報)
+    # 注: NULLはそのまま。モデル学習時に除外される
     for col in marine_cols + ['real_wave_height', 'real_river_discharge']:
-        df[f'{col}_lag1'] = df[col].shift(1).ffill().bfill()
+        df[f'{col}_lag1'] = df[col].shift(1)  # 補間なし
         
     df['month'] = df.index.month
     df['month_sin'] = np.sin(2 * np.pi * df['month'] / 12)

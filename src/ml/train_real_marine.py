@@ -19,23 +19,29 @@ CATCH_MODEL_PATH = os.path.join(MODEL_DIR, "model_catch_forecast_real.pkl")
 
 def get_prepared_data():
     df = create_dataset()
-    
-    # 欠損値を含む行をドロップ（補完済みのはずだが念の為）
-    df = df.dropna()
+
+    # 注: 欠損値は残したまま返す（パラメータごとに実測データのみで学習するため）
+    # 以前は全て dropna していたが、これだと実測データが少ないパラメータで学習できなかった
     return df
 
 def train_marine_env_model(df):
     """
     【前段】海況予測モデル (Marine Environment Model)
     陸上の気象・潮汐データから、海の中の状況（水温、塩分、波高等）を予測する
+
+    **重要な変更**: パラメータごとに実測データのみで個別に学習する
+    - 以前はMultiOutputRegressorで全パラメータを同時学習していたが、
+      補間データで学習していたため精度が崩壊していた
+    - 新方式では、各パラメータの実測値がある行のみでモデルを学習する
     """
     print("\n" + "="*50)
     print("🌊 【前段】海況予測モデル (Marine Env Model) 学習開始...")
-    
-    # --- 特徴量 (Inputs: 陸上・気象データ) ---
-    features = [
-        'avg_temp', 'max_temp', 'min_temp', 
-        'avg_wind_speed', 'max_wind_speed', 
+    print("  ⚠️  新方式: パラメータごとに実測データのみで個別学習")
+
+    # --- 基本特徴量 (Inputs: 陸上・気象データ) ---
+    base_features = [
+        'avg_temp', 'max_temp', 'min_temp',
+        'avg_wind_speed', 'max_wind_speed',
         'precipitation', 'precipitation_lag1', 'precipitation_lag2',
         'avg_wind_speed_lag1',
         'daylight_hours',
@@ -43,64 +49,91 @@ def train_marine_env_model(df):
         'is_kuroshio_meander',
         'month_sin', 'month_cos'
     ]
-    
-    # 昨日までの海況 (自己回帰特徴量) を持たせることで予測精度アップ
-    lag_features = [
-        'real_water_temp_lag1', 'real_salinity_lag1', 'real_do_lag1',
-        'real_cod_lag1', 'real_transparency_lag1', 
-        'real_wave_height_lag1', 'real_river_discharge_lag1'
-    ]
-    features.extend(lag_features)
-    
+
     # --- 目的変数 (Outputs: 実測海況データ) ---
     targets = [
-        'real_water_temp', 
-        'real_salinity', 
-        'real_do', 
-        'real_cod', 
+        'real_water_temp',
+        'real_salinity',
+        'real_do',
+        'real_cod',
         'real_transparency',
         'real_wave_height',
         'wave_direction_dominant',
         'real_river_discharge'
     ]
-    
-    X = df[features]
-    y = df[targets]
-    
-    print(f"  入力データ形状: X={X.shape}, y={y.shape}")
-    
-    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42, shuffle=False) # 時系列を崩さないようにshuffle=Falseがいいが、とりあえずベースライン
-    
-    # MultiOutputRegressor を使って複数の目的変数を同時に予測
-    base_model = LGBMRegressor(n_estimators=100, random_state=42)
-    marine_model = MultiOutputRegressor(base_model)
-    
-    marine_model.fit(X_train, y_train)
-    
-    # 評価
-    pred_test = marine_model.predict(X_test)
-    
-    print("  ✅ 学習完了! 各海況パラメータの R2スコア:")
-    for i, target_name in enumerate(targets):
-        r2 = r2_score(y_test.iloc[:, i], pred_test[:, i])
-        rmse = np.sqrt(mean_squared_error(y_test.iloc[:, i], pred_test[:, i]))
-        print(f"    - {target_name:<25}: R2 = {r2:7.4f}, RMSE = {rmse:7.4f}")
-        
+
+    # パラメータごとのモデルを格納
+    models = {}
+    feature_sets = {}
+
+    for target in targets:
+        print(f"\n  📊 {target} のモデルを学習中...")
+
+        # このターゲットのラグ特徴量
+        lag_feature = f'{target}_lag1'
+
+        # 特徴量セット
+        features = base_features.copy()
+        if lag_feature in df.columns:
+            features.append(lag_feature)
+
+        # このターゲットの実測値がある行のみを抽出
+        valid_mask = df[target].notna()
+
+        # ラグ特徴量も使う場合、それもNULLでない行のみ
+        if lag_feature in features:
+            valid_mask = valid_mask & df[lag_feature].notna()
+
+        df_valid = df[valid_mask].copy()
+
+        if len(df_valid) == 0:
+            print(f"    ⚠️  実測データが0件のためスキップ")
+            continue
+
+        X = df_valid[features]
+        y = df_valid[target]
+
+        print(f"    実測データ数: {len(df_valid)}件 (全体の{100*len(df_valid)/len(df):.1f}%)")
+
+        # 時系列を崩さずに分割
+        X_train, X_test, y_train, y_test = train_test_split(
+            X, y, test_size=0.2, random_state=42, shuffle=False
+        )
+
+        # モデル学習
+        model = LGBMRegressor(n_estimators=100, random_state=42, verbosity=-1)
+        model.fit(X_train, y_train)
+
+        # 評価
+        pred_test = model.predict(X_test)
+        r2 = r2_score(y_test, pred_test)
+        rmse = np.sqrt(mean_squared_error(y_test, pred_test))
+        print(f"    ✅ R2 = {r2:7.4f}, RMSE = {rmse:7.4f}")
+
+        # モデルと特徴量セットを保存
+        models[target] = model
+        feature_sets[target] = features
+
+        # 全データに対する予測値を生成（欠損値のある行も含めて）
+        # 欠損がある行はNaNのまま
+        df[f'pred_{target}'] = np.nan
+        try:
+            pred_all = model.predict(df[features].fillna(df[features].mean()))
+            df[f'pred_{target}'] = pred_all
+        except Exception as e:
+            print(f"    ⚠️  予測値生成エラー: {e}")
+
     # モデル保存
     model_data = {
-        "model": marine_model,
-        "features": features,
-        "targets": targets
+        "models": models,
+        "feature_sets": feature_sets,
+        "targets": list(models.keys())
     }
     joblib.dump(model_data, MARINE_MODEL_PATH)
-    print(f"  💾 海況予測モデルを保存完了: {MARINE_MODEL_PATH}")
-    
-    # 釣果モデル学習用に、テスト期間含めた全期間の「予測海況」を出力してdfにつなげる
-    pred_all = marine_model.predict(X)
-    for i, target_name in enumerate(targets):
-        df[f'pred_{target_name}'] = pred_all[:, i]
-        
-    return marine_model, df
+    print(f"\n  💾 海況予測モデルを保存完了: {MARINE_MODEL_PATH}")
+    print(f"  📊 学習完了したパラメータ数: {len(models)}/{len(targets)}")
+
+    return models, df
 
 
 def train_catch_forecast_model(df):
