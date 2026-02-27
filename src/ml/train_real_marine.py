@@ -23,13 +23,17 @@ def safe_impute(df, is_train=True, train_means=None):
     # 2. それでも NaN が残る場合 (データの最初の方など) は、
     # Train の場合は自身の平均、Test の場合は Train の平均で埋める
     if is_train:
-        means = df.mean()
+        # 数値型のみを選択して平均を計算
+        means = df.select_dtypes(include=[np.number]).mean()
         df = df.fillna(means)
         return df, means
     else:
         if train_means is not None:
-            df = df.fillna(train_means)
-        # さらに残る場合は 0 で埋める
+            # 指定された数値列のみを補完
+            for col in train_means.index:
+                if col in df.columns:
+                    df[col] = df[col].fillna(train_means[col])
+        # さらに残る場合は 0 で埋める（カテゴリ変数等も含む）
         df = df.fillna(0)
         return df
 
@@ -126,7 +130,8 @@ def train_marine_env_model(df):
             df[pred_col] = m_info["model"].predict(X_all)
         else:
             # モデルが作れなかった場合は、安全なデフォルト値（0.5など）で埋める
-            print(f"    ⚠️ {target} のモデルがないため、デフォルト値で埋めます。")
+            # TODO: 予測値の誤差伝播の問題（Issue #41）に関連。将来的に改善予定。
+            print(f"    ⚠️ 警告: {target} のモデルがないため、デフォルト値 0.5 で埋めます。 (Issue #41 関連)")
             df[pred_col] = 0.5
             
     return models, df
@@ -198,6 +203,9 @@ def main():
     print("🚀 Data Leakage 対策版 学習パイプライン起動")
     # 1. Rawデータ取得 (補完なし)
     df = create_dataset()
+    
+    # 時系列分割のため、念のため日付順にソート（インデックスがDatetimeIndexであることを前提）
+    df = df.sort_index()
     
     # 2. 海況モデル学習 (個別・分割後補完)
     _, df_with_preds = train_marine_env_model(df)

@@ -23,16 +23,17 @@ def safe_impute(df, is_train=True, train_means=None):
     
     # 2. それでも NaN が残る場合 (データの最初の方など)
     if is_train:
+        # 数値型のみを選択して平均を計算
         means = df.select_dtypes(include=[np.number]).mean()
         df = df.fillna(means)
         return df, means
     else:
         if train_means is not None:
-            # 数値列のみ補完
+            # 指定された数値列のみを補完
             for col in train_means.index:
                 if col in df.columns:
                     df[col] = df[col].fillna(train_means[col])
-        # さらに残る場合は 0 で埋める
+        # さらに残る場合は 0 で埋める（カテゴリ変数等も含む）
         df = df.fillna(0)
         return df
 
@@ -42,6 +43,9 @@ def train_trend_model(include_files=None, exclude_files=None):
     if df_raw.empty:
         print("エラー: 有効な釣具屋データがロードできませんでした。")
         return
+
+    # 日付順にソート（時系列分割のため）
+    df_raw = df_raw.sort_values("date")
 
     print("データの前処理中...")
     X, y, sample_weights = preprocess_trend_data(df_raw)
