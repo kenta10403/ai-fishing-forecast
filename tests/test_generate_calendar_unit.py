@@ -247,18 +247,18 @@ class TestMETNorwayParsing:
 
         assert today in data_map
         d = data_map[today]
-        # max_temp = max(5, 10, 15, 8) = 15
+        # max_temp = max(5, 10, 15) = 15
         assert d['max_temp'] == 15.0
-        # min_temp = min(5, 10, 15, 8) = 5
+        # min_temp = min(5, 10, 15) = 5
         assert d['min_temp'] == 5.0
-        # avg_temp = (5+10+15+8)/4 = 9.5
-        assert d['avg_temp'] == pytest.approx(9.5)
-        # max_wind = max(3, 5, 2, 4) = 5
+        # avg_temp = (5+10+15)/3 = 10.0
+        assert d['avg_temp'] == pytest.approx(10.0)
+        # max_wind = max(3, 5, 2) = 5
         assert d['max_wind_speed'] == 5.0
-        # avg_wind = (3+5+2+4)/4 = 3.5
-        assert d['avg_wind_speed'] == pytest.approx(3.5)
-        # precipitation = 0.5 + 1.5 + 0.0 + 2.0 = 4.0
-        assert d['precipitation'] == pytest.approx(4.0)
+        # avg_wind = (3+5+2)/3 = 3.3333333
+        assert d['avg_wind_speed'] == pytest.approx(3.33333333)
+        # precipitation = 0.5 + 1.5 + 0.0 = 2.0
+        assert d['precipitation'] == pytest.approx(2.0)
         # daylight_hours は astral で計算されるので正の値であること
         assert d['daylight_hours'] > 0
 
@@ -306,10 +306,10 @@ class TestRiverDischargeDecay:
 
             _fetch_river_discharge_from_db(data_map)
 
-        # 減衰: 100 * 0.7 = 70, 70 * 0.7 = 49, 49 * 0.7 = 34.3
-        assert data_map["2026-02-28"]["river_discharge"] == pytest.approx(70.0)
-        assert data_map["2026-03-01"]["river_discharge"] == pytest.approx(49.0)
-        assert data_map["2026-03-02"]["river_discharge"] == pytest.approx(34.3)
+        # 減衰: 100 * 0.95 = 95, 95 * 0.95 = 90.25, 90.25 * 0.95 = 85.7375
+        assert data_map["2026-02-28"]["river_discharge"] == pytest.approx(95.0)
+        assert data_map["2026-03-01"]["river_discharge"] == pytest.approx(90.25)
+        assert data_map["2026-03-02"]["river_discharge"] == pytest.approx(85.7375)
 
     def test_increase_with_heavy_rain(self):
         """降水量50mm以上で流量が維持されること"""
@@ -329,10 +329,10 @@ class TestRiverDischargeDecay:
 
             _fetch_river_discharge_from_db(data_map)
 
-        # 降水50mm: factor = 0.7 + 0.3 * 1.0 = 1.0 → 100 * 1.0 = 100
-        assert data_map["2026-02-28"]["river_discharge"] == pytest.approx(100.0)
-        # 降水100mm (cap at 50): factor = 1.0 → 100 * 1.0 = 100
-        assert data_map["2026-03-01"]["river_discharge"] == pytest.approx(100.0)
+        # 降水50mm: factor = 0.95 + 0.1 * 1.0 = 1.05 → 100 * 1.05 = 105
+        assert data_map["2026-02-28"]["river_discharge"] == pytest.approx(105.0)
+        # 降水100mm: factor = 1.05 → 105 * 1.05 = 110.25
+        assert data_map["2026-03-01"]["river_discharge"] == pytest.approx(110.25)
 
     def test_minimum_floor(self):
         """流量が下限値(10.0)を下回らないこと"""
@@ -374,8 +374,8 @@ class TestRiverDischargeDecay:
 
             _fetch_river_discharge_from_db(data_map)
 
-        # フォールバック(50) * 0.7 = 35
-        assert data_map["2026-02-28"]["river_discharge"] == pytest.approx(35.0)
+        # フォールバック(50) * 0.95 = 47.5
+        assert data_map["2026-02-28"]["river_discharge"] == pytest.approx(47.5)
 
 
 class TestDaylightCalculation:
