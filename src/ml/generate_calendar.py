@@ -190,6 +190,12 @@ def generate_ai_calendar(num_days=10):
     except Exception as e:
         print(f"DBから潮汐データ取得エラー: {e}")
         
+    last_weather = {
+        'precipitation_lag1': 0,
+        'precipitation_lag2': 0,
+        'avg_wind_speed_lag1': 3.0
+    }
+
     output_days = []
     
     for i in range(num_days):
@@ -210,8 +216,8 @@ def generate_ai_calendar(num_days=10):
         marine_features = [
             f.get('avg_temp', 15), f.get('max_temp', 20), f.get('min_temp', 10),
             f.get('avg_wind_speed', 3), f.get('max_wind_speed', 5),
-            f.get('precipitation', 0), 0, 0, # lag rain
-            3, # lag wind
+            f.get('precipitation', 0), last_weather['precipitation_lag1'], last_weather['precipitation_lag2'],
+            last_weather['avg_wind_speed_lag1'],
             f.get('daylight_hours', 8),
             get_tide_level(d_str, tide_map),
             1 if d >= datetime(2017,8,1) and d <= datetime(2025,4,30) else 0, # Kuroshio
@@ -228,7 +234,7 @@ def generate_ai_calendar(num_days=10):
         catch_features = [
             f.get('avg_temp', 15), f.get('max_temp', 20), f.get('min_temp', 10),
             f.get('avg_wind_speed', 3), f.get('max_wind_speed', 5),
-            f.get('precipitation', 0), 0, # lag rain
+            f.get('precipitation', 0), last_weather['precipitation_lag1'],
             f.get('daylight_hours', 8),
             get_tide_level(d_str, tide_map),
             1 if d >= datetime(2017,8,1) and d <= datetime(2025,4,30) else 0,
@@ -248,6 +254,10 @@ def generate_ai_calendar(num_days=10):
         # 昨日の状態を更新 (次のループ用)
         for k in last_marine:
             if k in p_marine: last_marine[k] = p_marine[k]
+            
+        last_weather['precipitation_lag2'] = last_weather['precipitation_lag1']
+        last_weather['precipitation_lag1'] = f.get('precipitation', 0)
+        last_weather['avg_wind_speed_lag1'] = f.get('avg_wind_speed', 3)
         
         # 理由(AIコメント)の生成
         reasons = []
