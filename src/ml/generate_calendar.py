@@ -1,4 +1,5 @@
 import json
+import logging
 import os
 import urllib.request
 from datetime import datetime, timedelta
@@ -36,6 +37,57 @@ def get_tide_level(d_str, tide_map):
     if "長潮" in tide: return 1
     if "若潮" in tide: return 0
     return 3 # 不明な場合は中潮扱い
+
+def fetch_last_weather_from_db(today):
+    """
+    【掟2: 現実同期】DBから前日・前々日の実測気象データを取得する。
+    ハードコーディングされた固定値ではなく、実際の観測データで初期化する。
+    DB取得失敗時はWarningログ付きでフォールバック値を使用する。
+    """
+    yesterday = (today - timedelta(days=1)).strftime("%Y-%m-%d")
+    day_before = (today - timedelta(days=2)).strftime("%Y-%m-%d")
+
+    # フォールバック用デフォルト値
+    last_weather = {
+        'precipitation_lag1': 0,
+        'precipitation_lag2': 0,
+        'avg_wind_speed_lag1': 3.0
+    }
+
+    try:
+        conn = sqlite3.connect(DB_PATH)
+        cursor = conn.cursor()
+
+        # 前日データ取得 (lag1)
+        cursor.execute(
+            "SELECT precipitation, avg_wind_speed FROM weather_history WHERE date = ? AND area = '神奈川県'",
+            (yesterday,)
+        )
+        row = cursor.fetchone()
+        if row:
+            last_weather['precipitation_lag1'] = row[0] if row[0] is not None else 0
+            last_weather['avg_wind_speed_lag1'] = row[1] if row[1] is not None else 3.0
+            print(f"  📊 掟2: 前日({yesterday})の実測値をDBから取得 → 降水量={last_weather['precipitation_lag1']}, 風速={last_weather['avg_wind_speed_lag1']}")
+        else:
+            logging.warning(f"掟2フォールバック: {yesterday}の気象データがDBに無いためデフォルト値を使用")
+
+        # 前々日データ取得 (lag2)
+        cursor.execute(
+            "SELECT precipitation FROM weather_history WHERE date = ? AND area = '神奈川県'",
+            (day_before,)
+        )
+        row = cursor.fetchone()
+        if row:
+            last_weather['precipitation_lag2'] = row[0] if row[0] is not None else 0
+            print(f"  📊 掟2: 前々日({day_before})の実測値をDBから取得 → 降水量={last_weather['precipitation_lag2']}")
+        else:
+            logging.warning(f"掟2フォールバック: {day_before}の気象データがDBに無いためデフォルト値を使用")
+
+        conn.close()
+    except Exception as e:
+        logging.warning(f"掟2フォールバック: DB接続エラー ({e})、デフォルト値を使用")
+
+    return last_weather
 
 def fetch_openmeteo_all(start_date, end_date):
     """
@@ -89,15 +141,33 @@ def fetch_openmeteo_all(start_date, end_date):
                             data_map[t]['daylight_hours'] = 8.0 # default fallback 
     except Exception as e: print(f"Weather API Error: {e}")
 
-    # 2. Marine Forecast (Wave)
-    url = f"https://marine-api.open-meteo.com/v1/marine?latitude={MARINE_LAT}&longitude={MARINE_LON}&daily=wave_height_max&timezone=Asia%2FTokyo&start_date={start_str}&end_date={end_str}"
+    # 2. Marine Forecast (Wave + Sea Surface Temperature)
+    url = f"https://marine-api.open-meteo.com/v1/marine?latitude={MARINE_LAT}&longitude={MARINE_LON}&daily=wave_height_max&hourly=sea_surface_temperature&timezone=Asia%2FTokyo&start_date={start_str}&end_date={end_str}"
     try:
         with urllib.request.urlopen(url) as res:
             d_json = json.loads(res.read().decode())
-            daily = d_json['daily']
-            for i, t in enumerate(daily['time']):
-                if t in data_map:
-                    data_map[t]['wave_height'] = daily['wave_height_max'][i]
+            daily = d_json.get('daily', {})
+            hourly = d_json.get('hourly', {})
+            
+            # 波高 (daily)
+            if 'time' in daily:
+                for i, t in enumerate(daily['time']):
+                    if t in data_map:
+                        data_map[t]['wave_height'] = daily['wave_height_max'][i]
+            
+            # 海面水温 (hourly → daily平均に集約)
+            if 'time' in hourly and 'sea_surface_temperature' in hourly:
+                daily_sst = {}
+                for ht, sst in zip(hourly['time'], hourly['sea_surface_temperature']):
+                    d_key = ht[:10]
+                    if d_key not in daily_sst:
+                        daily_sst[d_key] = []
+                    if sst is not None:
+                        daily_sst[d_key].append(sst)
+                for d_key, sst_list in daily_sst.items():
+                    if d_key in data_map and sst_list:
+                        data_map[d_key]['sea_surface_temperature'] = sum(sst_list) / len(sst_list)
+                        
     except Exception as e: print(f"Marine API Error: {e}")
 
     # 3. Flood Forecast (River Discharge)
@@ -153,11 +223,8 @@ def generate_ai_calendar(num_days=10):
     except Exception as e:
         print(f"DBから潮汐データ取得エラー: {e}")
         
-    last_weather = {
-        'precipitation_lag1': 0,
-        'precipitation_lag2': 0,
-        'avg_wind_speed_lag1': 3.0
-    }
+    # 【掟2: 現実同期】DBから実測値を取得（ハードコーディング禁止）
+    last_weather = fetch_last_weather_from_db(today)
 
     output_days = []
     
@@ -199,6 +266,18 @@ def generate_ai_calendar(num_days=10):
             p_val = m_info['model'].predict(feat_df)[0]
             p_marine[target] = p_val
 
+        # --- API直接値による上書き（モデル予測より実測/予報APIを優先） ---
+        # 波高: APIから取得した値をそのまま使用（モデル予測をスキップ）
+        if f.get('wave_height') is not None:
+            p_marine['real_wave_height'] = f['wave_height']
+        # 河川流量: APIから取得した値をそのまま使用（モデル予測をスキップ）
+        if f.get('river_discharge') is not None:
+            p_marine['real_river_discharge'] = f['river_discharge']
+        # 海面水温: API値があればモデル予測より優先
+        if f.get('sea_surface_temperature') is not None:
+            p_marine['real_water_temp'] = f['sea_surface_temperature']
+            print(f"  🌊 {d_str}: SST={f['sea_surface_temperature']:.1f}°C (API直接値)")
+
         # 2. 釣果予測 (Catch Forecast)
         catch_features = [
             f.get('avg_temp', 15), f.get('max_temp', 20), f.get('min_temp', 10),
@@ -226,10 +305,15 @@ def generate_ai_calendar(num_days=10):
         score = int(base_score)
         score = max(5, min(100, score))
         
-        # 昨日の状態を更新 (次のループ用)
+        # 【掟3: 移動平均ブレンド】予測値のブレを吸収 (7:3 = 当日予報:前日ラグ)
+        # 予測値を100%信用せず、前日ラグとブレンドすることで雪だるま式エラーを防止
         last_weather['precipitation_lag2'] = last_weather['precipitation_lag1']
-        last_weather['precipitation_lag1'] = f.get('precipitation', 0)
-        last_weather['avg_wind_speed_lag1'] = f.get('avg_wind_speed', 3)
+        last_weather['precipitation_lag1'] = (
+            0.7 * f.get('precipitation', 0) + 0.3 * last_weather['precipitation_lag1']
+        )
+        last_weather['avg_wind_speed_lag1'] = (
+            0.7 * f.get('avg_wind_speed', 3) + 0.3 * last_weather['avg_wind_speed_lag1']
+        )
         
         # 3. AIコメント生成 (安全なアクセス)
         reasons = []
