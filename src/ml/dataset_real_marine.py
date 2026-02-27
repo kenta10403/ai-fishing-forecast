@@ -90,7 +90,7 @@ def create_dataset():
     # 5. Open-Meteo 波浪・河川流量データ (目的変数/特徴量)
     print("  🌊 波浪・河川流量データを読み込み中...")
     openmeteo_query = """
-    SELECT date, wave_height_max as real_wave_height, wave_direction_dominant, river_discharge as real_river_discharge
+    SELECT date, wave_height_max as real_wave_height, river_discharge as real_river_discharge
     FROM openmeteo_marine_history
     """
     df_openmeteo = fetch_data(openmeteo_query, conn)
@@ -104,10 +104,9 @@ def create_dataset():
     
     # 波浪・河川トラッキングデータ：NULLはそのまま（モデル学習時に除外）
     # 注: 以前は ffill/bfill で補完していたが、偽データで学習する問題があったため廃止
-    df['wave_direction_dominant'] = df['wave_direction_dominant'].fillna(180)  # 方向のみデフォルト値
 
     # 海界ターゲット列
-    marine_cols = ['real_water_temp', 'real_salinity', 'real_do', 'real_cod', 'real_transparency', 'wave_direction_dominant']
+    marine_cols = ['real_water_temp', 'real_salinity', 'real_do', 'real_cod', 'real_transparency']
 
     # 7. 追加特徴量エンジニアリング (前日値など)
     # 未来の情報が漏れないよう、shift(1) のみを使ってラグを作成する

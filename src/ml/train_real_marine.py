@@ -62,7 +62,7 @@ def train_marine_env_model(df):
     targets = [
         'real_water_temp', 'real_salinity', 'real_do', 
         'real_cod', 'real_transparency', 'real_wave_height', 
-        'wave_direction_dominant', 'real_river_discharge'
+        'real_river_discharge'
     ]
     
     models = {}
