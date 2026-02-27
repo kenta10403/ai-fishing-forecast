@@ -18,6 +18,7 @@ from datetime import datetime, timedelta
 # プロジェクトルート
 PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DB_PATH = os.path.join(PROJECT_ROOT, "data", "fishing_forecast.db")
+CSV_DIR = os.path.join(PROJECT_ROOT, "data", "raw_csv", "tbeic")
 
 # TBEIC 設定
 TBEIC_URL = "https://www.tbeic.go.jp/MonitoringPost/ViewGraph/downLoadObservedCSVData"
@@ -81,29 +82,48 @@ def process_csv_to_daily(csv_text, buoy_name, buoy_id):
 
     # ヘッダーなしCSVとして読み込み
     # TBEICのCSV構成: 日時, 上層(水温,塩分,DO,pH), 中層(...), 下層(...)
-    # 1行目が「年月日時分, ...」となっているためスキップする
     try:
-        df = pd.read_csv(io.StringIO(csv_text), header=None, skiprows=1)
-        if df.empty:
+        # ヘッダー行を取得してカラム位置を特定
+        lines = csv_text.splitlines()
+        if not lines: return []
+        header = lines[0].split(',')
+        
+        # 必要なカラムのインデックスを固定 (デバッグ結果に基づく)
+        # 0:日時, 1:深度U, 2:水温U, 3:塩分U, 4:DO_U
+        temp_idx = 2
+        salt_idx = 3
+        do_idx = 4
+
+        # データを読み込み (ヘッダースキップ)
+        df_raw = pd.read_csv(io.StringIO(csv_text), header=None, skiprows=1)
+        if df_raw.empty:
             return []
+            
+        import numpy as np
         
-        df.columns = ['datetime', 'temp_u', 'salt_u', 'do_u', 'ph_u', 'temp_m', 'salt_m', 'do_m', 'ph_m', 'temp_l', 'salt_l', 'do_l', 'ph_l']
+        # 必要な列だけを安全に取り出す
+        df_final = pd.DataFrame()
+        df_final['datetime'] = pd.to_datetime(df_raw[0], format='%Y/%m/%d %H:%M', errors='coerce')
+        df_final['temp_u'] = pd.to_numeric(df_raw[temp_idx], errors='coerce')
+        df_final['salt_u'] = pd.to_numeric(df_raw[salt_idx], errors='coerce')
+        df_final['do_u'] = pd.to_numeric(df_raw[do_idx], errors='coerce')
         
-        # 異常値(99999.99)をNaNに変換
-        df.replace(99999.99, pd.NA, inplace=True)
+        # 異常値(99999.99, 99.99など)をNaNに変換 (完全一致と閾値を併用)
+        # TBEICでは999.99や99.99などが欠損・エラーとして使われる
+        df_final.replace([99999.99, 99999.9, 999.99, 999.9, 99.99, 99.9], np.nan, inplace=True)
         
-        # 日時パース (形式: 2024/02/01 02:15)
-        df['datetime'] = pd.to_datetime(df['datetime'], format='%Y/%m/%d %H:%M', errors='coerce')
-        df = df.dropna(subset=['datetime'])
-        df['date'] = df['datetime'].dt.strftime('%Y-%m-%d')
+        # 物理的な妥当性チェック
+        # 水温: 0-40度, 塩分: 0-50, DO: 0-30 の範囲外をNaNに
+        df_final.loc[(df_final['temp_u'] < 0) | (df_final['temp_u'] > 40), 'temp_u'] = np.nan
+        df_final.loc[(df_final['salt_u'] < 0) | (df_final['salt_u'] > 50), 'salt_u'] = np.nan
+        df_final.loc[(df_final['do_u'] < 0) | (df_final['do_u'] > 30), 'do_u'] = np.nan
         
-        # 数値変換
-        numeric_cols = ['temp_u', 'salt_u', 'do_u']
-        for col in numeric_cols:
-            df[col] = pd.to_numeric(df[col], errors='coerce')
+        # クリーニング
+        df_final = df_final.dropna(subset=['datetime'])
+        df_final['date'] = df_final['datetime'].dt.strftime('%Y-%m-%d')
         
         # 日次集約 (平均)
-        daily = df.groupby('date').agg({
+        daily = df_final.groupby('date').agg({
             'temp_u': 'mean',
             'salt_u': 'mean',
             'do_u': 'mean'
@@ -125,6 +145,10 @@ def process_csv_to_daily(csv_text, buoy_name, buoy_id):
                 'fiscal_year': dt.year if dt.month >= 4 else dt.year - 1,
                 'data_source': 'tbeic_continuous'
             })
+        if records:
+            # デバッグ用: 最初の1件の内容を表示
+            sample = records[0]
+            print(f"    🔍 Debug: {sample['date']} -> Temp: {sample['water_temp']:.2f}, Salt: {sample['salinity']:.2f}, DO: {sample['do_level']:.2f}")
         return records
     except Exception as e:
         print(f"  ❌ Error processing CSV: {e}")
@@ -179,7 +203,25 @@ def sync_all(start_year=2010):
                 current_end = today
             
             print(f"  📅 {current_start.strftime('%Y-%m')} 取得中...")
-            csv_text = fetch_tbeic_csv(buoy_id, current_start, current_end)
+            
+            csv_path = os.path.join(CSV_DIR, f"{buoy_id}_{current_start.strftime('%Y%m')}.csv")
+            csv_text = None
+            
+            # 1. ローカルキャッシュの確認
+            if os.path.exists(csv_path):
+                print(f"    📦 Loading from local cache: {os.path.basename(csv_path)}")
+                with open(csv_path, 'r', encoding='utf-8') as f:
+                    csv_text = f.read()
+            
+            # 2. キャッシュがない場合はAPIから取得
+            if not csv_text:
+                csv_text = fetch_tbeic_csv(buoy_id, current_start, current_end)
+                if csv_text and len(csv_text.strip()) > 0:
+                    os.makedirs(CSV_DIR, exist_ok=True)
+                    with open(csv_path, 'w', encoding='utf-8') as f:
+                        f.write(csv_text)
+                    time.sleep(1)  # APIアクセス時のみウェイト
+
             records = process_csv_to_daily(csv_text, buoy_name, buoy_id)
             
             if records:
@@ -187,7 +229,6 @@ def sync_all(start_year=2010):
                 print(f"  ✅ {len(records)} 日分のデータを保存しました。")
             
             current_start = current_end + timedelta(days=1)
-            time.sleep(1)  # サーバー負荷軽減
 
 if __name__ == "__main__":
     import sys
