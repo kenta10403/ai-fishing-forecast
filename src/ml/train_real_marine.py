@@ -77,9 +77,8 @@ def train_marine_env_model(df):
     for target in targets:
         print(f"  -> {target} のモデルを構築中...")
         
-        # このターゲットのラグ変数
-        lag_col = f"{target}_lag1"
-        target_features = base_features + [lag_col]
+        # ラグ変数はTrain-Serving Skewを引き起こすため廃止 (Issue #40)
+        target_features = base_features.copy()
         
         # 1. 学習データの準備: このターゲットの実測値がある行だけを抽出
         # 他の行は未来推測には使えない（あるいは補完によるリークの原因になる）

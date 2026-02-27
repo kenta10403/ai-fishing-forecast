@@ -136,45 +136,8 @@ def generate_ai_calendar(num_days=10):
     # データ取得
     forecast_data = fetch_openmeteo_all(today, end_date)
     
-    # 昨日の海況初期値 (DBから最新の実測値を取得)
-    last_marine = {
-        'real_water_temp': 15.0, 'real_salinity': 30.0, 'real_do': 8.0, 
-        'real_cod': 3.0, 'real_transparency': 3.0, 'real_wave_height': 0.5, 'real_river_discharge': 100.0
-    }
+    # (Issue #40: Train-Serving Skew対策により、海況モデルの自己回帰ラグを廃止したため初期値取得を削除)
     
-    try:
-        conn = sqlite3.connect(DB_PATH)
-        cursor = conn.cursor()
-        
-        # marine_environment_history と tokyo_bay_marine_data
-        # tokyo_bay_marine_data から取得を試みる
-        cursor.execute("""
-            SELECT water_temp, salinity, do_level, cod, transparency
-            FROM tokyo_bay_marine_data
-            ORDER BY date DESC LIMIT 1
-        """)
-        row = cursor.fetchone()
-        if row:
-            last_marine['real_water_temp'] = float(row[0]) if row[0] is not None else 15.0
-            last_marine['real_salinity'] = float(row[1]) if row[1] is not None else 30.0
-            last_marine['real_do'] = float(row[2]) if row[2] is not None else 8.0
-            last_marine['real_cod'] = float(row[3]) if row[3] is not None else 3.0
-            last_marine['real_transparency'] = float(row[4]) if row[4] is not None else 3.0
-            
-        # 波高、河川流量は openmeteo_marine_history
-        cursor.execute("""
-            SELECT wave_height_max, river_discharge
-            FROM openmeteo_marine_history
-            ORDER BY date DESC LIMIT 1
-        """)
-        row2 = cursor.fetchone()
-        if row2:
-            last_marine['real_wave_height'] = float(row2[0]) if row2[0] is not None else 0.5
-            last_marine['real_river_discharge'] = float(row2[1]) if row2[1] is not None else 100.0
-            
-        conn.close()
-    except Exception as e:
-        print(f"DBから初期値取得エラー: {e} (デフォルト値を使用します)")
     
     # 潮汐データの取得 (予測期間分)
     tide_map = {}
@@ -228,11 +191,9 @@ def generate_ai_calendar(num_days=10):
         
         # ターゲットごとに予測
         for target, m_info in marine_data.items():
-            # ラグ変数の取得
-            lag_val = last_marine.get(target, m_info['train_means'].get(f'{target}_lag1', 0.5))
             
             # 特徴量 DataFrame の作成 (警告回避と整合性のために名前付きで渡す)
-            feat_df = pd.DataFrame([base_marine_features + [lag_val]], columns=m_info['features'])
+            feat_df = pd.DataFrame([base_marine_features], columns=m_info['features'])
             
             # 予測実行
             p_val = m_info['model'].predict(feat_df)[0]
@@ -266,11 +227,6 @@ def generate_ai_calendar(num_days=10):
         score = max(5, min(100, score))
         
         # 昨日の状態を更新 (次のループ用)
-        # 予測値をラグとして更新する (Issue #41 との整合性も考慮し、本来はこの漏洩なしモデルで伝播させるべき)
-        for k in last_marine:
-            if k in p_marine:
-                last_marine[k] = p_marine[k]
-
         last_weather['precipitation_lag2'] = last_weather['precipitation_lag1']
         last_weather['precipitation_lag1'] = f.get('precipitation', 0)
         last_weather['avg_wind_speed_lag1'] = f.get('avg_wind_speed', 3)
