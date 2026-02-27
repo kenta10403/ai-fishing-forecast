@@ -107,7 +107,7 @@ def create_dataset():
     df['wave_direction_dominant'] = df['wave_direction_dominant'].fillna(180)  # 方向のみデフォルト値
 
     # 海界ターゲット列
-    marine_cols = ['real_water_temp', 'real_salinity', 'real_do', 'real_cod', 'real_transparency']
+    marine_cols = ['real_water_temp', 'real_salinity', 'real_do', 'real_cod', 'real_transparency', 'wave_direction_dominant']
 
     # 7. 追加特徴量エンジニアリング (前日値など)
     # 未来の情報が漏れないよう、shift(1) のみを使ってラグを作成する
