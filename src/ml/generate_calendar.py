@@ -2,7 +2,12 @@ import json
 import logging
 import os
 import urllib.request
+import urllib.error
 from datetime import datetime, timedelta
+
+# ロガーの設定
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+logger = logging.getLogger(__name__)
 
 import sqlite3
 import joblib
@@ -76,9 +81,9 @@ def fetch_last_weather_from_db(today):
         if row:
             last_weather['precipitation_lag1'] = row[0] if row[0] is not None else 0
             last_weather['avg_wind_speed_lag1'] = row[1] if row[1] is not None else 3.0
-            print(f"  📊 掟2: 前日({yesterday})の実測値をDBから取得 → 降水量={last_weather['precipitation_lag1']}, 風速={last_weather['avg_wind_speed_lag1']}")
+            logger.info(f"掟2: 前日({yesterday})の実測値をDBから取得 → 降水量={last_weather['precipitation_lag1']}, 風速={last_weather['avg_wind_speed_lag1']}")
         else:
-            logging.warning(f"掟2フォールバック: {yesterday}の気象データがDBに無いためデフォルト値を使用")
+            logger.warning(f"掟2フォールバック: {yesterday}の気象データがDBに無いためデフォルト値を使用")
 
         # 前々日データ取得 (lag2)
         cursor.execute(
@@ -88,13 +93,13 @@ def fetch_last_weather_from_db(today):
         row = cursor.fetchone()
         if row:
             last_weather['precipitation_lag2'] = row[0] if row[0] is not None else 0
-            print(f"  📊 掟2: 前々日({day_before})の実測値をDBから取得 → 降水量={last_weather['precipitation_lag2']}")
+            logger.info(f"掟2: 前々日({day_before})の実測値をDBから取得 → 降水量={last_weather['precipitation_lag2']}")
         else:
-            logging.warning(f"掟2フォールバック: {day_before}の気象データがDBに無いためデフォルト値を使用")
+            logger.warning(f"掟2フォールバック: {day_before}の気象データがDBに無いためデフォルト値を使用")
 
         conn.close()
     except Exception as e:
-        logging.warning(f"掟2フォールバック: DB接続エラー ({e})、デフォルト値を使用")
+        logger.error(f"掟2フォールバック: DB接続エラー ({e})、デフォルト値を使用")
 
     return last_weather
 
@@ -123,10 +128,17 @@ def _fetch_met_norway_weather(start_date, end_date, data_map):
     try:
         with urllib.request.urlopen(req, timeout=30) as res:
             d_json = json.loads(res.read().decode())
+    except (urllib.error.URLError, TimeoutError, json.JSONDecodeError) as e:
+        logger.error(f"MET Norway API Error: 通信またはパースに失敗しました - {e}")
+        return
+    except Exception as e:
+        logger.error(f"MET Norway API Error: 予期せぬ通信エラー - {e}")
+        return
 
+    try:
         timeseries = d_json.get('properties', {}).get('timeseries', [])
         if not timeseries:
-            print("⚠️ MET Norway: timeseries が空です")
+            logger.warning("MET Norway: timeseries が空です")
             return
 
         # Hourly data を日ごとに集約するためのバケット
@@ -185,10 +197,10 @@ def _fetch_met_norway_weather(start_date, end_date, data_map):
             except Exception:
                 data_map[d_str]['daylight_hours'] = 8.0
 
-        print(f"  ☀️ MET Norway: {len(daily_buckets)}日分の気象予報を取得")
+        logger.info(f"MET Norway: {len(daily_buckets)}日分の気象予報を取得")
 
     except Exception as e:
-        print(f"MET Norway Weather API Error: {e}")
+        logger.error(f"MET Norway Weather Parsing Error: パース中の予期せぬエラー - {e}")
 
 
 def _fetch_copernicus_marine(start_date, end_date, data_map):
@@ -200,12 +212,12 @@ def _fetch_copernicus_marine(start_date, end_date, data_map):
     try:
         import copernicusmarine
     except ImportError:
-        print("⚠️ copernicusmarine ライブラリが未インストールです。pip install copernicusmarine を実行してください。")
+        logger.warning("copernicusmarine ライブラリが未インストールです。pip install copernicusmarine を実行してください。")
         return
 
     from config import COPERNICUS_USERNAME_ENV, COPERNICUS_PASSWORD_ENV
     if not os.environ.get(COPERNICUS_USERNAME_ENV) or not os.environ.get(COPERNICUS_PASSWORD_ENV):
-        print(f"⚠️ Copernicus Marine の認証情報 ({COPERNICUS_USERNAME_ENV} / {COPERNICUS_PASSWORD_ENV}) が .env に設定されていません。スキップします。")
+        logger.warning(f"Copernicus Marine の認証情報 ({COPERNICUS_USERNAME_ENV} / {COPERNICUS_PASSWORD_ENV}) が .env に設定されていません。スキップします。")
         return
 
     # -- 波高 (Significant Wave Height) --
@@ -231,9 +243,9 @@ def _fetch_copernicus_marine(start_date, end_date, data_map):
                 if not np.isnan(val):
                     data_map[d_str]['wave_height'] = val
         ds_wave.close()
-        print(f"  🌊 Copernicus Wave: {len(wave_daily.time)}日分の波高予報を取得")
+        logger.info(f"Copernicus Wave: {len(wave_daily.time)}日分の波高予報を取得")
     except Exception as e:
-        print(f"Copernicus Wave API Error: {e}")
+        logger.error(f"Copernicus Wave API Error: {e}")
 
     # -- 海面水温 (Sea Surface Temperature) --
     try:
@@ -260,9 +272,9 @@ def _fetch_copernicus_marine(start_date, end_date, data_map):
                 if not np.isnan(val):
                     data_map[d_str]['sea_surface_temperature'] = val
         ds_sst.close()
-        print(f"  🌡️ Copernicus SST: {len(sst_daily.time)}日分の海面水温予報を取得")
+        logger.info(f"Copernicus SST: {len(sst_daily.time)}日分の海面水温予報を取得")
     except Exception as e:
-        print(f"Copernicus SST API Error: {e}")
+        logger.error(f"Copernicus SST API Error: {e}")
 
 
 def _fetch_river_discharge_from_db(data_map):
@@ -283,14 +295,14 @@ def _fetch_river_discharge_from_db(data_map):
         row = cursor.fetchone()
         if row:
             latest_discharge = row[0]
-            print(f"  🏞️ 河川流量: DBから最新実測値={latest_discharge:.1f}m³/s を取得")
+            logger.info(f"河川流量: DBから最新実測値={latest_discharge:.1f}m³/s を取得")
         conn.close()
     except Exception as e:
-        logging.warning(f"河川流量DB取得エラー: {e}")
+        logger.warning(f"河川流量DB取得エラー: {e}")
 
     if latest_discharge is None:
         latest_discharge = 50.0  # 荒川の平水流量の概算フォールバック値
-        logging.warning("河川流量: DB取得失敗のためデフォルト値(50.0)を使用")
+        logger.warning("河川流量: DB取得失敗のためデフォルト値(50.0)を使用")
 
     # 推論ループ: 降水予報連動の移動平均減衰ロジック (掟3の応用)
     prev_discharge = latest_discharge
@@ -332,10 +344,10 @@ def generate_ai_calendar(num_days=10):
     """
     2段階AIモデルを使って最新の釣果予測カレンダーを生成
     """
-    print("🚀 2段階AI推論パイプライン実行中 (データ駆動型)...")
+    logger.info("2段階AI推論パイプライン実行中 (データ駆動型)...")
     
     if not (os.path.exists(MARINE_MODEL_PATH) and os.path.exists(CATCH_MODEL_PATH)):
-        print("Error: AIモデルが見つかりません。train_real_marine.pyを先に実行してください。")
+        logger.error("AIモデルが見つかりません。train_real_marine.pyを先に実行してください。")
         return
 
     marine_data = joblib.load(MARINE_MODEL_PATH)
@@ -366,7 +378,7 @@ def generate_ai_calendar(num_days=10):
             tide_map[row[0]] = row[1] if row[1] else "中潮"
         conn.close()
     except Exception as e:
-        print(f"DBから潮汐データ取得エラー: {e}")
+        logger.error(f"DBから潮汐データ取得エラー: {e}")
         
     # 【掟2: 現実同期】DBから実測値を取得（ハードコーディング禁止）
     last_weather = fetch_last_weather_from_db(today)
@@ -378,7 +390,7 @@ def generate_ai_calendar(num_days=10):
         d_str = d.strftime("%Y-%m-%d")
         f = forecast_data.get(d_str, {})
         if not f:
-            print(f"Skipping {d_str} (API data unavailable)")
+            logger.warning(f"Skipping {d_str} (API data unavailable)")
             continue
         
         month = d.month
@@ -421,7 +433,7 @@ def generate_ai_calendar(num_days=10):
         # 海面水温: Copernicus 値があればモデル予測より優先
         if f.get('sea_surface_temperature') is not None:
             p_marine['real_water_temp'] = f['sea_surface_temperature']
-            print(f"  🌊 {d_str}: SST={f['sea_surface_temperature']:.1f}°C (Copernicus直接値)")
+            logger.info(f"{d_str}: SST={f['sea_surface_temperature']:.1f}°C (Copernicus直接値)")
 
         # 2. 釣果予測 (Catch Forecast)
         catch_features = [
@@ -505,7 +517,7 @@ def generate_ai_calendar(num_days=10):
     with open(out_path, 'w', encoding='utf-8') as f:
         json.dump(output_days, f, ensure_ascii=False, indent=2)
     
-    print(f"✅ カレンダー更新完了: {out_path}")
+    logger.info(f"カレンダー更新完了: {out_path}")
 
 if __name__ == "__main__":
     generate_ai_calendar()
