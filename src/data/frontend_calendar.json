@@ -2,140 +2,140 @@
   {
     "date": "2026/02/27",
     "type": "forecast",
-    "score": 69,
+    "score": 45,
     "weather": "sunny",
     "tide": "長潮",
     "marine": {
       "temp": 10.9,
-      "transparency": 3.7,
+      "transparency": 3.5,
       "wave": 0.5,
-      "salinity": 30.7
+      "salinity": 30.9
     },
     "ai_comment": "季節ごとの適水温で活性期待"
   },
   {
     "date": "2026/02/28",
     "type": "forecast",
-    "score": 44,
+    "score": 28,
     "weather": "sunny",
     "tide": "若潮",
     "marine": {
       "temp": 10.9,
-      "transparency": 4.6,
+      "transparency": 3.4,
       "wave": 0.5,
-      "salinity": 31.0
+      "salinity": 31.6
     },
     "ai_comment": "季節ごとの適水温で活性期待"
   },
   {
     "date": "2026/03/01",
     "type": "forecast",
-    "score": 39,
+    "score": 8,
     "weather": "sunny",
     "tide": "中潮",
     "marine": {
       "temp": 11.1,
-      "transparency": 3.7,
+      "transparency": 4.2,
       "wave": 0.5,
-      "salinity": 31.0
+      "salinity": 31.1
     },
     "ai_comment": "水温が低く活性低下の懸念"
   },
   {
     "date": "2026/03/02",
     "type": "forecast",
-    "score": 60,
+    "score": 78,
     "weather": "sunny",
     "tide": "中潮",
     "marine": {
       "temp": 11.1,
-      "transparency": 3.7,
+      "transparency": 4.9,
       "wave": 0.3,
-      "salinity": 31.0
+      "salinity": 31.1
     },
     "ai_comment": "水温が低く活性低下の懸念"
   },
   {
     "date": "2026/03/03",
     "type": "forecast",
-    "score": 45,
-    "weather": "sunny",
+    "score": 75,
+    "weather": "rain",
     "tide": "大潮",
     "marine": {
       "temp": 11.2,
-      "transparency": 3.8,
+      "transparency": 8.1,
       "wave": 0.8,
-      "salinity": 30.9
+      "salinity": 31.7
     },
-    "ai_comment": "水温が低く活性低下の懸念"
+    "ai_comment": "水温が低く活性低下の懸念、雨による水質変化に注意"
   },
   {
     "date": "2026/03/04",
     "type": "forecast",
-    "score": 45,
-    "weather": "sunny",
+    "score": 88,
+    "weather": "rain",
     "tide": "大潮",
     "marine": {
       "temp": 11.5,
-      "transparency": 3.8,
+      "transparency": 6.2,
       "wave": 0.8,
-      "salinity": 30.9
+      "salinity": 31.4
     },
     "ai_comment": "水温が低く活性低下の懸念"
   },
   {
     "date": "2026/03/05",
     "type": "forecast",
-    "score": 57,
+    "score": 53,
     "weather": "sunny",
     "tide": "大潮",
     "marine": {
       "temp": 11.7,
-      "transparency": 3.8,
+      "transparency": 4.7,
       "wave": 0.4,
-      "salinity": 30.9
+      "salinity": 31.3
     },
     "ai_comment": "水温が低く活性低下の懸念"
   },
   {
     "date": "2026/03/06",
     "type": "forecast",
-    "score": 57,
+    "score": 52,
     "weather": "sunny",
     "tide": "大潮",
     "marine": {
       "temp": 11.6,
-      "transparency": 3.8,
+      "transparency": 5.0,
       "wave": 0.2,
-      "salinity": 30.9
+      "salinity": 31.1
     },
     "ai_comment": "水温が低く活性低下の懸念"
   },
   {
     "date": "2026/03/07",
     "type": "forecast",
-    "score": 71,
-    "weather": "sunny",
+    "score": 59,
+    "weather": "rain",
     "tide": "中潮",
     "marine": {
       "temp": 11.7,
-      "transparency": 3.7,
+      "transparency": 2.8,
       "wave": 0.7,
-      "salinity": 31.0
+      "salinity": 31.3
     },
     "ai_comment": "水温が低く活性低下の懸念"
   },
   {
     "date": "2026/03/08",
     "type": "forecast",
-    "score": 81,
+    "score": 72,
     "weather": "sunny",
     "tide": "中潮",
     "marine": {
       "temp": 11.6,
-      "transparency": 3.7,
+      "transparency": 5.3,
       "wave": 0.9,
-      "salinity": 31.0
+      "salinity": 31.3
     },
     "ai_comment": "水温が低く活性低下の懸念"
   }
