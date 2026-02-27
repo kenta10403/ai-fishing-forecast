@@ -2,21 +2,32 @@ import json
 import logging
 import os
 import urllib.request
-from datetime import datetime, timedelta
+import urllib.error
+from datetime import datetime, timedelta, timezone
+from dateutil import parser
+
+# ロガーの設定
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+logger = logging.getLogger(__name__)
 
 import sqlite3
 import joblib
 import numpy as np
 import pandas as pd
 import scipy.stats as stats
+from astral import LocationInfo
+from astral.sun import sun
+from dotenv import load_dotenv
 
 # -- Model Paths --
 ML_DIR = os.path.dirname(__file__)
 DB_PATH = os.path.join(os.path.dirname(os.path.dirname(ML_DIR)), "data", "fishing_forecast.db")
+ENV_PATH = os.path.join(os.path.dirname(os.path.dirname(ML_DIR)), ".env")
+load_dotenv(ENV_PATH)
 MARINE_MODEL_PATH = os.path.join(ML_DIR, "model_marine_env_real.pkl")
 CATCH_MODEL_PATH = os.path.join(ML_DIR, "model_catch_forecast_real.pkl")
 
-from config import TOKYO_BAY_CENTER, ARAKAWA_ESTUARY
+from config import TOKYO_BAY_CENTER, ARAKAWA_ESTUARY, MET_NORWAY_USER_AGENT
 
 # -- Coordinates --
 MARINE_LAT = TOKYO_BAY_CENTER['lat']
@@ -24,6 +35,10 @@ MARINE_LON = TOKYO_BAY_CENTER['lon']
 
 RIVER_LAT = ARAKAWA_ESTUARY['lat']
 RIVER_LON = ARAKAWA_ESTUARY['lon']
+
+# -- Astral Location for Daylight Calculation --
+_LOCATION = LocationInfo("Tokyo Bay", "Japan", "Asia/Tokyo", MARINE_LAT, MARINE_LON)
+
 
 def get_tide_level(d_str, tide_map):
     """
@@ -67,9 +82,9 @@ def fetch_last_weather_from_db(today):
         if row:
             last_weather['precipitation_lag1'] = row[0] if row[0] is not None else 0
             last_weather['avg_wind_speed_lag1'] = row[1] if row[1] is not None else 3.0
-            print(f"  📊 掟2: 前日({yesterday})の実測値をDBから取得 → 降水量={last_weather['precipitation_lag1']}, 風速={last_weather['avg_wind_speed_lag1']}")
+            logger.info(f"掟2: 前日({yesterday})の実測値をDBから取得 → 降水量={last_weather['precipitation_lag1']}, 風速={last_weather['avg_wind_speed_lag1']}")
         else:
-            logging.warning(f"掟2フォールバック: {yesterday}の気象データがDBに無いためデフォルト値を使用")
+            logger.warning(f"掟2フォールバック: {yesterday}の気象データがDBに無いためデフォルト値を使用")
 
         # 前々日データ取得 (lag2)
         cursor.execute(
@@ -79,118 +94,231 @@ def fetch_last_weather_from_db(today):
         row = cursor.fetchone()
         if row:
             last_weather['precipitation_lag2'] = row[0] if row[0] is not None else 0
-            print(f"  📊 掟2: 前々日({day_before})の実測値をDBから取得 → 降水量={last_weather['precipitation_lag2']}")
+            logger.info(f"掟2: 前々日({day_before})の実測値をDBから取得 → 降水量={last_weather['precipitation_lag2']}")
         else:
-            logging.warning(f"掟2フォールバック: {day_before}の気象データがDBに無いためデフォルト値を使用")
+            logger.warning(f"掟2フォールバック: {day_before}の気象データがDBに無いためデフォルト値を使用")
 
         conn.close()
     except Exception as e:
-        logging.warning(f"掟2フォールバック: DB接続エラー ({e})、デフォルト値を使用")
+        logger.error(f"掟2フォールバック: DB接続エラー ({e})、デフォルト値を使用")
 
     return last_weather
 
-def fetch_openmeteo_all(start_date, end_date):
+
+def _calculate_daylight_hours(target_date):
+    """astral ライブラリで日の出・日の入りから日照可能時間を算出"""
+    try:
+        s = sun(_LOCATION.observer, date=target_date, tzinfo=_LOCATION.timezone)
+        daylight = (s['sunset'] - s['sunrise']).total_seconds() / 3600.0
+        return daylight
+    except Exception:
+        return 8.0  # フォールバック
+
+
+def _fetch_met_norway_weather(start_date, end_date, data_map):
     """
-    Open-Meteoの各種APIから、推論に必要な気象・海況予報を一括取得
+    【Phase 1: MET Norway Locationforecast 2.0】
+    気象予報（気温・風速・降水量）を取得し、hourly → daily に集約する。
     """
-    start_str = start_date.strftime("%Y-%m-%d")
-    end_str = end_date.strftime("%Y-%m-%d")
-    
+    url = f"https://api.met.no/weatherapi/locationforecast/2.0/compact?lat={MARINE_LAT}&lon={MARINE_LON}"
+    req = urllib.request.Request(url, headers={
+        'User-Agent': MET_NORWAY_USER_AGENT,
+        'Accept': 'application/json'
+    })
+
+    try:
+        with urllib.request.urlopen(req, timeout=30) as res:
+            d_json = json.loads(res.read().decode())
+    except (urllib.error.URLError, TimeoutError, json.JSONDecodeError) as e:
+        logger.error(f"MET Norway API Error: 通信またはパースに失敗しました - {e}")
+        return
+    except Exception as e:
+        logger.error(f"MET Norway API Error: 予期せぬ通信エラー - {e}")
+        return
+
+    try:
+        timeseries = d_json.get('properties', {}).get('timeseries', [])
+        if not timeseries:
+            logger.warning("MET Norway: timeseries が空です")
+            return
+
+        # Hourly data を日ごとに集約するためのバケット
+        daily_buckets = {}
+        JST = timezone(timedelta(hours=+9), 'JST')
+
+        for entry in timeseries:
+            utc_time = parser.parse(entry.get('time', ''))
+            jst_time = utc_time.astimezone(JST)
+            ts = jst_time.strftime('%Y-%m-%d')
+            
+            if ts not in data_map:
+                continue
+
+            if ts not in daily_buckets:
+                daily_buckets[ts] = {
+                    'temps': [], 'winds': [], 'precip_sum': 0.0
+                }
+
+            instant = entry.get('data', {}).get('instant', {}).get('details', {})
+            temps = instant.get('air_temperature')
+            winds = instant.get('wind_speed')
+
+            if temps is not None:
+                daily_buckets[ts]['temps'].append(temps)
+            if winds is not None:
+                daily_buckets[ts]['winds'].append(winds)
+
+            # 降水量: next_1_hours > next_6_hours の順に取得
+            for period_key in ['next_1_hours', 'next_6_hours']:
+                period_data = entry.get('data', {}).get(period_key, {})
+                precip = period_data.get('details', {}).get('precipitation_amount')
+                if precip is not None:
+                    daily_buckets[ts]['precip_sum'] += precip
+                    break  # 一番短い期間のデータを採用
+
+        # daily集約 → data_map に書き込み
+        for d_str, bucket in daily_buckets.items():
+            if d_str not in data_map:
+                continue
+
+            if bucket['temps']:
+                data_map[d_str]['max_temp'] = max(bucket['temps'])
+                data_map[d_str]['min_temp'] = min(bucket['temps'])
+                data_map[d_str]['avg_temp'] = sum(bucket['temps']) / len(bucket['temps'])
+
+            if bucket['winds']:
+                data_map[d_str]['max_wind_speed'] = max(bucket['winds'])
+                data_map[d_str]['avg_wind_speed'] = sum(bucket['winds']) / len(bucket['winds'])
+            else:
+                data_map[d_str]['max_wind_speed'] = 0
+                data_map[d_str]['avg_wind_speed'] = 0
+
+            data_map[d_str]['precipitation'] = bucket['precip_sum']
+
+            # 日照時間は astral で算出
+            try:
+                d_obj = datetime.strptime(d_str, "%Y-%m-%d")
+                data_map[d_str]['daylight_hours'] = _calculate_daylight_hours(d_obj)
+            except Exception:
+                data_map[d_str]['daylight_hours'] = 8.0
+
+        logger.info(f"MET Norway: {len(daily_buckets)}日分の気象予報を取得")
+
+    except Exception as e:
+        logger.error(f"MET Norway Weather Parsing Error: パース中の予期せぬエラー - {e}")
+
+
+def _fetch_copernicus_forecast_from_db(start_date, end_date, data_map):
+    """
+    【Phase 2: Copernicus Marine Service】
+    推論時間短縮のため、別バッチで記録されたDB上の予報データ（波高・水温）を読み込む。
+    """
+    try:
+        conn = sqlite3.connect(DB_PATH)
+        cursor = conn.cursor()
+        
+        # marine_forecast_history の構造が更新されている前提
+        # sea_surface_temperatureカラム等の存在保証はマイグレーションにて。
+        try:
+            cursor.execute("ALTER TABLE marine_forecast_history ADD COLUMN sea_surface_temperature REAL")
+            conn.commit()
+        except sqlite3.OperationalError:
+            pass # 既に存在している場合は無視
+            
+        start_str = start_date.strftime("%Y-%m-%d")
+        end_str = end_date.strftime("%Y-%m-%d")
+        
+        cursor.execute('''
+            SELECT date, wave_height_max, sea_surface_temperature 
+            FROM marine_forecast_history 
+            WHERE date >= ? AND date <= ?
+        ''', (start_str, end_str))
+        
+        records = cursor.fetchall()
+        for row in records:
+            d_str, wave, sst = row
+            if d_str in data_map:
+                if wave is not None:
+                    data_map[d_str]['wave_height'] = wave
+                if sst is not None:
+                    data_map[d_str]['sea_surface_temperature'] = sst
+                    
+        conn.close()
+        logger.info(f"Copernicus Marine: DBから予報データ({len(records)}件)を取得完了")
+    except Exception as e:
+        logger.error(f"Copernicus Marine DB取得エラー: {e}")
+
+
+def _fetch_river_discharge_from_db(data_map):
+    """
+    【Phase 3: 河川流量】
+    DBから最新の実測河川流量を取得し、翌日以降は降水予報に連動した移動平均減衰ロジックで推定。
+    """
+    latest_discharge = None
+    try:
+        conn = sqlite3.connect(DB_PATH)
+        cursor = conn.cursor()
+        # marine_forecast_history から最新の river_discharge を取得 (旧 openmeteo_marine_history)
+        cursor.execute("""
+            SELECT river_discharge FROM marine_forecast_history 
+            WHERE river_discharge IS NOT NULL 
+            ORDER BY date DESC LIMIT 1
+        """)
+        row = cursor.fetchone()
+        if row:
+            latest_discharge = row[0]
+            logger.info(f"河川流量: DBから最新実測値={latest_discharge:.1f}m³/s を取得")
+        conn.close()
+    except Exception as e:
+        logger.warning(f"河川流量DB取得エラー: {e}")
+
+    if latest_discharge is None:
+        latest_discharge = 50.0  # 荒川の平水流量の概算フォールバック値
+        logger.warning("河川流量: DB取得失敗のためデフォルト値(50.0)を使用")
+
+    # 推論ループ: 降水予報連動の移動平均減衰ロジック (掟3の応用)
+    prev_discharge = latest_discharge
+    for d_str in sorted(data_map.keys()):
+        precip = data_map[d_str].get('precipitation', 0)
+        # 降水量に応じて流量を増減: 晴れでも前日の95%を維持、雨の日は少し増加
+        factor = 0.95 + 0.1 * min(precip / 20.0, 1.0)
+        river_discharge = prev_discharge * factor
+        # 下限設定 (完全に0にはならない)
+        river_discharge = max(river_discharge, 10.0)
+        data_map[d_str]['river_discharge'] = river_discharge
+        prev_discharge = river_discharge
+
+
+def fetch_forecast_all(start_date, end_date):
+    """
+    MET Norway・Copernicus・国交省DBから、推論に必要な気象・海況予報を一括取得。
+    旧 fetch_openmeteo_all() を完全置換。
+    """
     data_map = {}
     dates = pd.date_range(start_date, end_date)
     for d in dates:
         data_map[d.strftime("%Y-%m-%d")] = {}
 
-    # 1. Weather Forecast (Temp, Wind, Rain)
-    url = f"https://api.open-meteo.com/v1/forecast?latitude={MARINE_LAT}&longitude={MARINE_LON}&hourly=windspeed_10m&daily=temperature_2m_max,temperature_2m_min,precipitation_sum,windspeed_10m_max,sunshine_duration&wind_speed_unit=ms&timezone=Asia%2FTokyo&start_date={start_str}&end_date={end_str}"
-    try:
-        with urllib.request.urlopen(url) as res:
-            d_json = json.loads(res.read().decode())
-            daily = d_json.get('daily', {})
-            hourly = d_json.get('hourly', {})
+    # 1. 気象予報 (MET Norway Locationforecast 2.0)
+    _fetch_met_norway_weather(start_date, end_date, data_map)
 
-            daily_wind_avg = {}
-            if 'time' in hourly and 'windspeed_10m' in hourly:
-                for ht, hw in zip(hourly['time'], hourly['windspeed_10m']):
-                    d_key = ht[:10]
-                    if d_key not in daily_wind_avg:
-                        daily_wind_avg[d_key] = []
-                    if hw is not None:
-                        daily_wind_avg[d_key].append(hw)
+    # 2. 海況予報 (Copernicus Marine: 波高 + SSTをDBから取得)
+    _fetch_copernicus_forecast_from_db(start_date, end_date, data_map)
 
-            if 'time' in daily:
-                for i, t in enumerate(daily['time']):
-                    if t in data_map:
-                        data_map[t]['max_temp'] = daily['temperature_2m_max'][i]
-                        data_map[t]['min_temp'] = daily['temperature_2m_min'][i]
-                        data_map[t]['avg_temp'] = (daily['temperature_2m_max'][i] + daily['temperature_2m_min'][i]) / 2
-                        data_map[t]['precipitation'] = daily['precipitation_sum'][i]
-                        
-                        max_w = daily['windspeed_10m_max'][i]
-                        data_map[t]['max_wind_speed'] = max_w if max_w is not None else 0
-                        
-                        if t in daily_wind_avg and len(daily_wind_avg[t]) > 0:
-                            data_map[t]['avg_wind_speed'] = sum(daily_wind_avg[t]) / len(daily_wind_avg[t])
-                        else:
-                            data_map[t]['avg_wind_speed'] = (max_w * 0.7) if max_w is not None else 0
-                            
-                        # Radiation to Daylight Hours approx
-                        if 'sunshine_duration' in daily and daily['sunshine_duration'][i] is not None:
-                            data_map[t]['daylight_hours'] = daily['sunshine_duration'][i] / 3600.0
-                        else:
-                            data_map[t]['daylight_hours'] = 8.0 # default fallback 
-    except Exception as e: print(f"Weather API Error: {e}")
-
-    # 2. Marine Forecast (Wave + Sea Surface Temperature)
-    url = f"https://marine-api.open-meteo.com/v1/marine?latitude={MARINE_LAT}&longitude={MARINE_LON}&daily=wave_height_max&hourly=sea_surface_temperature&timezone=Asia%2FTokyo&start_date={start_str}&end_date={end_str}"
-    try:
-        with urllib.request.urlopen(url) as res:
-            d_json = json.loads(res.read().decode())
-            daily = d_json.get('daily', {})
-            hourly = d_json.get('hourly', {})
-            
-            # 波高 (daily)
-            if 'time' in daily:
-                for i, t in enumerate(daily['time']):
-                    if t in data_map:
-                        data_map[t]['wave_height'] = daily['wave_height_max'][i]
-            
-            # 海面水温 (hourly → daily平均に集約)
-            if 'time' in hourly and 'sea_surface_temperature' in hourly:
-                daily_sst = {}
-                for ht, sst in zip(hourly['time'], hourly['sea_surface_temperature']):
-                    d_key = ht[:10]
-                    if d_key not in daily_sst:
-                        daily_sst[d_key] = []
-                    if sst is not None:
-                        daily_sst[d_key].append(sst)
-                for d_key, sst_list in daily_sst.items():
-                    if d_key in data_map and sst_list:
-                        data_map[d_key]['sea_surface_temperature'] = sum(sst_list) / len(sst_list)
-                        
-    except Exception as e: print(f"Marine API Error: {e}")
-
-    # 3. Flood Forecast (River Discharge)
-    url = f"https://flood-api.open-meteo.com/v1/flood?latitude={RIVER_LAT}&longitude={RIVER_LON}&daily=river_discharge&timezone=Asia%2FTokyo&start_date={start_str}&end_date={end_str}"
-    try:
-        with urllib.request.urlopen(url) as res:
-            d_json = json.loads(res.read().decode())
-            daily = d_json['daily']
-            for i, t in enumerate(daily['time']):
-                if t in data_map:
-                    data_map[t]['river_discharge'] = daily['river_discharge'][i]
-    except Exception as e: print(f"Flood API Error: {e}")
+    # 3. 河川流量 (DB実測値 + 移動平均減衰)
+    _fetch_river_discharge_from_db(data_map)
 
     return data_map
+
 
 def generate_ai_calendar(num_days=10):
     """
     2段階AIモデルを使って最新の釣果予測カレンダーを生成
     """
-    print("🚀 2段階AI推論パイプライン実行中 (データ駆動型)...")
+    logger.info("2段階AI推論パイプライン実行中 (データ駆動型)...")
     
     if not (os.path.exists(MARINE_MODEL_PATH) and os.path.exists(CATCH_MODEL_PATH)):
-        print("Error: AIモデルが見つかりません。train_real_marine.pyを先に実行してください。")
+        logger.error("AIモデルが見つかりません。train_real_marine.pyを先に実行してください。")
         return
 
     marine_data = joblib.load(MARINE_MODEL_PATH)
@@ -203,8 +331,8 @@ def generate_ai_calendar(num_days=10):
     today = datetime.now().replace(hour=0, minute=0, second=0, microsecond=0)
     end_date = today + timedelta(days=num_days - 1)
     
-    # データ取得
-    forecast_data = fetch_openmeteo_all(today, end_date)
+    # データ取得 (MET Norway + Copernicus + 国交省DB)
+    forecast_data = fetch_forecast_all(today, end_date)
     
     # (Issue #40: Train-Serving Skew対策により、海況モデルの自己回帰ラグを廃止したため初期値取得を削除)
     
@@ -221,7 +349,7 @@ def generate_ai_calendar(num_days=10):
             tide_map[row[0]] = row[1] if row[1] else "中潮"
         conn.close()
     except Exception as e:
-        print(f"DBから潮汐データ取得エラー: {e}")
+        logger.error(f"DBから潮汐データ取得エラー: {e}")
         
     # 【掟2: 現実同期】DBから実測値を取得（ハードコーディング禁止）
     last_weather = fetch_last_weather_from_db(today)
@@ -233,7 +361,7 @@ def generate_ai_calendar(num_days=10):
         d_str = d.strftime("%Y-%m-%d")
         f = forecast_data.get(d_str, {})
         if not f:
-            print(f"Skipping {d_str} (API data unavailable)")
+            logger.warning(f"Skipping {d_str} (API data unavailable)")
             continue
         
         month = d.month
@@ -243,60 +371,69 @@ def generate_ai_calendar(num_days=10):
         is_weekend = 1 if day_of_week in [5, 6] else 0
 
         # 1. 海況予測 (Marine Env)
-        # 個別モデル形式に対応
         p_marine = {}
-        base_marine_features = [
-            f.get('avg_temp', 15), f.get('max_temp', 20), f.get('min_temp', 10),
-            f.get('avg_wind_speed', 3), f.get('max_wind_speed', 5),
-            f.get('precipitation', 0), last_weather['precipitation_lag1'], last_weather['precipitation_lag2'],
-            last_weather['avg_wind_speed_lag1'],
-            f.get('daylight_hours', 8),
-            get_tide_level(d_str, tide_map),
-            1 if d >= datetime(2017,8,1) and d <= datetime(2025,4,30) else 0, # Kuroshio
-            month_sin, month_cos
-        ]
+        base_marine_dict = {
+            'avg_temp': f.get('avg_temp', 15),
+            'max_temp': f.get('max_temp', 20),
+            'min_temp': f.get('min_temp', 10),
+            'avg_wind_speed': f.get('avg_wind_speed', 3),
+            'max_wind_speed': f.get('max_wind_speed', 5),
+            'precipitation': f.get('precipitation', 0),
+            'precipitation_lag1': last_weather['precipitation_lag1'],
+            'precipitation_lag2': last_weather['precipitation_lag2'],
+            'avg_wind_speed_lag1': last_weather['avg_wind_speed_lag1'],
+            'daylight_hours': f.get('daylight_hours', 8),
+            'tide_level': get_tide_level(d_str, tide_map),
+            'is_kuroshio_meander': 1 if d >= datetime(2017,8,1) and d <= datetime(2025,4,30) else 0,
+            'month_sin': month_sin,
+            'month_cos': month_cos
+        }
         
         # ターゲットごとに予測
         for target, m_info in marine_data.items():
-            
-            # 特徴量 DataFrame の作成 (警告回避と整合性のために名前付きで渡す)
-            feat_df = pd.DataFrame([base_marine_features], columns=m_info['features'])
-            
-            # 予測実行
+            # 特徴量 DataFrame の作成 (安全な辞書渡し)
+            feat_df = pd.DataFrame([base_marine_dict])[m_info['features']]
             p_val = m_info['model'].predict(feat_df)[0]
             p_marine[target] = p_val
 
         # --- API直接値による上書き（モデル予測より実測/予報APIを優先） ---
-        # 波高: APIから取得した値をそのまま使用（モデル予測をスキップ）
+        # 波高: Copernicus から取得した値をそのまま使用（モデル予測をスキップ）
         if f.get('wave_height') is not None:
             p_marine['real_wave_height'] = f['wave_height']
-        # 河川流量: APIから取得した値をそのまま使用（モデル予測をスキップ）
+        # 河川流量: DB実測値+減衰ロジックの値をそのまま使用
         if f.get('river_discharge') is not None:
             p_marine['real_river_discharge'] = f['river_discharge']
-        # 海面水温: API値があればモデル予測より優先
+        # 海面水温: Copernicus 値があればモデル予測より優先
         if f.get('sea_surface_temperature') is not None:
             p_marine['real_water_temp'] = f['sea_surface_temperature']
-            print(f"  🌊 {d_str}: SST={f['sea_surface_temperature']:.1f}°C (API直接値)")
+            logger.info(f"{d_str}: SST={f['sea_surface_temperature']:.1f}°C (Copernicus直接値)")
 
         # 2. 釣果予測 (Catch Forecast)
-        catch_features = [
-            f.get('avg_temp', 15), f.get('max_temp', 20), f.get('min_temp', 10),
-            f.get('avg_wind_speed', 3), f.get('max_wind_speed', 5),
-            f.get('precipitation', 0), last_weather['precipitation_lag1'],
-            f.get('daylight_hours', 8),
-            get_tide_level(d_str, tide_map),
-            1 if d >= datetime(2017,8,1) and d <= datetime(2025,4,30) else 0,
-            p_marine.get('real_water_temp', 18), 
-            p_marine.get('real_salinity', 30), 
-            p_marine.get('real_do', 8),
-            p_marine.get('real_transparency', 1.0), 
-            p_marine.get('real_wave_height', 0.5), 
-            p_marine.get('real_river_discharge', 0.5),
-            month_sin, month_cos, day_of_week, is_weekend
-        ]
+        catch_feature_dict = {
+            'avg_temp': f.get('avg_temp', 15),
+            'max_temp': f.get('max_temp', 20),
+            'min_temp': f.get('min_temp', 10),
+            'avg_wind_speed': f.get('avg_wind_speed', 3),
+            'max_wind_speed': f.get('max_wind_speed', 5),
+            'precipitation': f.get('precipitation', 0),
+            'precipitation_lag1': last_weather['precipitation_lag1'],
+            'daylight_hours': f.get('daylight_hours', 8),
+            'tide_level': get_tide_level(d_str, tide_map),
+            'is_kuroshio_meander': 1 if d >= datetime(2017,8,1) and d <= datetime(2025,4,30) else 0,
+            'pred_real_water_temp': p_marine.get('real_water_temp', 18), 
+            'pred_real_salinity': p_marine.get('real_salinity', 30), 
+            'pred_real_do': p_marine.get('real_do', 8),
+            'pred_real_transparency': p_marine.get('real_transparency', 1.0), 
+            'pred_real_wave_height': p_marine.get('real_wave_height', 0.5), 
+            'pred_real_river_discharge': p_marine.get('real_river_discharge', 0.5),
+            'month_sin': month_sin, 
+            'month_cos': month_cos, 
+            'day_of_week': day_of_week, 
+            'is_weekend': is_weekend
+        }
         
-        # 釣果モデルも DataFrame 形式で推論
-        catch_feat_df = pd.DataFrame([catch_features], columns=catch_data['features'])
+        # 釣果モデルも DataFrame 形式で推論 (安全な辞書渡し)
+        catch_feat_df = pd.DataFrame([catch_feature_dict])[catch_data['features']]
         raw_catch = catch_model.predict(catch_feat_df)[0]
         
         # --- 手動補正一切なしの純粋なAIスコア ---
@@ -360,7 +497,7 @@ def generate_ai_calendar(num_days=10):
     with open(out_path, 'w', encoding='utf-8') as f:
         json.dump(output_days, f, ensure_ascii=False, indent=2)
     
-    print(f"✅ カレンダー更新完了: {out_path}")
+    logger.info(f"カレンダー更新完了: {out_path}")
 
 if __name__ == "__main__":
     generate_ai_calendar()

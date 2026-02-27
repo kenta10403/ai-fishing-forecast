@@ -57,15 +57,15 @@ print(f"\n  サンプルデータ（先頭20件）:")
 for row in sample[:10]:
     print(f"    DO={row[0]}, COD={row[1]}")
 
-# 波高（Open-Meteo）
-print("\n【Open-Meteo 波高データ】")
-cursor.execute("SELECT COUNT(*), COUNT(DISTINCT date), MIN(date), MAX(date) FROM openmeteo_marine_history")
+# 波高データ
+print("\n【波高データ (marine_forecast_history)】")
+cursor.execute("SELECT COUNT(*), COUNT(DISTINCT date), MIN(date), MAX(date) FROM marine_forecast_history")
 result = cursor.fetchone()
 print(f"  総レコード数: {result[0]}")
 print(f"  ユニーク日付数: {result[1]}")
 print(f"  期間: {result[2]} 〜 {result[3]}")
 
-cursor.execute("SELECT date, wave_height_max FROM openmeteo_marine_history WHERE wave_height_max IS NOT NULL LIMIT 10")
+cursor.execute("SELECT date, wave_height_max FROM marine_forecast_history WHERE wave_height_max IS NOT NULL LIMIT 10")
 sample = cursor.fetchall()
 print(f"\n  サンプルデータ（先頭10件）:")
 for row in sample:

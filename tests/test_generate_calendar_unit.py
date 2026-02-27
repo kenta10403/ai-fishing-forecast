@@ -1,6 +1,7 @@
 """
 generate_calendar.py のユニットテスト
 掟2（DB初期値取得）・掟3（7:3ブレンド）の検証
++ MET Norway パースロジック、河川流量減衰ロジックの検証
 """
 import sys
 import os
@@ -8,7 +9,8 @@ import sqlite3
 import tempfile
 import pytest
 from datetime import datetime, timedelta
-from unittest.mock import patch
+from unittest.mock import patch, MagicMock
+import json
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'src', 'ml'))
 
@@ -153,3 +155,245 @@ class TestBlendLogic:
 
         # 0に近づいていること
         assert lag < 0.1
+
+
+class TestMETNorwayParsing:
+    """MET Norway Locationforecast 2.0 レスポンスのパースロジックのテスト"""
+
+    def _make_met_response(self):
+        """MET Norway API のモックレスポンスを生成"""
+        today = datetime.now().strftime("%Y-%m-%d")
+        return {
+            "type": "Feature",
+            "properties": {
+                "timeseries": [
+                    {
+                        "time": f"{today}T00:00:00Z",
+                        "data": {
+                            "instant": {
+                                "details": {
+                                    "air_temperature": 5.0,
+                                    "wind_speed": 3.0
+                                }
+                            },
+                            "next_1_hours": {
+                                "details": {"precipitation_amount": 0.5}
+                            }
+                        }
+                    },
+                    {
+                        "time": f"{today}T06:00:00Z",
+                        "data": {
+                            "instant": {
+                                "details": {
+                                    "air_temperature": 10.0,
+                                    "wind_speed": 5.0
+                                }
+                            },
+                            "next_1_hours": {
+                                "details": {"precipitation_amount": 1.5}
+                            }
+                        }
+                    },
+                    {
+                        "time": f"{today}T12:00:00Z",
+                        "data": {
+                            "instant": {
+                                "details": {
+                                    "air_temperature": 15.0,
+                                    "wind_speed": 2.0
+                                }
+                            },
+                            "next_1_hours": {
+                                "details": {"precipitation_amount": 0.0}
+                            }
+                        }
+                    },
+                    {
+                        "time": f"{today}T18:00:00Z",
+                        "data": {
+                            "instant": {
+                                "details": {
+                                    "air_temperature": 8.0,
+                                    "wind_speed": 4.0
+                                }
+                            },
+                            "next_6_hours": {
+                                "details": {"precipitation_amount": 2.0}
+                            }
+                        }
+                    },
+                ]
+            }
+        }
+
+    def test_daily_aggregation(self):
+        """hourly → daily 集約が正しく行われること"""
+        from generate_calendar import _fetch_met_norway_weather
+
+        today = datetime.now().strftime("%Y-%m-%d")
+        data_map = {today: {}}
+        start = datetime.now().replace(hour=0, minute=0, second=0, microsecond=0)
+        end = start
+
+        mock_response = self._make_met_response()
+        mock_read = MagicMock(return_value=json.dumps(mock_response).encode())
+        mock_urlopen = MagicMock()
+        mock_urlopen.__enter__ = MagicMock(return_value=MagicMock(read=mock_read))
+        mock_urlopen.__exit__ = MagicMock(return_value=False)
+
+        with patch('generate_calendar.urllib.request.urlopen', return_value=mock_urlopen):
+            _fetch_met_norway_weather(start, end, data_map)
+
+        assert today in data_map
+        d = data_map[today]
+        # max_temp = max(5, 10, 15) = 15
+        assert d['max_temp'] == 15.0
+        # min_temp = min(5, 10, 15) = 5
+        assert d['min_temp'] == 5.0
+        # avg_temp = (5+10+15)/3 = 10.0
+        assert d['avg_temp'] == pytest.approx(10.0)
+        # max_wind = max(3, 5, 2) = 5
+        assert d['max_wind_speed'] == 5.0
+        # avg_wind = (3+5+2)/3 = 3.3333333
+        assert d['avg_wind_speed'] == pytest.approx(3.33333333)
+        # precipitation = 0.5 + 1.5 + 0.0 = 2.0
+        assert d['precipitation'] == pytest.approx(2.0)
+        # daylight_hours は astral で計算されるので正の値であること
+        assert d['daylight_hours'] > 0
+
+    def test_empty_response_handling(self):
+        """空レスポンス時にクラッシュしないこと"""
+        from generate_calendar import _fetch_met_norway_weather
+
+        today = datetime.now().strftime("%Y-%m-%d")
+        data_map = {today: {}}
+        start = datetime.now().replace(hour=0, minute=0, second=0, microsecond=0)
+        end = start
+
+        mock_response = {"properties": {"timeseries": []}}
+        mock_read = MagicMock(return_value=json.dumps(mock_response).encode())
+        mock_urlopen = MagicMock()
+        mock_urlopen.__enter__ = MagicMock(return_value=MagicMock(read=mock_read))
+        mock_urlopen.__exit__ = MagicMock(return_value=False)
+
+        with patch('generate_calendar.urllib.request.urlopen', return_value=mock_urlopen):
+            _fetch_met_norway_weather(start, end, data_map)
+
+        # data_map は空のまま (エラーなし)
+        assert data_map[today] == {}
+
+
+class TestRiverDischargeDecay:
+    """河川流量の移動平均減衰ロジック検証"""
+
+    def test_decay_with_no_rain(self):
+        """降水量0の場合、流量が減衰すること"""
+        from generate_calendar import _fetch_river_discharge_from_db
+
+        data_map = {
+            "2026-02-28": {"precipitation": 0},
+            "2026-03-01": {"precipitation": 0},
+            "2026-03-02": {"precipitation": 0},
+        }
+
+        with patch('generate_calendar.sqlite3') as mock_sqlite:
+            mock_conn = MagicMock()
+            mock_cursor = MagicMock()
+            mock_cursor.fetchone.return_value = (100.0,)
+            mock_conn.cursor.return_value = mock_cursor
+            mock_sqlite.connect.return_value = mock_conn
+
+            _fetch_river_discharge_from_db(data_map)
+
+        # 減衰: 100 * 0.95 = 95, 95 * 0.95 = 90.25, 90.25 * 0.95 = 85.7375
+        assert data_map["2026-02-28"]["river_discharge"] == pytest.approx(95.0)
+        assert data_map["2026-03-01"]["river_discharge"] == pytest.approx(90.25)
+        assert data_map["2026-03-02"]["river_discharge"] == pytest.approx(85.7375)
+
+    def test_increase_with_heavy_rain(self):
+        """降水量50mm以上で流量が維持されること"""
+        from generate_calendar import _fetch_river_discharge_from_db
+
+        data_map = {
+            "2026-02-28": {"precipitation": 50},
+            "2026-03-01": {"precipitation": 100},
+        }
+
+        with patch('generate_calendar.sqlite3') as mock_sqlite:
+            mock_conn = MagicMock()
+            mock_cursor = MagicMock()
+            mock_cursor.fetchone.return_value = (100.0,)
+            mock_conn.cursor.return_value = mock_cursor
+            mock_sqlite.connect.return_value = mock_conn
+
+            _fetch_river_discharge_from_db(data_map)
+
+        # 降水50mm: factor = 0.95 + 0.1 * 1.0 = 1.05 → 100 * 1.05 = 105
+        assert data_map["2026-02-28"]["river_discharge"] == pytest.approx(105.0)
+        # 降水100mm: factor = 1.05 → 105 * 1.05 = 110.25
+        assert data_map["2026-03-01"]["river_discharge"] == pytest.approx(110.25)
+
+    def test_minimum_floor(self):
+        """流量が下限値(10.0)を下回らないこと"""
+        from generate_calendar import _fetch_river_discharge_from_db
+
+        # 長期間の無降水で下限テスト
+        data_map = {}
+        for i in range(30):
+            d = f"2026-03-{i+1:02d}"
+            data_map[d] = {"precipitation": 0}
+
+        with patch('generate_calendar.sqlite3') as mock_sqlite:
+            mock_conn = MagicMock()
+            mock_cursor = MagicMock()
+            mock_cursor.fetchone.return_value = (50.0,)
+            mock_conn.cursor.return_value = mock_cursor
+            mock_sqlite.connect.return_value = mock_conn
+
+            _fetch_river_discharge_from_db(data_map)
+
+        # 30日後でも10.0を下回らない
+        last_day = f"2026-03-30"
+        assert data_map[last_day]["river_discharge"] >= 10.0
+
+    def test_fallback_when_no_db_data(self):
+        """DB取得失敗時にフォールバック値（50.0）が使われること"""
+        from generate_calendar import _fetch_river_discharge_from_db
+
+        data_map = {
+            "2026-02-28": {"precipitation": 0},
+        }
+
+        with patch('generate_calendar.sqlite3') as mock_sqlite:
+            mock_conn = MagicMock()
+            mock_cursor = MagicMock()
+            mock_cursor.fetchone.return_value = None  # No data
+            mock_conn.cursor.return_value = mock_cursor
+            mock_sqlite.connect.return_value = mock_conn
+
+            _fetch_river_discharge_from_db(data_map)
+
+        # フォールバック(50) * 0.95 = 47.5
+        assert data_map["2026-02-28"]["river_discharge"] == pytest.approx(47.5)
+
+
+class TestDaylightCalculation:
+    """日照時間計算のテスト"""
+
+    def test_daylight_positive(self):
+        """日照時間が正の値を返すこと"""
+        from generate_calendar import _calculate_daylight_hours
+        
+        d = datetime(2026, 6, 21)  # 夏至付近
+        hours = _calculate_daylight_hours(d)
+        assert hours > 10  # 夏なので10時間以上
+        assert hours < 20  # 常識的な範囲
+
+    def test_winter_shorter_than_summer(self):
+        """冬の日照時間が夏より短いこと"""
+        from generate_calendar import _calculate_daylight_hours
+        
+        summer = _calculate_daylight_hours(datetime(2026, 6, 21))
+        winter = _calculate_daylight_hours(datetime(2026, 12, 21))
+        assert winter < summer

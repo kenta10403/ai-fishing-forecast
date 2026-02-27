@@ -87,14 +87,14 @@ def create_dataset():
     meander_mask = (df.index >= '2017-08-01') & (df.index <= '2025-04-30')
     df.loc[meander_mask, 'is_kuroshio_meander'] = 1
 
-    # 5. Open-Meteo 波浪・河川流量データ (目的変数/特徴量)
+    # 5. 波浪・河川流量データ (目的変数/特徴量)
     print("  🌊 波浪・河川流量データを読み込み中...")
-    openmeteo_query = """
+    marine_forecast_query = """
     SELECT date, wave_height_max as real_wave_height, wave_direction_dominant, river_discharge as real_river_discharge
-    FROM openmeteo_marine_history
+    FROM marine_forecast_history
     """
-    df_openmeteo = fetch_data(openmeteo_query, conn)
-    df = df.merge(df_openmeteo, left_index=True, right_index=True, how='left')
+    df_marine_forecast = fetch_data(marine_forecast_query, conn)
+    df = df.merge(df_marine_forecast, left_index=True, right_index=True, how='left')
 
     # 6. 前処理 (Data Leakage を防ぐため、ここでは一括補完を行わない)
     print("  🧪 欠損値はそのままにする (学習時に分割後補完を行う)")
