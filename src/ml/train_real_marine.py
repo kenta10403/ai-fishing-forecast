@@ -8,6 +8,7 @@ from sklearn.multioutput import MultiOutputRegressor
 from sklearn.ensemble import RandomForestRegressor
 from lightgbm import LGBMRegressor
 from sklearn.metrics import mean_squared_error, r2_score
+from sklearn.model_selection import train_test_split
 # --- Utilities ---
 from dataset_real_marine import create_dataset
 
@@ -61,7 +62,7 @@ def train_marine_env_model(df):
     targets = [
         'real_water_temp', 'real_salinity', 'real_do', 
         'real_cod', 'real_transparency', 'real_wave_height', 
-        'real_river_discharge'
+        'wave_direction_dominant', 'real_river_discharge'
     ]
     
     models = {}
@@ -93,7 +94,7 @@ def train_marine_env_model(df):
         X_train, train_means = safe_impute(X_train_raw, is_train=True)
         
         # 2. モデル学習
-        model = LGBMRegressor(n_estimators=100, random_state=42, importance_type='gain')
+        model = LGBMRegressor(n_estimators=100, random_state=42, importance_type='gain', verbosity=-1)
         model.fit(X_train, y_train)
         
         # 3. テストデータでの評価
@@ -169,7 +170,7 @@ def train_catch_forecast_model(df):
     X_train, train_means = safe_impute(X_train_raw, is_train=True)
     X_test = safe_impute(X_test_raw, is_train=False, train_means=train_means)
     
-    catch_model = LGBMRegressor(n_estimators=100, random_state=42, learning_rate=0.05, max_depth=7)
+    catch_model = LGBMRegressor(n_estimators=100, random_state=42, learning_rate=0.05, max_depth=7, verbosity=-1)
     catch_model.fit(X_train, y_train)
     
     # 評価

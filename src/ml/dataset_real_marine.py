@@ -102,6 +102,11 @@ def create_dataset():
     # 最小限の埋め (潮汐など、不連続で過去から引き継げるもののみ)
     df['tide_level'] = df['tide_level'].ffill().fillna(2)
     
+    # 波浪・河川トラッキングデータ：NULLはそのまま（モデル学習時に除外）
+    # 注: 以前は ffill/bfill で補完していたが、偽データで学習する問題があったため廃止
+    df['wave_direction_dominant'] = df['wave_direction_dominant'].fillna(180)  # 方向のみデフォルト値
+
+    # 海界ターゲット列
     marine_cols = ['real_water_temp', 'real_salinity', 'real_do', 'real_cod', 'real_transparency']
 
     # 7. 追加特徴量エンジニアリング (前日値など)
@@ -111,6 +116,7 @@ def create_dataset():
     df['avg_wind_speed_lag1'] = df['avg_wind_speed'].shift(1).fillna(0)
     
     # 前日の各種海況 (bfill()など未来を参照する補完は避ける)
+    # 注: NULLはそのまま。モデル学習時に分割後補正される
     for col in marine_cols + ['real_wave_height', 'real_river_discharge']:
         df[f'{col}_lag1'] = df[col].shift(1) # ここではまだNaNが残る
         
