@@ -219,6 +219,8 @@ def _fetch_copernicus_marine(start_date, end_date, data_map):
             maximum_longitude=MARINE_LON + 0.5,
             start_datetime=start_date.strftime("%Y-%m-%dT00:00:00"),
             end_datetime=end_date.strftime("%Y-%m-%dT23:59:59"),
+            username=os.environ.get(COPERNICUS_USERNAME_ENV),
+            password=os.environ.get(COPERNICUS_PASSWORD_ENV),
         )
         # 空間平均 → 日次max
         wave_daily = ds_wave['VHM0'].mean(dim=['latitude', 'longitude']).resample(time='1D').max()
@@ -246,6 +248,8 @@ def _fetch_copernicus_marine(start_date, end_date, data_map):
             maximum_depth=1.0,
             start_datetime=start_date.strftime("%Y-%m-%dT00:00:00"),
             end_datetime=end_date.strftime("%Y-%m-%dT23:59:59"),
+            username=os.environ.get(COPERNICUS_USERNAME_ENV),
+            password=os.environ.get(COPERNICUS_PASSWORD_ENV),
         )
         # 空間平均 → 日次平均
         sst_daily = ds_sst['thetao'].mean(dim=['latitude', 'longitude', 'depth']).resample(time='1D').mean()

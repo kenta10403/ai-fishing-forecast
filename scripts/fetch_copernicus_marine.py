@@ -75,6 +75,8 @@ def fetch_and_save(start_year, end_year):
                 maximum_longitude=LON + 0.5,
                 start_datetime=f"{start_date}T00:00:00",
                 end_datetime=f"{end_date}T23:59:59",
+                username=os.environ.get(COPERNICUS_USERNAME_ENV),
+                password=os.environ.get(COPERNICUS_PASSWORD_ENV),
             )
             wave_daily = ds_wave['VHM0'].mean(dim=['latitude', 'longitude']).resample(time='1D').max()
 
