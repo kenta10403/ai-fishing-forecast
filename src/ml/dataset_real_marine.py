@@ -96,39 +96,23 @@ def create_dataset():
     df_openmeteo = fetch_data(openmeteo_query, conn)
     df = df.merge(df_openmeteo, left_index=True, right_index=True, how='left')
 
-    # 6. 前処理と欠損値補完 (最重要)
-    print("  🔧 欠損値の補完処理を実行中...")
+    # 6. 前処理 (Data Leakage を防ぐため、ここでは一括補完を行わない)
+    print("  🧪 欠損値はそのままにする (学習時に分割後補完を行う)")
     
-    # 天気関連の欠損値補完 (基本的にあるはずだが念のため)
-    weather_cols = ['avg_temp', 'max_temp', 'min_temp', 'avg_wind_speed', 'max_wind_speed', 'precipitation', 'daylight_hours']
-    for col in weather_cols:
-         df[col] = df[col].ffill().bfill().fillna(0)
-    
+    # 最小限の埋め (潮汐など、未来を参照しないもの)
     df['tide_level'] = df['tide_level'].ffill().bfill().fillna(2)
     
-    # 波浪・河川トラッキングデータの補完 (毎日あるはずだが念のため)
-    df['real_wave_height'] = df['real_wave_height'].ffill().bfill().fillna(0.5)
-    df['wave_direction_dominant'] = df['wave_direction_dominant'].ffill().bfill().fillna(180)
-    df['real_river_discharge'] = df['real_river_discharge'].ffill().bfill().fillna(0.5)
-    
-    # 千葉県水質データの補完 (これが一番粗い。月に1回程度の計測しかないため、線形補間が必須)
     marine_cols = ['real_water_temp', 'real_salinity', 'real_do', 'real_cod', 'real_transparency']
-    for col in marine_cols:
-        # 線形補間 (時間経過による滑らかな変化を仮定)
-        df[col] = df[col].interpolate(method='time', limit_direction='both')
-        # それでも欠損があれば平均値で埋める
-        if df[col].isnull().any():
-             df[col] = df[col].fillna(df[col].mean())
 
     # 7. 追加特徴量エンジニアリング (前日値など)
-    # 河川流量は前日に降った雨の影響を強く受けるため、前日の雨量などをモデルに教える
+    # 未来の情報が漏れないよう、shift(1) のみを使ってラグを作成する
     df['precipitation_lag1'] = df['precipitation'].shift(1).fillna(0)
     df['precipitation_lag2'] = df['precipitation'].shift(2).fillna(0)
     df['avg_wind_speed_lag1'] = df['avg_wind_speed'].shift(1).fillna(0)
     
-    # 前日の各種海況(自己回帰的な情報)
+    # 前日の各種海況 (bfill()など未来を参照する補完は避ける)
     for col in marine_cols + ['real_wave_height', 'real_river_discharge']:
-        df[f'{col}_lag1'] = df[col].shift(1).ffill().bfill()
+        df[f'{col}_lag1'] = df[col].shift(1) # ここではまだNaNが残る
         
     df['month'] = df.index.month
     df['month_sin'] = np.sin(2 * np.pi * df['month'] / 12)
