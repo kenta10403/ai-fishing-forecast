@@ -114,9 +114,23 @@ export async function scrapeJohshuyaPage(page = 1, year?: number, month?: number
             const countStr = $(tr).find('td').last().text().trim();
 
             if (fishName && fishName !== '魚種') {
+                let count = 0;
+                if (countStr.includes('-')) {
+                    const minStr = countStr.split('-')[0];
+                    count = parseInt(minStr.replace(/[^0-9]/g, ''), 10) || 0;
+                } else if (countStr.includes('～')) { // 全角波ダッシュ
+                    const minStr = countStr.split('～')[0];
+                    count = parseInt(minStr.replace(/[^0-9]/g, ''), 10) || 0;
+                } else if (countStr.includes('~')) { // 半角チルダ
+                    const minStr = countStr.split('~')[0];
+                    count = parseInt(minStr.replace(/[^0-9]/g, ''), 10) || 0;
+                } else {
+                    count = parseInt(countStr.replace(/[^0-9]/g, ''), 10) || 0;
+                }
+
                 catches.push({
                     name: fishName,
-                    count: parseInt(countStr.replace(/[^0-9]/g, '')) || 0,
+                    count: count,
                     size: size || undefined
                 });
             }
