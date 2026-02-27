@@ -126,7 +126,7 @@ def generate_ai_calendar(num_days=10):
     marine_data = joblib.load(MARINE_MODEL_PATH)
     catch_data = joblib.load(CATCH_MODEL_PATH)
     
-    marine_model = marine_data["model"]
+    # marine_data 自体が {target: {model, features, train_means}} の辞書形式
     catch_model = catch_data["model"]
     catch_dist = catch_data["score_distribution"]
     
@@ -213,7 +213,9 @@ def generate_ai_calendar(num_days=10):
         is_weekend = 1 if day_of_week in [5, 6] else 0
 
         # 1. 海況予測 (Marine Env)
-        marine_features = [
+        # 個別モデル形式に対応
+        p_marine = {}
+        base_marine_features = [
             f.get('avg_temp', 15), f.get('max_temp', 20), f.get('min_temp', 10),
             f.get('avg_wind_speed', 3), f.get('max_wind_speed', 5),
             f.get('precipitation', 0), last_weather['precipitation_lag1'], last_weather['precipitation_lag2'],
@@ -221,15 +223,21 @@ def generate_ai_calendar(num_days=10):
             f.get('daylight_hours', 8),
             get_tide_level(d_str, tide_map),
             1 if d >= datetime(2017,8,1) and d <= datetime(2025,4,30) else 0, # Kuroshio
-            month_sin, month_cos,
-            last_marine['real_water_temp'], last_marine['real_salinity'], last_marine['real_do'],
-            last_marine['real_cod'], last_marine['real_transparency'],
-            last_marine['real_wave_height'], last_marine['real_river_discharge']
+            month_sin, month_cos
         ]
         
-        marine_preds = marine_model.predict(np.array([marine_features]))[0]
-        p_marine = {name: marine_preds[idx] for idx, name in enumerate(marine_data['targets'])}
-        
+        # ターゲットごとに予測
+        for target, m_info in marine_data.items():
+            # ラグ変数の取得
+            lag_val = last_marine.get(target, m_info['train_means'].get(f'{target}_lag1', 0.5))
+            
+            # 特徴量 DataFrame の作成 (警告回避と整合性のために名前付きで渡す)
+            feat_df = pd.DataFrame([base_marine_features + [lag_val]], columns=m_info['features'])
+            
+            # 予測実行
+            p_val = m_info['model'].predict(feat_df)[0]
+            p_marine[target] = p_val
+
         # 2. 釣果予測 (Catch Forecast)
         catch_features = [
             f.get('avg_temp', 15), f.get('max_temp', 20), f.get('min_temp', 10),
@@ -238,12 +246,18 @@ def generate_ai_calendar(num_days=10):
             f.get('daylight_hours', 8),
             get_tide_level(d_str, tide_map),
             1 if d >= datetime(2017,8,1) and d <= datetime(2025,4,30) else 0,
-            p_marine['real_water_temp'], p_marine['real_salinity'], p_marine['real_do'],
-            p_marine['real_transparency'], p_marine['real_wave_height'], p_marine['real_river_discharge'],
+            p_marine.get('real_water_temp', 18), 
+            p_marine.get('real_salinity', 30), 
+            p_marine.get('real_do', 8),
+            p_marine.get('real_transparency', 1.0), 
+            p_marine.get('real_wave_height', 0.5), 
+            p_marine.get('real_river_discharge', 0.5),
             month_sin, month_cos, day_of_week, is_weekend
         ]
         
-        raw_catch = catch_model.predict(np.array([catch_features]))[0]
+        # 釣果モデルも DataFrame 形式で推論
+        catch_feat_df = pd.DataFrame([catch_features], columns=catch_data['features'])
+        raw_catch = catch_model.predict(catch_feat_df)[0]
         
         # --- 手動補正一切なしの純粋なAIスコア ---
         # スコア化 (パーセンタイル)
@@ -252,17 +266,19 @@ def generate_ai_calendar(num_days=10):
         score = max(5, min(100, score))
         
         # 昨日の状態を更新 (次のループ用)
+        # 予測値をラグとして更新する (Issue #41 との整合性も考慮し、本来はこの漏洩なしモデルで伝播させるべき)
         for k in last_marine:
-            if k in p_marine: last_marine[k] = p_marine[k]
-            
+            if k in p_marine:
+                last_marine[k] = p_marine[k]
+
         last_weather['precipitation_lag2'] = last_weather['precipitation_lag1']
         last_weather['precipitation_lag1'] = f.get('precipitation', 0)
         last_weather['avg_wind_speed_lag1'] = f.get('avg_wind_speed', 3)
         
-        # 理由(AIコメント)の生成
+        # 3. AIコメント生成 (安全なアクセス)
         reasons = []
-        
-        # 季節別の適水温 (東京湾基準の概算)
+        month = d.month
+        # 季節ごとの適水温の目安 (仮)
         if month in [3, 4, 5]: 
             min_temp, max_temp = 12, 18
         elif month in [6, 7, 8]: 
@@ -272,14 +288,14 @@ def generate_ai_calendar(num_days=10):
         else: 
             min_temp, max_temp = 8, 15
             
-        wt = p_marine['real_water_temp']
+        wt = p_marine.get('real_water_temp', 18)
         if wt > max_temp: reasons.append("水温が高めで夏バテ気味の魚も")
         elif min_temp <= wt <= max_temp: reasons.append("季節ごとの適水温で活性期待")
         elif wt < min_temp: reasons.append("水温が低く活性低下の懸念")
 
-        if p_marine['real_transparency'] < 2.0: reasons.append("適度な濁りで警戒心低下")
+        if p_marine.get('real_transparency', 1.0) < 2.0: reasons.append("適度な濁りで警戒心低下")
         if f.get('precipitation', 0) > 10: reasons.append("雨による水質変化に注意")
-        if p_marine['real_wave_height'] > 1.5: reasons.append("波が高く底荒れの可能性")
+        if p_marine.get('real_wave_height', 0.5) > 1.5: reasons.append("波が高く底荒れの可能性")
         
         ai_comment = "、".join(reasons) if reasons else "安定した海況が予想されます。"
 
@@ -290,10 +306,10 @@ def generate_ai_calendar(num_days=10):
             "weather": 'sunny' if f.get('precipitation', 0) < 1 else 'rain',
             "tide": ["若潮","長潮","小潮","中潮","大潮"][get_tide_level(d_str, tide_map)],
             "marine": {
-                "temp": round(p_marine['real_water_temp'], 1),
-                "transparency": round(p_marine['real_transparency'], 1),
-                "wave": round(p_marine['real_wave_height'], 1),
-                "salinity": round(p_marine['real_salinity'], 1)
+                "temp": round(p_marine.get('real_water_temp', 18), 1),
+                "transparency": round(p_marine.get('real_transparency', 1.0), 1),
+                "wave": round(p_marine.get('real_wave_height', 0.5), 1),
+                "salinity": round(p_marine.get('real_salinity', 30), 1)
             },
             "ai_comment": ai_comment
         })

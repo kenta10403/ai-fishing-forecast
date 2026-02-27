@@ -117,10 +117,9 @@ def load_trend_data() -> pd.DataFrame:
     df['tide'] = df['tide'].fillna('不明')
     df['wind_direction'] = df['wind_direction'].fillna('不明')
     
-    # 連続値の欠損補完（全体平均）
+    # 連続値の型変換（補完は学習時に分割後に行う）
     for col in ['avg_wind_speed', 'max_wind_speed', 'precipitation', 'avg_temp', 'wave_height', 'salinity', 'turbidity', 'do_level']:
         df[col] = pd.to_numeric(df[col], errors='coerce')
-        df[col] = df[col].fillna(df[col].mean())
         
     df['is_kuroshio_meander'] = df['is_kuroshio_meander'].fillna(0).astype(int)
 
@@ -219,8 +218,8 @@ def preprocess_trend_data(df: pd.DataFrame) -> tuple[pd.DataFrame, pd.Series, pd
     y = df['trend_score']
     sample_weight = df['weight'] # AIモデルの学習時の重要度として使用
 
-    # 水温の欠損値補完（その「旬」の平均水温などで埋めるのが理想だが、一旦全体平均または0）
-    X['water_temp'] = X['water_temp'].fillna(X['water_temp'].mean() if not X['water_temp'].isna().all() else 0)
+    # 水温の欠損値補完は学習スクリプト側で分割後に行う
+    # X['water_temp'] = X['water_temp'].fillna(X['water_temp'].mean() if not X['water_temp'].isna().all() else 0)
 
     # One-Hot Encoding
     X = pd.get_dummies(X, columns=['area', 'wind_dir_simple', 'tide', 'species'], drop_first=True)
