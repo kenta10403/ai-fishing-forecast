@@ -266,11 +266,17 @@ def generate_ai_calendar(num_days=10):
         score = max(5, min(100, score))
         
         # 昨日の状態を更新 (次のループ用)
-        # 予測値をラグとして更新する (Issue #41 との整合性も考慮し、本来はこの漏洩なしモデルで伝播させるべき)
-        for k in last_marine:
-            if k in p_marine:
-                last_marine[k] = p_marine[k]
+        # 予測値を次の日のラグ変数として保存する (Issue #35, #41 対応)
+        # 全ての海況パラメータを確実に更新（モデルが存在しない場合はデフォルト値を使用）
+        last_marine['real_water_temp'] = p_marine.get('real_water_temp', 18.0)
+        last_marine['real_salinity'] = p_marine.get('real_salinity', 30.0)
+        last_marine['real_do'] = p_marine.get('real_do', 8.0)
+        last_marine['real_cod'] = p_marine.get('real_cod', 3.0)
+        last_marine['real_transparency'] = p_marine.get('real_transparency', 3.0)
+        last_marine['real_wave_height'] = p_marine.get('real_wave_height', 0.5)
+        last_marine['real_river_discharge'] = p_marine.get('real_river_discharge', 100.0)
 
+        # Weather ラグ変数も同様に更新
         last_weather['precipitation_lag2'] = last_weather['precipitation_lag1']
         last_weather['precipitation_lag1'] = f.get('precipitation', 0)
         last_weather['avg_wind_speed_lag1'] = f.get('avg_wind_speed', 3)
