@@ -12,6 +12,30 @@ from sklearn.model_selection import train_test_split
 MODEL_DIR = os.path.dirname(__file__)
 MODEL_PATH = os.path.join(MODEL_DIR, "model_trend.pkl")
 
+def safe_impute(df, is_train=True, train_means=None):
+    """
+    時系列データのリークを防ぎながら補完を行う
+    """
+    df = df.copy()
+    
+    # 1. 前方向埋め (過去の値を引き継ぐ)
+    df = df.ffill()
+    
+    # 2. それでも NaN が残る場合 (データの最初の方など)
+    if is_train:
+        means = df.select_dtypes(include=[np.number]).mean()
+        df = df.fillna(means)
+        return df, means
+    else:
+        if train_means is not None:
+            # 数値列のみ補完
+            for col in train_means.index:
+                if col in df.columns:
+                    df[col] = df[col].fillna(train_means[col])
+        # さらに残る場合は 0 で埋める
+        df = df.fillna(0)
+        return df
+
 def train_trend_model(include_files=None, exclude_files=None):
     print("SQLiteから釣果データと施設データを結合して読み込み中...")
     df_raw = load_trend_data()
@@ -24,9 +48,13 @@ def train_trend_model(include_files=None, exclude_files=None):
 
     print(f"X shape: {X.shape}, y shape: {y.shape}")
 
-    X_train, X_test, y_train, y_test, w_train, w_test = train_test_split(
-        X, y, sample_weights, test_size=0.2, random_state=42
+    X_train_raw, X_test_raw, y_train, y_test, w_train, w_test = train_test_split(
+        X, y, sample_weights, test_size=0.2, random_state=42, shuffle=False # 時系列なのでシャッフルしないのが無難
     )
+
+    print("欠損値の補完中 (Leakage対策)...")
+    X_train, train_means = safe_impute(X_train_raw, is_train=True)
+    X_test = safe_impute(X_test_raw, is_train=False, train_means=train_means)
 
     print("モデルの学習中 (RandomForestRegressor)...")
     model = RandomForestRegressor(n_estimators=100, random_state=42)

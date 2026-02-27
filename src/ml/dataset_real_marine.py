@@ -99,8 +99,8 @@ def create_dataset():
     # 6. 前処理 (Data Leakage を防ぐため、ここでは一括補完を行わない)
     print("  🧪 欠損値はそのままにする (学習時に分割後補完を行う)")
     
-    # 最小限の埋め (潮汐など、未来を参照しないもの)
-    df['tide_level'] = df['tide_level'].ffill().bfill().fillna(2)
+    # 最小限の埋め (潮汐など、不連続で過去から引き継げるもののみ)
+    df['tide_level'] = df['tide_level'].ffill().fillna(2)
     
     marine_cols = ['real_water_temp', 'real_salinity', 'real_do', 'real_cod', 'real_transparency']
 
