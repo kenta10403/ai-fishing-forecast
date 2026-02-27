@@ -252,9 +252,11 @@ def generate_ai_calendar(num_days=10):
         score = max(5, min(100, score))
         
         # 昨日の状態を更新 (次のループ用)
-        for k in last_marine:
-            if k in p_marine: last_marine[k] = p_marine[k]
-            
+        # NOTE: Issue #35対応 - 予測値の伝播を防ぐため、海況ラグ変数は実測値固定とする
+        # for k in last_marine:
+        #     if k in p_marine: last_marine[k] = p_marine[k]
+        # → 海況のラグ変数は最初のDB実測値を維持し、予測値で上書きしない
+
         last_weather['precipitation_lag2'] = last_weather['precipitation_lag1']
         last_weather['precipitation_lag1'] = f.get('precipitation', 0)
         last_weather['avg_wind_speed_lag1'] = f.get('avg_wind_speed', 3)
