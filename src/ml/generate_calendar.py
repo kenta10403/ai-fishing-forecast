@@ -221,10 +221,10 @@ def generate_ai_calendar(num_days=10):
             f.get('daylight_hours', 8),
             get_tide_level(d_str, tide_map),
             1 if d >= datetime(2017,8,1) and d <= datetime(2025,4,30) else 0, # Kuroshio
+            month_sin, month_cos,
             last_marine['real_water_temp'], last_marine['real_salinity'], last_marine['real_do'],
             last_marine['real_cod'], last_marine['real_transparency'],
-            last_marine['real_wave_height'], last_marine['real_river_discharge'],
-            month_sin, month_cos
+            last_marine['real_wave_height'], last_marine['real_river_discharge']
         ]
         
         marine_preds = marine_model.predict(np.array([marine_features]))[0]
