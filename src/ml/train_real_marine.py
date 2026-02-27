@@ -8,7 +8,7 @@ from sklearn.multioutput import MultiOutputRegressor
 from sklearn.ensemble import RandomForestRegressor
 from lightgbm import LGBMRegressor
 from sklearn.metrics import mean_squared_error, r2_score
-from sklearn.model_selection import train_test_split
+from sklearn.model_selection import train_test_split, TimeSeriesSplit
 # --- Utilities ---
 from dataset_real_marine import create_dataset
 
@@ -93,12 +93,36 @@ def train_marine_env_model(df):
         y_train = train_data[target]
         X_train, train_means = safe_impute(X_train_raw, is_train=True)
         
-        # 2. モデル学習
+        # 2. 交差検証 (TimeSeriesSplit) による評価
+        tscv = TimeSeriesSplit(n_splits=5)
+        cv_r2 = []
+        cv_rmse = []
+
+        # NaNが除去された train_data のみでCVを行う
+        X_data_cv = train_data[target_features].reset_index(drop=True)
+        y_data_cv = train_data[target].reset_index(drop=True)
+
+        for train_index, test_index in tscv.split(X_data_cv):
+            X_tr_raw, X_te_raw = X_data_cv.iloc[train_index], X_data_cv.iloc[test_index]
+            y_tr, y_te = y_data_cv.iloc[train_index], y_data_cv.iloc[test_index]
+            
+            X_tr, means = safe_impute(X_tr_raw, is_train=True)
+            X_te = safe_impute(X_te_raw, is_train=False, train_means=means)
+            
+            cv_model = LGBMRegressor(n_estimators=100, random_state=42, verbosity=-1)
+            cv_model.fit(X_tr, y_tr)
+            
+            p_te = cv_model.predict(X_te)
+            cv_r2.append(r2_score(y_te, p_te))
+            cv_rmse.append(np.sqrt(mean_squared_error(y_te, p_te)))
+            
+        print(f"    --> CV R2: {np.mean(cv_r2):.4f} ± {np.std(cv_r2):.4f}, RMSE: {np.mean(cv_rmse):.4f} ± {np.std(cv_rmse):.4f}")
+
+        # 3. 本番モデルの学習 (Hold-out Testで最終確認)
         model = LGBMRegressor(n_estimators=100, random_state=42, importance_type='gain', verbosity=-1)
         model.fit(X_train, y_train)
         
-        # 3. テストデータでの評価
-        # テスト期間の全行に対して予測を行い、実測値があるところだけで評価する
+        # 4. ホールドアウトデータでの評価
         X_test_all = safe_impute(test_df_raw[target_features], is_train=False, train_means=train_means)
         y_test_all = test_df_raw[target]
         
@@ -109,7 +133,7 @@ def train_marine_env_model(df):
         if mask.any():
             r2 = r2_score(y_test_all[mask], preds_test[mask])
             rmse = np.sqrt(mean_squared_error(y_test_all[mask], preds_test[mask]))
-            print(f"    ✅ R2 = {r2:7.4f}, RMSE = {rmse:7.4f} (実測数: {mask.sum()})")
+            print(f"    ✅ Hold-out R2 = {r2:7.4f}, RMSE = {rmse:7.4f} (実測数: {mask.sum()})")
         
         models[target] = {
             "model": model,
@@ -170,15 +194,41 @@ def train_catch_forecast_model(df):
     X_train, train_means = safe_impute(X_train_raw, is_train=True)
     X_test = safe_impute(X_test_raw, is_train=False, train_means=train_means)
     
+    # 1. 交差検証 (TimeSeriesSplit) による評価
+    tscv = TimeSeriesSplit(n_splits=5)
+    cv_r2 = []
+    cv_rmse = []
+    
+    # NaNが含まれない df に対してCVを実行
+    for train_index, test_index in tscv.split(train_df):
+        X_tr_raw = train_df.iloc[train_index][features]
+        X_te_raw = train_df.iloc[test_index][features]
+        # target は catch_count
+        y_tr = train_df.iloc[train_index][target]
+        y_te = train_df.iloc[test_index][target]
+        
+        X_tr, means = safe_impute(X_tr_raw, is_train=True)
+        X_te = safe_impute(X_te_raw, is_train=False, train_means=means)
+        
+        cv_model = LGBMRegressor(n_estimators=100, random_state=42, learning_rate=0.05, max_depth=7, verbosity=-1)
+        cv_model.fit(X_tr, y_tr)
+        
+        p_te = np.maximum(0, cv_model.predict(X_te))
+        cv_r2.append(r2_score(y_te, p_te))
+        cv_rmse.append(np.sqrt(mean_squared_error(y_te, p_te)))
+
+    print(f"  🔍 CV R2: {np.mean(cv_r2):.4f} ± {np.std(cv_r2):.4f}, RMSE: {np.mean(cv_rmse):.4f} ± {np.std(cv_rmse):.4f}")
+
+    # 2. 本番モデルの学習 (Hold-out Testで最終確認)
     catch_model = LGBMRegressor(n_estimators=100, random_state=42, learning_rate=0.05, max_depth=7, verbosity=-1)
     catch_model.fit(X_train, y_train)
     
-    # 評価
+    # 3. ホールドアウトデータでの評価
     pred_test = np.maximum(0, catch_model.predict(X_test))
     r2 = r2_score(y_test, pred_test)
     rmse = np.sqrt(mean_squared_error(y_test, pred_test))
     
-    print(f"  ✅ 学習完了! R2 = {r2:7.4f}, RMSE = {rmse:7.4f}")
+    print(f"  ✅ Hold-out R2 = {r2:7.4f}, RMSE = {rmse:7.4f}")
     
     # 予測分布の保存
     pred_all = np.maximum(0, catch_model.predict(safe_impute(df[features], is_train=False, train_means=train_means)))

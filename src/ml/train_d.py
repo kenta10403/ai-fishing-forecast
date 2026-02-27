@@ -7,7 +7,7 @@ import pandas as pd
 from dataset_d import load_trend_data, preprocess_trend_data
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import mean_squared_error, r2_score
-from sklearn.model_selection import train_test_split
+from sklearn.model_selection import train_test_split, TimeSeriesSplit
 
 MODEL_DIR = os.path.dirname(__file__)
 MODEL_PATH = os.path.join(MODEL_DIR, "model_trend.pkl")
@@ -60,7 +60,34 @@ def train_trend_model(include_files=None, exclude_files=None):
     X_train, train_means = safe_impute(X_train_raw, is_train=True)
     X_test = safe_impute(X_test_raw, is_train=False, train_means=train_means)
 
-    print("モデルの学習中 (RandomForestRegressor)...")
+    print("交差検証 (TimeSeriesSplit) を実行中...")
+    tscv = TimeSeriesSplit(n_splits=5)
+    cv_r2 = []
+    cv_mse = []
+    
+    # DataFrameのインデックスをリセットしてCV分割しやすくする
+    X_cv = X.reset_index(drop=True)
+    y_cv = y.reset_index(drop=True)
+    w_cv = sample_weights.reset_index(drop=True)
+    
+    for train_index, test_index in tscv.split(X_cv):
+        X_tr_raw, X_te_raw = X_cv.iloc[train_index], X_cv.iloc[test_index]
+        y_tr, y_te = y_cv.iloc[train_index], y_cv.iloc[test_index]
+        w_tr = w_cv.iloc[train_index]
+        
+        X_tr, means = safe_impute(X_tr_raw, is_train=True)
+        X_te = safe_impute(X_te_raw, is_train=False, train_means=means)
+        
+        cv_model = RandomForestRegressor(n_estimators=100, random_state=42)
+        cv_model.fit(X_tr, y_tr, sample_weight=w_tr)
+        
+        p_te = cv_model.predict(X_te)
+        cv_r2.append(r2_score(y_te, p_te))
+        cv_mse.append(mean_squared_error(y_te, p_te))
+        
+    print(f"  🔍 CV R2: {np.mean(cv_r2):.4f} ± {np.std(cv_r2):.4f}, MSE: {np.mean(cv_mse):.4f} ± {np.std(cv_mse):.4f}\n")
+
+    print("本番モデルの学習とホールドアウト評価中 (RandomForestRegressor)...")
     model = RandomForestRegressor(n_estimators=100, random_state=42)
     # ここで weight（施設1.0, 釣具屋0.3等）を sample_weight として渡すことでAIが施設データをより重視する
     model.fit(X_train, y_train, sample_weight=w_train)
