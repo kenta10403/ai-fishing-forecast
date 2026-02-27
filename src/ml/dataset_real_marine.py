@@ -22,12 +22,14 @@ def create_dataset():
     # 1. 釣果データの取得 (目的変数用)
     print("  📊 釣果データを読み込み中...")
     catches_query = """
-    SELECT date, SUM(COALESCE(count, 1)) as catch_count
+    SELECT date, SUM(COALESCE(count, 1)) * 1.0 / COUNT(DISTINCT log_id) as catch_count
     FROM (
-        SELECT sl.date, sc.count FROM shop_catches sc
+        SELECT sl.date, sc.count, sc.log_id FROM shop_catches sc
         JOIN shop_logs sl ON sc.log_id = sl.id
+        WHERE sl.category = 'sea'
+        AND sl.area IN ('東京都', '神奈川県', '千葉県')
         UNION ALL
-        SELECT fl.date, fc.count FROM facility_catches fc
+        SELECT fl.date, fc.count, fc.log_id FROM facility_catches fc
         JOIN facility_logs fl ON fc.log_id = fl.id
     )
     GROUP BY date
@@ -47,7 +49,7 @@ def create_dataset():
     weather_query = """
     SELECT date, avg_temp, max_temp, min_temp, avg_wind_speed, max_wind_speed, precipitation, daylight_hours
     FROM weather_history
-    WHERE area = '東京'
+    WHERE area = '神奈川県'
     """
     df_weather = fetch_data(weather_query, conn)
     df = df.merge(df_weather, left_index=True, right_index=True, how='left')
@@ -82,7 +84,7 @@ def create_dataset():
     
     # 黒潮大蛇行フラグ (2017/8/1 〜 2025/4/1)
     df['is_kuroshio_meander'] = 0
-    meander_mask = (df.index >= '2017-08-01') & (df.index <= '2025-04-01')
+    meander_mask = (df.index >= '2017-08-01') & (df.index <= '2025-04-30')
     df.loc[meander_mask, 'is_kuroshio_meander'] = 1
 
     # 5. Open-Meteo 波浪・河川流量データ (目的変数/特徴量)
@@ -126,7 +128,13 @@ def create_dataset():
     
     # 前日の各種海況(自己回帰的な情報)
     for col in marine_cols + ['real_wave_height', 'real_river_discharge']:
-        df[f'{col}_lag1'] = df[col].shift(1).fillna(method='bfill')
+        df[f'{col}_lag1'] = df[col].shift(1).ffill().bfill()
+        
+    df['month'] = df.index.month
+    df['month_sin'] = np.sin(2 * np.pi * df['month'] / 12)
+    df['month_cos'] = np.cos(2 * np.pi * df['month'] / 12)
+    df['day_of_week'] = df.index.dayofweek
+    df['is_weekend'] = df['day_of_week'].isin([5, 6]).astype(int)
 
     print(f"✅ データセット作成完了: {df.shape[0]}行 × {df.shape[1]}列")
     conn.close()

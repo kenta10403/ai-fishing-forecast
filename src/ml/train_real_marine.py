@@ -40,7 +40,8 @@ def train_marine_env_model(df):
         'avg_wind_speed_lag1',
         'daylight_hours',
         'tide_level',
-        'is_kuroshio_meander'
+        'is_kuroshio_meander',
+        'month_sin', 'month_cos'
     ]
     
     # 昨日までの海況 (自己回帰特徴量) を持たせることで予測精度アップ
@@ -122,7 +123,9 @@ def train_catch_forecast_model(df):
         'pred_real_do', 
         'pred_real_transparency',
         'pred_real_wave_height',
-        'pred_real_river_discharge'
+        'pred_real_river_discharge',
+        'month_sin', 'month_cos',
+        'day_of_week', 'is_weekend'
     ]
     
     # --- 目的変数 (Output: 釣果件数) ---

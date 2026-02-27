@@ -84,7 +84,7 @@ def load_trend_data() -> pd.DataFrame:
     LEFT JOIN tide_history th ON th.date = REPLACE(l.date, '/', '-')
     LEFT JOIN weather_history wh ON wh.date = REPLACE(l.date, '/', '-') AND wh.area = l.area
     LEFT JOIN marine_environment_history me ON me.date = REPLACE(l.date, '/', '-') AND me.area = l.area
-    WHERE l.area IN ('東京都', '神奈川県', '千葉県', '茨城県') -- JMAデータ取得済みの主要4県に絞る
+    WHERE l.area IN ('東京都', '神奈川県', '千葉県') -- 東京湾周辺の主要3県に絞る
     AND l.category = 'sea'
     """
     
