@@ -1,198 +1,142 @@
 [
   {
-    "date": "2026/02/26",
-    "type": "forecast",
-    "score": 80,
-    "weather": "sunny",
-    "tide": "小潮",
-    "marine": {
-      "temp": 15.2,
-      "transparency": 2.9,
-      "wave": 2.8,
-      "salinity": 29.6
-    },
-    "ai_comment": "波が高く底荒れの可能性"
-  },
-  {
     "date": "2026/02/27",
     "type": "forecast",
-    "score": 89,
+    "score": 99,
     "weather": "sunny",
     "tide": "長潮",
     "marine": {
-      "temp": 15.6,
-      "transparency": 3.0,
-      "wave": 2.7,
-      "salinity": 28.8
+      "temp": 8.5,
+      "transparency": 1.5,
+      "wave": 2.8,
+      "salinity": 26.4
     },
-    "ai_comment": "波が高く底荒れの可能性"
+    "ai_comment": "季節ごとの適水温で活性期待、適度な濁りで警戒心低下、波が高く底荒れの可能性"
   },
   {
     "date": "2026/02/28",
     "type": "forecast",
-    "score": 88,
+    "score": 99,
     "weather": "sunny",
     "tide": "若潮",
     "marine": {
-      "temp": 15.6,
-      "transparency": 3.2,
-      "wave": 2.8,
-      "salinity": 28.9
+      "temp": 8.8,
+      "transparency": 1.4,
+      "wave": 2.7,
+      "salinity": 24.2
     },
-    "ai_comment": "波が高く底荒れの可能性"
+    "ai_comment": "季節ごとの適水温で活性期待、適度な濁りで警戒心低下、波が高く底荒れの可能性"
   },
   {
     "date": "2026/03/01",
     "type": "forecast",
-    "score": 68,
+    "score": 99,
     "weather": "sunny",
     "tide": "中潮",
     "marine": {
-      "temp": 15.6,
-      "transparency": 3.1,
+      "temp": 8.7,
+      "transparency": 1.4,
       "wave": 2.8,
-      "salinity": 29.2
+      "salinity": 24.2
     },
-    "ai_comment": "波が高く底荒れの可能性"
+    "ai_comment": "水温が低く活性低下の懸念、適度な濁りで警戒心低下、波が高く底荒れの可能性"
   },
   {
     "date": "2026/03/02",
     "type": "forecast",
-    "score": 68,
+    "score": 99,
     "weather": "rain",
     "tide": "中潮",
     "marine": {
-      "temp": 15.8,
-      "transparency": 3.0,
+      "temp": 8.9,
+      "transparency": 1.6,
       "wave": 2.8,
-      "salinity": 28.8
+      "salinity": 24.4
     },
-    "ai_comment": "波が高く底荒れの可能性"
+    "ai_comment": "水温が低く活性低下の懸念、適度な濁りで警戒心低下、波が高く底荒れの可能性"
   },
   {
     "date": "2026/03/03",
     "type": "forecast",
-    "score": 67,
+    "score": 99,
     "weather": "rain",
-    "tide": "中潮",
+    "tide": "大潮",
     "marine": {
-      "temp": 15.8,
-      "transparency": 3.0,
+      "temp": 8.5,
+      "transparency": 1.9,
       "wave": 2.8,
-      "salinity": 28.8
+      "salinity": 24.2
     },
-    "ai_comment": "雨による水質変化に注意、波が高く底荒れの可能性"
+    "ai_comment": "水温が低く活性低下の懸念、適度な濁りで警戒心低下、雨による水質変化に注意、波が高く底荒れの可能性"
   },
   {
     "date": "2026/03/04",
     "type": "forecast",
-    "score": 60,
-    "weather": "rain",
+    "score": 99,
+    "weather": "sunny",
     "tide": "大潮",
     "marine": {
-      "temp": 15.9,
-      "transparency": 3.1,
-      "wave": 2.8,
-      "salinity": 28.9
+      "temp": 8.4,
+      "transparency": 1.9,
+      "wave": 2.7,
+      "salinity": 24.8
     },
-    "ai_comment": "雨による水質変化に注意、波が高く底荒れの可能性"
+    "ai_comment": "水温が低く活性低下の懸念、適度な濁りで警戒心低下、波が高く底荒れの可能性"
   },
   {
     "date": "2026/03/05",
     "type": "forecast",
-    "score": 56,
-    "weather": "rain",
+    "score": 99,
+    "weather": "sunny",
     "tide": "大潮",
     "marine": {
-      "temp": 15.9,
-      "transparency": 3.0,
+      "temp": 8.4,
+      "transparency": 1.9,
       "wave": 2.8,
-      "salinity": 29.1
+      "salinity": 24.5
     },
-    "ai_comment": "波が高く底荒れの可能性"
+    "ai_comment": "水温が低く活性低下の懸念、適度な濁りで警戒心低下、波が高く底荒れの可能性"
   },
   {
     "date": "2026/03/06",
     "type": "forecast",
-    "score": 56,
+    "score": 99,
     "weather": "sunny",
     "tide": "大潮",
     "marine": {
-      "temp": 15.9,
-      "transparency": 3.0,
+      "temp": 8.5,
+      "transparency": 1.9,
       "wave": 2.8,
-      "salinity": 29.0
+      "salinity": 24.5
     },
-    "ai_comment": "波が高く底荒れの可能性"
+    "ai_comment": "水温が低く活性低下の懸念、適度な濁りで警戒心低下、波が高く底荒れの可能性"
   },
   {
     "date": "2026/03/07",
     "type": "forecast",
-    "score": 56,
+    "score": 99,
     "weather": "rain",
-    "tide": "大潮",
+    "tide": "中潮",
     "marine": {
-      "temp": 15.9,
-      "transparency": 3.0,
+      "temp": 8.6,
+      "transparency": 1.4,
       "wave": 2.8,
-      "salinity": 29.0
+      "salinity": 24.1
     },
-    "ai_comment": "波が高く底荒れの可能性"
+    "ai_comment": "水温が低く活性低下の懸念、適度な濁りで警戒心低下、波が高く底荒れの可能性"
   },
   {
     "date": "2026/03/08",
     "type": "forecast",
-    "score": 60,
+    "score": 99,
     "weather": "sunny",
     "tide": "中潮",
     "marine": {
-      "temp": 15.9,
-      "transparency": 2.9,
+      "temp": 8.4,
+      "transparency": 1.6,
       "wave": 2.8,
-      "salinity": 29.0
+      "salinity": 24.1
     },
-    "ai_comment": "波が高く底荒れの可能性"
-  },
-  {
-    "date": "2026/03/09",
-    "type": "forecast",
-    "score": 60,
-    "weather": "sunny",
-    "tide": "中潮",
-    "marine": {
-      "temp": 15.9,
-      "transparency": 2.9,
-      "wave": 2.8,
-      "salinity": 29.1
-    },
-    "ai_comment": "波が高く底荒れの可能性"
-  },
-  {
-    "date": "2026/03/10",
-    "type": "forecast",
-    "score": 60,
-    "weather": "rain",
-    "tide": "中潮",
-    "marine": {
-      "temp": 15.9,
-      "transparency": 2.9,
-      "wave": 2.8,
-      "salinity": 29.2
-    },
-    "ai_comment": "波が高く底荒れの可能性"
-  },
-  {
-    "date": "2026/03/11",
-    "type": "forecast",
-    "score": 62,
-    "weather": "rain",
-    "tide": "小潮",
-    "marine": {
-      "temp": 16.0,
-      "transparency": 2.9,
-      "wave": 2.8,
-      "salinity": 29.0
-    },
-    "ai_comment": "雨による水質変化に注意、波が高く底荒れの可能性"
+    "ai_comment": "水温が低く活性低下の懸念、適度な濁りで警戒心低下、波が高く底荒れの可能性"
   }
 ]

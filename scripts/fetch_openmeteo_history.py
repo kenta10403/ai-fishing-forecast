@@ -8,13 +8,17 @@ import os
 
 DB_PATH = os.path.join(os.path.dirname(os.path.dirname(__abspath__)), 'data', 'fishing_forecast.db') if '__abspath__' in globals() else 'data/fishing_forecast.db'
 
+import sys
+sys.path.append(os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "src", "ml"))
+from config import TOKYO_BAY_CENTER, ARAKAWA_ESTUARY
+
 # 東京湾の波 (Marine API) - 大和町や木更津沖など
-MARINE_LAT = 35.5
-MARINE_LON = 139.9
+MARINE_LAT = TOKYO_BAY_CENTER['lat']
+MARINE_LON = TOKYO_BAY_CENTER['lon']
 
 # 荒川河口付近の流量 (Flood API)
-RIVER_LAT = 35.65
-RIVER_LON = 139.85
+RIVER_LAT = ARAKAWA_ESTUARY['lat']
+RIVER_LON = ARAKAWA_ESTUARY['lon']
 
 def init_table():
     conn = sqlite3.connect(DB_PATH)
