@@ -19,40 +19,34 @@ def create_dataset():
     print("🌊 実測データ結合プロセス開始...")
     conn = sqlite3.connect(DB_PATH)
 
-    # 1. 釣果データの取得 (目的変数用)
-    print("  📊 釣果データを読み込み中...")
+    # 1. 釣果データの取得 (目的変数用) - 施設データのみ使用
+    # 改善 #2: 店舗(shop)データとの混合を廃止。施設データのCPUEのみを正確に計算する。
+    print("  📊 釣果データを読み込み中 (施設データのみ)...")
     catches_query = """
-    SELECT date, SUM(COALESCE(count, 1)) * 1.0 / COUNT(DISTINCT log_id) as catch_count
-    FROM (
-        SELECT sl.date, sc.count, sc.log_id FROM shop_catches sc
-        JOIN shop_logs sl ON sc.log_id = sl.id
-        WHERE sl.category = 'sea'
-        AND sl.area IN ('東京都', '神奈川県', '千葉県')
-        UNION ALL
-        SELECT fl.date, fc.count, fc.log_id FROM facility_catches fc
-        JOIN facility_logs fl ON fc.log_id = fl.id
-    )
-    GROUP BY date
+    SELECT fl.date,
+           SUM(COALESCE(fc.count, 1)) * 1.0 / fl.visitors as catch_count
+    FROM facility_catches fc
+    JOIN facility_logs fl ON fc.log_id = fl.id
+    WHERE fl.visitors > 0
+    GROUP BY fl.date, fl.facility
     """
     df_catches = fetch_data(catches_query, conn)
-    
-    # 全日付のベースとなるカレンダーを作成 (2009-01-01 から 2024-12-31)
-    base_dates = pd.date_range(start='2009-01-01', end='2024-12-31', freq='D')
-    df_base = pd.DataFrame(index=base_dates)
-    
-    # 釣果データをマージ (釣果がない日は0)
-    df = df_base.merge(df_catches, left_index=True, right_index=True, how='left')
-    df['catch_count'] = df['catch_count'].fillna(0)
+    # 同日に複数施設のデータがある場合は、日付ごとに平均CPUEを算出
+    df_catches = df_catches.groupby(df_catches.index).mean()
 
-    # 2. 気象データの取得 (特徴量: 東京)
+    # 2. 気象データの取得 (特徴量: 神奈川県) - これをベースのDataFrameにする
+    # 海況モデルは全期間の気象データで学習するため、気象データをベースにする。
     print("  ☀️ 気象データを読み込み中...")
     weather_query = """
     SELECT date, avg_temp, max_temp, min_temp, avg_wind_speed, max_wind_speed, precipitation, daylight_hours
     FROM weather_history
     WHERE area = '神奈川県'
     """
-    df_weather = fetch_data(weather_query, conn)
-    df = df.merge(df_weather, left_index=True, right_index=True, how='left')
+    df = fetch_data(weather_query, conn)
+    
+    # 釣果データをマージ (改善 #3: 報告なし日はNaNのまま残す。fillna(0)にしない)
+    df = df.merge(df_catches, left_index=True, right_index=True, how='left')
+
 
     # 3. 潮汐データの取得 (特徴量: 東京)
     print("  🌙 潮汐データを読み込み中...")

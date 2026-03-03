@@ -1,4 +1,4 @@
-from train_real_marine import get_prepared_data
+from dataset_real_marine import create_dataset as get_prepared_data
 from sklearn.multioutput import MultiOutputRegressor
 from lightgbm import LGBMRegressor
 from sklearn.metrics import r2_score
@@ -24,6 +24,15 @@ def run_multi_test(n_iterations=10):
     X = df[features]
     y = df[targets]
     
+    # ターゲットにNaNがある行を除去 (MultiOutputRegressorはNaNを許容しないため)
+    valid_mask = y.notna().all(axis=1)
+    X = X[valid_mask]
+    y = y[valid_mask]
+    
+    if len(X) < 10:
+        print("⚠️ 有効なデータが少なすぎて評価できません")
+        return
+
     results = {t: [] for t in targets}
     
     for i in range(n_iterations):

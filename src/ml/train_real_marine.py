@@ -168,6 +168,10 @@ def train_catch_forecast_model(df):
     print("\n" + "="*50)
     print("🎣 【後段】釣果予測モデル (Catch Forecast Model) 学習開始...")
     
+    # 改善 #3: 釣果データがある行のみ使用（報告なし=NaN を学習に使わない）
+    df = df.dropna(subset=['catch_count'])
+    print(f"  📊 釣果データがある日数: {len(df)}")
+
     features = [
         'avg_temp', 'max_temp', 'min_temp', 
         'avg_wind_speed', 'max_wind_speed', 
