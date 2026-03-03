@@ -421,11 +421,14 @@ def generate_ai_calendar(num_days=10):
             'tide_level': get_tide_level(d_str, tide_map),
             'is_kuroshio_meander': 1 if d >= datetime(2017,8,1) and d <= datetime(2025,4,30) else 0,
             'pred_real_water_temp': p_marine.get('real_water_temp', 18), 
-            'pred_real_salinity': p_marine.get('real_salinity', 30), 
-            'pred_real_do': p_marine.get('real_do', 8),
-            'pred_real_transparency': p_marine.get('real_transparency', 1.0), 
+            'pred_final_salinity': p_marine.get('final_salinity', 30), 
+            'pred_final_do': p_marine.get('final_do', 8),
+            'pred_final_transparency': p_marine.get('final_transparency', 1.0), 
             'pred_real_wave_height': p_marine.get('real_wave_height', 0.5), 
             'pred_real_river_discharge': p_marine.get('real_river_discharge', 0.5),
+            'pred_final_ssh': p_marine.get('final_ssh', 0.0),
+            'pred_final_current_u': p_marine.get('final_current_u', 0.0),
+            'pred_final_current_v': p_marine.get('final_current_v', 0.0),
             'month_sin': month_sin, 
             'month_cos': month_cos, 
             'day_of_week': day_of_week, 
@@ -470,7 +473,7 @@ def generate_ai_calendar(num_days=10):
         elif min_temp <= wt <= max_temp: reasons.append("季節ごとの適水温で活性期待")
         elif wt < min_temp: reasons.append("水温が低く活性低下の懸念")
 
-        if p_marine.get('real_transparency', 1.0) < 2.0: reasons.append("適度な濁りで警戒心低下")
+        if p_marine.get('final_transparency', 1.0) < 2.0: reasons.append("適度な濁りで警戒心低下")
         if f.get('precipitation', 0) > 10: reasons.append("雨による水質変化に注意")
         if p_marine.get('real_wave_height', 0.5) > 1.5: reasons.append("波が高く底荒れの可能性")
         
@@ -484,9 +487,9 @@ def generate_ai_calendar(num_days=10):
             "tide": ["若潮","長潮","小潮","中潮","大潮"][get_tide_level(d_str, tide_map)],
             "marine": {
                 "temp": round(p_marine.get('real_water_temp', 18), 1),
-                "transparency": round(p_marine.get('real_transparency', 1.0), 1),
+                "transparency": round(p_marine.get('final_transparency', 1.0), 1),
                 "wave": round(p_marine.get('real_wave_height', 0.5), 1),
-                "salinity": round(p_marine.get('real_salinity', 30), 1)
+                "salinity": round(p_marine.get('final_salinity', 30), 1)
             },
             "ai_comment": ai_comment
         })

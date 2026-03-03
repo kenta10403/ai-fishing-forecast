@@ -56,13 +56,15 @@ def train_marine_env_model(df):
         'daylight_hours',
         'tide_level',
         'is_kuroshio_meander',
-        'month_sin', 'month_cos'
+        'month_sin', 'month_cos',
+        'copernicus_chlorophyll', 'copernicus_oxygen'
     ]
     
     targets = [
-        'real_water_temp', 'real_salinity', 'real_do', 
+        'real_water_temp', 'final_salinity', 'real_do', 
         'real_cod', 'real_transparency', 'real_wave_height', 
-        'wave_direction_dominant', 'real_river_discharge'
+        'wave_direction_dominant', 'real_river_discharge',
+        'final_ssh', 'final_current_u', 'final_current_v'
     ]
     
     models = {}
@@ -177,8 +179,10 @@ def train_catch_forecast_model(df):
         'avg_wind_speed', 'max_wind_speed', 
         'precipitation', 'precipitation_lag1', 'daylight_hours',
         'tide_level', 'is_kuroshio_meander',
-        'pred_real_water_temp', 'pred_real_salinity', 'pred_real_do', 
+        'copernicus_chlorophyll', 'copernicus_oxygen',
+        'pred_real_water_temp', 'pred_final_salinity', 'pred_real_do', 
         'pred_real_transparency', 'pred_real_wave_height', 'pred_real_river_discharge',
+        'pred_final_ssh', 'pred_final_current_u', 'pred_final_current_v',
         'month_sin', 'month_cos', 'day_of_week', 'is_weekend'
     ]
     target = 'catch_count'

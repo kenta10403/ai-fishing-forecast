@@ -81,14 +81,34 @@ def create_dataset():
     meander_mask = (df.index >= '2017-08-01') & (df.index <= '2025-04-30')
     df.loc[meander_mask, 'is_kuroshio_meander'] = 1
 
-    # 5. 波浪・河川流量データ (目的変数/特徴量)
-    print("  🌊 波浪・河川流量データを読み込み中...")
+    # 5. 波浪・河川流量・Copernicusデータ (目的変数/特徴量)
+    print("  🌊 波浪・河川流量・Copernicusデータを読み込み中...")
     marine_forecast_query = """
-    SELECT date, wave_height_max as real_wave_height, wave_direction_dominant, river_discharge as real_river_discharge
+    SELECT date, 
+           wave_height_max as real_wave_height, 
+           wave_direction_dominant, 
+           river_discharge as real_river_discharge,
+           salinity as copernicus_salinity,
+           sea_surface_height as copernicus_ssh,
+           current_u as copernicus_current_u,
+           current_v as copernicus_current_v,
+           chlorophyll as copernicus_chlorophyll,
+           oxygen as copernicus_oxygen
     FROM marine_forecast_history
     """
     df_marine_forecast = fetch_data(marine_forecast_query, conn)
     df = df.merge(df_marine_forecast, left_index=True, right_index=True, how='left')
+
+    # 5.5 実測値優先のハイブリッド特徴量作成
+    print("  🧬 実測値優先のハイブリッド特徴量を生成中...")
+    df['final_salinity'] = df['real_salinity'].fillna(df['copernicus_salinity'])
+    
+    # BGC(クロロフィル/酸素)と実測(透明度/DO)は単位が違うため、結合せず別特徴量で扱う
+    
+    # 完全に新しいCopernicusカラム (実測値なし) はそのまま final_ として扱う
+    df['final_ssh'] = df['copernicus_ssh']
+    df['final_current_u'] = df['copernicus_current_u']
+    df['final_current_v'] = df['copernicus_current_v']
 
     # 6. 前処理 (Data Leakage を防ぐため、ここでは一括補完を行わない)
     print("  🧪 欠損値はそのままにする (学習時に分割後補完を行う)")
@@ -100,8 +120,8 @@ def create_dataset():
     # 注: 以前は ffill/bfill で補完していたが、偽データで学習する問題があったため廃止
     df['wave_direction_dominant'] = df['wave_direction_dominant'].fillna(180)  # 方向のみデフォルト値
 
-    # 海界ターゲット列
-    marine_cols = ['real_water_temp', 'real_salinity', 'real_do', 'real_cod', 'real_transparency', 'wave_direction_dominant']
+    # 海界ターゲット列 (ハイブリッド版に変更)
+    marine_cols = ['real_water_temp', 'final_salinity', 'real_do', 'real_cod', 'real_transparency', 'wave_direction_dominant', 'final_ssh', 'final_current_u', 'final_current_v']
 
     # 7. 追加特徴量エンジニアリング (前日値など)
     # 未来の情報が漏れないよう、shift(1) のみを使ってラグを作成する
